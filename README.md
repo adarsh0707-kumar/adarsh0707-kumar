@@ -5,6 +5,6 @@
 - 📫 How to reach me through Instagram: @adarsh_07_07, 
                               Phone/Whatsapp: +91 7209798901, 
                               Twitter: @Adarsh_07-07, 
-                              Facebook: adarsh.kumargupta07, 
-                              Linkedin: https://www.linkedin.com/in/adarsh-kumar-657315251 
-                              Hackerrank: https://www.hackerrank.com/adarshku12345671
+                              Facebook: https://www.facebook.com/adarsh.kumargupta07 ,
+                              Linkedin: https://www.linkedin.com/in/adarsh-kumar-657315251 ,
+                              Hackerrank: https://www.hackerrank.com/adarshku12345671 ,
