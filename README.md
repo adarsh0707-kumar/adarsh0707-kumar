@@ -2,7 +2,7 @@
 - 👀 I’m interested in cyber security
 - 🌱 I’m currently learning c/c++
 - 💞️ I’m looking to collaborate on Web devlopment
-- 📫 How to reach me through 
+- 📫 Reach to me through 
 -                             Instagram: https://www.instagram.com/adarsh_07_07/ ,
                               Twitter: https://twitter.com/Adarsh_07_07 , 
                               Facebook: https://www.facebook.com/adarsh.kumargupta07 ,
