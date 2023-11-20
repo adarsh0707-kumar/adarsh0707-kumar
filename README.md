@@ -1,7 +1,6 @@
 - 👋 Hi, I’m @adarsh0707-kumar
 - 👀 I’m interested in cyber security
 - 🌱 I’m currently learning c
--     I’m currently learning python
 - 💞️ I’m looking to collaborate on Web devlopment
 - 📫 Reach to me through 
 -                             Instagram: https://www.instagram.com/i_.a_k/ ,
