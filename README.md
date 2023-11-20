@@ -3,8 +3,8 @@
 - 🌱 I’m currently learning c/c++
 - 💞️ I’m looking to collaborate on Web devlopment
 - 📫 Reach to me through 
--                             Instagram: https://www.instagram.com/adarsh_07_07/ ,
-                              Twitter: https://twitter.com/Adarsh_07_07 , 
+-                             Instagram: https://www.instagram.com/i_.a_k/ ,
+                              Twitter: https://twitter.com/i__a_k/ , 
                               Facebook: https://www.facebook.com/adarsh.kumargupta07 ,
                               Linkedin: https://www.linkedin.com/in/adarsh-kumar-657315251 ,
                               Hackerrank: https://www.hackerrank.com/adarshku12345671 ,
