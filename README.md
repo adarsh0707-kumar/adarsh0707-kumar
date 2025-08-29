@@ -1,5 +1,5 @@
 - 👋 Hi, I’m @adarsh0707-kumar
-- 👀 I’m interested in cyber security, Wweb Development, and Data Science.
+- 👀 I’m interested in cyber security, Web Development, and Data Science.
 - 🌱 I’m currently learning C, Python, JAVA, Web Devlopment, MERN, PERN, AI & ML,  and Data Science.
 - 💞️ I’m looking to collaborate on Web devlopment
 - 📫 Reach to me through 
