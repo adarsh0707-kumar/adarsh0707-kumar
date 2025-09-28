@@ -5,7 +5,7 @@
 - 📫 Reach to me through 
 -                             Instagram: https://www.instagram.com/i_.a_k/ ,
                               Twitter: https://x.com/i__a_k/, 
-                              Facebook: https://www.facebook.com/adarsh.kumargupta07 ,
+                              Facebook: https://www.facebook.com/I.A.Kr.GUPTA,
                               Linkedin: https://www.linkedin.com/in/adarsh-kumar-657315251 ,
                               Hackerrank: https://www.hackerrank.com/adarshku12345671 ,
                               TryHackMe: https://tryhackme.com/p/adarsh0707 ,
