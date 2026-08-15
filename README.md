@@ -22,6 +22,6 @@
 ![Top Contributed Repo](./profile/contributor-stats.svg)
 
 ---
-[![](https://visitcount.itsvg.in/api?id=adarsh0707-kumar&icon=0&color=0)](https://visitcount.itsvg.in)
+![Profile Views](https://komarev.com/ghpvc/?username=adarsh0707-kumar&color=abd200&style=flat&label=Profile+Views)
 
 <!-- Proudly created with GPRM ( https://gprm.itsvg.in ) -->
