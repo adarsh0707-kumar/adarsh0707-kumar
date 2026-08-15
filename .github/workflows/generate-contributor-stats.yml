@@ -37,5 +37,8 @@ jobs:
           plugin_notable: yes
           plugin_notable_from: all
           plugin_notable_repositories: yes
+          # Without this the card renders empty: the plugin excludes repos you
+          # own by default, and all contributions here are to own repositories.
+          plugin_notable_self: yes
 
           output_action: commit
