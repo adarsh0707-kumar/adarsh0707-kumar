@@ -26,7 +26,10 @@ jobs:
           username: adarsh0707-kumar
           file: profile/trophy.svg
           theme: darkhub
-          token: ${{ secrets.GITHUB_TOKEN }}
+          # Must be a PAT. The default GITHUB_TOKEN is a repo-scoped
+          # installation token and cannot resolve user().contributionsCollection
+          # over GraphQL, which this action requires.
+          token: ${{ secrets.PROFILE_TOKEN }}
 
       - name: Commit generated trophy
         run: |

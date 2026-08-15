@@ -22,7 +22,8 @@ jobs:
         with:
           # PAT with public_repo scope. The default GITHUB_TOKEN cannot read
           # contribution data across other people's repositories.
-          token: ${{ secrets.METRICS_TOKEN }}
+          # Same secret as generate-trophy.yml - one PAT serves both.
+          token: ${{ secrets.PROFILE_TOKEN }}
           # Commit with the built-in token so the PAT is never used for writes.
           committer_token: ${{ secrets.GITHUB_TOKEN }}
           committer_branch: main
