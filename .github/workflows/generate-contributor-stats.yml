@@ -1,0 +1,40 @@
+name: Generate Contributor Stats
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - ".github/workflows/generate-contributor-stats.yml"
+  workflow_dispatch:
+  schedule:
+    - cron: "0 0 * * 1"
+
+permissions:
+  contents: write
+
+jobs:
+  generate-contributor-stats:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Generate notable contributions
+        uses: lowlighter/metrics@latest
+        with:
+          # PAT with public_repo scope. The default GITHUB_TOKEN cannot read
+          # contribution data across other people's repositories.
+          token: ${{ secrets.METRICS_TOKEN }}
+          # Commit with the built-in token so the PAT is never used for writes.
+          committer_token: ${{ secrets.GITHUB_TOKEN }}
+          committer_branch: main
+
+          user: adarsh0707-kumar
+          filename: profile/contributor-stats.svg
+          base: ""
+          template: classic
+          config_timezone: Asia/Kolkata
+
+          plugin_notable: yes
+          plugin_notable_from: all
+          plugin_notable_repositories: yes
+
+          output_action: commit

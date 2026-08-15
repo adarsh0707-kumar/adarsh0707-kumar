@@ -1,6 +1,10 @@
 name: Generate GitHub Trophies
 
 on:
+  push:
+    branches: [main]
+    paths:
+      - ".github/workflows/generate-trophy.yml"
   workflow_dispatch:
   schedule:
     - cron: "0 0 * * 1"
@@ -20,7 +24,8 @@ jobs:
         uses: Erik-Donath/github-profile-trophy@feature/generate-svg
         with:
           username: adarsh0707-kumar
-          output_path: trophy.svg
+          file: profile/trophy.svg
+          theme: darkhub
           token: ${{ secrets.GITHUB_TOKEN }}
 
       - name: Commit generated trophy
@@ -28,10 +33,10 @@ jobs:
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
 
-          git add trophy.svg
+          git add profile/trophy.svg
 
           if git diff --cached --quiet; then
-            echo "No changes to trophy.svg"
+            echo "No changes to profile/trophy.svg"
           else
             git commit -m "chore: update GitHub trophies"
             git push

@@ -13,13 +13,13 @@
 ![](https://github-stats-extended.vercel.app/api/top-langs/?username=adarsh0707-kumar&theme=merko&hide_border=false&include_all_commits=true&count_private=true&layout=compact)
 
 ## 🏆 GitHub Trophies
-![GitHub Trophies](./trophy.svg)
+![GitHub Trophies](./profile/trophy.svg)
 
 ### ✍️ Random Dev Quote
 ![](https://quotes-github-readme.vercel.app/api?type=vetical&theme=merko)
 
 ### 🔝 Top Contributed Repo
-![](https://github-contributor-stats.vercel.app/api?username=adarsh0707-kumar&limit=5&theme=dark&combine_all_yearly_contributions=true)
+![Top Contributed Repo](./profile/contributor-stats.svg)
 
 ---
 [![](https://visitcount.itsvg.in/api?id=adarsh0707-kumar&icon=0&color=0)](https://visitcount.itsvg.in)
