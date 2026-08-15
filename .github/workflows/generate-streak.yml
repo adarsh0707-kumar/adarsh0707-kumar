@@ -1,0 +1,67 @@
+name: Generate Streak Stats
+
+# streak-stats.demolab.com returns accurate data but runs on a sleeping dyno,
+# so a cold request takes ~16s. GitHub's camo image proxy times out at ~5s and
+# serves a 504, which renders as a broken image. Fetching the card here and
+# committing it means the README can reference a repo-relative path, which
+# bypasses camo entirely.
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - ".github/workflows/generate-streak.yml"
+  workflow_dispatch:
+  schedule:
+    - cron: "0 0 * * *"
+
+permissions:
+  contents: write
+
+jobs:
+  generate-streak:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout profile repository
+        uses: actions/checkout@v4
+
+      - name: Fetch streak card
+        run: |
+          url="https://streak-stats.demolab.com/?user=adarsh0707-kumar&theme=merko&hide_border=false"
+          mkdir -p profile
+
+          for attempt in 1 2 3 4 5; do
+            echo "Attempt $attempt (cold dyno can take ~20s)..."
+
+            if curl -sSfL --max-time 60 "$url" -o streak.tmp; then
+              # Guard against committing an error card or an empty body.
+              if grep -q "Total Contributions" streak.tmp; then
+                mv streak.tmp profile/streak.svg
+                echo "Fetched a valid streak card ($(wc -c < profile/streak.svg) bytes)."
+                exit 0
+              fi
+              echo "Response did not contain expected content, retrying."
+            else
+              echo "Request failed, retrying."
+            fi
+
+            sleep 15
+          done
+
+          echo "::error::Could not fetch a valid streak card after 5 attempts."
+          exit 1
+
+      - name: Commit generated card
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+
+          git add profile/streak.svg
+
+          if git diff --cached --quiet; then
+            echo "No changes to profile/streak.svg"
+          else
+            git commit -m "chore: update streak stats"
+            git push
+          fi
