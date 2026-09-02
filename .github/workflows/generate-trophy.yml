@@ -7,9 +7,11 @@ on:
       - ".github/workflows/generate-trophy.yml"
   workflow_dispatch:
   schedule:
-    # 17:50 UTC Monday = 23:20 IST Monday. Moved off 00:00 UTC for the same
-    # scheduler-congestion reason as generate-streak.yml.
-    - cron: "50 17 * * 1"
+    # 16:40 UTC = 22:10 IST, daily. Staggered from the other card jobs: they
+    # all push to main, and two commits landing at the same minute means one
+    # gets rejected non-fast-forward. Order is contributor-stats 21:40,
+    # trophy 22:10, stats 22:50, streak 23:20 IST.
+    - cron: "40 16 * * *"
 
 permissions:
   contents: write
