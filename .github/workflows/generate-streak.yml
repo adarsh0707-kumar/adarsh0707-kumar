@@ -1,71 +1,65 @@
-name: Generate Streak Stats
+name: Generate README Stats Cards
 
-# streak-stats.demolab.com returns accurate data but runs on a sleeping dyno,
-# so a cold request takes ~16s. GitHub's camo image proxy times out at ~5s and
-# serves a 504, which renders as a broken image. Fetching the card here and
-# committing it means the README can reference a repo-relative path, which
-# bypasses camo entirely.
+# The public github-stats-extended instance caches the stats card for 24h and
+# the top-langs card for 144h (6 days), and camo caches on top of that using
+# the same headers. Neither is shortenable from the URL - cache_seconds is
+# clamped to a 6h minimum. Generating the SVGs here and committing them means
+# the README uses repo-relative paths, which bypasses camo entirely and
+# refreshes on this schedule instead.
 
 on:
   push:
     branches: [main]
     paths:
-      - ".github/workflows/generate-streak.yml"
+      - ".github/workflows/generate-stats.yml"
   workflow_dispatch:
   schedule:
-    # Times are UTC. 00:00 UTC is 05:30 IST, which snapshots the day before
-    # any local work happens, so the card always trailed by a day. It is also
-    # the most contended slot on GitHub's scheduler - runs were queueing up to
-    # 8h late. 17:50 UTC is 23:20 IST, near the end of the local day.
-    - cron: "50 5,11,17 * * *"
+    # 17:20 UTC = 22:50 IST, near the end of the local day. Offset from the
+    # streak workflow so the two jobs do not collide on a push to main.
+    - cron: "20 17 * * *"
 
 permissions:
   contents: write
 
 jobs:
-  generate-streak:
+  generate-stats:
     runs-on: ubuntu-latest
 
     steps:
       - name: Checkout profile repository
         uses: actions/checkout@v4
 
-      - name: Fetch streak card
-        run: |
-          url="https://streak-stats.demolab.com/?user=adarsh0707-kumar&theme=merko&hide_border=false"
-          mkdir -p profile
+      - name: Generate stats card
+        uses: readme-tools/github-readme-stats-action@v1
+        with:
+          card: stats
+          options: username=adarsh0707-kumar&theme=merko&hide_border=false&include_all_commits=true&count_private=true
+          path: profile/stats.svg
+          # count_private only works with a PAT carrying repo scope. The
+          # default GITHUB_TOKEN cannot read across your private repos.
+          token: ${{ secrets.PROFILE_TOKEN }}
+          # Do not commit a "Something went wrong" card if the API rate limits.
+          fail_on_error: true
 
-          for attempt in 1 2 3 4 5; do
-            echo "Attempt $attempt (cold dyno can take ~20s)..."
+      - name: Generate top languages card
+        uses: readme-tools/github-readme-stats-action@v1
+        with:
+          card: top-langs
+          options: username=adarsh0707-kumar&theme=merko&hide_border=false&layout=compact
+          path: profile/top-langs.svg
+          token: ${{ secrets.PROFILE_TOKEN }}
+          fail_on_error: true
 
-            if curl -sSfL --max-time 60 "$url" -o streak.tmp; then
-              # Guard against committing an error card or an empty body.
-              if grep -q "Total Contributions" streak.tmp; then
-                mv streak.tmp profile/streak.svg
-                echo "Fetched a valid streak card ($(wc -c < profile/streak.svg) bytes)."
-                exit 0
-              fi
-              echo "Response did not contain expected content, retrying."
-            else
-              echo "Request failed, retrying."
-            fi
-
-            sleep 15
-          done
-
-          echo "::error::Could not fetch a valid streak card after 5 attempts."
-          exit 1
-
-      - name: Commit generated card
+      - name: Commit generated cards
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
 
-          git add profile/streak.svg
+          git add profile/stats.svg profile/top-langs.svg
 
           if git diff --cached --quiet; then
-            echo "No changes to profile/streak.svg"
+            echo "No changes to the stats cards"
           else
-            git commit -m "chore: update streak stats"
+            git commit -m "chore: update README stats cards"
             git push
           fi
