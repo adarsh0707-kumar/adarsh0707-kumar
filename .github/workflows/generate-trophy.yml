@@ -7,7 +7,9 @@ on:
       - ".github/workflows/generate-trophy.yml"
   workflow_dispatch:
   schedule:
-    - cron: "0 0 * * 1"
+    # 17:50 UTC Monday = 23:20 IST Monday. Moved off 00:00 UTC for the same
+    # scheduler-congestion reason as generate-streak.yml.
+    - cron: "50 17 * * 1"
 
 permissions:
   contents: write
