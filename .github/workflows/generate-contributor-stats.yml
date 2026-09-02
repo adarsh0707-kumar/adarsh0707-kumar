@@ -7,7 +7,10 @@ on:
       - ".github/workflows/generate-contributor-stats.yml"
   workflow_dispatch:
   schedule:
-    - cron: "0 0 * * 1"
+    # 16:10 UTC = 21:40 IST, daily. Moved off 00:00 UTC, which is the most
+    # contended slot on GitHub's scheduler and was queueing runs hours late.
+    # First in the staggered card sequence - see generate-trophy.yml.
+    - cron: "10 16 * * *"
 
 permissions:
   contents: write
