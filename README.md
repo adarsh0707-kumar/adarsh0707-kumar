@@ -80,6 +80,13 @@ Full-stack web applications · DevOps and CI/CD tooling · Open source
 ![](https://quotes-github-readme.vercel.app/api?type=vetical&theme=merko)
 
 ---
+## 🏅 GitHub Achievements
+
+[<img src="https://github.githubassets.com/assets/pair-extraordinaire-default-579438a20e01.png" width="300" alt="Pair Extraordinaire x2">](https://github.com/adarsh0707-kumar?tab=achievements)
+[<img src="https://github.githubassets.com/assets/pull-shark-default-498c279a747d.png" width="300" alt="Pull Shark">](https://github.com/adarsh0707-kumar?tab=achievements)
+[<img src="https://github.githubassets.com/assets/yolo-default-be0bbff04951.png" width="300" alt="YOLO">](https://github.com/adarsh0707-kumar?tab=achievements)
+
+---
 ### 🔝 Top Contributed Repo
 ![Top Contributed Repo](./profile/contributor-stats.svg)
 
