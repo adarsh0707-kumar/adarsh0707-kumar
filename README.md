@@ -91,6 +91,7 @@ Full-stack web applications · DevOps and CI/CD tooling · Open source
 ![Top Contributed Repo](./profile/contributor-stats.svg)
 
 ---
-![Profile Views](https://komarev.com/ghpvc/?username=adarsh0707-kumar&color=abd200&style=flat&label=Profile+Views)
+![Profile Views](https://komarev.com/ghpvc/?username=adarsh0707-kumar&color=abd200&style=flat&label=Profile+Views) 
+[![Buy Me a Coffee](https://img.shields.io/badge/Buy%20Me%20a%20Coffee-support-yellow?logo=buy-me-a-coffee\&logoColor=white)](https://buymeacoffee.com/adarsh12kumar)
 
 <!-- Proudly created with GPRM ( https://gprm.itsvg.in ) -->
