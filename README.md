@@ -11,6 +11,12 @@ B.Tech CSE graduate (2026) who builds things from the socket layer up — a SQL 
 
 ## 🔨 What I'm building
 
+**[Trading Engine](https://github.com/adarsh0707-kumar/Trading-Engine)** — Cloud-based algorithmic trading engine built with C++, Python, Node.js and React. Covers market-data simulation, order-book matching, analytics, risk management, real-time ingestion and trading dashboards.
+
+**[CodeForge Cloud](https://github.com/adarsh0707-kumar/CodeForge-Cloud)** — Cloud-native, multi-language online development platform with a browser-based IDE, secure code compilation and execution, real-time collaboration and project management.
+
+**[Distributed Media Analytics Platform](https://github.com/adarsh0707-kumar/High-Performance-Distributed-Media-Analytics-Platform)** — High-performance distributed platform for video and audio processing, AI-powered media analysis and real-time job orchestration using C++, Python, Node.js, React, PostgreSQL, Redis, Docker and FFmpeg.
+
 **[MedBill Pro](https://github.com/adarsh0707-kumar/medical-billing)** — Full-stack medical billing system: billing, inventory, customers, reporting. React + TypeScript frontend, Node/Express/Prisma backend, containerised behind nginx.
 
 **[Database Engine](https://github.com/adarsh0707-kumar/Database-engine)** — SQL-like database engine in C++ with a custom parser, in-memory execution and file-based persistence.
