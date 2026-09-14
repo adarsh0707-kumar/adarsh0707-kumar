@@ -13,12 +13,17 @@ on:
       - ".github/workflows/generate-streak.yml"
   workflow_dispatch:
   schedule:
-    # Times are UTC. 00:00 UTC is 05:30 IST, which snapshots the day before
-    # any local work happens, so the card always trailed by a day. It is also
-    # the most contended slot on GitHub's scheduler - runs were queueing up to
-    # 8h late. 17:50 UTC is 23:20 IST, near the end of the local day.
-     - cron: "30 4,8,13 * * *"
-     - cron: "0 16 * * *"
+    # 10:00 AM IST = 04:30 UTC
+    - cron: "30 4 * * *"
+
+    # 2:00 PM IST = 08:30 UTC
+    - cron: "30 8 * * *"
+
+    # 7:00 PM IST = 13:30 UTC
+    - cron: "30 13 * * *"
+
+    # 9:30 PM IST = 16:00 UTC
+    - cron: "0 16 * * *"
 
 permissions:
   contents: write
