@@ -14,10 +14,11 @@ on:
       - ".github/workflows/generate-stats.yml"
   workflow_dispatch:
   schedule:
-    # 15:30 UTC = 21:00 IST, near the end of the local day. Offset from the
-    # streak workflow so the two jobs do not collide on a push to main.
-    # 15:30 UTC = 21:00 IST
-  - cron: "30 8,15 * * *"
+    # 08:30 UTC = 2:00 PM IST
+    - cron: "30 8 * * *"
+
+    # 15:30 UTC = 9:00 PM IST
+    - cron: "30 15 * * *"
 
 permissions:
   contents: write
