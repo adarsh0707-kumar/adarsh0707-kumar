@@ -37,30 +37,31 @@ jobs:
         uses: actions/checkout@v4
 
       - name: Fetch streak card
+        continue-on-error: true
         run: |
           url="https://streak-stats.demolab.com/?user=adarsh0707-kumar&theme=merko&hide_border=false"
           mkdir -p profile
 
-          for attempt in 1 2 3 4 5; do
-            echo "Attempt $attempt (cold dyno can take ~20s)..."
+          for attempt in 1 2 3; do
+            echo "Attempt $attempt..."
 
-            if curl -sSfL --max-time 60 "$url" -o streak.tmp; then
-              # Guard against committing an error card or an empty body.
+            if curl -sSfL --max-time 10 "$url" -o streak.tmp; then
               if grep -q "Total Contributions" streak.tmp; then
                 mv streak.tmp profile/streak.svg
                 echo "Fetched a valid streak card ($(wc -c < profile/streak.svg) bytes)."
                 exit 0
               fi
-              echo "Response did not contain expected content, retrying."
+              echo "Invalid content returned, retrying..."
             else
-              echo "Request failed, retrying."
+              echo "Request failed, retrying..."
             fi
 
-            sleep 15
+            sleep 5
           done
 
-          echo "::error::Could not fetch a valid streak card after 5 attempts."
-          exit 1
+          echo "Service is currently down. Keeping existing streak.svg for this run."
+          exit 0
+
 
       - name: Commit generated card
         run: |
