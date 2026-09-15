@@ -66,7 +66,7 @@ AWS (IAM, EC2, VPC networking) · CI/CD pipelines · Docker in production · Adv
 
 ## 🤝 Open to collaborating on
 
-Full-stack web applications · DevOps and CI/CD tooling · Open source
+Full-stack web applications · DevOps and CI/CD tooling · Open source.
 
 ---
 
