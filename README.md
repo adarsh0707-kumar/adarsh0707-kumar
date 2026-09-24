@@ -168,10 +168,12 @@ Modern full-stack financial application built with Next.js and production-orient
 
 ## 🎓 Professional Learning
 
-| Program | Area | Period |
-|---|---|---|
-| **S-CUBE / Satyam Software Solutions** | C++ & C Internship | Apr 2026 |
-| **RCPL — ITS Engineering College** | Data Science with Python | May 2026 |
+<div align="center">
+<img src="./profile/certificate-gallery.svg" width="100%" alt="Animated certificate gallery"/>
+</div>
+
+> Certificate images can be added to this gallery later without changing the profile layout.
+
 
 ---
 
