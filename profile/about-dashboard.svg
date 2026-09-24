@@ -1,0 +1,65 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="390" viewBox="0 0 1200 390">
+<defs>
+  <linearGradient id="bg" x1="0" x2="1">
+    <stop offset="0" stop-color="#0d1117"/>
+    <stop offset="0.5" stop-color="#111827"/>
+    <stop offset="1" stop-color="#0d1117"/>
+  </linearGradient>
+  <linearGradient id="line" x1="0" x2="1">
+    <stop offset="0" stop-color="#58a6ff"/>
+    <stop offset="0.5" stop-color="#7ee787"/>
+    <stop offset="1" stop-color="#d2a8ff"/>
+  </linearGradient>
+  <filter id="glow"><feGaussianBlur stdDeviation="3" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+</defs>
+
+<rect x="5" y="5" width="1190" height="380" rx="28" fill="url(#bg)" stroke="#30363d"/>
+
+<g font-family="Arial, sans-serif">
+  <text x="55" y="55" fill="#f0f6fc" font-size="28" font-weight="700">ABOUT ME</text>
+  <text x="55" y="82" fill="#8b949e" font-size="15">Backend • Systems • Distributed Software</text>
+
+  <circle cx="1110" cy="55" r="8" fill="#7ee787" filter="url(#glow)">
+    <animate attributeName="r" values="6;10;6" dur="1.8s" repeatCount="indefinite"/>
+    <animate attributeName="opacity" values="1;.45;1" dur="1.8s" repeatCount="indefinite"/>
+  </circle>
+  <text x="1130" y="61" fill="#7ee787" font-size="13">BUILDING</text>
+
+  <g>
+    <rect x="45" y="110" width="250" height="105" rx="18" fill="#161b22" stroke="#30363d"/>
+    <text x="68" y="143" fill="#58a6ff" font-size="17" font-weight="700">🎓 EDUCATION</text>
+    <text x="68" y="171" fill="#f0f6fc" font-size="17">B.Tech CSE</text>
+    <text x="68" y="196" fill="#8b949e" font-size="14">Graduate · 2026</text>
+  </g>
+
+  <g>
+    <rect x="315" y="110" width="250" height="105" rx="18" fill="#161b22" stroke="#30363d"/>
+    <text x="338" y="143" fill="#7ee787" font-size="17" font-weight="700">⚙️ ENGINEERING</text>
+    <text x="338" y="171" fill="#f0f6fc" font-size="17">Backend &amp; Systems</text>
+    <text x="338" y="196" fill="#8b949e" font-size="14">Sockets · DB · APIs</text>
+  </g>
+
+  <g>
+    <rect x="585" y="110" width="250" height="105" rx="18" fill="#161b22" stroke="#30363d"/>
+    <text x="608" y="143" fill="#d2a8ff" font-size="17" font-weight="700">🧱 BUILDING</text>
+    <text x="608" y="171" fill="#f0f6fc" font-size="17">Real-world systems</text>
+    <text x="608" y="196" fill="#8b949e" font-size="14">C++ · Python · Node</text>
+  </g>
+
+  <g>
+    <rect x="855" y="110" width="300" height="105" rx="18" fill="#161b22" stroke="#30363d"/>
+    <text x="878" y="143" fill="#ffa657" font-size="17" font-weight="700">☁️ EXPLORING</text>
+    <text x="878" y="171" fill="#f0f6fc" font-size="17">Cloud &amp; DevOps</text>
+    <text x="878" y="196" fill="#8b949e" font-size="14">AWS · Docker · CI/CD</text>
+  </g>
+
+  <line x1="70" y1="275" x2="1130" y2="275" stroke="url(#line)" stroke-width="2" stroke-dasharray="12 10">
+    <animate attributeName="stroke-dashoffset" from="0" to="-44" dur="1.6s" repeatCount="indefinite"/>
+  </line>
+
+  <text x="600" y="320" text-anchor="middle" fill="#c9d1d9" font-size="17">“Build from the socket layer up.”</text>
+  <text x="600" y="350" text-anchor="middle" fill="#8b949e" font-size="14">Networking → Systems → Backend → Cloud</text>
+
+  <circle cx="70" cy="275" r="5" fill="#58a6ff"><animate attributeName="cx" values="70;1130;70" dur="4s" repeatCount="indefinite"/></circle>
+</g>
+</svg>
