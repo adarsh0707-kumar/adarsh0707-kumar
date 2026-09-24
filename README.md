@@ -19,6 +19,10 @@
 
 ## 👨‍💻 About Me
 
+<div align="center">
+<img src="./profile/about-dashboard.svg" width="100%" alt="Animated About Me dashboard"/>
+</div>
+
 Hi, I'm **Adarsh Kumar**, a **B.Tech Computer Science Engineering graduate (2026)** focused on backend engineering, systems programming, distributed applications, and production-oriented full-stack development.
 
 I like understanding what happens **below the framework level** — from sockets, protocols, parsers and database storage to APIs, queues, persistence, containers and deployment.
@@ -225,6 +229,6 @@ A software engineering environment where I can work on **real systems**, learn f
 
 ![Profile Views](https://komarev.com/ghpvc/?username=adarsh0707-kumar&style=for-the-badge&label=PROFILE+VIEWS)
 
-<img src="https://capsule-render.vercel.app/api?type=waving&color=0:334155,50:1e293b,100:0f172a&height=120&section=footer" width="100%"/>
+<img src="./profile/footer.svg" width="100%" alt="Animated profile footer"/>
 
 </div>
