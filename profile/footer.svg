@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="110" viewBox="0 0 1200 110">
+<rect width="1200" height="110" rx="22" fill="#0d1117"/>
+<path d="M0 65 Q150 15 300 65 T600 65 T900 65 T1200 65 V110 H0 Z" fill="#161b22">
+ <animateTransform attributeName="transform" type="translate" values="0 0;-35 0;0 0" dur="5s" repeatCount="indefinite"/>
+</path>
+<text x="600" y="48" text-anchor="middle" fill="#f0f6fc" font-family="monospace" font-size="18" font-weight="700">BUILD LOW • SHIP RELIABLY • KEEP LEARNING</text>
+<circle cx="150" cy="82" r="4" fill="#58a6ff"><animate attributeName="cx" values="150;1050;150" dur="4s" repeatCount="indefinite"/></circle>
+</svg>
