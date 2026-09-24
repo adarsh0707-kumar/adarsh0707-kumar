@@ -1,103 +1,259 @@
+<!-- ═══════════════════════════════════════════════════════════════════════ -->
+<!--                           ADARSH KUMAR                                  -->
+<!-- ═══════════════════════════════════════════════════════════════════════ -->
 
-# Hi, I'm Adarsh Kumar
+<div align="center">
 
-B.Tech CSE graduate (2026) who builds things from the socket layer up — a SQL engine and a multi-client chat server in C++, and full-stack production apps in React, Node and PostgreSQL. Currently going deeper on AWS, Docker and CI/CD.
+<img src="https://capsule-render.vercel.app/api?type=waving&color=0:0f172a,50:1e293b,100:334155&height=220&section=header&text=Adarsh%20Kumar&fontSize=58&fontColor=ffffff&fontAlignY=38&desc=Backend%20%26%20Systems%20Engineer%20%7C%20Building%20from%20the%20socket%20layer%20up&descAlignY=61&descSize=17" width="100%"/>
 
-📍 Noida, India · 🎓 B.Tech CSE, 2026 · 💼 Available for full-time roles and freelance work
+[![GitHub](https://img.shields.io/badge/GitHub-adarsh0707--kumar-181717?style=for-the-badge&logo=github)](https://github.com/adarsh0707-kumar)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-Adarsh%20Kumar-0A66C2?style=for-the-badge&logo=linkedin)](https://linkedin.com/in/Adarsh-kumar-657315251)
+[![Instagram](https://img.shields.io/badge/Instagram-i_.a__k-E4405F?style=for-the-badge&logo=instagram&logoColor=white)](https://instagram.com/i_.a_k)
+[![Email](https://img.shields.io/badge/Email-Contact-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:adarshku.offical@gmail.com)
 
-[![Facebook](https://img.shields.io/badge/Facebook-%231877F2.svg?logo=Facebook&logoColor=white)](https://facebook.com/I.A.Kr.GUPTA) [![Instagram](https://img.shields.io/badge/Instagram-%23E4405F.svg?logo=Instagram&logoColor=white)](https://instagram.com/i_.a_k) [![LinkedIn](https://img.shields.io/badge/LinkedIn-%230077B5.svg?logo=linkedin&logoColor=white)](https://linkedin.com/in/Adarsh-kumar-657315251) [![X](https://img.shields.io/badge/X-black.svg?logo=X&logoColor=white)](https://x.com/i__a_k) [![email](https://img.shields.io/badge/Email-D14836?logo=gmail&logoColor=white)](mailto:adarshku.offical@gmail.com) [![Buy Me a Coffee](https://img.shields.io/badge/Buy%20Me%20a%20Coffee-support-yellow?logo=buy-me-a-coffee\&logoColor=white)](https://buymeacoffee.com/adarsh12kumar)
-
----
-
-## 🔨 What I'm building
-
-**[Trading Engine](https://github.com/adarsh0707-kumar/Trading-Engine)** — Cloud-based algorithmic trading engine built with C++, Python, Node.js and React. Covers market-data simulation, order-book matching, analytics, risk management, real-time ingestion and trading dashboards.
-
-**[CodeForge Cloud](https://github.com/adarsh0707-kumar/CodeForge-Cloud)** — Cloud-native, multi-language online development platform with a browser-based IDE, secure code compilation and execution, real-time collaboration and project management.
-
-**[Distributed Media Analytics Platform](https://github.com/adarsh0707-kumar/High-Performance-Distributed-Media-Analytics-Platform)** — High-performance distributed platform for video and audio processing, AI-powered media analysis and real-time job orchestration using C++, Python, Node.js, React, PostgreSQL, Redis, Docker and FFmpeg.
-
-**[MedBill Pro](https://github.com/adarsh0707-kumar/medical-billing)** — Full-stack medical billing system: billing, inventory, customers, reporting. React + TypeScript frontend, Node/Express/Prisma backend, containerised behind nginx.
-
-**[Database Engine](https://github.com/adarsh0707-kumar/Database-engine)** — SQL-like database engine in C++ with a custom parser, in-memory execution and file-based persistence.
-
-**[Chat App](https://github.com/adarsh0707-kumar/Chat-app)** — Real-time multi-client chat server in C++ using POSIX sockets.
-
-**[Task Manager](https://github.com/adarsh0707-kumar/taskmanager)** — Full-stack team task manager with role-based access control.
+</div>
 
 ---
 
-## 🧰 Tech I actually use
+## 👨‍💻 About Me
 
-**Languages**
-![C++](https://img.shields.io/badge/c++-%2300599C.svg?style=for-the-badge&logo=c%2B%2B&logoColor=white)
-![C](https://img.shields.io/badge/c-%2300599C.svg?style=for-the-badge&logo=c&logoColor=white)
-![TypeScript](https://img.shields.io/badge/typescript-%23007ACC.svg?style=for-the-badge&logo=typescript&logoColor=white)
-![JavaScript](https://img.shields.io/badge/javascript-%23F7DF1E.svg?style=for-the-badge&logo=javascript&logoColor=black)
-![Python](https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54)
+Hi, I'm **Adarsh Kumar**, a **B.Tech Computer Science Engineering graduate (2026)** focused on backend engineering, systems programming, distributed applications, and production-oriented full-stack development.
 
-**Frontend**
-![React](https://img.shields.io/badge/react-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB)
-![Next.js](https://img.shields.io/badge/Next-black?style=for-the-badge&logo=next.js&logoColor=white)
-![Vite](https://img.shields.io/badge/vite-%23646CFF.svg?style=for-the-badge&logo=vite&logoColor=white)
-![TailwindCSS](https://img.shields.io/badge/tailwindcss-%2338B2AC.svg?style=for-the-badge&logo=tailwind-css&logoColor=white)
+I like understanding what happens **below the framework level** — from sockets, protocols, parsers and database storage to APIs, queues, persistence, containers and deployment.
 
-**Backend & Data**
-![Node.js](https://img.shields.io/badge/node.js-6DA55F?style=for-the-badge&logo=node.js&logoColor=white)
-![Express.js](https://img.shields.io/badge/express.js-%23404d59.svg?style=for-the-badge&logo=express&logoColor=%2361DAFB)
-![PostgreSQL](https://img.shields.io/badge/postgres-%23316192.svg?style=for-the-badge&logo=postgresql&logoColor=white)
-![Prisma](https://img.shields.io/badge/Prisma-3982CE?style=for-the-badge&logo=Prisma&logoColor=white)
-![MongoDB](https://img.shields.io/badge/MongoDB-%234ea94b.svg?style=for-the-badge&logo=mongodb&logoColor=white)
-![Redis](https://img.shields.io/badge/redis-%23DD0031.svg?style=for-the-badge&logo=redis&logoColor=white)
+- 🎓 **B.Tech CSE — 2026**
+- 🧠 Focused on **Backend Engineering & Systems**
+- ⚙️ Building with **C++, Python, Node.js, React & PostgreSQL**
+- 🏗️ Interested in **distributed systems, databases, networking and cloud infrastructure**
+- ☁️ Currently going deeper into **AWS, Docker and CI/CD**
+- 📍 **Noida, India**
+- 💼 Open to **full-time roles and freelance opportunities**
 
-**Tooling & Infra**
-![Docker](https://img.shields.io/badge/docker-%230db7ed.svg?style=for-the-badge&logo=docker&logoColor=white)
-![AWS](https://img.shields.io/badge/AWS-%23FF9900.svg?style=for-the-badge&logo=amazon-aws&logoColor=white)
-![Git](https://img.shields.io/badge/git-%23F05033.svg?style=for-the-badge&logo=git&logoColor=white)
-![GitHub Actions](https://img.shields.io/badge/github%20actions-%232671E5.svg?style=for-the-badge&logo=githubactions&logoColor=white)
+---
+
+## 🚀 What I'm Building
+
+<table>
+<tr>
+<td width="50%" valign="top">
+
+### 📈 Cloud-Based Algorithmic Trading Engine
+
+A polyglot trading simulation platform built from the transport layer upward.
+
+**Stack:** C++ · Python · Node.js · React · PostgreSQL · Docker
+
+**Focus:** TCP transport, order-book matching, streaming analytics, risk management, persistence and observability.
+
+<a href="https://github.com/adarsh0707-kumar/Trading-Engine">View Repository →</a>
+
+</td>
+<td width="50%" valign="top">
+
+### ☁️ CodeForge Cloud
+
+A cloud-native multi-language development platform with browser-based development, secure execution and collaboration workflows.
+
+**Stack:** TypeScript · React · Node.js · Cloud Infrastructure
+
+<a href="https://github.com/adarsh0707-kumar/CodeForge-Cloud">View Repository →</a>
+
+</td>
+</tr>
+
+<tr>
+<td width="50%" valign="top">
+
+### 🗄️ Database Engine
+
+A SQL-like database engine written in C++ with a custom parser, in-memory execution and file-based persistence.
+
+**Focus:** Parsing · Query Execution · Storage · C++
+
+<a href="https://github.com/adarsh0707-kumar/Database-engine">View Repository →</a>
+
+</td>
+<td width="50%" valign="top">
+
+### 🔴 Redis Clone
+
+A systems-oriented Redis implementation exploring networking, commands, data structures and server-side architecture.
+
+**Focus:** C++ · Networking · Systems Programming
+
+<a href="https://github.com/adarsh0707-kumar/redis-clone">View Repository →</a>
+
+</td>
+</tr>
+
+<tr>
+<td width="50%" valign="top">
+
+### 🤖 Trao — AI Interview Prep Kit
+
+A full-stack application for generating structured interview preparation kits from company and role information.
+
+**Stack:** React · Node.js · TypeScript · PostgreSQL
+
+<a href="https://github.com/adarsh0707-kumar/Trao">View Repository →</a>
+
+</td>
+<td width="50%" valign="top">
+
+### 💰 Welth
+
+A modern full-stack financial application built with Next.js and production-oriented tooling.
+
+**Stack:** Next.js · React · TypeScript · PostgreSQL · Docker
+
+<a href="https://github.com/adarsh0707-kumar/welth">View Repository →</a>
+
+</td>
+</tr>
+</table>
+
+---
+
+## 🧩 Engineering Interests
+
+<div align="center">
+
+| 🌐 Networking | 🗄️ Databases | ⚡ Distributed Systems | ☁️ Cloud |
+|:---:|:---:|:---:|:---:|
+| TCP/IP · Sockets | SQL · Storage | Services · Queues | AWS · Docker |
+| Protocol Design | PostgreSQL | Real-time Systems | CI/CD |
+
+</div>
+
+---
+
+## 🛠️ Tech Stack
+
+### Languages
+
+![C++](https://img.shields.io/badge/C++-00599C?style=for-the-badge&logo=cplusplus&logoColor=white)
+![C](https://img.shields.io/badge/C-00599C?style=for-the-badge&logo=c&logoColor=white)
+![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)
+![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=for-the-badge&logo=typescript&logoColor=white)
+![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)
+
+### Backend & Data
+
+![Node.js](https://img.shields.io/badge/Node.js-339933?style=for-the-badge&logo=nodedotjs&logoColor=white)
+![Express](https://img.shields.io/badge/Express-000000?style=for-the-badge&logo=express&logoColor=white)
+![PostgreSQL](https://img.shields.io/badge/PostgreSQL-4169E1?style=for-the-badge&logo=postgresql&logoColor=white)
+![MongoDB](https://img.shields.io/badge/MongoDB-47A248?style=for-the-badge&logo=mongodb&logoColor=white)
+![Redis](https://img.shields.io/badge/Redis-DC382D?style=for-the-badge&logo=redis&logoColor=white)
+![Prisma](https://img.shields.io/badge/Prisma-2D3748?style=for-the-badge&logo=prisma&logoColor=white)
+
+### Frontend
+
+![React](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)
+![Next.js](https://img.shields.io/badge/Next.js-000000?style=for-the-badge&logo=nextdotjs&logoColor=white)
+![Vite](https://img.shields.io/badge/Vite-646CFF?style=for-the-badge&logo=vite&logoColor=white)
+![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-06B6D4?style=for-the-badge&logo=tailwindcss&logoColor=white)
+
+### Infrastructure & Tools
+
+![Docker](https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white)
+![AWS](https://img.shields.io/badge/AWS-232F3E?style=for-the-badge&logo=amazonwebservices&logoColor=white)
+![GitHub Actions](https://img.shields.io/badge/GitHub_Actions-2088FF?style=for-the-badge&logo=githubactions&logoColor=white)
 ![Linux](https://img.shields.io/badge/Linux-FCC624?style=for-the-badge&logo=linux&logoColor=black)
+![CMake](https://img.shields.io/badge/CMake-064F8C?style=for-the-badge&logo=cmake&logoColor=white)
+![Git](https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white)
 ![Postman](https://img.shields.io/badge/Postman-FF6C37?style=for-the-badge&logo=postman&logoColor=white)
 
 ---
 
-## 🌱 Currently learning
+## 📊 GitHub Analytics
 
-AWS (IAM, EC2, VPC networking) · CI/CD pipelines · Docker in production · Advanced Next.js
+<div align="center">
 
-## 🤝 Open to collaborating on
+<img src="./profile/stats.svg" width="49%" />
+<img src="./profile/top-langs.svg" width="49%" />
 
-Full-stack web applications · DevOps and CI/CD tooling · Open source.
+<img src="./profile/streak.svg" width="70%" />
 
----
-
-## 📊 Stats
-
-![GitHub Stats](./profile/stats.svg)<br/>
-![GitHub Streak](./profile/streak.svg)<br/>
-![Top Languages](./profile/top-langs.svg)
+</div>
 
 ---
 
 ## 🏆 GitHub Trophies
-![GitHub Trophies](./profile/trophy.svg)
+
+<div align="center">
+
+<img src="./profile/trophy.svg" width="90%" />
+
+</div>
 
 ---
-### ✍️ Random Dev Quote
-![](https://quotes-github-readme.vercel.app/api?type=vetical&theme=merko)
+
+## 🐍 Contribution Activity
+
+<div align="center">
+
+<img src="https://raw.githubusercontent.com/adarsh0707-kumar/adarsh0707-kumar/output/github-contribution-grid-snake.svg" alt="GitHub contribution snake" width="100%" />
+
+</div>
 
 ---
-## 🏅 GitHub Achievements
 
-[<img src="https://github.githubassets.com/assets/pair-extraordinaire-default-579438a20e01.png" width="300" alt="Pair Extraordinaire x2">](https://github.com/adarsh0707-kumar?tab=achievements)
-[<img src="https://github.githubassets.com/assets/pull-shark-default-498c279a747d.png" width="300" alt="Pull Shark">](https://github.com/adarsh0707-kumar?tab=achievements)
-[<img src="https://github.githubassets.com/assets/yolo-default-be0bbff04951.png" width="300" alt="YOLO">](https://github.com/adarsh0707-kumar?tab=achievements)
+## 🎓 Professional Learning
+
+### Certifications & Experience
+
+| Program | Area | Period |
+|---|---|---|
+| **S-CUBE / Satyam Software Solutions** | C++ & C Internship | Apr 2026 |
+| **RCPL — ITS Engineering College** | Data Science with Python | May 2026 |
 
 ---
-### 🔝 Top Contributed Repo
-![Top Contributed Repo](./profile/contributor-stats.svg)
+
+## 🌱 Currently Exploring
+
+- ☁️ **AWS** — IAM, EC2 and VPC networking
+- 🐳 **Docker** — production containers and service orchestration
+- 🔄 **CI/CD** — automated testing, builds and deployments
+- ⚡ **Advanced Next.js** — production application architecture
+- 🧱 **Systems Engineering** — networking, storage and distributed services
 
 ---
-![Profile Views](https://komarev.com/ghpvc/?username=adarsh0707-kumar&color=abd200&style=flat&label=Profile+Views) 
-[![Buy Me a Coffee](https://img.shields.io/badge/Buy%20Me%20a%20Coffee-support-yellow?logo=buy-me-a-coffee\&logoColor=white)](https://buymeacoffee.com/adarsh12kumar)
 
-<!-- Proudly created with GPRM ( https://gprm.itsvg.in ) -->
+## 🤝 Open to Collaborating On
+
+- Full-stack applications
+- Backend and infrastructure projects
+- Systems programming
+- Distributed systems
+- DevOps and CI/CD tooling
+- Open-source projects
+
+---
+
+## 🎯 What I'm Looking For
+
+A software engineering environment where I can work on **real systems**, learn from experienced engineers, and contribute across the stack — especially backend, infrastructure, databases, networking and distributed applications.
+
+---
+
+## 📫 Connect With Me
+
+<div align="center">
+
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-Connect-0A66C2?style=for-the-badge&logo=linkedin)](https://linkedin.com/in/Adarsh-kumar-657315251)
+[![Instagram](https://img.shields.io/badge/Instagram-Follow-E4405F?style=for-the-badge&logo=instagram)](https://instagram.com/i_.a_k)
+[![Email](https://img.shields.io/badge/Email-Say%20Hello-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:adarshku.offical@gmail.com)
+
+</div>
+
+---
+
+<div align="center">
+
+### 💻 Build low. Ship reliably. Learn continuously.
+
+![Profile Views](https://komarev.com/ghpvc/?username=adarsh0707-kumar&style=for-the-badge&label=PROFILE+VIEWS)
+
+<img src="https://capsule-render.vercel.app/api?type=waving&color=0:334155,50:1e293b,100:0f172a&height=120&section=footer" width="100%"/>
+
+</div>
