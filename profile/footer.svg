@@ -1,8 +1,51 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="110" viewBox="0 0 1200 110">
-<rect width="1200" height="110" rx="22" fill="#0d1117"/>
-<path d="M0 65 Q150 15 300 65 T600 65 T900 65 T1200 65 V110 H0 Z" fill="#161b22">
- <animateTransform attributeName="transform" type="translate" values="0 0;-35 0;0 0" dur="5s" repeatCount="indefinite"/>
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="260" viewBox="0 0 1600 260">
+<defs>
+  <linearGradient id="g" x1="0" x2="1">
+    <stop offset="0" stop-color="#58a6ff"/>
+    <stop offset=".5" stop-color="#7ee787"/>
+    <stop offset="1" stop-color="#d2a8ff"/>
+  </linearGradient>
+  <linearGradient id="wave" x1="0" x2="1">
+    <stop offset="0" stop-color="#0f172a"/>
+    <stop offset=".5" stop-color="#172033"/>
+    <stop offset="1" stop-color="#0f172a"/>
+  </linearGradient>
+  <filter id="glow"><feGaussianBlur stdDeviation="4" result="blur"/><feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+</defs>
+
+<rect width="1600" height="260" fill="#0d1117"/>
+
+<!-- animated grid -->
+<g opacity=".16" stroke="#58a6ff" stroke-width="1">
+  <path d="M0 210 H1600"><animate attributeName="d" values="M0 210 H1600;M0 200 H1600;M0 210 H1600" dur="4s" repeatCount="indefinite"/></path>
+  <path d="M0 235 H1600"/>
+  <path d="M100 180 V260 M300 180 V260 M500 180 V260 M700 180 V260 M900 180 V260 M1100 180 V260 M1300 180 V260 M1500 180 V260"/>
+</g>
+
+<!-- moving circuit line -->
+<path d="M0 175 C180 105 280 215 460 155 S760 100 930 165 S1240 225 1600 125"
+      fill="none" stroke="url(#g)" stroke-width="3" stroke-dasharray="14 14">
+  <animate attributeName="stroke-dashoffset" from="0" to="-56" dur="1.5s" repeatCount="indefinite"/>
 </path>
-<text x="600" y="48" text-anchor="middle" fill="#f0f6fc" font-family="monospace" font-size="18" font-weight="700">BUILD LOW • SHIP RELIABLY • KEEP LEARNING</text>
-<circle cx="150" cy="82" r="4" fill="#58a6ff"><animate attributeName="cx" values="150;1050;150" dur="4s" repeatCount="indefinite"/></circle>
+
+<!-- animated wave -->
+<path d="M0 205 Q200 145 400 205 T800 205 T1200 205 T1600 205 V260 H0 Z" fill="url(#wave)">
+  <animateTransform attributeName="transform" type="translate" values="0 0;-45 0;0 0" dur="6s" repeatCount="indefinite"/>
+</path>
+
+<g font-family="Arial, sans-serif" text-anchor="middle">
+  <text x="800" y="72" fill="#f0f6fc" font-size="30" font-weight="700">BUILD • SHIP • LEARN</text>
+  <text x="800" y="105" fill="#8b949e" font-size="15">Backend · Systems · Distributed Software · Cloud</text>
+  <text x="800" y="145" fill="#c9d1d9" font-family="monospace" font-size="14">from sockets to production</text>
+</g>
+
+<!-- travelling nodes -->
+<g fill="#58a6ff" filter="url(#glow)">
+  <circle cx="80" cy="175" r="5"><animate attributeName="cx" values="80;1520;80" dur="6s" repeatCount="indefinite"/></circle>
+</g>
+<g fill="#7ee787" filter="url(#glow)">
+  <circle cx="1520" cy="175" r="4"><animate attributeName="cx" values="1520;80;1520" dur="6s" repeatCount="indefinite"/></circle>
+</g>
+
+<text x="800" y="238" text-anchor="middle" fill="#6e7681" font-family="monospace" font-size="12">ADARSH KUMAR · 2026</text>
 </svg>
