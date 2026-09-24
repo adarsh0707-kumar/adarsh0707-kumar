@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="260" viewBox="0 0 1400 260">
+<defs>
+  <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#0d1117"/><stop offset="1" stop-color="#161b22"/></linearGradient>
+  <linearGradient id="line" x1="0" x2="1"><stop stop-color="#06b6d4"/><stop offset=".5" stop-color="#7c3aed"/><stop offset="1" stop-color="#06b6d4"/></linearGradient>
+</defs>
+<rect width="1400" height="260" rx="22" fill="url(#bg)"/>
+<circle cx="120" cy="55" r="80" fill="#7c3aed" opacity=".08"/><circle cx="1280" cy="210" r="110" fill="#06b6d4" opacity=".06"/>
+<text x="700" y="105" text-anchor="middle" fill="#f0f6fc" font-family="Arial,Helvetica,sans-serif" font-size="52" font-weight="700">ADARSH KUMAR</text>
+<text x="700" y="145" text-anchor="middle" fill="#8b949e" font-family="Arial,Helvetica,sans-serif" font-size="20">Backend &amp; Systems Engineer</text>
+<text x="700" y="178" text-anchor="middle" fill="#8b949e" font-family="Arial,Helvetica,sans-serif" font-size="14">C++  •  Python  •  Node.js  •  PostgreSQL  •  Distributed Systems</text>
+<path d="M300 215 H1100" stroke="#30363d" stroke-width="1"/>
+<path d="M300 215 H480" stroke="url(#line)" stroke-width="3" stroke-linecap="round">
+<animate attributeName="x1" values="300;920;300" dur="5s" repeatCount="indefinite"/><animate attributeName="x2" values="480;1100;480" dur="5s" repeatCount="indefinite"/>
+</path></svg>
