@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="110" viewBox="0 0 1200 110">
+  <defs>
+    <linearGradient id="g" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#7c3aed"/>
+      <stop offset="50%" stop-color="#06b6d4"/>
+      <stop offset="100%" stop-color="#7c3aed"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="110" rx="18" fill="#0d1117"/>
+  <path d="M45 82 H1155" stroke="#30363d" stroke-width="1"/>
+  <path d="M45 82 H280" stroke="url(#g)" stroke-width="3" stroke-linecap="round">
+    <animate attributeName="x1" values="45;800;45" dur="5s" repeatCount="indefinite"/>
+    <animate attributeName="x2" values="280;1155;280" dur="5s" repeatCount="indefinite"/>
+  </path>
+  <text x="600" y="45" text-anchor="middle" fill="#f0f6fc" font-family="Arial, Helvetica, sans-serif" font-size="20" font-weight="700">CURRENTLY EXPLORING</text>
+  <text x="600" y="68" text-anchor="middle" fill="#8b949e" font-family="Arial, Helvetica, sans-serif" font-size="13">AWS  •  Docker  •  CI/CD  •  Distributed Systems  •  Systems Engineering</text>
+</svg>
