@@ -1,0 +1,58 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="520" viewBox="0 0 1200 520">
+<defs>
+  <linearGradient id="scan" x1="0" x2="1">
+    <stop offset="0" stop-color="#58a6ff"/><stop offset=".5" stop-color="#7ee787"/><stop offset="1" stop-color="#d2a8ff"/>
+  </linearGradient>
+  <filter id="glow"><feGaussianBlur stdDeviation="3" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+</defs>
+<rect x="5" y="5" width="1190" height="510" rx="28" fill="#0d1117" stroke="#30363d"/>
+<text x="55" y="52" fill="#f0f6fc" font-family="Arial,sans-serif" font-size="28" font-weight="700">CERTIFICATE GALLERY</text>
+<text x="55" y="78" fill="#8b949e" font-family="Arial,sans-serif" font-size="14">Professional learning • internships • continuous engineering growth</text>
+
+<!-- Certificate 1 -->
+<g>
+<rect x="45" y="110" width="535" height="260" rx="22" fill="#161b22" stroke="#30363d"/>
+<rect x="68" y="133" width="489" height="214" rx="14" fill="#0d1117" stroke="#58a6ff" stroke-width="1.5"/>
+<circle cx="112" cy="177" r="30" fill="#161b22" stroke="#58a6ff" stroke-width="2"/>
+<text x="112" y="184" text-anchor="middle" fill="#58a6ff" font-family="Arial,sans-serif" font-size="19" font-weight="700">C/C++</text>
+<text x="160" y="163" fill="#f0f6fc" font-family="Arial,sans-serif" font-size="20" font-weight="700">C++ &amp; C Internship</text>
+<text x="160" y="190" fill="#8b949e" font-family="Arial,sans-serif" font-size="14">S-CUBE / Satyam Software Solutions</text>
+<line x1="95" y1="218" x2="530" y2="218" stroke="#30363d"/>
+<text x="95" y="248" fill="#c9d1d9" font-family="Arial,sans-serif" font-size="15">Focus</text>
+<text x="175" y="248" fill="#8b949e" font-family="Arial,sans-serif" font-size="15">C · C++ · Systems Programming</text>
+<text x="95" y="278" fill="#c9d1d9" font-family="Arial,sans-serif" font-size="15">Period</text>
+<text x="175" y="278" fill="#7ee787" font-family="Arial,sans-serif" font-size="15">April 2026</text>
+<rect x="95" y="304" width="435" height="3" rx="2" fill="#30363d"/>
+<rect x="95" y="304" width="80" height="3" rx="2" fill="#58a6ff">
+<animate attributeName="width" values="20;435;20" dur="4s" repeatCount="indefinite"/>
+</rect>
+</g>
+
+<!-- Certificate 2 -->
+<g>
+<rect x="620" y="110" width="535" height="260" rx="22" fill="#161b22" stroke="#30363d"/>
+<rect x="643" y="133" width="489" height="214" rx="14" fill="#0d1117" stroke="#7ee787" stroke-width="1.5"/>
+<circle cx="687" cy="177" r="30" fill="#161b22" stroke="#7ee787" stroke-width="2"/>
+<text x="687" y="184" text-anchor="middle" fill="#7ee787" font-family="Arial,sans-serif" font-size="17" font-weight="700">PY</text>
+<text x="735" y="163" fill="#f0f6fc" font-family="Arial,sans-serif" font-size="20" font-weight="700">Data Science with Python</text>
+<text x="735" y="190" fill="#8b949e" font-family="Arial,sans-serif" font-size="14">RCPL — ITS Engineering College</text>
+<line x1="670" y1="218" x2="1105" y2="218" stroke="#30363d"/>
+<text x="670" y="248" fill="#c9d1d9" font-family="Arial,sans-serif" font-size="15">Focus</text>
+<text x="750" y="248" fill="#8b949e" font-family="Arial,sans-serif" font-size="15">Python · Data Science</text>
+<text x="670" y="278" fill="#c9d1d9" font-family="Arial,sans-serif" font-size="15">Period</text>
+<text x="750" y="278" fill="#7ee787" font-family="Arial,sans-serif" font-size="15">May 2026</text>
+<rect x="670" y="304" width="435" height="3" rx="2" fill="#30363d"/>
+<rect x="670" y="304" width="80" height="3" rx="2" fill="#7ee787">
+<animate attributeName="width" values="20;435;20" dur="4s" begin="1s" repeatCount="indefinite"/>
+</rect>
+</g>
+
+<!-- animated verification strip -->
+<rect x="45" y="400" width="1110" height="65" rx="18" fill="#161b22" stroke="#30363d"/>
+<text x="70" y="438" fill="#7ee787" font-family="monospace" font-size="15">● VERIFIED LEARNING PORTFOLIO</text>
+<text x="430" y="438" fill="#8b949e" font-family="Arial,sans-serif" font-size="14">2 documented programs · 2026</text>
+<line x1="70" y1="452" x2="1130" y2="452" stroke="url(#scan)" stroke-width="1" stroke-dasharray="8 10"/>
+<circle cx="70" cy="452" r="4" fill="#58a6ff" filter="url(#glow)">
+<animate attributeName="cx" values="70;1130;70" dur="4.5s" repeatCount="indefinite"/>
+</circle>
+</svg>
