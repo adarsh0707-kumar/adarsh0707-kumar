@@ -43,82 +43,12 @@ I like understanding what happens **below the framework level** — from sockets
 
 ## 🚀 Featured Projects
 
-<table>
-<tr>
-<td width="50%" valign="top">
+<div align="center">
+<img src="./profile/project-cards.svg" width="100%" alt="Animated project cards"/>
+</div>
 
-### 📈 Cloud-Based Algorithmic Trading Engine
+> The animated cards highlight selected projects; repository links remain available in the project names and sections below.
 
-Polyglot trading simulation platform built from the transport layer upward.
-
-**C++ · Python · Node.js · React · PostgreSQL · Docker**
-
-TCP transport · order-book matching · streaming analytics · risk management · persistence · observability.
-
-<a href="https://github.com/adarsh0707-kumar/Trading-Engine">View Repository →</a>
-
-</td>
-<td width="50%" valign="top">
-
-### ☁️ CodeForge Cloud
-
-Cloud-native multi-language development platform with browser-based development, secure execution and collaboration workflows.
-
-**TypeScript · React · Node.js · Cloud**
-
-<a href="https://github.com/adarsh0707-kumar/CodeForge-Cloud">View Repository →</a>
-
-</td>
-</tr>
-<tr>
-<td width="50%" valign="top">
-
-### 🗄️ Database Engine
-
-SQL-like database engine written in C++ with a custom parser, in-memory execution and file-based persistence.
-
-**C++ · Parsing · Query Execution · Storage**
-
-<a href="https://github.com/adarsh0707-kumar/Database-engine">View Repository →</a>
-
-</td>
-<td width="50%" valign="top">
-
-### 🔴 Redis Clone
-
-Systems-oriented Redis implementation exploring networking, commands, data structures and server architecture.
-
-**C++ · Networking · Systems Programming**
-
-<a href="https://github.com/adarsh0707-kumar/redis-clone">View Repository →</a>
-
-</td>
-</tr>
-<tr>
-<td width="50%" valign="top">
-
-### 🤖 Trao — AI Interview Prep Kit
-
-Full-stack application for generating structured interview preparation kits.
-
-**React · Node.js · TypeScript · PostgreSQL**
-
-<a href="https://github.com/adarsh0707-kumar/Trao">View Repository →</a>
-
-</td>
-<td width="50%" valign="top">
-
-### 💰 Welth
-
-Modern full-stack financial application built with Next.js and production-oriented tooling.
-
-**Next.js · React · TypeScript · PostgreSQL**
-
-<a href="https://github.com/adarsh0707-kumar/welth">View Repository →</a>
-
-</td>
-</tr>
-</table>
 
 ---
 
