@@ -268,7 +268,9 @@ Credential ID: **SC-S73ZDEN3I8**
 
 ## 🌱 Currently Exploring
 
-**AWS** · **Docker** · **CI/CD** · **Advanced Next.js** · **Distributed Systems** · **Systems Engineering**
+<div align="center">
+<img src="./profile/exploring.svg" width="94%" alt="Currently exploring technologies and systems engineering topics"/>
+</div>
 
 ---
 
