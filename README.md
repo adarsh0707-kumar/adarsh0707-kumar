@@ -132,22 +132,27 @@ A systems-focused Redis implementation exploring networking, commands, in-memory
 
 <div align="center">
 
-<img src="./profile/stats.svg" width="48%" alt="GitHub statistics"/>
-<img src="./profile/top-langs.svg" width="48%" alt="Top languages"/>
-
-<br/><br/>
-
-<img src="./profile/streak.svg" width="76%" alt="GitHub contribution streak"/>
+<img src="./profile/stats.svg" width="72%" alt="Adarsh Kumar GitHub statistics"/>
 
 </div>
 
 ---
 
-## 💻 Spent My Time
+## 💻 Engineering Focus
 
 <div align="center">
 
-<img src="./profile/stats.svg" width="78%" alt="Development activity and GitHub statistics"/>
+<img src="./profile/top-langs.svg" width="72%" alt="Adarsh Kumar top languages"/>
+
+</div>
+
+---
+
+## 🔥 Contribution Streak
+
+<div align="center">
+
+<img src="./profile/streak.svg" width="72%" alt="Adarsh Kumar GitHub contribution streak"/>
 
 </div>
 
