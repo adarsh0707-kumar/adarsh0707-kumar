@@ -1,34 +1,35 @@
-# Adarsh Kumar
-
 <div align="center">
 
-<img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=12,14,18,20&height=210&section=header&text=Adarsh%20Kumar&fontSize=54&fontColor=ffffff&fontAlignY=38&desc=Backend%20%26%20Systems%20Engineer&descAlignY=61&descSize=19" width="100%"/>
+<img src="./profile/header.svg" width="100%" alt="Adarsh Kumar — Backend and Systems Engineer"/>
 
-<img src="./profile/typing.svg" width="86%" alt="Backend and systems engineering"/>
+<img src="./profile/specialization.svg" width="88%" alt="Building from the socket layer up"/>
 
 <p>
-  <a href="https://github.com/adarsh0707-kumar"><img src="https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white" alt="GitHub"/></a>
-  <a href="https://linkedin.com/in/Adarsh-kumar-657315251"><img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn"/></a>
-  <a href="mailto:adarshku.offical@gmail.com"><img src="https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail&logoColor=white" alt="Email"/></a>
-  <a href="https://instagram.com/i_.a_k"><img src="https://img.shields.io/badge/Instagram-E4405F?style=for-the-badge&logo=instagram&logoColor=white" alt="Instagram"/></a>
+  <a href="https://github.com/adarsh0707-kumar"><img src="https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white"/></a>
+  <a href="https://linkedin.com/in/Adarsh-kumar-657315251"><img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white"/></a>
+  <a href="mailto:adarshku.offical@gmail.com"><img src="https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail&logoColor=white"/></a>
+  <a href="https://instagram.com/i_.a_k"><img src="https://img.shields.io/badge/Instagram-E4405F?style=for-the-badge&logo=instagram&logoColor=white"/></a>
 </p>
 
 </div>
 
 ---
 
-## 👋 About Me
+# 👨‍💻 About Me
 
-Hi, I'm **Adarsh Kumar**, a **B.Tech Computer Science Engineering graduate (2026)** focused on backend engineering, systems programming, databases, networking, and production-oriented applications.
+## Adarsh Kumar
 
-I enjoy understanding software from the lower layers upward — **sockets and protocols → systems and databases → APIs and distributed services → cloud infrastructure**.
+**B.Tech Computer Science Engineering Graduate · 2026**  
+**Backend & Systems Engineer · Noida, India**
 
-- 🎓 B.Tech CSE · 2026
-- ⚙️ Backend & Systems Engineering
-- 💻 C++ · Python · Node.js · React · PostgreSQL
-- 🌐 TCP/IP · POSIX sockets · APIs · databases
-- ☁️ AWS · Docker · CI/CD · Linux
-- 💼 Open to full-time software engineering and freelance opportunities
+I enjoy building complete software systems — from **TCP sockets and C++ systems programming** to **databases, backend APIs, distributed services, and cloud infrastructure**.
+
+- 🎓 **Degree:** B.Tech CSE · 2026
+- ⚙️ **Focus:** Backend Engineering · Systems Programming · Databases · Networking
+- 🧩 **Stack:** C++ · Python · Node.js · React · PostgreSQL
+- 🌐 **Systems:** TCP/IP · POSIX Sockets · CMake · Linux
+- ☁️ **Infrastructure:** Docker · AWS · CI/CD
+- 💼 **Open to:** Full-time Software Engineering & Freelance opportunities
 
 ---
 
@@ -38,13 +39,15 @@ I enjoy understanding software from the lower layers upward — **sockets and pr
 <tr>
 <td width="50%" valign="top">
 
-### ⚡ Trading Engine
+### ⚡ Cloud-Based Trading Engine
 
-Cloud-based algorithmic trading simulation built around a C++ matching engine, Python analytics, Node.js gateway, PostgreSQL persistence, and observability.
+A polyglot trading simulation combining a **C++ matching engine**, Python streaming analytics, Node.js gateway, PostgreSQL persistence, and observability.
 
-**C++ · Python · Node.js · PostgreSQL · Docker**
+<img src="https://img.shields.io/badge/C%2B%2B-Systems-00599C?style=flat-square"/>
+<img src="https://img.shields.io/badge/Python-Analytics-3776AB?style=flat-square"/>
+<img src="https://img.shields.io/badge/PostgreSQL-Data-4169E1?style=flat-square"/>
 
-<br/>
+<br/><br/>
 <a href="https://github.com/adarsh0707-kumar/Trading-Engine">View Repository →</a>
 
 </td>
@@ -52,11 +55,13 @@ Cloud-based algorithmic trading simulation built around a C++ matching engine, P
 
 ### ☁️ CodeForge Cloud
 
-Cloud-oriented developer platform focused on backend services, execution workflows, and production-style infrastructure.
+Cloud-oriented developer platform exploring backend services, execution workflows, APIs, and production-style infrastructure.
 
-**Node.js · React · PostgreSQL · Docker**
+<img src="https://img.shields.io/badge/Node.js-Backend-339933?style=flat-square&logo=node.js&logoColor=white"/>
+<img src="https://img.shields.io/badge/React-Frontend-61DAFB?style=flat-square&logo=react&logoColor=black"/>
+<img src="https://img.shields.io/badge/Docker-Infrastructure-2496ED?style=flat-square&logo=docker&logoColor=white"/>
 
-<br/>
+<br/><br/>
 <a href="https://github.com/adarsh0707-kumar/CodeForge-Cloud">View Repository →</a>
 
 </td>
@@ -66,11 +71,13 @@ Cloud-oriented developer platform focused on backend services, execution workflo
 
 ### 🗄️ Database Engine
 
-From-the-ground-up database engineering project exploring storage, parsing, query execution, and systems-level design.
+A from-the-ground-up database project exploring storage, parsing, query execution, and systems-level design.
 
-**C++ · CMake · SQL · Systems**
+<img src="https://img.shields.io/badge/C%2B%2B-Systems-00599C?style=flat-square"/>
+<img src="https://img.shields.io/badge/SQL-Database-4479A1?style=flat-square"/>
+<img src="https://img.shields.io/badge/CMake-Build-064F8C?style=flat-square"/>
 
-<br/>
+<br/><br/>
 <a href="https://github.com/adarsh0707-kumar/Database-engine">View Repository →</a>
 
 </td>
@@ -80,36 +87,12 @@ From-the-ground-up database engineering project exploring storage, parsing, quer
 
 A systems-focused Redis implementation exploring networking, commands, in-memory data structures, and protocol handling.
 
-**C++ · TCP · Networking · Data Structures**
+<img src="https://img.shields.io/badge/C%2B%2B-Networking-00599C?style=flat-square"/>
+<img src="https://img.shields.io/badge/TCP-Protocols-161B22?style=flat-square"/>
+<img src="https://img.shields.io/badge/Data%20Structures-Core-7C3AED?style=flat-square"/>
 
-<br/>
+<br/><br/>
 <a href="https://github.com/adarsh0707-kumar/redis-clone">View Repository →</a>
-
-</td>
-</tr>
-<tr>
-<td width="50%" valign="top">
-
-### 🤖 Trao
-
-AI-powered interview preparation platform for generating structured company and role-specific interview kits.
-
-**React · Node.js · TypeScript · AI**
-
-<br/>
-<a href="https://github.com/adarsh0707-kumar/Trao">View Repository →</a>
-
-</td>
-<td width="50%" valign="top">
-
-### 💰 Welth
-
-Full-stack personal finance application focused on practical product engineering, authentication, data, and modern web UX.
-
-**Next.js · React · PostgreSQL · TypeScript**
-
-<br/>
-<a href="https://github.com/adarsh0707-kumar/welth">View Repository →</a>
 
 </td>
 </tr>
@@ -119,47 +102,53 @@ Full-stack personal finance application focused on practical product engineering
 
 ## 🛠️ Tech Stack
 
-<div align="center">
-
 **Languages**
 
-<img src="https://skillicons.dev/icons?i=cpp,c,python,typescript,javascript,java" alt="Languages"/>
+<p>
+<img src="https://skillicons.dev/icons?i=cpp,c,python,typescript,javascript,java"/>
+</p>
 
 **Backend & Data**
 
-<img src="https://skillicons.dev/icons?i=nodejs,express,postgres,redis,prisma" alt="Backend and data"/>
+<p>
+<img src="https://skillicons.dev/icons?i=nodejs,express,postgres,redis,prisma"/>
+</p>
 
 **Frontend**
 
-<img src="https://skillicons.dev/icons?i=react,nextjs,vite,tailwind" alt="Frontend"/>
+<p>
+<img src="https://skillicons.dev/icons?i=react,nextjs,vite,tailwind"/>
+</p>
 
-**Infrastructure & Tools**
+**Infrastructure & Systems**
 
-<img src="https://skillicons.dev/icons?i=linux,docker,aws,githubactions,cmake,git" alt="Infrastructure and tools"/>
-
-</div>
+<p>
+<img src="https://skillicons.dev/icons?i=linux,docker,aws,githubactions,cmake,git"/>
+</p>
 
 ---
 
 ## 📊 GitHub Stats
 
 <div align="center">
-<table>
-<tr>
-<td><img src="./profile/stats.svg" alt="GitHub statistics"/></td>
-<td><img src="./profile/top-langs.svg" alt="Top languages"/></td>
-</tr>
-</table>
 
-<img src="./profile/streak.svg" width="72%" alt="GitHub contribution streak"/>
+<img src="./profile/stats.svg" width="48%" alt="GitHub statistics"/>
+<img src="./profile/top-langs.svg" width="48%" alt="Top languages"/>
+
+<br/><br/>
+
+<img src="./profile/streak.svg" width="76%" alt="GitHub contribution streak"/>
+
 </div>
 
 ---
 
-## 🏆 GitHub Trophies
+## 💻 Spent My Time
 
 <div align="center">
-<img src="./profile/trophy.svg" width="88%" alt="GitHub trophies"/>
+
+<img src="./profile/stats.svg" width="78%" alt="Development activity and GitHub statistics"/>
+
 </div>
 
 ---
@@ -167,94 +156,101 @@ Full-stack personal finance application focused on practical product engineering
 ## 🐍 Contribution Activity
 
 <div align="center">
-<img src="https://raw.githubusercontent.com/adarsh0707-kumar/adarsh0707-kumar/output/github-contribution-grid-snake.svg" width="96%" alt="Animated GitHub contribution snake"/>
+
+<img src="https://raw.githubusercontent.com/adarsh0707-kumar/adarsh0707-kumar/output/github-contribution-grid-snake.svg" width="94%" alt="Animated GitHub contribution snake"/>
+
 </div>
 
 ---
 
-## 🎓 Certifications & Credentials
-
 <div align="center">
 
-### Professional Certifications
+<img src="./profile/certifications.svg" width="92%" alt="Certifications and professional learning"/>
+
+<br/><br/>
 
 <table>
 <tr>
-<td width="50%" valign="top" align="center">
+<td align="center" width="33%">
 
 <a href="https://portfolio-orpin-zeta-77.vercel.app/certificates/satyam-internship.jpg">
-<img src="https://portfolio-orpin-zeta-77.vercel.app/certificates/satyam-internship.jpg" width="100%" alt="Software Development Internship certificate"/>
+<img src="https://portfolio-orpin-zeta-77.vercel.app/certificates/satyam-internship.jpg" width="270" alt="Software Development Internship certificate"/>
 </a>
 
-**Software Development Internship**  
+**Software Development Internship**
+
 Satyam Software Solutions Pvt. Ltd.  
-*3-month training · Jan – Mar 2026*
+*Jan – Mar 2026*
 
-**C/C++ · IPC · Multithreading · Drools**
-
-<a href="https://linkedin.com/in/adarsh-kumar-657315251/details/certifications/">LinkedIn Credential →</a>
+<a href="https://linkedin.com/in/adarsh-kumar-657315251/details/certifications/"><img src="https://img.shields.io/badge/VIEW-CREDENTIAL-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white"/></a>
 
 </td>
-<td width="50%" valign="top" align="center">
+<td align="center" width="33%">
 
 <a href="https://portfolio-orpin-zeta-77.vercel.app/certificates/rcpl-data-science-python.png">
-<img src="https://portfolio-orpin-zeta-77.vercel.app/certificates/rcpl-data-science-python.png" width="100%" alt="Data Science with Python certificate"/>
+<img src="https://portfolio-orpin-zeta-77.vercel.app/certificates/rcpl-data-science-python.png" width="270" alt="Data Science with Python certificate"/>
 </a>
 
-**Data Science with Python**  
+**Data Science with Python**
+
 RCPL × ITS Engineering College  
 *Aug – Sep 2025*
 
-**Credential ID: RCPL-2026/13664**
+<a href="https://linkedin.com/in/adarsh-kumar-657315251/details/certifications/"><img src="https://img.shields.io/badge/VIEW-CREDENTIAL-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white"/></a>
 
-<a href="https://linkedin.com/in/adarsh-kumar-657315251/details/certifications/">LinkedIn Credential →</a>
+</td>
+<td align="center" width="33%">
+
+<img src="https://portfolio-orpin-zeta-77.vercel.app/certificates/skillcourse-power-bi.jpg" width="270" alt="Power BI certificate"/>
+
+**Power BI Micro Course**
+
+Credential: **SC-41TV1QU1VH**
+
+<a href="https://edu.skillcourse.in/view-certificate/SC-41TV1QU1VH"><img src="https://img.shields.io/badge/VERIFY-CREDENTIAL-7C3AED?style=for-the-badge&logo=googledocs&logoColor=white"/></a>
+
+</td>
+</tr>
+<tr>
+<td align="center">
+
+<img src="https://portfolio-orpin-zeta-77.vercel.app/certificates/skillcourse-python.jpg" width="270" alt="Python certificate"/>
+
+**Python Micro Course**
+
+Credential: **SC-BAXUXNTSMF**
+
+<a href="https://edu.skillcourse.in/view-certificate/SC-BAXUXNTSMF"><img src="https://img.shields.io/badge/VERIFY-CREDENTIAL-7C3AED?style=for-the-badge&logo=googledocs&logoColor=white"/></a>
+
+</td>
+<td align="center">
+
+<img src="https://portfolio-orpin-zeta-77.vercel.app/certificates/skillcourse-sql.png" width="270" alt="SQL certificate"/>
+
+**SQL Micro Course**
+
+Credential: **SC-I5EZD3SUZQ**
+
+<a href="https://edu.skillcourse.in/view-certificate/SC-I5EZD3SUZQ"><img src="https://img.shields.io/badge/VERIFY-CREDENTIAL-7C3AED?style=for-the-badge&logo=googledocs&logoColor=white"/></a>
+
+</td>
+<td align="center">
+
+<img src="https://portfolio-orpin-zeta-77.vercel.app/certificates/skillcourse-excel.jpg" width="270" alt="Microsoft Excel certificate"/>
+
+**Microsoft Excel — Beginners to Advance**
+
+Credential: **SC-S73ZDEN3I8**
+
+<a href="https://edu.skillcourse.in/view-certificate/SC-S73ZDEN3I8"><img src="https://img.shields.io/badge/VERIFY-CREDENTIAL-7C3AED?style=for-the-badge&logo=googledocs&logoColor=white"/></a>
 
 </td>
 </tr>
 </table>
 
-### SkillCourse Credentials
+<br/>
 
-<table>
-<tr>
-<td width="50%" align="center">
-<img src="https://portfolio-orpin-zeta-77.vercel.app/certificates/skillcourse-power-bi.jpg" width="92%" alt="Power BI certificate"/>
-
-**Power BI Micro Course**  
-Credential ID: **SC-41TV1QU1VH**  
-<a href="https://edu.skillcourse.in/view-certificate/SC-41TV1QU1VH">Verify Credential ↗</a>
-</td>
-<td width="50%" align="center">
-<img src="https://portfolio-orpin-zeta-77.vercel.app/certificates/skillcourse-python.jpg" width="92%" alt="Python certificate"/>
-
-**Python Micro Course**  
-Credential ID: **SC-BAXUXNTSMF**  
-<a href="https://edu.skillcourse.in/view-certificate/SC-BAXUXNTSMF">Verify Credential ↗</a>
-</td>
-</tr>
-<tr>
-<td width="50%" align="center">
-<img src="https://portfolio-orpin-zeta-77.vercel.app/certificates/skillcourse-sql.png" width="92%" alt="SQL certificate"/>
-
-**SQL Micro Course**  
-Credential ID: **SC-I5EZD3SUZQ**  
-<a href="https://edu.skillcourse.in/view-certificate/SC-I5EZD3SUZQ">Verify Credential ↗</a>
-</td>
-<td width="50%" align="center">
-<img src="https://portfolio-orpin-zeta-77.vercel.app/certificates/skillcourse-excel.jpg" width="92%" alt="Microsoft Excel certificate"/>
-
-**Microsoft Excel — Beginners to Advance**  
-Credential ID: **SC-S73ZDEN3I8**  
-<a href="https://edu.skillcourse.in/view-certificate/SC-S73ZDEN3I8">Verify Credential ↗</a>
-</td>
-</tr>
-</table>
-
-<p>
-<a href="https://linkedin.com/in/Adarsh-kumar-657315251/details/certifications/">
-<img src="https://img.shields.io/badge/View_All_Credentials-LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" alt="View all credentials"/>
-</a>
-</p>
+<a href="https://linkedin.com/in/Adarsh-kumar-657315251/details/certifications/"><img src="https://img.shields.io/badge/VIEW_ALL_CREDENTIALS-LINKEDIN-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white"/></a>
 
 </div>
 
@@ -269,30 +265,30 @@ Credential ID: **SC-S73ZDEN3I8**
 ## 🌱 Currently Exploring
 
 <div align="center">
-<img src="./profile/exploring.svg" width="94%" alt="Currently exploring technologies and systems engineering topics"/>
+<img src="./profile/exploring.svg" width="92%" alt="Currently exploring"/>
 </div>
 
 ---
 
 ## 🤝 Open to Collaborating On
 
-Backend systems · Full-stack applications · Databases · Networking · Distributed systems · DevOps · Open source
+**Backend systems** · **Full-stack applications** · **Databases** · **Networking** · **Distributed systems** · **DevOps** · **Open source**
 
 ---
 
 ## 🎯 What I'm Looking For
 
-A software engineering environment where I can work on **real systems**, learn from experienced engineers, and contribute across backend, infrastructure, databases, networking, and distributed applications.
+Software engineering opportunities where I can work on **real systems**, learn from experienced engineers, and contribute across backend, infrastructure, databases, networking, and distributed applications.
 
 ---
 
 <div align="center">
 
-### 📫 Let's Connect
+## 📫 Let's Connect
 
-<a href="https://linkedin.com/in/Adarsh-kumar-657315251"><img src="https://img.shields.io/badge/LinkedIn-Connect-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn"/></a>
-<a href="mailto:adarshku.offical@gmail.com"><img src="https://img.shields.io/badge/Email-Say%20Hello-D14836?style=for-the-badge&logo=gmail&logoColor=white" alt="Email"/></a>
-<a href="https://github.com/adarsh0707-kumar"><img src="https://img.shields.io/badge/GitHub-Profile-181717?style=for-the-badge&logo=github&logoColor=white" alt="GitHub"/></a>
+<a href="https://linkedin.com/in/Adarsh-kumar-657315251"><img src="https://img.shields.io/badge/LINKEDIN-CONNECT-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white"/></a>
+<a href="mailto:adarshku.offical@gmail.com"><img src="https://img.shields.io/badge/EMAIL-SAY_HELLO-D14836?style=for-the-badge&logo=gmail&logoColor=white"/></a>
+<a href="https://github.com/adarsh0707-kumar"><img src="https://img.shields.io/badge/GITHUB-PROFILE-181717?style=for-the-badge&logo=github&logoColor=white"/></a>
 
 <br/><br/>
 
