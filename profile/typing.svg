@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="90" viewBox="0 0 1000 90">
+  <rect width="100%" height="100%" rx="18" fill="#0d1117"/>
+  <text x="500" y="55" text-anchor="middle" fill="#58a6ff" font-family="monospace" font-size="28" font-weight="600">
+    <tspan>Backend &amp; Systems Engineer</tspan>
+    <animate attributeName="opacity" values="0;1;1;0" dur="7s" repeatCount="indefinite"/>
+  </text>
+  <text x="500" y="55" text-anchor="middle" fill="#7ee787" font-family="monospace" font-size="28" font-weight="600">
+    <tspan>Building from the socket layer up</tspan>
+    <animate attributeName="opacity" values="0;0;1;1;0" dur="7s" repeatCount="indefinite"/>
+  </text>
+  <text x="500" y="55" text-anchor="middle" fill="#d2a8ff" font-family="monospace" font-size="28" font-weight="600">
+    <tspan>C++ · Python · Node.js · React · PostgreSQL</tspan>
+    <animate attributeName="opacity" values="0;0;0;1;1;0" dur="7s" repeatCount="indefinite"/>
+  </text>
+</svg>
