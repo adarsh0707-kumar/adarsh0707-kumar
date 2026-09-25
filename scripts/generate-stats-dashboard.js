@@ -328,7 +328,7 @@ async function main() {
   <circle cx="472" cy="191" r="62" fill="none" stroke="url(#ringGrad)"
     stroke-width="10" stroke-linecap="round"
     stroke-dasharray="389.56"
-    stroke-dashoffset="${(389.56 * (1 - Math.min(contrib.current, 60) / 60)).toFixed(2)}"
+    stroke-dashoffset="0"
     transform="rotate(-90 472 191)" filter="url(#glow)"/>
   ${rollCurrent}
   <text x="472" y="229" text-anchor="middle" font-size="12"
