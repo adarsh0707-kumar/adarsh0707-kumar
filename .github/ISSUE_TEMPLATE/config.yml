@@ -1,0 +1,8 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Profile feedback
+    url: mailto:adarshku.offical@gmail.com
+    about: For feedback on the profile itself, email me directly.
+  - name: GitHub profile
+    url: https://github.com/adarsh0707-kumar
+    about: Browse my public repositories.

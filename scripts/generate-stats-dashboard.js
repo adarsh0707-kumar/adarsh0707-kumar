@@ -3,12 +3,21 @@
 // a custom dark "GitHub Stats" dashboard SVG (contributions, streak,
 // commits-by-hour, top languages by repo).
 //
-// Requires env vars: GITHUB_TOKEN, USERNAME
-// Run with: node scripts/generate-stats-dashboard.js
+// Requires env vars: GITHUB_TOKEN, GH_USERNAME
+// Run with: GH_USERNAME=adarsh0707-kumar GITHUB_TOKEN=... node scripts/generate-stats-dashboard.js
 
-const USERNAME = process.env.USERNAME;
+const USERNAME = process.env.GH_USERNAME;
 const TOKEN = process.env.GITHUB_TOKEN;
 const API = "https://api.github.com/graphql";
+
+if (!USERNAME) {
+  console.error("Missing GH_USERNAME env var");
+  process.exit(1);
+}
+if (!TOKEN) {
+  console.error("Missing GITHUB_TOKEN env var");
+  process.exit(1);
+}
 
 async function gql(query) {
   const res = await fetch(API, {
@@ -36,11 +45,16 @@ async function getContributions() {
     }
   }`;
   const data = await gql(query);
-  const days = data.user.contributionsCollection.contributionCalendar.weeks
-    .flatMap((w) => w.contributionDays);
-  const total = data.user.contributionsCollection.contributionCalendar.totalContributions;
+  const days =
+    data.user.contributionsCollection.contributionCalendar.weeks.flatMap(
+      (w) => w.contributionDays,
+    );
+  const total =
+    data.user.contributionsCollection.contributionCalendar.totalContributions;
 
-  let longest = 0, run = 0, current = 0;
+  let longest = 0,
+    run = 0,
+    current = 0;
   for (const d of days) {
     if (d.contributionCount > 0) {
       run++;
@@ -59,7 +73,7 @@ async function getContributions() {
 async function getLanguages() {
   const res = await fetch(
     `https://api.github.com/users/${USERNAME}/repos?per_page=100`,
-    { headers: { Authorization: `bearer ${TOKEN}` } }
+    { headers: { Authorization: `bearer ${TOKEN}` } },
   );
   const repos = await res.json();
   const counts = {};
@@ -77,14 +91,14 @@ async function getLanguages() {
 async function getCommitHours() {
   const res = await fetch(
     `https://api.github.com/users/${USERNAME}/events/public?per_page=100`,
-    { headers: { Authorization: `bearer ${TOKEN}` } }
+    { headers: { Authorization: `bearer ${TOKEN}` } },
   );
   const events = await res.json();
   const hours = new Array(24).fill(0);
   for (const e of events) {
     if (e.type !== "PushEvent") continue;
     const h = new Date(e.created_at).getHours();
-    hours[h] += (e.payload && e.payload.commits ? e.payload.commits.length : 1);
+    hours[h] += e.payload && e.payload.commits ? e.payload.commits.length : 1;
   }
   return hours;
 }

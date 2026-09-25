@@ -7,7 +7,6 @@
 [![Email](https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:adarshku.offical@gmail.com)
 [![Instagram](https://img.shields.io/badge/Instagram-E4405F?style=for-the-badge&logo=instagram&logoColor=white)](https://instagram.com/i_.a_k)
 
-
 ---
 
 ## 👨‍💻 About Me
@@ -63,7 +62,6 @@ I enjoy building complete software systems — from **TCP sockets and C++ system
 </p>
 
 ---
-
 
 ## 🌆 3D Contribution Graph
 
@@ -135,46 +133,4 @@ I enjoy building complete software systems — from **TCP sockets and C++ system
 
 Enjoyed my work? Pick a star rating below — it opens your email client with the rating pre-filled, straight to my inbox.
 
-| Rating | Click to rate |
-|---|---|
-| ⭐⭐⭐⭐⭐ | [![RATE](https://img.shields.io/badge/RATE-5_STARS_--_EXCELLENT-14b8a6?style=for-the-badge)](mailto:adarshku.offical@gmail.com?subject=Feedback%3A%205%20Stars%20-%20Excellent&body=Hi%20Adarsh%2C%0A%0AI%20wanted%20to%20share%20some%20feedback%20on%20your%20work%3A%0A) |
-| ⭐⭐⭐⭐ | [![RATE](https://img.shields.io/badge/RATE-4_STARS_--_VERY_GOOD-14b8a6?style=for-the-badge)](mailto:adarshku.offical@gmail.com?subject=Feedback%3A%204%20Stars%20-%20Very%20Good&body=Hi%20Adarsh%2C%0A%0AI%20wanted%20to%20share%20some%20feedback%20on%20your%20work%3A%0A) |
-| ⭐⭐⭐ | [![RATE](https://img.shields.io/badge/RATE-3_STARS_--_GOOD-f59e0b?style=for-the-badge)](mailto:adarshku.offical@gmail.com?subject=Feedback%3A%203%20Stars%20-%20Good&body=Hi%20Adarsh%2C%0A%0AI%20wanted%20to%20share%20some%20feedback%20on%20your%20work%3A%0A) |
-| ⭐⭐ | [![RATE](https://img.shields.io/badge/RATE-2_STARS_--_FAIR-f59e0b?style=for-the-badge)](mailto:adarshku.offical@gmail.com?subject=Feedback%3A%202%20Stars%20-%20Fair&body=Hi%20Adarsh%2C%0A%0AI%20wanted%20to%20share%20some%20feedback%20on%20your%20work%3A%0A) |
-| ⭐ | [![RATE](https://img.shields.io/badge/RATE-1_STAR_--_POOR-f87171?style=for-the-badge)](mailto:adarshku.offical@gmail.com?subject=Feedback%3A%201%20Star%20-%20Poor&body=Hi%20Adarsh%2C%0A%0AI%20wanted%20to%20share%20some%20feedback%20on%20your%20work%3A%0A) |
-
-[![Email](https://img.shields.io/badge/EMAIL-adarshku.offical%40gmail.com-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:adarshku.offical@gmail.com)
-
----
-
-## 📚 Training
-
-**AI and ML Training Program** · ITS Engineering College, Noida · Apr 2025
-
----
-
-## 🌱 Currently Exploring
-
-[![Currently exploring](https://raw.githubusercontent.com/adarsh0707-kumar/adarsh0707-kumar/main/profile/exploring.svg)](https://github.com/adarsh0707-kumar/adarsh0707-kumar/blob/main/profile/exploring.svg)
-
----
-
-## 🤝 Open to Collaborating On
-
-**Backend systems** · **Full-stack applications** · **Databases** · **Networking** · **Distributed systems** · **DevOps** · **Open source**
-
-## 🎯 What I'm Looking For
-
-Software engineering opportunities where I can work on **real systems**, learn from experienced engineers, and contribute across backend, infrastructure, databases, networking, and distributed applications.
-
----
-
-## 📫 Let's Connect
-
-[![LinkedIn](https://img.shields.io/badge/LINKEDIN-CONNECT-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://linkedin.com/in/Adarsh-kumar-657315251)
-[![Email](https://img.shields.io/badge/EMAIL-SAY_HELLO-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:adarshku.offical@gmail.com)
-[![GitHub](https://img.shields.io/badge/GITHUB-PROFILE-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/adarsh0707-kumar)
-
-[![Profile views](https://komarev.com/ghpvc/?username=adarsh0707-kumar&style=for-the-badge&label=PROFILE+VIEWS)](https://github.com/adarsh0707-kumar)
-
-[![Adarsh Kumar footer](https://raw.githubusercontent.com/adarsh0707-kumar/adarsh0707-kumar/main/profile/footer.svg)](https://github.com/adarsh0707-kumar/adarsh0707-kumar/blob/main/profile/footer.svg)
+| Rating |

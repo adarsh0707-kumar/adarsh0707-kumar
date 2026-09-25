@@ -13,16 +13,16 @@ on:
       - ".github/workflows/generate-streak.yml"
   workflow_dispatch:
   schedule:
-    # 10:00 AM IST = 04:30 UTC
+    # 04:30 UTC = 10:00 AM IST
     - cron: "30 4 * * *"
 
-    # 2:00 PM IST = 08:30 UTC
+    # 08:40 UTC = 2:10 PM IST
     - cron: "40 8 * * *"
 
-    # 7:00 PM IST = 13:30 UTC
+    # 13:30 UTC = 7:00 PM IST
     - cron: "30 13 * * *"
 
-    # 9:30 PM IST = 16:00 UTC
+    # 16:00 UTC = 9:30 PM IST
     - cron: "0 16 * * *"
 
 permissions:
@@ -63,7 +63,6 @@ jobs:
 
           echo "Service is currently down. Keeping existing streak.svg for this run."
           exit 0
-
 
       - name: Commit generated card
         run: |

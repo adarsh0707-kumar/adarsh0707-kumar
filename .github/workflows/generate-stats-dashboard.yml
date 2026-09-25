@@ -1,9 +1,19 @@
 name: Custom Stats Dashboard
 
 on:
-  schedule:
-    - cron: "0 0 * * *"
+  push:
+    branches: [main]
+    paths:
+      - ".github/workflows/generate-stats-dashboard.yml"
+      - "scripts/generate-stats-dashboard.js"
   workflow_dispatch:
+  schedule:
+    # 17:07 UTC = 10:37 PM IST. Between streak's last run (16:00) and 3d-contrib
+    # (17:43), so no two main-pushing jobs collide.
+    - cron: "7 17 * * *"
+
+permissions:
+  contents: write
 
 jobs:
   build:
@@ -23,13 +33,18 @@ jobs:
           # The default GITHUB_TOKEN cannot read the GraphQL contributionsCollection
           # for a user profile.
           GITHUB_TOKEN: ${{ secrets.PROFILE_TOKEN }}
-          USERNAME: adarsh0707-kumar
+          GH_USERNAME: adarsh0707-kumar
         run: node scripts/generate-stats-dashboard.js
 
       - name: Commit and push
         run: |
           git config user.name  "github-actions[bot]"
-          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git add profile/stats-dashboard.svg
-          git commit -m "chore: update stats dashboard" || echo "Nothing to commit"
-          git push
+
+          if git diff --cached --quiet; then
+            echo "No changes to profile/stats-dashboard.svg"
+          else
+            git commit -m "chore: update stats dashboard"
+            git push
+          fi

@@ -7,9 +7,9 @@ on:
       - ".github/workflows/generate-contributor-stats.yml"
   workflow_dispatch:
   schedule:
-    # 08:30 UTC = 2:00 PM IST   /  14:30 UTC = 8:00 PM IST
-    # First in the staggered card sequence - see generate-trophy.yml.
-    # Pushes here and in trophy/stats/streak all target main; keep them ≥30 min apart.
+    # 08:30 UTC = 2:00 PM IST  /  14:30 UTC = 8:00 PM IST
+    # First in the staggered card sequence. All push-to-main jobs must be
+    # ≥30 min apart; see CONTRIBUTING.md for the full table.
     - cron: "30 8,14 * * *"
 
 permissions:
@@ -25,7 +25,6 @@ jobs:
         with:
           # PAT with public_repo scope. The default GITHUB_TOKEN cannot read
           # contribution data across other people's repositories.
-          # Same secret as generate-trophy.yml - one PAT serves both.
           token: ${{ secrets.PROFILE_TOKEN }}
           # Commit with the built-in token so the PAT is never used for writes.
           committer_token: ${{ secrets.GITHUB_TOKEN }}
