@@ -63,7 +63,24 @@ I enjoy building complete software systems — from **TCP sockets and C++ system
 
 ## 🌆 3D Contribution Graph
 
-<img src="https://raw.githubusercontent.com/adarsh0707-kumar/adarsh0707-kumar/main/profile-3d-contrib/profile-night-rainbow.svg" alt="Adarsh Kumar 3D contribution graph" />
+<img src="https://raw.githubusercontent.com/adarsh0707-kumar/adarsh0707-kumar/main/profile-3d-contrib/profile-night-rainbow.svg" alt="Adarsh Kumar 3D contribution graph — night rainbow" width="100%" />
+
+<table>
+<tr>
+<td width="50%">
+<img src="https://raw.githubusercontent.com/adarsh0707-kumar/adarsh0707-kumar/main/profile-3d-contrib/profile-season-animate.svg" alt="Adarsh Kumar 3D contribution graph — season animated" width="100%" />
+</td>
+<td width="50%">
+<img src="https://raw.githubusercontent.com/adarsh0707-kumar/adarsh0707-kumar/main/profile-3d-contrib/profile-night-view.svg" alt="Adarsh Kumar 3D contribution graph — night view" width="100%" />
+</td>
+</tr>
+</table>
+
+---
+
+## 🏆 Trophy Case
+
+<img src="https://github-profile-trophy.vercel.app/?username=adarsh0707-kumar&theme=onedark&no-frame=true&row=1&column=6" alt="Adarsh Kumar GitHub trophies" />
 
 ---
 
