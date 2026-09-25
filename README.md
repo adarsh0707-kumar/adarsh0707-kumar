@@ -55,7 +55,13 @@ I enjoy building complete software systems — from **TCP sockets and C++ system
 
 <img src="https://raw.githubusercontent.com/adarsh0707-kumar/adarsh0707-kumar/main/profile/stats-dashboard.svg" alt="Adarsh Kumar GitHub stats dashboard" />
 
+<p align="center">
+  <img src="https://raw.githubusercontent.com/adarsh0707-kumar/adarsh0707-kumar/main/profile/stats.svg" alt="Adarsh Kumar GitHub stats" height="160" />
+  <img src="https://raw.githubusercontent.com/adarsh0707-kumar/adarsh0707-kumar/main/profile/top-langs.svg" alt="Adarsh Kumar top languages" height="160" />
+</p>
+
 ---
+
 
 ## 🌆 3D Contribution Graph
 
