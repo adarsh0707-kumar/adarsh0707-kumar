@@ -17,7 +17,7 @@
 
   <!-- Row 1: three stat blocks (y = 90..160) -->
   <text x="30" y="100" font-family="-apple-system,Segoe UI,Roboto,Arial" font-size="11" font-weight="600" letter-spacing="1.5" fill="#7ee787">TOTAL CONTRIBUTIONS</text>
-  <text x="30" y="142" font-family="-apple-system,Segoe UI,Roboto,Arial" font-size="36" font-weight="800" fill="#ffffff">1216</text>
+  <text x="30" y="142" font-family="-apple-system,Segoe UI,Roboto,Arial" font-size="36" font-weight="800" fill="#ffffff">1217</text>
 
   <text x="290" y="100" font-family="-apple-system,Segoe UI,Roboto,Arial" font-size="11" font-weight="600" letter-spacing="1.5" fill="#7ee787">CURRENT STREAK</text>
   <text x="290" y="142" font-family="-apple-system,Segoe UI,Roboto,Arial" font-size="36" font-weight="800" fill="#ffffff">44<tspan font-size="14" fill="#8b949e"> days</tspan></text>
