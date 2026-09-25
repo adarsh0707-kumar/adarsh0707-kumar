@@ -104,6 +104,14 @@ I enjoy building complete software systems — from **TCP sockets and C++ system
 
 **CERTIFICATES `6`** &nbsp;&nbsp; **LEARNING TRACKS `3`** &nbsp;&nbsp; **LEARNING MODE `ALWAYS ON`**
 
+### 🎯 Learning Tracks
+
+![SYSTEMS & NETWORKING](https://img.shields.io/badge/SYSTEMS_%26_NETWORKING-8b5cf6?style=for-the-badge)
+![BACKEND & APIs](https://img.shields.io/badge/BACKEND_%26_APIs-0ea5e9?style=for-the-badge)
+![DATABASES](https://img.shields.io/badge/DATABASES-14b8a6?style=for-the-badge)
+![INFRASTRUCTURE & DEVOPS](https://img.shields.io/badge/INFRA_%26_DEVOPS-22c55e?style=for-the-badge)
+![DISTRIBUTED SYSTEMS](https://img.shields.io/badge/DISTRIBUTED_SYSTEMS-f59e0b?style=for-the-badge)
+
 ### 💻 Software Engineering
 
 | Certificate | Issuer | Date |
