@@ -3,6 +3,8 @@
 // a custom dark "GitHub Stats" dashboard SVG (contributions, streak,
 // commits-by-hour, top languages by repo).
 //
+// Theme: merko (matches profile/stats.svg + profile/top-langs.svg)
+//
 // Requires env vars: GITHUB_TOKEN, GH_USERNAME
 // Run with: GH_USERNAME=adarsh0707-kumar GITHUB_TOKEN=... node scripts/generate-stats-dashboard.js
 
@@ -19,6 +21,21 @@ if (!TOKEN) {
   process.exit(1);
 }
 
+// ─── merko theme palette ─────────────────────────────────────────────
+const T = {
+  bg:        "#0d1117",
+  border:    "#1f6feb33",
+  title:     "#39d353",   // merko green
+  label:     "#7ee787",   // light green
+  value:     "#ffffff",
+  muted:     "#8b949e",
+  bar:       "#39d353",
+  barDim:    "#1f6feb",
+  donut:     ["#39d353", "#f778ba", "#f0883e", "#58a6ff", "#a371f7"],
+  panel:     "#161b22",
+};
+
+// ─── GitHub API helpers ──────────────────────────────────────────────
 async function gql(query) {
   const res = await fetch(API, {
     method: "POST",
@@ -45,16 +62,10 @@ async function getContributions() {
     }
   }`;
   const data = await gql(query);
-  const days =
-    data.user.contributionsCollection.contributionCalendar.weeks.flatMap(
-      (w) => w.contributionDays,
-    );
-  const total =
-    data.user.contributionsCollection.contributionCalendar.totalContributions;
+  const cal  = data.user.contributionsCollection.contributionCalendar;
+  const days = cal.weeks.flatMap((w) => w.contributionDays);
 
-  let longest = 0,
-    run = 0,
-    current = 0;
+  let longest = 0, run = 0, current = 0;
   for (const d of days) {
     if (d.contributionCount > 0) {
       run++;
@@ -67,13 +78,13 @@ async function getContributions() {
     if (days[i].contributionCount > 0) current++;
     else break;
   }
-  return { total, current, longest };
+  return { total: cal.totalContributions, current, longest };
 }
 
 async function getLanguages() {
   const res = await fetch(
     `https://api.github.com/users/${USERNAME}/repos?per_page=100`,
-    { headers: { Authorization: `bearer ${TOKEN}` } },
+    { headers: { Authorization: `bearer ${TOKEN}` } }
   );
   const repos = await res.json();
   const counts = {};
@@ -91,20 +102,19 @@ async function getLanguages() {
 async function getCommitHours() {
   const res = await fetch(
     `https://api.github.com/users/${USERNAME}/events/public?per_page=100`,
-    { headers: { Authorization: `bearer ${TOKEN}` } },
+    { headers: { Authorization: `bearer ${TOKEN}` } }
   );
   const events = await res.json();
   const hours = new Array(24).fill(0);
   for (const e of events) {
     if (e.type !== "PushEvent") continue;
     const h = new Date(e.created_at).getHours();
-    hours[h] += e.payload && e.payload.commits ? e.payload.commits.length : 1;
+    hours[h] += (e.payload && e.payload.commits ? e.payload.commits.length : 1);
   }
   return hours;
 }
 
-const COLORS = ["#60a5fa", "#f472b6", "#facc15", "#34d399", "#a78bfa"];
-
+// ─── SVG drawing helpers ─────────────────────────────────────────────
 function donut(cx, cy, r, segments) {
   let angle = -90;
   return segments
@@ -116,22 +126,44 @@ function donut(cx, cy, r, segments) {
       angle += sweep;
       const x2 = cx + r * Math.cos((angle * Math.PI) / 180);
       const y2 = cy + r * Math.sin((angle * Math.PI) / 180);
-      return `<path d="M${cx},${cy} L${x1},${y1} A${r},${r} 0 ${large} 1 ${x2},${y2} Z" fill="${COLORS[i % COLORS.length]}"/>`;
+      return `<path d="M${cx},${cy} L${x1.toFixed(1)},${y1.toFixed(1)} A${r},${r} 0 ${large} 1 ${x2.toFixed(1)},${y2.toFixed(1)} Z" fill="${T.donut[i % T.donut.length]}"/>`;
     })
     .join("\n");
 }
 
+// Bars now live in a dedicated band from x=40 to x=560, y=210..300.
+// This is well clear of the three stat blocks (y=100..150) and the donut
+// column (x=620+), so nothing overlaps.
 function bars(hours) {
-  const max = Math.max(...hours, 1);
+  const max     = Math.max(...hours, 1);
+  const baseY   = 300;   // bottom of bar area
+  const maxBarH = 70;    // tallest bar height
+  const barW    = 16;
+  const gap     = 6;
+  const startX  = 40;
+
   return hours
     .map((v, h) => {
-      const height = (v / max) * 60;
-      const x = 40 + h * 22;
-      return `<rect x="${x}" y="${140 - height}" width="14" height="${height}" rx="3" fill="#818cf8"/>`;
+      const height = Math.max((v / max) * maxBarH, 1.5);
+      const x = startX + h * (barW + gap);
+      return `<rect x="${x}" y="${baseY - height}" width="${barW}" height="${height}" rx="2" fill="${T.bar}"/>`;
     })
     .join("\n");
 }
 
+function hourTicks() {
+  // Show 00, 06, 12, 18, 23 under the bar chart
+  const baseY = 316;
+  const barW = 16, gap = 6, startX = 40;
+  return [0, 6, 12, 18, 23]
+    .map((h) => {
+      const x = startX + h * (barW + gap) + barW / 2;
+      return `<text x="${x}" y="${baseY}" font-family="-apple-system,Segoe UI,Roboto,Arial" font-size="9" fill="${T.muted}" text-anchor="middle">${String(h).padStart(2, "0")}</text>`;
+    })
+    .join("\n");
+}
+
+// ─── Main ────────────────────────────────────────────────────────────
 async function main() {
   const [contrib, langs, hours] = await Promise.all([
     getContributions(),
@@ -139,45 +171,70 @@ async function main() {
     getCommitHours(),
   ]);
 
-  const svg = `<svg width="820" height="260" viewBox="0 0 820 260" xmlns="http://www.w3.org/2000/svg">
+  const svg = `<svg width="820" height="340" viewBox="0 0 820 340" xmlns="http://www.w3.org/2000/svg">
   <defs>
-    <radialGradient id="bg" cx="20%" cy="20%" r="90%">
-      <stop offset="0%" stop-color="#1b1440"/>
-      <stop offset="100%" stop-color="#0a0818"/>
+    <radialGradient id="bg" cx="20%" cy="15%" r="100%">
+      <stop offset="0%"   stop-color="#0d2818"/>
+      <stop offset="60%"  stop-color="#0d1117"/>
+      <stop offset="100%" stop-color="#050810"/>
     </radialGradient>
   </defs>
-  <rect width="820" height="260" rx="16" fill="url(#bg)"/>
-  <text x="30" y="38" font-family="Arial" font-size="20" font-weight="800" fill="#fff">GitHub Stats</text>
-  <text x="30" y="58" font-family="Arial" font-size="12" fill="#94a3b8">${USERNAME}</text>
 
-  <text x="30" y="100" font-family="Arial" font-size="12" fill="#93c5fd">TOTAL CONTRIBUTIONS</text>
-  <text x="30" y="132" font-family="Arial" font-size="34" font-weight="800" fill="#fff">${contrib.total}</text>
+  <!-- Background card -->
+  <rect width="820" height="340" rx="14" fill="url(#bg)"/>
+  <rect x="0.5" y="0.5" width="819" height="339" rx="14" fill="none" stroke="${T.border}"/>
 
-  <text x="220" y="100" font-family="Arial" font-size="12" fill="#93c5fd">CURRENT STREAK</text>
-  <text x="220" y="132" font-family="Arial" font-size="34" font-weight="800" fill="#fff">${contrib.current}<tspan font-size="14"> days</tspan></text>
+  <!-- Header -->
+  <text x="30" y="40" font-family="-apple-system,Segoe UI,Roboto,Arial" font-size="20" font-weight="800" fill="${T.title}">GitHub Stats</text>
+  <text x="30" y="60" font-family="-apple-system,Segoe UI,Roboto,Arial" font-size="12" fill="${T.muted}">${USERNAME}</text>
 
-  <text x="420" y="100" font-family="Arial" font-size="12" fill="#93c5fd">LONGEST STREAK</text>
-  <text x="420" y="132" font-family="Arial" font-size="34" font-weight="800" fill="#fff">${contrib.longest}<tspan font-size="14"> days</tspan></text>
+  <!-- Row 1: three stat blocks (y = 90..160) -->
+  <text x="30" y="100" font-family="-apple-system,Segoe UI,Roboto,Arial" font-size="11" font-weight="600" letter-spacing="1.5" fill="${T.label}">TOTAL CONTRIBUTIONS</text>
+  <text x="30" y="142" font-family="-apple-system,Segoe UI,Roboto,Arial" font-size="36" font-weight="800" fill="${T.value}">${contrib.total}</text>
 
-  <text x="30" y="170" font-family="Arial" font-size="12" fill="#93c5fd">COMMITS BY HOUR (last ~90 public events)</text>
+  <text x="290" y="100" font-family="-apple-system,Segoe UI,Roboto,Arial" font-size="11" font-weight="600" letter-spacing="1.5" fill="${T.label}">CURRENT STREAK</text>
+  <text x="290" y="142" font-family="-apple-system,Segoe UI,Roboto,Arial" font-size="36" font-weight="800" fill="${T.value}">${contrib.current}<tspan font-size="14" fill="${T.muted}"> days</tspan></text>
+
+  <text x="500" y="100" font-family="-apple-system,Segoe UI,Roboto,Arial" font-size="11" font-weight="600" letter-spacing="1.5" fill="${T.label}">LONGEST STREAK</text>
+  <text x="500" y="142" font-family="-apple-system,Segoe UI,Roboto,Arial" font-size="36" font-weight="800" fill="${T.value}">${contrib.longest}<tspan font-size="14" fill="${T.muted}"> days</tspan></text>
+
+  <!-- Divider -->
+  <line x1="30" y1="172" x2="790" y2="172" stroke="${T.border}"/>
+
+  <!-- Row 2: commits-by-hour (left) + top-langs donut (right) -->
+  <text x="30" y="200" font-family="-apple-system,Segoe UI,Roboto,Arial" font-size="11" font-weight="600" letter-spacing="1.5" fill="${T.label}">COMMITS BY HOUR</text>
+  <text x="30" y="214" font-family="-apple-system,Segoe UI,Roboto,Arial" font-size="10" fill="${T.muted}">last ~90 public events</text>
+
   ${bars(hours)}
+  ${hourTicks()}
 
-  <text x="600" y="100" font-family="Arial" font-size="12" fill="#93c5fd">TOP LANGUAGES</text>
-  ${donut(660, 170, 55, langs)}
-  ${langs
-    .map(
-      (l, i) =>
-        `<circle cx="740" cy="${150 + i * 16}" r="4" fill="${COLORS[i % COLORS.length]}"/><text x="750" y="${154 + i * 16}" font-family="Arial" font-size="10" fill="#e2e8f0">${l.name} ${l.pct}%</text>`,
-    )
-    .join("\n")}
+  <!-- Top languages donut -->
+  <text x="620" y="200" font-family="-apple-system,Segoe UI,Roboto,Arial" font-size="11" font-weight="600" letter-spacing="1.5" fill="${T.label}">TOP LANGUAGES</text>
+
+  <g transform="translate(620, 300)">
+    ${donut(0, 0, 48, langs)}
+    <circle cx="0" cy="0" r="26" fill="${T.bg}"/>
+    <text x="0" y="4" font-family="-apple-system,Segoe UI,Roboto,Arial" font-size="11" fill="${T.muted}" text-anchor="middle">top 5</text>
+  </g>
+
+  <g>
+    ${langs
+      .map(
+        (l, i) => `
+      <circle cx="700" cy="${244 + i * 18}" r="4" fill="${T.donut[i % T.donut.length]}"/>
+      <text x="712" y="${248 + i * 18}" font-family="-apple-system,Segoe UI,Roboto,Arial" font-size="10" fill="${T.value}">${l.name}</text>
+      <text x="790" y="${248 + i * 18}" font-family="-apple-system,Segoe UI,Roboto,Arial" font-size="10" fill="${T.muted}" text-anchor="end">${l.pct}%</text>`
+      )
+      .join("\n")}
+  </g>
 </svg>`;
 
-  // --- Validate before writing ---
+  // ─── Validate before writing ──────────────────────────────────────
   const bad =
     !svg.includes("<svg") ||
     svg.includes("NaN") ||
     svg.includes("undefined") ||
-    contrib.total == null ||
+    contrib.total   == null ||
     contrib.current == null ||
     contrib.longest == null ||
     !Array.isArray(langs) ||
@@ -185,9 +242,7 @@ async function main() {
     !Array.isArray(hours);
 
   if (bad) {
-    throw new Error(
-      "Refusing to write stats-dashboard.svg — data looks invalid",
-    );
+    throw new Error("Refusing to write stats-dashboard.svg — data looks invalid");
   }
 
   require("fs").mkdirSync("profile", { recursive: true });
