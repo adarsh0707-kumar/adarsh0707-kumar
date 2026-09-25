@@ -158,8 +158,8 @@ function donutArc(cx, cy, r, thick, segs) {
 
 function barChart(hours, x0, y0, w, h) {
   const max    = Math.max(...hours, 1);
-  const padL   = 40;
-  const padR   = 20;
+  const padL   = 30;
+  const padR   = 30;
   const padT   = 10;
   const padB   = 30;
   const innerW = w - padL - padR;
@@ -208,7 +208,7 @@ async function main() {
 
   // Fake "by commit" split — GitHub's commit-language breakdown isn't exposed
   // via the public REST API, so we approximate from the repo breakdown.
-  // (Reference does the same: Python stays 1st, ordering shifts.)
+  // (Reference does the same: top language stays the same, ordering shifts.)
   const langsByCommit = langsByRepo.map((l, i) => ({
     name: l.name,
     pct: i === 0 ? Math.min(l.pct + 8, 60) : Math.max(l.pct - 2 * i, 1),
@@ -342,7 +342,8 @@ async function main() {
   <text x="888" y="138" font-size="15" font-weight="600"
     fill="${T.muted}">Longest streak</text>
   ${rollLongest}
-  <text x="1030" y="218" font-size="20" font-weight="600" fill="${T.muted}">days</text>
+  <text x="${860 + 300 - 28}" y="218" text-anchor="end" font-size="20"
+    font-weight="600" fill="${T.muted}">days</text>
   <text x="888" y="260" font-size="13" font-weight="600" fill="${T.accent}">All-time best</text>
 
   <!-- Row 2 — Commits by hour -->
