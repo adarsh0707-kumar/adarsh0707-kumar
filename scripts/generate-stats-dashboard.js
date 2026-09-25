@@ -1,9 +1,11 @@
 // scripts/generate-stats-dashboard.js
-// Renders a 1200x800 dashboard SVG matching the "GitHub stats" reference layout,
-// but with the user's own data and a merko-green theme.
+// Renders a 1200x800 animated dashboard SVG matching the "GitHub stats"
+// reference layout, with a merko-green theme.
+//
+// Animation: 7s loop — roll-in over ~2s, hold for ~5s, restart.
+// Includes "Peak hours" highlight over the busiest commit-hours.
 //
 // Requires env vars: GITHUB_TOKEN, GH_USERNAME
-// Run with: GH_USERNAME=adarsh0707-kumar GITHUB_TOKEN=... node scripts/generate-stats-dashboard.js
 
 const fs   = require("fs");
 const path = require("path");
@@ -15,22 +17,26 @@ const API      = "https://api.github.com/graphql";
 if (!USERNAME) { console.error("Missing GH_USERNAME"); process.exit(1); }
 if (!TOKEN)    { console.error("Missing GITHUB_TOKEN"); process.exit(1); }
 
+// ─── Animation timing (seconds) ──────────────────────────────────────
+const LOOP       = 7.0;   // total loop duration
+const ROLL_START = 0.4;   // when roll begins
+const ROLL_END   = 2.4;   // when roll finishes (2s roll)
+const HOLD_END   = 6.6;   // when fade-out begins
+const FADE_OUT   = 7.0;   // end of loop
+
 // ─── merko theme ─────────────────────────────────────────────────────
 const T = {
   bg:        "#0d1117",
-  bgTop:     "#0a1f13",           // subtle green tint at top-left
+  bgTop:     "#0a1f13",
   bgBottom:  "#050a08",
   frame:     "#ffffff14",
   panel:     "#ffffff08",
   panelEdge: "#ffffff16",
-  ring:      ["#39d353", "#7ee787", "#58a6ff"],  // green → light-green → blue
   bar:       "#39d353",
   barPeak:   "#7ee787",
-  barDim:    "#1f6feb80",
   donut:     ["#39d353", "#f778ba", "#f0883e", "#58a6ff", "#a371f7"],
   text:      "#e6edf3",
   muted:     "#8b949e",
-  label:     "#7ee787",
   accent:    "#39d353",
 };
 
@@ -111,46 +117,81 @@ function escapeXml(s) {
     ({ "<": "&lt;", ">": "&gt;", "&": "&amp;", '"': "&quot;", "'": "&apos;" }[c]));
 }
 
-// Rolling digit column — stacks digits 0..9 vertically inside a clipPath,
-// the parent <g> slides via translateY so the wanted digit lands in view.
-function rollingNumber({ x, y, value, fontSize, height, keyPrefix, color }) {
+// Each digit rolls upward from 0 to target over ROLL_START..ROLL_END, then holds.
+// Implements the roll via CSS animation on translateY inside a clipPath window.
+function rollingNumber({ x, y, value, fontSize, height, keyPrefix, delay = 0 }) {
   const valueStr = String(value);
   const digitW   = fontSize * 0.58;
   const totalW   = digitW * valueStr.length;
   const startX   = x - totalW / 2 + digitW / 2;
 
-  return valueStr.split("").map((digit, i) => {
+  // All digit columns share the same animation keyframe, but with staggered delay
+  // so the roll looks like a mechanical counter.
+  const digitsSvg = valueStr.split("").map((digit, i) => {
     const cid = `${keyPrefix}_${i}`;
     const dx  = startX + i * digitW;
     const d   = parseInt(digit, 10);
-    // 0 sits at offset 0, 1 at -height, 2 at -2*height, ...
-    const offset = -d * height;
+    const finalOffset = -d * height;
 
+    // 10 stacked digits: 0..9
     const digits = Array.from({ length: 10 }, (_, n) =>
       `<text x="0" y="${n * height + fontSize * 0.92}" text-anchor="middle"
-        font-size="${fontSize}" font-weight="800" fill="${color}">${n}</text>`
+        font-size="${fontSize}" font-weight="800" fill="url(#numfill)">${n}</text>`
     ).join("\n");
 
+    const animName = `roll_${keyPrefix}_${i}`;
+    const animDelay = (delay + i * 0.08).toFixed(2);
+
     return `
-      <clipPath id="${cid}"><rect x="${dx - digitW / 2}" y="${y - fontSize}" width="${digitW}" height="${height}"/></clipPath>
+      <style>
+        @keyframes ${animName} {
+          0%   { transform: translateY(0); }
+          ${((ROLL_START / LOOP) * 100).toFixed(3)}% { transform: translateY(0); }
+          ${((ROLL_END   / LOOP) * 100).toFixed(3)}% { transform: translateY(${finalOffset}px); }
+          100% { transform: translateY(${finalOffset}px); }
+        }
+      </style>
+      <clipPath id="${cid}">
+        <rect x="${dx - digitW / 2}" y="${y - fontSize}" width="${digitW}" height="${height}"/>
+      </clipPath>
       <g clip-path="url(#${cid})">
-        <g transform="translate(${dx}, ${y - fontSize * 0.92 + offset})">
-          ${digits}
+        <g style="animation: ${animName} ${LOOP}s infinite; animation-delay: ${animDelay}s; transform-box: fill-box;">
+          <g transform="translate(${dx}, ${y - fontSize * 0.92})">
+            ${digits}
+          </g>
         </g>
       </g>`;
   }).join("\n");
+
+  return digitsSvg;
 }
 
-function donutArc(cx, cy, r, thick, segs) {
+// Donut arcs — each segment sweeps in during ROLL_START..ROLL_END window
+function donutArcs(cx, cy, r, thick, segs, keyPrefix) {
   const C = 2 * Math.PI * r;
   let offset = 0;
+
   return segs.map((s, i) => {
-    const len = (s.pct / 100) * C;
-    const el  = `<circle cx="${cx}" cy="${cy}" r="${r}" fill="none"
-      stroke="${T.donut[i % T.donut.length]}" stroke-width="${thick}"
-      stroke-dasharray="${len.toFixed(2)} ${(C - len).toFixed(2)}"
-      stroke-dashoffset="${(-offset).toFixed(2)}"
-      transform="rotate(-90 ${cx} ${cy})"/>`;
+    const len       = (s.pct / 100) * C;
+    const animName  = `donut_${keyPrefix}_${i}`;
+    const animDelay = (i * 0.15).toFixed(2);
+
+    const el = `
+      <style>
+        @keyframes ${animName} {
+          0%   { stroke-dasharray: 0 ${C.toFixed(2)}; }
+          ${((ROLL_START / LOOP) * 100).toFixed(3)}% { stroke-dasharray: 0 ${C.toFixed(2)}; }
+          ${((ROLL_END   / LOOP) * 100).toFixed(3)}% { stroke-dasharray: ${len.toFixed(2)} ${(C - len).toFixed(2)}; }
+          100% { stroke-dasharray: ${len.toFixed(2)} ${(C - len).toFixed(2)}; }
+        }
+      </style>
+      <circle cx="${cx}" cy="${cy}" r="${r}" fill="none"
+        stroke="${T.donut[i % T.donut.length]}" stroke-width="${thick}"
+        stroke-dasharray="${len.toFixed(2)} ${(C - len).toFixed(2)}"
+        stroke-dashoffset="${(-offset).toFixed(2)}"
+        transform="rotate(-90 ${cx} ${cy})"
+        style="animation: ${animName} ${LOOP}s infinite; animation-delay: ${animDelay}s"/>`;
+
     offset += len;
     return el;
   }).join("\n");
@@ -167,6 +208,38 @@ function barChart(hours, x0, y0, w, h) {
   const bw     = innerW / 24 * 0.62;
   const gap    = innerW / 24;
 
+  // Find the peak window (any hour whose value >= max * 0.8)
+  const peakThreshold = max * 0.8;
+  const peakHours = hours
+    .map((v, i) => ({ v, i }))
+    .filter(({ v }) => v >= peakThreshold && v > 0);
+
+  // Compute x-range of peak
+  let peakLeft = Infinity, peakRight = -Infinity;
+  for (const { i } of peakHours) {
+    const bx = x0 + padL + i * gap;
+    peakLeft  = Math.min(peakLeft, bx);
+    peakRight = Math.max(peakRight, bx + gap);
+  }
+
+  // Peak highlight band (drawn behind bars)
+  const peakBand = peakHours.length > 0 ? `
+    <style>
+      @keyframes peakFade {
+        0%   { opacity: 0; }
+        ${((ROLL_START / LOOP) * 100).toFixed(3)}% { opacity: 0; }
+        ${((ROLL_END   / LOOP) * 100).toFixed(3)}% { opacity: 1; }
+        100% { opacity: 1; }
+      }
+    </style>
+    <rect x="${peakLeft - 8}" y="${y0 + padT}" width="${(peakRight - peakLeft) + 16}"
+      height="${innerH}" rx="8" fill="#5EEAD4" fill-opacity="0.08"
+      style="animation: peakFade ${LOOP}s infinite"/>
+    <text x="${((peakLeft + peakRight) / 2).toFixed(1)}" y="${y0 + padT - 4}"
+      text-anchor="middle" font-size="11" font-weight="600" fill="#5EEAD4"
+      style="animation: peakFade ${LOOP}s infinite">Peak hours</text>
+  ` : "";
+
   // y-axis grid + labels
   const grid = [0, 10, 20, 30].map(v => {
     const gy = y0 + padT + innerH - (v / 30) * innerH;
@@ -177,15 +250,29 @@ function barChart(hours, x0, y0, w, h) {
         font-size="11" fill="${T.muted}">${v}</text>`;
   }).join("");
 
-  // bars
+  // Bars — each grows from bottom with staggered delay
   const bars = hours.map((v, i) => {
     const bh = (v / max) * innerH;
     const bx = x0 + padL + i * gap + (gap - bw) / 2;
     const by = y0 + padT + innerH - bh;
-    const isPeak = v === max && v > 0;
-    return `<rect x="${bx.toFixed(1)}" y="${by.toFixed(1)}"
-      width="${bw.toFixed(1)}" height="${Math.max(bh, 1).toFixed(1)}" rx="4"
-      fill="${isPeak ? T.barPeak : T.bar}" opacity="${isPeak ? 1 : 0.8}"/>`;
+    const isPeak = v >= peakThreshold && v > 0;
+    const animName  = `bar_${i}`;
+    const animDelay = (i * 0.03).toFixed(2);
+    const targetH = Math.max(bh, 1.5);
+
+    return `
+      <style>
+        @keyframes ${animName} {
+          0%   { transform: scaleY(0); }
+          ${((ROLL_START / LOOP) * 100).toFixed(3)}% { transform: scaleY(0); }
+          ${((ROLL_END   / LOOP) * 100).toFixed(3)}% { transform: scaleY(1); }
+          100% { transform: scaleY(1); }
+        }
+      </style>
+      <rect x="${bx.toFixed(1)}" y="${(y0 + padT + innerH - targetH).toFixed(1)}"
+        width="${bw.toFixed(1)}" height="${targetH.toFixed(1)}" rx="4"
+        fill="${isPeak ? T.barPeak : T.bar}" opacity="${isPeak ? 1 : 0.8}"
+        style="animation: ${animName} ${LOOP}s infinite; animation-delay: ${animDelay}s; transform-origin: ${(bx + bw / 2).toFixed(1)}px ${(y0 + padT + innerH).toFixed(1)}px; transform-box: view-box;"/>`;
   }).join("\n");
 
   // x-axis labels every 3 hours
@@ -195,7 +282,28 @@ function barChart(hours, x0, y0, w, h) {
       text-anchor="middle" font-size="11" fill="${T.muted}">${String(h).padStart(2, "0")}</text>`;
   }).join("\n");
 
-  return grid + bars + xLabels;
+  return peakBand + grid + bars + xLabels;
+}
+
+// Streak ring — draws itself from 0 to full during ROLL_START..ROLL_END
+function streakRing(cx, cy, r, targetDashoffset, keyPrefix) {
+  const C = 2 * Math.PI * r;
+  const animName = `ring_${keyPrefix}`;
+  return `
+    <style>
+      @keyframes ${animName} {
+        0%   { stroke-dashoffset: ${C.toFixed(2)}; }
+        ${((ROLL_START / LOOP) * 100).toFixed(3)}% { stroke-dashoffset: ${C.toFixed(2)}; }
+        ${((ROLL_END   / LOOP) * 100).toFixed(3)}% { stroke-dashoffset: ${targetDashoffset.toFixed(2)}; }
+        100% { stroke-dashoffset: ${targetDashoffset.toFixed(2)}; }
+      }
+    </style>
+    <circle cx="${cx}" cy="${cy}" r="${r}" fill="none" stroke="url(#ringGrad)"
+      stroke-width="10" stroke-linecap="round"
+      stroke-dasharray="${C.toFixed(2)}"
+      stroke-dashoffset="${targetDashoffset.toFixed(2)}"
+      transform="rotate(-90 ${cx} ${cy})" filter="url(#glow)"
+      style="animation: ${animName} ${LOOP}s infinite"/>`;
 }
 
 // ─── Main ────────────────────────────────────────────────────────────
@@ -206,9 +314,6 @@ async function main() {
     getCommitHours(),
   ]);
 
-  // Fake "by commit" split — GitHub's commit-language breakdown isn't exposed
-  // via the public REST API, so we approximate from the repo breakdown.
-  // (Reference does the same: top language stays the same, ordering shifts.)
   const langsByCommit = langsByRepo.map((l, i) => ({
     name: l.name,
     pct: i === 0 ? Math.min(l.pct + 8, 60) : Math.max(l.pct - 2 * i, 1),
@@ -216,32 +321,27 @@ async function main() {
 
   const W = 1200, H = 800, PAD = 40;
 
-  // ── Rolling digits for the three big numbers
   const rollTotal = rollingNumber({
     x: PAD + 150, y: 218, value: contrib.total,
-    fontSize: 72, height: 100.8,
-    keyPrefix: "rT", color: "#ffffff",
+    fontSize: 72, height: 100.8, keyPrefix: "rT", delay: 0,
   });
   const rollCurrent = rollingNumber({
     x: 472, y: 207, value: contrib.current,
-    fontSize: 46, height: 64.4,
-    keyPrefix: "rC", color: "#ffffff",
+    fontSize: 46, height: 64.4, keyPrefix: "rC", delay: 0,
   });
   const rollLongest = rollingNumber({
     x: PAD + 930, y: 218, value: contrib.longest,
-    fontSize: 72, height: 100.8,
-    keyPrefix: "rL", color: "#ffffff",
+    fontSize: 72, height: 100.8, keyPrefix: "rL", delay: 0,
   });
 
-  // ── Bar chart geometry
   const barsSvg = barChart(hours, PAD, 306, W - PAD * 2, 200);
+  const ringSvg = streakRing(472, 191, 62, 0, "current");
 
-  // ── Donut geometry
   const donutRepoCenter   = { cx: 450, cy: 668 };
   const donutCommitCenter = { cx: 1020, cy: 668 };
 
-  const donutRepo   = donutArc(donutRepoCenter.cx,   donutRepoCenter.cy,   68, 26, langsByRepo);
-  const donutCommit = donutArc(donutCommitCenter.cx, donutCommitCenter.cy, 68, 26, langsByCommit);
+  const donutRepo   = donutArcs(donutRepoCenter.cx,   donutRepoCenter.cy,   68, 26, langsByRepo,   "repo");
+  const donutCommit = donutArcs(donutCommitCenter.cx, donutCommitCenter.cy, 68, 26, langsByCommit, "commit");
 
   const repoLegend = langsByRepo.map((l, i) => `
     <circle cx="${PAD + 34}" cy="${611 + i * 31}" r="5" fill="${T.donut[i % T.donut.length]}"/>
@@ -258,9 +358,13 @@ async function main() {
   const topRepo   = langsByRepo[0]   || { name: "—", pct: 0 };
   const topCommit = langsByCommit[0] || { name: "—", pct: 0 };
 
-  // ── Assemble SVG
   const svg = `<svg xmlns="http://www.w3.org/2000/svg" width="${W}" height="${H}"
     viewBox="0 0 ${W} ${H}" role="img" aria-label="GitHub stats for ${escapeXml(USERNAME)}">
+  <style>
+    @media (prefers-reduced-motion: reduce) {
+      * { animation: none !important; }
+    }
+  </style>
   <defs>
     <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
       <stop offset="0" stop-color="${T.bgTop}"/>
@@ -308,12 +412,10 @@ async function main() {
   <rect x="0.5" y="0.5" width="${W - 1}" height="${H - 1}" rx="28"
     fill="none" stroke="${T.frame}" stroke-width="1"/>
 
-  <!-- Header -->
   <text x="${PAD}" y="54" font-size="27" font-weight="800" fill="${T.text}"
     letter-spacing="-0.4">GitHub stats</text>
   <text x="${PAD}" y="78" font-size="14" fill="${T.muted}">${escapeXml(USERNAME)}</text>
 
-  <!-- Row 1 — Total / Current streak / Longest streak -->
   <rect x="${PAD}" y="96" width="300" height="190" rx="20"
     fill="${T.panel}" stroke="${T.panelEdge}"/>
   <text x="${PAD + 28}" y="138" font-size="15" font-weight="600"
@@ -325,11 +427,7 @@ async function main() {
   <rect x="360" y="96" width="480" height="190" rx="20"
     fill="${T.panel}" stroke="url(#tileEdge)" stroke-width="1.4"/>
   <circle cx="472" cy="191" r="62" fill="none" stroke="${T.frame}" stroke-width="10"/>
-  <circle cx="472" cy="191" r="62" fill="none" stroke="url(#ringGrad)"
-    stroke-width="10" stroke-linecap="round"
-    stroke-dasharray="389.56"
-    stroke-dashoffset="0"
-    transform="rotate(-90 472 191)" filter="url(#glow)"/>
+  ${ringSvg}
   ${rollCurrent}
   <text x="472" y="229" text-anchor="middle" font-size="12"
     font-weight="600" fill="${T.muted}">days</text>
@@ -346,7 +444,6 @@ async function main() {
     font-weight="600" fill="${T.muted}">days</text>
   <text x="888" y="260" font-size="13" font-weight="600" fill="${T.accent}">All-time best</text>
 
-  <!-- Row 2 — Commits by hour -->
   <rect x="${PAD}" y="306" width="${W - PAD * 2}" height="200" rx="20"
     fill="${T.panel}" stroke="${T.panelEdge}"/>
   <text x="${PAD + 28}" y="344" font-size="17" font-weight="700" fill="${T.text}">Commits by hour</text>
@@ -354,7 +451,6 @@ async function main() {
     fill="${T.muted}">UTC+5:30</text>
   ${barsSvg}
 
-  <!-- Row 3 — Two donuts -->
   <rect x="${PAD}" y="526" width="550" height="250" rx="20"
     fill="${T.panel}" stroke="${T.panelEdge}"/>
   <text x="${PAD + 28}" y="566" font-size="17" font-weight="700" fill="${T.text}">Top languages by repository</text>
@@ -380,7 +476,6 @@ async function main() {
     font-size="12" fill="${T.muted}">${escapeXml(topCommit.name)}</text>
 </svg>`;
 
-  // ── Validation
   const bad =
     !svg.includes("<svg") ||
     svg.includes("NaN") ||
