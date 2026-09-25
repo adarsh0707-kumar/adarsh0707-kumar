@@ -7,9 +7,9 @@ on:
       - ".github/workflows/generate-contributor-stats.yml"
   workflow_dispatch:
   schedule:
-    # 15:30 UTC = 21:40 IST, daily. Moved off 00:00 UTC, which is the most
-    # contended slot on GitHub's scheduler and was queueing runs hours late.
+    # 08:30 UTC = 2:00 PM IST   /  14:30 UTC = 8:00 PM IST
     # First in the staggered card sequence - see generate-trophy.yml.
+    # Pushes here and in trophy/stats/streak all target main; keep them ≥30 min apart.
     - cron: "30 8,14 * * *"
 
 permissions:

@@ -19,7 +19,10 @@ jobs:
 
       - name: Generate dashboard
         env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          # PAT with at least public_repo scope (repo scope for private contribs).
+          # The default GITHUB_TOKEN cannot read the GraphQL contributionsCollection
+          # for a user profile.
+          GITHUB_TOKEN: ${{ secrets.PROFILE_TOKEN }}
           USERNAME: adarsh0707-kumar
         run: node scripts/generate-stats-dashboard.js
 

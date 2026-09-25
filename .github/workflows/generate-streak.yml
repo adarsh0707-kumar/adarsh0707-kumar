@@ -46,7 +46,9 @@ jobs:
             echo "Attempt $attempt..."
 
             if curl -sSfL --max-time 10 "$url" -o streak.tmp; then
-              if grep -q "Total Contributions" streak.tmp; then
+              if grep -q "Total Contributions" streak.tmp \
+                && grep -q "<svg" streak.tmp \
+                && [ "$(wc -c < streak.tmp)" -gt 2000 ]; then
                 mv streak.tmp profile/streak.svg
                 echo "Fetched a valid streak card ($(wc -c < profile/streak.svg) bytes)."
                 exit 0

@@ -153,10 +153,28 @@ async function main() {
   ${langs
     .map(
       (l, i) =>
-        `<circle cx="740" cy="${150 + i * 16}" r="4" fill="${COLORS[i % COLORS.length]}"/><text x="750" y="${154 + i * 16}" font-family="Arial" font-size="10" fill="#e2e8f0">${l.name} ${l.pct}%</text>`
+        `<circle cx="740" cy="${150 + i * 16}" r="4" fill="${COLORS[i % COLORS.length]}"/><text x="750" y="${154 + i * 16}" font-family="Arial" font-size="10" fill="#e2e8f0">${l.name} ${l.pct}%</text>`,
     )
     .join("\n")}
 </svg>`;
+
+  // --- Validate before writing ---
+  const bad =
+    !svg.includes("<svg") ||
+    svg.includes("NaN") ||
+    svg.includes("undefined") ||
+    contrib.total == null ||
+    contrib.current == null ||
+    contrib.longest == null ||
+    !Array.isArray(langs) ||
+    langs.length === 0 ||
+    !Array.isArray(hours);
+
+  if (bad) {
+    throw new Error(
+      "Refusing to write stats-dashboard.svg — data looks invalid",
+    );
+  }
 
   require("fs").mkdirSync("profile", { recursive: true });
   require("fs").writeFileSync("profile/stats-dashboard.svg", svg);

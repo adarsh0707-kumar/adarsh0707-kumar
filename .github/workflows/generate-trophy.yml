@@ -7,10 +7,10 @@ on:
       - ".github/workflows/generate-trophy.yml"
   workflow_dispatch:
   schedule:
-    # 15:20 UTC = 20:50 IST, daily. Staggered from the other card jobs: they
-    # all push to main, and two commits landing at the same minute means one
-    # gets rejected non-fast-forward. Order is contributor-stats 21:40,
-    # trophy 22:10, stats 22:50, streak 23:20 IST.
+    # 08:20 UTC = 1:50 PM IST  /  15:20 UTC = 8:50 PM IST
+    # Staggered from the other card jobs; all push to main and must not overlap.
+    # Order: contributor-stats (08:30/14:30), trophy (08:20/15:20),
+    #        stats (08:30/15:30), streak (04:30/08:40/13:30/16:00).
     - cron: "20 8,15 * * *"
 
 permissions:

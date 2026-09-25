@@ -74,6 +74,10 @@ I enjoy building complete software systems — from **TCP sockets and C++ system
 
 ---
 
+[![Typing SVG](https://raw.githubusercontent.com/adarsh0707-kumar/adarsh0707-kumar/main/profile/typing.svg)](https://github.com/adarsh0707-kumar/adarsh0707-kumar/blob/main/profile/typing.svg)
+
+---
+
 ## 🏆 Trophy Case
 
 [![Adarsh Kumar GitHub trophies](https://raw.githubusercontent.com/adarsh0707-kumar/adarsh0707-kumar/main/profile/trophy.svg)](https://github.com/adarsh0707-kumar/adarsh0707-kumar/blob/main/profile/trophy.svg)
