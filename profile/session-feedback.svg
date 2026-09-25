@@ -1,0 +1,61 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="360" viewBox="0 0 900 360" font-family="-apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif">
+  <defs>
+    <linearGradient id="fb-bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#0b1220"/>
+      <stop offset="60%" stop-color="#0f172a"/>
+      <stop offset="100%" stop-color="#111a33"/>
+    </linearGradient>
+    <linearGradient id="fb-btn" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#34d399"/>
+      <stop offset="100%" stop-color="#10b981"/>
+    </linearGradient>
+    <linearGradient id="fb-star" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#fde047"/>
+      <stop offset="100%" stop-color="#f59e0b"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Card background -->
+  <rect width="900" height="360" rx="18" fill="url(#fb-bg)"/>
+  <rect x="1" y="1" width="898" height="358" rx="17" fill="none" stroke="#1e293b" stroke-width="1"/>
+
+  <!-- Left pane -->
+  <rect x="40" y="40" width="22" height="22" rx="6" fill="#0f2a3a" stroke="#0ea5e9" stroke-width="1"/>
+  <circle cx="51" cy="51" r="3" fill="#0ea5e9"/>
+  <text x="72" y="57" font-size="12" fill="#7dd3fc" font-weight="500">One last thing</text>
+
+  <text x="40" y="115" font-size="34" fill="#e2e8f0" font-weight="800">Session Feedback</text>
+
+  <text x="40" y="152" font-size="14" fill="#94a3b8">After your guidance session, please rate</text>
+  <text x="40" y="172" font-size="14" fill="#94a3b8">your experience and share any thoughts.</text>
+  <text x="40" y="192" font-size="14" fill="#94a3b8">This helps me improve future sessions.</text>
+
+  <text x="40" y="238" font-size="14" fill="#e2e8f0" font-weight="600">How would you rate the session?</text>
+
+  <!-- 5 stars -->
+  <g fill="url(#fb-star)">
+    <path d="M50 262 l7 15 16 2 -12 11 3 16 -14 -8 -14 8 3 -16 -12 -11 16 -2 z"/>
+    <path d="M90 262 l7 15 16 2 -12 11 3 16 -14 -8 -14 8 3 -16 -12 -11 16 -2 z"/>
+    <path d="M130 262 l7 15 16 2 -12 11 3 16 -14 -8 -14 8 3 -16 -12 -11 16 -2 z"/>
+    <path d="M170 262 l7 15 16 2 -12 11 3 16 -14 -8 -14 8 3 -16 -12 -11 16 -2 z"/>
+    <path d="M210 262 l7 15 16 2 -12 11 3 16 -14 -8 -14 8 3 -16 -12 -11 16 -2 z"/>
+  </g>
+
+  <text x="40" y="320" font-size="15" fill="#fbbf24" font-weight="700">Excellent</text>
+  <text x="120" y="320" font-size="13" fill="#94a3b8">5 out of 5</text>
+
+  <!-- Divider -->
+  <line x1="470" y1="60" x2="470" y2="300" stroke="#1e293b" stroke-width="1"/>
+
+  <!-- Right pane (fake form) -->
+  <text x="510" y="80" font-size="13" fill="#e2e8f0" font-weight="600">What did you like most about the session?</text>
+  <rect x="510" y="94" width="350" height="70" rx="10" fill="#0b1220" stroke="#1e293b"/>
+  <text x="524" y="120" font-size="12" fill="#94a3b8">The clear guidance and real examples</text>
+  <text x="524" y="138" font-size="12" fill="#94a3b8">made every step easy to follow.</text>
+
+  <text x="510" y="196" font-size="13" fill="#e2e8f0" font-weight="600">Any suggestions for improvement?</text>
+  <rect x="510" y="210" width="350" height="70" rx="10" fill="#0b1220" stroke="#10b981" stroke-opacity="0.5" stroke-width="1.5"/>
+
+  <rect x="510" y="294" width="180" height="40" rx="8" fill="url(#fb-btn)"/>
+  <text x="600" y="319" font-size="14" fill="#0b1220" font-weight="800" text-anchor="middle">Submit Feedback</text>
+</svg>
