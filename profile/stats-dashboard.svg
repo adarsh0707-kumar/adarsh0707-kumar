@@ -1,5 +1,10 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="1200" height="800"
     viewBox="0 0 1200 800" role="img" aria-label="GitHub stats for adarsh0707-kumar">
+  <style>
+    @media (prefers-reduced-motion: reduce) {
+      * { animation: none !important; }
+    }
+  </style>
   <defs>
     <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
       <stop offset="0" stop-color="#0a1f13"/>
@@ -47,118 +52,164 @@
   <rect x="0.5" y="0.5" width="1199" height="799" rx="28"
     fill="none" stroke="#ffffff14" stroke-width="1"/>
 
-  <!-- Header -->
   <text x="40" y="54" font-size="27" font-weight="800" fill="#e6edf3"
     letter-spacing="-0.4">GitHub stats</text>
   <text x="40" y="78" font-size="14" fill="#8b949e">adarsh0707-kumar</text>
 
-  <!-- Row 1 — Total / Current streak / Longest streak -->
   <rect x="40" y="96" width="300" height="190" rx="20"
     fill="#ffffff08" stroke="#ffffff16"/>
   <text x="68" y="138" font-size="15" font-weight="600"
     fill="#8b949e">Total contributions</text>
   
-      <clipPath id="rT_0"><rect x="106.48" y="146" width="41.76" height="100.8"/></clipPath>
+      <style>
+        @keyframes roll_rT_0 {
+          0%   { transform: translateY(0); }
+          5.714% { transform: translateY(0); }
+          34.286% { transform: translateY(-100.8px); }
+          100% { transform: translateY(-100.8px); }
+        }
+      </style>
+      <clipPath id="rT_0">
+        <rect x="106.48" y="146" width="41.76" height="100.8"/>
+      </clipPath>
       <g clip-path="url(#rT_0)">
-        <g transform="translate(127.36, 50.959999999999994)">
-          <text x="0" y="66.24000000000001" text-anchor="middle"
-        font-size="72" font-weight="800" fill="#ffffff">0</text>
+        <g style="animation: roll_rT_0 7s infinite; animation-delay: 0.00s; transform-box: fill-box;">
+          <g transform="translate(127.36, 151.76)">
+            <text x="0" y="66.24000000000001" text-anchor="middle"
+        font-size="72" font-weight="800" fill="url(#numfill)">0</text>
 <text x="0" y="167.04000000000002" text-anchor="middle"
-        font-size="72" font-weight="800" fill="#ffffff">1</text>
+        font-size="72" font-weight="800" fill="url(#numfill)">1</text>
 <text x="0" y="267.84000000000003" text-anchor="middle"
-        font-size="72" font-weight="800" fill="#ffffff">2</text>
+        font-size="72" font-weight="800" fill="url(#numfill)">2</text>
 <text x="0" y="368.64" text-anchor="middle"
-        font-size="72" font-weight="800" fill="#ffffff">3</text>
+        font-size="72" font-weight="800" fill="url(#numfill)">3</text>
 <text x="0" y="469.44" text-anchor="middle"
-        font-size="72" font-weight="800" fill="#ffffff">4</text>
+        font-size="72" font-weight="800" fill="url(#numfill)">4</text>
 <text x="0" y="570.24" text-anchor="middle"
-        font-size="72" font-weight="800" fill="#ffffff">5</text>
+        font-size="72" font-weight="800" fill="url(#numfill)">5</text>
 <text x="0" y="671.04" text-anchor="middle"
-        font-size="72" font-weight="800" fill="#ffffff">6</text>
+        font-size="72" font-weight="800" fill="url(#numfill)">6</text>
 <text x="0" y="771.84" text-anchor="middle"
-        font-size="72" font-weight="800" fill="#ffffff">7</text>
+        font-size="72" font-weight="800" fill="url(#numfill)">7</text>
 <text x="0" y="872.64" text-anchor="middle"
-        font-size="72" font-weight="800" fill="#ffffff">8</text>
+        font-size="72" font-weight="800" fill="url(#numfill)">8</text>
 <text x="0" y="973.4399999999999" text-anchor="middle"
-        font-size="72" font-weight="800" fill="#ffffff">9</text>
+        font-size="72" font-weight="800" fill="url(#numfill)">9</text>
+          </g>
         </g>
       </g>
 
-      <clipPath id="rT_1"><rect x="148.24" y="146" width="41.76" height="100.8"/></clipPath>
+      <style>
+        @keyframes roll_rT_1 {
+          0%   { transform: translateY(0); }
+          5.714% { transform: translateY(0); }
+          34.286% { transform: translateY(-201.6px); }
+          100% { transform: translateY(-201.6px); }
+        }
+      </style>
+      <clipPath id="rT_1">
+        <rect x="148.24" y="146" width="41.76" height="100.8"/>
+      </clipPath>
       <g clip-path="url(#rT_1)">
-        <g transform="translate(169.12, -49.84)">
-          <text x="0" y="66.24000000000001" text-anchor="middle"
-        font-size="72" font-weight="800" fill="#ffffff">0</text>
+        <g style="animation: roll_rT_1 7s infinite; animation-delay: 0.08s; transform-box: fill-box;">
+          <g transform="translate(169.12, 151.76)">
+            <text x="0" y="66.24000000000001" text-anchor="middle"
+        font-size="72" font-weight="800" fill="url(#numfill)">0</text>
 <text x="0" y="167.04000000000002" text-anchor="middle"
-        font-size="72" font-weight="800" fill="#ffffff">1</text>
+        font-size="72" font-weight="800" fill="url(#numfill)">1</text>
 <text x="0" y="267.84000000000003" text-anchor="middle"
-        font-size="72" font-weight="800" fill="#ffffff">2</text>
+        font-size="72" font-weight="800" fill="url(#numfill)">2</text>
 <text x="0" y="368.64" text-anchor="middle"
-        font-size="72" font-weight="800" fill="#ffffff">3</text>
+        font-size="72" font-weight="800" fill="url(#numfill)">3</text>
 <text x="0" y="469.44" text-anchor="middle"
-        font-size="72" font-weight="800" fill="#ffffff">4</text>
+        font-size="72" font-weight="800" fill="url(#numfill)">4</text>
 <text x="0" y="570.24" text-anchor="middle"
-        font-size="72" font-weight="800" fill="#ffffff">5</text>
+        font-size="72" font-weight="800" fill="url(#numfill)">5</text>
 <text x="0" y="671.04" text-anchor="middle"
-        font-size="72" font-weight="800" fill="#ffffff">6</text>
+        font-size="72" font-weight="800" fill="url(#numfill)">6</text>
 <text x="0" y="771.84" text-anchor="middle"
-        font-size="72" font-weight="800" fill="#ffffff">7</text>
+        font-size="72" font-weight="800" fill="url(#numfill)">7</text>
 <text x="0" y="872.64" text-anchor="middle"
-        font-size="72" font-weight="800" fill="#ffffff">8</text>
+        font-size="72" font-weight="800" fill="url(#numfill)">8</text>
 <text x="0" y="973.4399999999999" text-anchor="middle"
-        font-size="72" font-weight="800" fill="#ffffff">9</text>
+        font-size="72" font-weight="800" fill="url(#numfill)">9</text>
+          </g>
         </g>
       </g>
 
-      <clipPath id="rT_2"><rect x="190" y="146" width="41.76" height="100.8"/></clipPath>
+      <style>
+        @keyframes roll_rT_2 {
+          0%   { transform: translateY(0); }
+          5.714% { transform: translateY(0); }
+          34.286% { transform: translateY(-201.6px); }
+          100% { transform: translateY(-201.6px); }
+        }
+      </style>
+      <clipPath id="rT_2">
+        <rect x="190" y="146" width="41.76" height="100.8"/>
+      </clipPath>
       <g clip-path="url(#rT_2)">
-        <g transform="translate(210.88, -49.84)">
-          <text x="0" y="66.24000000000001" text-anchor="middle"
-        font-size="72" font-weight="800" fill="#ffffff">0</text>
+        <g style="animation: roll_rT_2 7s infinite; animation-delay: 0.16s; transform-box: fill-box;">
+          <g transform="translate(210.88, 151.76)">
+            <text x="0" y="66.24000000000001" text-anchor="middle"
+        font-size="72" font-weight="800" fill="url(#numfill)">0</text>
 <text x="0" y="167.04000000000002" text-anchor="middle"
-        font-size="72" font-weight="800" fill="#ffffff">1</text>
+        font-size="72" font-weight="800" fill="url(#numfill)">1</text>
 <text x="0" y="267.84000000000003" text-anchor="middle"
-        font-size="72" font-weight="800" fill="#ffffff">2</text>
+        font-size="72" font-weight="800" fill="url(#numfill)">2</text>
 <text x="0" y="368.64" text-anchor="middle"
-        font-size="72" font-weight="800" fill="#ffffff">3</text>
+        font-size="72" font-weight="800" fill="url(#numfill)">3</text>
 <text x="0" y="469.44" text-anchor="middle"
-        font-size="72" font-weight="800" fill="#ffffff">4</text>
+        font-size="72" font-weight="800" fill="url(#numfill)">4</text>
 <text x="0" y="570.24" text-anchor="middle"
-        font-size="72" font-weight="800" fill="#ffffff">5</text>
+        font-size="72" font-weight="800" fill="url(#numfill)">5</text>
 <text x="0" y="671.04" text-anchor="middle"
-        font-size="72" font-weight="800" fill="#ffffff">6</text>
+        font-size="72" font-weight="800" fill="url(#numfill)">6</text>
 <text x="0" y="771.84" text-anchor="middle"
-        font-size="72" font-weight="800" fill="#ffffff">7</text>
+        font-size="72" font-weight="800" fill="url(#numfill)">7</text>
 <text x="0" y="872.64" text-anchor="middle"
-        font-size="72" font-weight="800" fill="#ffffff">8</text>
+        font-size="72" font-weight="800" fill="url(#numfill)">8</text>
 <text x="0" y="973.4399999999999" text-anchor="middle"
-        font-size="72" font-weight="800" fill="#ffffff">9</text>
+        font-size="72" font-weight="800" fill="url(#numfill)">9</text>
+          </g>
         </g>
       </g>
 
-      <clipPath id="rT_3"><rect x="231.76" y="146" width="41.76" height="100.8"/></clipPath>
+      <style>
+        @keyframes roll_rT_3 {
+          0%   { transform: translateY(0); }
+          5.714% { transform: translateY(0); }
+          34.286% { transform: translateY(-302.4px); }
+          100% { transform: translateY(-302.4px); }
+        }
+      </style>
+      <clipPath id="rT_3">
+        <rect x="231.76" y="146" width="41.76" height="100.8"/>
+      </clipPath>
       <g clip-path="url(#rT_3)">
-        <g transform="translate(252.64, -49.84)">
-          <text x="0" y="66.24000000000001" text-anchor="middle"
-        font-size="72" font-weight="800" fill="#ffffff">0</text>
+        <g style="animation: roll_rT_3 7s infinite; animation-delay: 0.24s; transform-box: fill-box;">
+          <g transform="translate(252.64, 151.76)">
+            <text x="0" y="66.24000000000001" text-anchor="middle"
+        font-size="72" font-weight="800" fill="url(#numfill)">0</text>
 <text x="0" y="167.04000000000002" text-anchor="middle"
-        font-size="72" font-weight="800" fill="#ffffff">1</text>
+        font-size="72" font-weight="800" fill="url(#numfill)">1</text>
 <text x="0" y="267.84000000000003" text-anchor="middle"
-        font-size="72" font-weight="800" fill="#ffffff">2</text>
+        font-size="72" font-weight="800" fill="url(#numfill)">2</text>
 <text x="0" y="368.64" text-anchor="middle"
-        font-size="72" font-weight="800" fill="#ffffff">3</text>
+        font-size="72" font-weight="800" fill="url(#numfill)">3</text>
 <text x="0" y="469.44" text-anchor="middle"
-        font-size="72" font-weight="800" fill="#ffffff">4</text>
+        font-size="72" font-weight="800" fill="url(#numfill)">4</text>
 <text x="0" y="570.24" text-anchor="middle"
-        font-size="72" font-weight="800" fill="#ffffff">5</text>
+        font-size="72" font-weight="800" fill="url(#numfill)">5</text>
 <text x="0" y="671.04" text-anchor="middle"
-        font-size="72" font-weight="800" fill="#ffffff">6</text>
+        font-size="72" font-weight="800" fill="url(#numfill)">6</text>
 <text x="0" y="771.84" text-anchor="middle"
-        font-size="72" font-weight="800" fill="#ffffff">7</text>
+        font-size="72" font-weight="800" fill="url(#numfill)">7</text>
 <text x="0" y="872.64" text-anchor="middle"
-        font-size="72" font-weight="800" fill="#ffffff">8</text>
+        font-size="72" font-weight="800" fill="url(#numfill)">8</text>
 <text x="0" y="973.4399999999999" text-anchor="middle"
-        font-size="72" font-weight="800" fill="#ffffff">9</text>
+        font-size="72" font-weight="800" fill="url(#numfill)">9</text>
+          </g>
         </g>
       </g>
   <text x="68" y="260" font-size="13" font-weight="600"
@@ -167,61 +218,95 @@
   <rect x="360" y="96" width="480" height="190" rx="20"
     fill="#ffffff08" stroke="url(#tileEdge)" stroke-width="1.4"/>
   <circle cx="472" cy="191" r="62" fill="none" stroke="#ffffff14" stroke-width="10"/>
-  <circle cx="472" cy="191" r="62" fill="none" stroke="url(#ringGrad)"
-    stroke-width="10" stroke-linecap="round"
-    stroke-dasharray="389.56"
-    stroke-dashoffset="0"
-    transform="rotate(-90 472 191)" filter="url(#glow)"/>
   
-      <clipPath id="rC_0"><rect x="445.32" y="161" width="26.68" height="64.4"/></clipPath>
+    <style>
+      @keyframes ring_current {
+        0%   { stroke-dashoffset: 389.56; }
+        5.714% { stroke-dashoffset: 389.56; }
+        34.286% { stroke-dashoffset: 0.00; }
+        100% { stroke-dashoffset: 0.00; }
+      }
+    </style>
+    <circle cx="472" cy="191" r="62" fill="none" stroke="url(#ringGrad)"
+      stroke-width="10" stroke-linecap="round"
+      stroke-dasharray="389.56"
+      stroke-dashoffset="0.00"
+      transform="rotate(-90 472 191)" filter="url(#glow)"
+      style="animation: ring_current 7s infinite"/>
+  
+      <style>
+        @keyframes roll_rC_0 {
+          0%   { transform: translateY(0); }
+          5.714% { transform: translateY(0); }
+          34.286% { transform: translateY(-257.6px); }
+          100% { transform: translateY(-257.6px); }
+        }
+      </style>
+      <clipPath id="rC_0">
+        <rect x="445.32" y="161" width="26.68" height="64.4"/>
+      </clipPath>
       <g clip-path="url(#rC_0)">
-        <g transform="translate(458.65999999999997, -92.92000000000002)">
-          <text x="0" y="42.32" text-anchor="middle"
-        font-size="46" font-weight="800" fill="#ffffff">0</text>
+        <g style="animation: roll_rC_0 7s infinite; animation-delay: 0.00s; transform-box: fill-box;">
+          <g transform="translate(458.65999999999997, 164.68)">
+            <text x="0" y="42.32" text-anchor="middle"
+        font-size="46" font-weight="800" fill="url(#numfill)">0</text>
 <text x="0" y="106.72" text-anchor="middle"
-        font-size="46" font-weight="800" fill="#ffffff">1</text>
+        font-size="46" font-weight="800" fill="url(#numfill)">1</text>
 <text x="0" y="171.12" text-anchor="middle"
-        font-size="46" font-weight="800" fill="#ffffff">2</text>
+        font-size="46" font-weight="800" fill="url(#numfill)">2</text>
 <text x="0" y="235.52" text-anchor="middle"
-        font-size="46" font-weight="800" fill="#ffffff">3</text>
+        font-size="46" font-weight="800" fill="url(#numfill)">3</text>
 <text x="0" y="299.92" text-anchor="middle"
-        font-size="46" font-weight="800" fill="#ffffff">4</text>
+        font-size="46" font-weight="800" fill="url(#numfill)">4</text>
 <text x="0" y="364.32" text-anchor="middle"
-        font-size="46" font-weight="800" fill="#ffffff">5</text>
+        font-size="46" font-weight="800" fill="url(#numfill)">5</text>
 <text x="0" y="428.72" text-anchor="middle"
-        font-size="46" font-weight="800" fill="#ffffff">6</text>
+        font-size="46" font-weight="800" fill="url(#numfill)">6</text>
 <text x="0" y="493.12000000000006" text-anchor="middle"
-        font-size="46" font-weight="800" fill="#ffffff">7</text>
+        font-size="46" font-weight="800" fill="url(#numfill)">7</text>
 <text x="0" y="557.5200000000001" text-anchor="middle"
-        font-size="46" font-weight="800" fill="#ffffff">8</text>
+        font-size="46" font-weight="800" fill="url(#numfill)">8</text>
 <text x="0" y="621.9200000000001" text-anchor="middle"
-        font-size="46" font-weight="800" fill="#ffffff">9</text>
+        font-size="46" font-weight="800" fill="url(#numfill)">9</text>
+          </g>
         </g>
       </g>
 
-      <clipPath id="rC_1"><rect x="472" y="161" width="26.68" height="64.4"/></clipPath>
+      <style>
+        @keyframes roll_rC_1 {
+          0%   { transform: translateY(0); }
+          5.714% { transform: translateY(0); }
+          34.286% { transform: translateY(-257.6px); }
+          100% { transform: translateY(-257.6px); }
+        }
+      </style>
+      <clipPath id="rC_1">
+        <rect x="472" y="161" width="26.68" height="64.4"/>
+      </clipPath>
       <g clip-path="url(#rC_1)">
-        <g transform="translate(485.34, -92.92000000000002)">
-          <text x="0" y="42.32" text-anchor="middle"
-        font-size="46" font-weight="800" fill="#ffffff">0</text>
+        <g style="animation: roll_rC_1 7s infinite; animation-delay: 0.08s; transform-box: fill-box;">
+          <g transform="translate(485.34, 164.68)">
+            <text x="0" y="42.32" text-anchor="middle"
+        font-size="46" font-weight="800" fill="url(#numfill)">0</text>
 <text x="0" y="106.72" text-anchor="middle"
-        font-size="46" font-weight="800" fill="#ffffff">1</text>
+        font-size="46" font-weight="800" fill="url(#numfill)">1</text>
 <text x="0" y="171.12" text-anchor="middle"
-        font-size="46" font-weight="800" fill="#ffffff">2</text>
+        font-size="46" font-weight="800" fill="url(#numfill)">2</text>
 <text x="0" y="235.52" text-anchor="middle"
-        font-size="46" font-weight="800" fill="#ffffff">3</text>
+        font-size="46" font-weight="800" fill="url(#numfill)">3</text>
 <text x="0" y="299.92" text-anchor="middle"
-        font-size="46" font-weight="800" fill="#ffffff">4</text>
+        font-size="46" font-weight="800" fill="url(#numfill)">4</text>
 <text x="0" y="364.32" text-anchor="middle"
-        font-size="46" font-weight="800" fill="#ffffff">5</text>
+        font-size="46" font-weight="800" fill="url(#numfill)">5</text>
 <text x="0" y="428.72" text-anchor="middle"
-        font-size="46" font-weight="800" fill="#ffffff">6</text>
+        font-size="46" font-weight="800" fill="url(#numfill)">6</text>
 <text x="0" y="493.12000000000006" text-anchor="middle"
-        font-size="46" font-weight="800" fill="#ffffff">7</text>
+        font-size="46" font-weight="800" fill="url(#numfill)">7</text>
 <text x="0" y="557.5200000000001" text-anchor="middle"
-        font-size="46" font-weight="800" fill="#ffffff">8</text>
+        font-size="46" font-weight="800" fill="url(#numfill)">8</text>
 <text x="0" y="621.9200000000001" text-anchor="middle"
-        font-size="46" font-weight="800" fill="#ffffff">9</text>
+        font-size="46" font-weight="800" fill="url(#numfill)">9</text>
+          </g>
         </g>
       </g>
   <text x="472" y="229" text-anchor="middle" font-size="12"
@@ -235,67 +320,105 @@
   <text x="888" y="138" font-size="15" font-weight="600"
     fill="#8b949e">Longest streak</text>
   
-      <clipPath id="rL_0"><rect x="928.24" y="146" width="41.76" height="100.8"/></clipPath>
+      <style>
+        @keyframes roll_rL_0 {
+          0%   { transform: translateY(0); }
+          5.714% { transform: translateY(0); }
+          34.286% { transform: translateY(-403.2px); }
+          100% { transform: translateY(-403.2px); }
+        }
+      </style>
+      <clipPath id="rL_0">
+        <rect x="928.24" y="146" width="41.76" height="100.8"/>
+      </clipPath>
       <g clip-path="url(#rL_0)">
-        <g transform="translate(949.12, -251.44)">
-          <text x="0" y="66.24000000000001" text-anchor="middle"
-        font-size="72" font-weight="800" fill="#ffffff">0</text>
+        <g style="animation: roll_rL_0 7s infinite; animation-delay: 0.00s; transform-box: fill-box;">
+          <g transform="translate(949.12, 151.76)">
+            <text x="0" y="66.24000000000001" text-anchor="middle"
+        font-size="72" font-weight="800" fill="url(#numfill)">0</text>
 <text x="0" y="167.04000000000002" text-anchor="middle"
-        font-size="72" font-weight="800" fill="#ffffff">1</text>
+        font-size="72" font-weight="800" fill="url(#numfill)">1</text>
 <text x="0" y="267.84000000000003" text-anchor="middle"
-        font-size="72" font-weight="800" fill="#ffffff">2</text>
+        font-size="72" font-weight="800" fill="url(#numfill)">2</text>
 <text x="0" y="368.64" text-anchor="middle"
-        font-size="72" font-weight="800" fill="#ffffff">3</text>
+        font-size="72" font-weight="800" fill="url(#numfill)">3</text>
 <text x="0" y="469.44" text-anchor="middle"
-        font-size="72" font-weight="800" fill="#ffffff">4</text>
+        font-size="72" font-weight="800" fill="url(#numfill)">4</text>
 <text x="0" y="570.24" text-anchor="middle"
-        font-size="72" font-weight="800" fill="#ffffff">5</text>
+        font-size="72" font-weight="800" fill="url(#numfill)">5</text>
 <text x="0" y="671.04" text-anchor="middle"
-        font-size="72" font-weight="800" fill="#ffffff">6</text>
+        font-size="72" font-weight="800" fill="url(#numfill)">6</text>
 <text x="0" y="771.84" text-anchor="middle"
-        font-size="72" font-weight="800" fill="#ffffff">7</text>
+        font-size="72" font-weight="800" fill="url(#numfill)">7</text>
 <text x="0" y="872.64" text-anchor="middle"
-        font-size="72" font-weight="800" fill="#ffffff">8</text>
+        font-size="72" font-weight="800" fill="url(#numfill)">8</text>
 <text x="0" y="973.4399999999999" text-anchor="middle"
-        font-size="72" font-weight="800" fill="#ffffff">9</text>
+        font-size="72" font-weight="800" fill="url(#numfill)">9</text>
+          </g>
         </g>
       </g>
 
-      <clipPath id="rL_1"><rect x="970" y="146" width="41.76" height="100.8"/></clipPath>
+      <style>
+        @keyframes roll_rL_1 {
+          0%   { transform: translateY(0); }
+          5.714% { transform: translateY(0); }
+          34.286% { transform: translateY(-403.2px); }
+          100% { transform: translateY(-403.2px); }
+        }
+      </style>
+      <clipPath id="rL_1">
+        <rect x="970" y="146" width="41.76" height="100.8"/>
+      </clipPath>
       <g clip-path="url(#rL_1)">
-        <g transform="translate(990.88, -251.44)">
-          <text x="0" y="66.24000000000001" text-anchor="middle"
-        font-size="72" font-weight="800" fill="#ffffff">0</text>
+        <g style="animation: roll_rL_1 7s infinite; animation-delay: 0.08s; transform-box: fill-box;">
+          <g transform="translate(990.88, 151.76)">
+            <text x="0" y="66.24000000000001" text-anchor="middle"
+        font-size="72" font-weight="800" fill="url(#numfill)">0</text>
 <text x="0" y="167.04000000000002" text-anchor="middle"
-        font-size="72" font-weight="800" fill="#ffffff">1</text>
+        font-size="72" font-weight="800" fill="url(#numfill)">1</text>
 <text x="0" y="267.84000000000003" text-anchor="middle"
-        font-size="72" font-weight="800" fill="#ffffff">2</text>
+        font-size="72" font-weight="800" fill="url(#numfill)">2</text>
 <text x="0" y="368.64" text-anchor="middle"
-        font-size="72" font-weight="800" fill="#ffffff">3</text>
+        font-size="72" font-weight="800" fill="url(#numfill)">3</text>
 <text x="0" y="469.44" text-anchor="middle"
-        font-size="72" font-weight="800" fill="#ffffff">4</text>
+        font-size="72" font-weight="800" fill="url(#numfill)">4</text>
 <text x="0" y="570.24" text-anchor="middle"
-        font-size="72" font-weight="800" fill="#ffffff">5</text>
+        font-size="72" font-weight="800" fill="url(#numfill)">5</text>
 <text x="0" y="671.04" text-anchor="middle"
-        font-size="72" font-weight="800" fill="#ffffff">6</text>
+        font-size="72" font-weight="800" fill="url(#numfill)">6</text>
 <text x="0" y="771.84" text-anchor="middle"
-        font-size="72" font-weight="800" fill="#ffffff">7</text>
+        font-size="72" font-weight="800" fill="url(#numfill)">7</text>
 <text x="0" y="872.64" text-anchor="middle"
-        font-size="72" font-weight="800" fill="#ffffff">8</text>
+        font-size="72" font-weight="800" fill="url(#numfill)">8</text>
 <text x="0" y="973.4399999999999" text-anchor="middle"
-        font-size="72" font-weight="800" fill="#ffffff">9</text>
+        font-size="72" font-weight="800" fill="url(#numfill)">9</text>
+          </g>
         </g>
       </g>
   <text x="1132" y="218" text-anchor="end" font-size="20"
     font-weight="600" fill="#8b949e">days</text>
   <text x="888" y="260" font-size="13" font-weight="600" fill="#39d353">All-time best</text>
 
-  <!-- Row 2 — Commits by hour -->
   <rect x="40" y="306" width="1120" height="200" rx="20"
     fill="#ffffff08" stroke="#ffffff16"/>
   <text x="68" y="344" font-size="17" font-weight="700" fill="#e6edf3">Commits by hour</text>
   <text x="1132" y="344" text-anchor="end" font-size="13"
     fill="#8b949e">UTC+5:30</text>
+  
+    <style>
+      @keyframes peakFade {
+        0%   { opacity: 0; }
+        5.714% { opacity: 0; }
+        34.286% { opacity: 1; }
+        100% { opacity: 1; }
+      }
+    </style>
+    <rect x="768.6666666666666" y="316" width="60.16666666666663"
+      height="160" rx="8" fill="#5EEAD4" fill-opacity="0.08"
+      style="animation: peakFade 7s infinite"/>
+    <text x="798.8" y="312"
+      text-anchor="middle" font-size="11" font-weight="600" fill="#5EEAD4"
+      style="animation: peakFade 7s infinite">Peak hours</text>
   
       <line x1="70" y1="476" x2="1130" y2="476"
         stroke="#ffffff14" stroke-width="1"/>
@@ -312,78 +435,318 @@
       <line x1="70" y1="316" x2="1130" y2="316"
         stroke="#ffffff14" stroke-width="1"/>
       <text x="62" y="320" text-anchor="end"
-        font-size="11" fill="#8b949e">30</text><rect x="78.4" y="476.0"
-      width="27.4" height="1.0" rx="4"
-      fill="#39d353" opacity="0.8"/>
-<rect x="122.6" y="453.8"
-      width="27.4" height="22.2" rx="4"
-      fill="#39d353" opacity="0.8"/>
-<rect x="166.7" y="467.1"
-      width="27.4" height="8.9" rx="4"
-      fill="#39d353" opacity="0.8"/>
-<rect x="210.9" y="436.0"
-      width="27.4" height="40.0" rx="4"
-      fill="#39d353" opacity="0.8"/>
-<rect x="255.1" y="471.6"
-      width="27.4" height="4.4" rx="4"
-      fill="#39d353" opacity="0.8"/>
-<rect x="299.2" y="471.6"
-      width="27.4" height="4.4" rx="4"
-      fill="#39d353" opacity="0.8"/>
-<rect x="343.4" y="471.6"
-      width="27.4" height="4.4" rx="4"
-      fill="#39d353" opacity="0.8"/>
-<rect x="387.6" y="467.1"
-      width="27.4" height="8.9" rx="4"
-      fill="#39d353" opacity="0.8"/>
-<rect x="431.7" y="471.6"
-      width="27.4" height="4.4" rx="4"
-      fill="#39d353" opacity="0.8"/>
-<rect x="475.9" y="431.6"
-      width="27.4" height="44.4" rx="4"
-      fill="#39d353" opacity="0.8"/>
-<rect x="520.1" y="453.8"
-      width="27.4" height="22.2" rx="4"
-      fill="#39d353" opacity="0.8"/>
-<rect x="564.2" y="462.7"
-      width="27.4" height="13.3" rx="4"
-      fill="#39d353" opacity="0.8"/>
-<rect x="608.4" y="476.0"
-      width="27.4" height="1.0" rx="4"
-      fill="#39d353" opacity="0.8"/>
-<rect x="652.6" y="440.4"
-      width="27.4" height="35.6" rx="4"
-      fill="#39d353" opacity="0.8"/>
-<rect x="696.7" y="467.1"
-      width="27.4" height="8.9" rx="4"
-      fill="#39d353" opacity="0.8"/>
-<rect x="740.9" y="440.4"
-      width="27.4" height="35.6" rx="4"
-      fill="#39d353" opacity="0.8"/>
-<rect x="785.1" y="316.0"
-      width="27.4" height="160.0" rx="4"
-      fill="#7ee787" opacity="1"/>
-<rect x="829.2" y="467.1"
-      width="27.4" height="8.9" rx="4"
-      fill="#39d353" opacity="0.8"/>
-<rect x="873.4" y="476.0"
-      width="27.4" height="1.0" rx="4"
-      fill="#39d353" opacity="0.8"/>
-<rect x="917.6" y="476.0"
-      width="27.4" height="1.0" rx="4"
-      fill="#39d353" opacity="0.8"/>
-<rect x="961.7" y="476.0"
-      width="27.4" height="1.0" rx="4"
-      fill="#39d353" opacity="0.8"/>
-<rect x="1005.9" y="476.0"
-      width="27.4" height="1.0" rx="4"
-      fill="#39d353" opacity="0.8"/>
-<rect x="1050.1" y="476.0"
-      width="27.4" height="1.0" rx="4"
-      fill="#39d353" opacity="0.8"/>
-<rect x="1094.2" y="476.0"
-      width="27.4" height="1.0" rx="4"
-      fill="#39d353" opacity="0.8"/><text x="92.1" y="496"
+        font-size="11" fill="#8b949e">30</text>
+      <style>
+        @keyframes bar_0 {
+          0%   { transform: scaleY(0); }
+          5.714% { transform: scaleY(0); }
+          34.286% { transform: scaleY(1); }
+          100% { transform: scaleY(1); }
+        }
+      </style>
+      <rect x="78.4" y="474.5"
+        width="27.4" height="1.5" rx="4"
+        fill="#39d353" opacity="0.8"
+        style="animation: bar_0 7s infinite; animation-delay: 0.00s; transform-origin: 92.1px 476.0px; transform-box: view-box;"/>
+
+      <style>
+        @keyframes bar_1 {
+          0%   { transform: scaleY(0); }
+          5.714% { transform: scaleY(0); }
+          34.286% { transform: scaleY(1); }
+          100% { transform: scaleY(1); }
+        }
+      </style>
+      <rect x="122.6" y="453.8"
+        width="27.4" height="22.2" rx="4"
+        fill="#39d353" opacity="0.8"
+        style="animation: bar_1 7s infinite; animation-delay: 0.03s; transform-origin: 136.3px 476.0px; transform-box: view-box;"/>
+
+      <style>
+        @keyframes bar_2 {
+          0%   { transform: scaleY(0); }
+          5.714% { transform: scaleY(0); }
+          34.286% { transform: scaleY(1); }
+          100% { transform: scaleY(1); }
+        }
+      </style>
+      <rect x="166.7" y="467.1"
+        width="27.4" height="8.9" rx="4"
+        fill="#39d353" opacity="0.8"
+        style="animation: bar_2 7s infinite; animation-delay: 0.06s; transform-origin: 180.4px 476.0px; transform-box: view-box;"/>
+
+      <style>
+        @keyframes bar_3 {
+          0%   { transform: scaleY(0); }
+          5.714% { transform: scaleY(0); }
+          34.286% { transform: scaleY(1); }
+          100% { transform: scaleY(1); }
+        }
+      </style>
+      <rect x="210.9" y="436.0"
+        width="27.4" height="40.0" rx="4"
+        fill="#39d353" opacity="0.8"
+        style="animation: bar_3 7s infinite; animation-delay: 0.09s; transform-origin: 224.6px 476.0px; transform-box: view-box;"/>
+
+      <style>
+        @keyframes bar_4 {
+          0%   { transform: scaleY(0); }
+          5.714% { transform: scaleY(0); }
+          34.286% { transform: scaleY(1); }
+          100% { transform: scaleY(1); }
+        }
+      </style>
+      <rect x="255.1" y="471.6"
+        width="27.4" height="4.4" rx="4"
+        fill="#39d353" opacity="0.8"
+        style="animation: bar_4 7s infinite; animation-delay: 0.12s; transform-origin: 268.8px 476.0px; transform-box: view-box;"/>
+
+      <style>
+        @keyframes bar_5 {
+          0%   { transform: scaleY(0); }
+          5.714% { transform: scaleY(0); }
+          34.286% { transform: scaleY(1); }
+          100% { transform: scaleY(1); }
+        }
+      </style>
+      <rect x="299.2" y="471.6"
+        width="27.4" height="4.4" rx="4"
+        fill="#39d353" opacity="0.8"
+        style="animation: bar_5 7s infinite; animation-delay: 0.15s; transform-origin: 312.9px 476.0px; transform-box: view-box;"/>
+
+      <style>
+        @keyframes bar_6 {
+          0%   { transform: scaleY(0); }
+          5.714% { transform: scaleY(0); }
+          34.286% { transform: scaleY(1); }
+          100% { transform: scaleY(1); }
+        }
+      </style>
+      <rect x="343.4" y="471.6"
+        width="27.4" height="4.4" rx="4"
+        fill="#39d353" opacity="0.8"
+        style="animation: bar_6 7s infinite; animation-delay: 0.18s; transform-origin: 357.1px 476.0px; transform-box: view-box;"/>
+
+      <style>
+        @keyframes bar_7 {
+          0%   { transform: scaleY(0); }
+          5.714% { transform: scaleY(0); }
+          34.286% { transform: scaleY(1); }
+          100% { transform: scaleY(1); }
+        }
+      </style>
+      <rect x="387.6" y="467.1"
+        width="27.4" height="8.9" rx="4"
+        fill="#39d353" opacity="0.8"
+        style="animation: bar_7 7s infinite; animation-delay: 0.21s; transform-origin: 401.2px 476.0px; transform-box: view-box;"/>
+
+      <style>
+        @keyframes bar_8 {
+          0%   { transform: scaleY(0); }
+          5.714% { transform: scaleY(0); }
+          34.286% { transform: scaleY(1); }
+          100% { transform: scaleY(1); }
+        }
+      </style>
+      <rect x="431.7" y="471.6"
+        width="27.4" height="4.4" rx="4"
+        fill="#39d353" opacity="0.8"
+        style="animation: bar_8 7s infinite; animation-delay: 0.24s; transform-origin: 445.4px 476.0px; transform-box: view-box;"/>
+
+      <style>
+        @keyframes bar_9 {
+          0%   { transform: scaleY(0); }
+          5.714% { transform: scaleY(0); }
+          34.286% { transform: scaleY(1); }
+          100% { transform: scaleY(1); }
+        }
+      </style>
+      <rect x="475.9" y="431.6"
+        width="27.4" height="44.4" rx="4"
+        fill="#39d353" opacity="0.8"
+        style="animation: bar_9 7s infinite; animation-delay: 0.27s; transform-origin: 489.6px 476.0px; transform-box: view-box;"/>
+
+      <style>
+        @keyframes bar_10 {
+          0%   { transform: scaleY(0); }
+          5.714% { transform: scaleY(0); }
+          34.286% { transform: scaleY(1); }
+          100% { transform: scaleY(1); }
+        }
+      </style>
+      <rect x="520.1" y="453.8"
+        width="27.4" height="22.2" rx="4"
+        fill="#39d353" opacity="0.8"
+        style="animation: bar_10 7s infinite; animation-delay: 0.30s; transform-origin: 533.8px 476.0px; transform-box: view-box;"/>
+
+      <style>
+        @keyframes bar_11 {
+          0%   { transform: scaleY(0); }
+          5.714% { transform: scaleY(0); }
+          34.286% { transform: scaleY(1); }
+          100% { transform: scaleY(1); }
+        }
+      </style>
+      <rect x="564.2" y="462.7"
+        width="27.4" height="13.3" rx="4"
+        fill="#39d353" opacity="0.8"
+        style="animation: bar_11 7s infinite; animation-delay: 0.33s; transform-origin: 577.9px 476.0px; transform-box: view-box;"/>
+
+      <style>
+        @keyframes bar_12 {
+          0%   { transform: scaleY(0); }
+          5.714% { transform: scaleY(0); }
+          34.286% { transform: scaleY(1); }
+          100% { transform: scaleY(1); }
+        }
+      </style>
+      <rect x="608.4" y="474.5"
+        width="27.4" height="1.5" rx="4"
+        fill="#39d353" opacity="0.8"
+        style="animation: bar_12 7s infinite; animation-delay: 0.36s; transform-origin: 622.1px 476.0px; transform-box: view-box;"/>
+
+      <style>
+        @keyframes bar_13 {
+          0%   { transform: scaleY(0); }
+          5.714% { transform: scaleY(0); }
+          34.286% { transform: scaleY(1); }
+          100% { transform: scaleY(1); }
+        }
+      </style>
+      <rect x="652.6" y="440.4"
+        width="27.4" height="35.6" rx="4"
+        fill="#39d353" opacity="0.8"
+        style="animation: bar_13 7s infinite; animation-delay: 0.39s; transform-origin: 666.3px 476.0px; transform-box: view-box;"/>
+
+      <style>
+        @keyframes bar_14 {
+          0%   { transform: scaleY(0); }
+          5.714% { transform: scaleY(0); }
+          34.286% { transform: scaleY(1); }
+          100% { transform: scaleY(1); }
+        }
+      </style>
+      <rect x="696.7" y="467.1"
+        width="27.4" height="8.9" rx="4"
+        fill="#39d353" opacity="0.8"
+        style="animation: bar_14 7s infinite; animation-delay: 0.42s; transform-origin: 710.4px 476.0px; transform-box: view-box;"/>
+
+      <style>
+        @keyframes bar_15 {
+          0%   { transform: scaleY(0); }
+          5.714% { transform: scaleY(0); }
+          34.286% { transform: scaleY(1); }
+          100% { transform: scaleY(1); }
+        }
+      </style>
+      <rect x="740.9" y="440.4"
+        width="27.4" height="35.6" rx="4"
+        fill="#39d353" opacity="0.8"
+        style="animation: bar_15 7s infinite; animation-delay: 0.45s; transform-origin: 754.6px 476.0px; transform-box: view-box;"/>
+
+      <style>
+        @keyframes bar_16 {
+          0%   { transform: scaleY(0); }
+          5.714% { transform: scaleY(0); }
+          34.286% { transform: scaleY(1); }
+          100% { transform: scaleY(1); }
+        }
+      </style>
+      <rect x="785.1" y="316.0"
+        width="27.4" height="160.0" rx="4"
+        fill="#7ee787" opacity="1"
+        style="animation: bar_16 7s infinite; animation-delay: 0.48s; transform-origin: 798.8px 476.0px; transform-box: view-box;"/>
+
+      <style>
+        @keyframes bar_17 {
+          0%   { transform: scaleY(0); }
+          5.714% { transform: scaleY(0); }
+          34.286% { transform: scaleY(1); }
+          100% { transform: scaleY(1); }
+        }
+      </style>
+      <rect x="829.2" y="467.1"
+        width="27.4" height="8.9" rx="4"
+        fill="#39d353" opacity="0.8"
+        style="animation: bar_17 7s infinite; animation-delay: 0.51s; transform-origin: 842.9px 476.0px; transform-box: view-box;"/>
+
+      <style>
+        @keyframes bar_18 {
+          0%   { transform: scaleY(0); }
+          5.714% { transform: scaleY(0); }
+          34.286% { transform: scaleY(1); }
+          100% { transform: scaleY(1); }
+        }
+      </style>
+      <rect x="873.4" y="474.5"
+        width="27.4" height="1.5" rx="4"
+        fill="#39d353" opacity="0.8"
+        style="animation: bar_18 7s infinite; animation-delay: 0.54s; transform-origin: 887.1px 476.0px; transform-box: view-box;"/>
+
+      <style>
+        @keyframes bar_19 {
+          0%   { transform: scaleY(0); }
+          5.714% { transform: scaleY(0); }
+          34.286% { transform: scaleY(1); }
+          100% { transform: scaleY(1); }
+        }
+      </style>
+      <rect x="917.6" y="474.5"
+        width="27.4" height="1.5" rx="4"
+        fill="#39d353" opacity="0.8"
+        style="animation: bar_19 7s infinite; animation-delay: 0.57s; transform-origin: 931.3px 476.0px; transform-box: view-box;"/>
+
+      <style>
+        @keyframes bar_20 {
+          0%   { transform: scaleY(0); }
+          5.714% { transform: scaleY(0); }
+          34.286% { transform: scaleY(1); }
+          100% { transform: scaleY(1); }
+        }
+      </style>
+      <rect x="961.7" y="474.5"
+        width="27.4" height="1.5" rx="4"
+        fill="#39d353" opacity="0.8"
+        style="animation: bar_20 7s infinite; animation-delay: 0.60s; transform-origin: 975.4px 476.0px; transform-box: view-box;"/>
+
+      <style>
+        @keyframes bar_21 {
+          0%   { transform: scaleY(0); }
+          5.714% { transform: scaleY(0); }
+          34.286% { transform: scaleY(1); }
+          100% { transform: scaleY(1); }
+        }
+      </style>
+      <rect x="1005.9" y="474.5"
+        width="27.4" height="1.5" rx="4"
+        fill="#39d353" opacity="0.8"
+        style="animation: bar_21 7s infinite; animation-delay: 0.63s; transform-origin: 1019.6px 476.0px; transform-box: view-box;"/>
+
+      <style>
+        @keyframes bar_22 {
+          0%   { transform: scaleY(0); }
+          5.714% { transform: scaleY(0); }
+          34.286% { transform: scaleY(1); }
+          100% { transform: scaleY(1); }
+        }
+      </style>
+      <rect x="1050.1" y="474.5"
+        width="27.4" height="1.5" rx="4"
+        fill="#39d353" opacity="0.8"
+        style="animation: bar_22 7s infinite; animation-delay: 0.66s; transform-origin: 1063.7px 476.0px; transform-box: view-box;"/>
+
+      <style>
+        @keyframes bar_23 {
+          0%   { transform: scaleY(0); }
+          5.714% { transform: scaleY(0); }
+          34.286% { transform: scaleY(1); }
+          100% { transform: scaleY(1); }
+        }
+      </style>
+      <rect x="1094.2" y="474.5"
+        width="27.4" height="1.5" rx="4"
+        fill="#39d353" opacity="0.8"
+        style="animation: bar_23 7s infinite; animation-delay: 0.69s; transform-origin: 1107.9px 476.0px; transform-box: view-box;"/><text x="92.1" y="496"
       text-anchor="middle" font-size="11" fill="#8b949e">00</text>
 <text x="224.6" y="496"
       text-anchor="middle" font-size="11" fill="#8b949e">03</text>
@@ -402,7 +765,6 @@
 <text x="1107.9" y="496"
       text-anchor="middle" font-size="11" fill="#8b949e">23</text>
 
-  <!-- Row 3 — Two donuts -->
   <rect x="40" y="526" width="550" height="250" rx="20"
     fill="#ffffff08" stroke="#ffffff16"/>
   <text x="68" y="566" font-size="17" font-weight="700" fill="#e6edf3">Top languages by repository</text>
@@ -433,31 +795,81 @@
       font-weight="600" fill="#8b949e">6%</text>
   <circle cx="450" cy="668" r="68" fill="none"
     stroke="#ffffff14" stroke-width="26"/>
-  <circle cx="450" cy="668" r="68" fill="none"
-      stroke="#39d353" stroke-width="26"
-      stroke-dasharray="187.99 239.26"
-      stroke-dashoffset="0.00"
-      transform="rotate(-90 450 668)"/>
-<circle cx="450" cy="668" r="68" fill="none"
-      stroke="#f778ba" stroke-width="26"
-      stroke-dasharray="81.18 346.08"
-      stroke-dashoffset="-187.99"
-      transform="rotate(-90 450 668)"/>
-<circle cx="450" cy="668" r="68" fill="none"
-      stroke="#f0883e" stroke-width="26"
-      stroke-dasharray="55.54 371.71"
-      stroke-dashoffset="-269.17"
-      transform="rotate(-90 450 668)"/>
-<circle cx="450" cy="668" r="68" fill="none"
-      stroke="#58a6ff" stroke-width="26"
-      stroke-dasharray="34.18 393.08"
-      stroke-dashoffset="-324.72"
-      transform="rotate(-90 450 668)"/>
-<circle cx="450" cy="668" r="68" fill="none"
-      stroke="#a371f7" stroke-width="26"
-      stroke-dasharray="25.64 401.62"
-      stroke-dashoffset="-358.90"
-      transform="rotate(-90 450 668)"/>
+  
+      <style>
+        @keyframes donut_repo_0 {
+          0%   { stroke-dasharray: 0 427.26; }
+          5.714% { stroke-dasharray: 0 427.26; }
+          34.286% { stroke-dasharray: 187.99 239.26; }
+          100% { stroke-dasharray: 187.99 239.26; }
+        }
+      </style>
+      <circle cx="450" cy="668" r="68" fill="none"
+        stroke="#39d353" stroke-width="26"
+        stroke-dasharray="187.99 239.26"
+        stroke-dashoffset="0.00"
+        transform="rotate(-90 450 668)"
+        style="animation: donut_repo_0 7s infinite; animation-delay: 0.00s"/>
+
+      <style>
+        @keyframes donut_repo_1 {
+          0%   { stroke-dasharray: 0 427.26; }
+          5.714% { stroke-dasharray: 0 427.26; }
+          34.286% { stroke-dasharray: 81.18 346.08; }
+          100% { stroke-dasharray: 81.18 346.08; }
+        }
+      </style>
+      <circle cx="450" cy="668" r="68" fill="none"
+        stroke="#f778ba" stroke-width="26"
+        stroke-dasharray="81.18 346.08"
+        stroke-dashoffset="-187.99"
+        transform="rotate(-90 450 668)"
+        style="animation: donut_repo_1 7s infinite; animation-delay: 0.15s"/>
+
+      <style>
+        @keyframes donut_repo_2 {
+          0%   { stroke-dasharray: 0 427.26; }
+          5.714% { stroke-dasharray: 0 427.26; }
+          34.286% { stroke-dasharray: 55.54 371.71; }
+          100% { stroke-dasharray: 55.54 371.71; }
+        }
+      </style>
+      <circle cx="450" cy="668" r="68" fill="none"
+        stroke="#f0883e" stroke-width="26"
+        stroke-dasharray="55.54 371.71"
+        stroke-dashoffset="-269.17"
+        transform="rotate(-90 450 668)"
+        style="animation: donut_repo_2 7s infinite; animation-delay: 0.30s"/>
+
+      <style>
+        @keyframes donut_repo_3 {
+          0%   { stroke-dasharray: 0 427.26; }
+          5.714% { stroke-dasharray: 0 427.26; }
+          34.286% { stroke-dasharray: 34.18 393.08; }
+          100% { stroke-dasharray: 34.18 393.08; }
+        }
+      </style>
+      <circle cx="450" cy="668" r="68" fill="none"
+        stroke="#58a6ff" stroke-width="26"
+        stroke-dasharray="34.18 393.08"
+        stroke-dashoffset="-324.72"
+        transform="rotate(-90 450 668)"
+        style="animation: donut_repo_3 7s infinite; animation-delay: 0.45s"/>
+
+      <style>
+        @keyframes donut_repo_4 {
+          0%   { stroke-dasharray: 0 427.26; }
+          5.714% { stroke-dasharray: 0 427.26; }
+          34.286% { stroke-dasharray: 25.64 401.62; }
+          100% { stroke-dasharray: 25.64 401.62; }
+        }
+      </style>
+      <circle cx="450" cy="668" r="68" fill="none"
+        stroke="#a371f7" stroke-width="26"
+        stroke-dasharray="25.64 401.62"
+        stroke-dashoffset="-358.90"
+        transform="rotate(-90 450 668)"
+        style="animation: donut_repo_4 7s infinite; animation-delay: 0.60s"/>
   <text x="450" y="672" text-anchor="middle"
     font-size="24" font-weight="800" fill="url(#numfill)">44%</text>
   <text x="450" y="690" text-anchor="middle"
@@ -493,31 +905,81 @@
       font-weight="600" fill="#8b949e">1%</text>
   <circle cx="1020" cy="668" r="68" fill="none"
     stroke="#ffffff14" stroke-width="26"/>
-  <circle cx="1020" cy="668" r="68" fill="none"
-      stroke="#39d353" stroke-width="26"
-      stroke-dasharray="222.17 205.08"
-      stroke-dashoffset="0.00"
-      transform="rotate(-90 1020 668)"/>
-<circle cx="1020" cy="668" r="68" fill="none"
-      stroke="#f778ba" stroke-width="26"
-      stroke-dasharray="72.63 354.62"
-      stroke-dashoffset="-222.17"
-      transform="rotate(-90 1020 668)"/>
-<circle cx="1020" cy="668" r="68" fill="none"
-      stroke="#f0883e" stroke-width="26"
-      stroke-dasharray="38.45 388.80"
-      stroke-dashoffset="-294.81"
-      transform="rotate(-90 1020 668)"/>
-<circle cx="1020" cy="668" r="68" fill="none"
-      stroke="#58a6ff" stroke-width="26"
-      stroke-dasharray="8.55 418.71"
-      stroke-dashoffset="-333.26"
-      transform="rotate(-90 1020 668)"/>
-<circle cx="1020" cy="668" r="68" fill="none"
-      stroke="#a371f7" stroke-width="26"
-      stroke-dasharray="4.27 422.98"
-      stroke-dashoffset="-341.81"
-      transform="rotate(-90 1020 668)"/>
+  
+      <style>
+        @keyframes donut_commit_0 {
+          0%   { stroke-dasharray: 0 427.26; }
+          5.714% { stroke-dasharray: 0 427.26; }
+          34.286% { stroke-dasharray: 222.17 205.08; }
+          100% { stroke-dasharray: 222.17 205.08; }
+        }
+      </style>
+      <circle cx="1020" cy="668" r="68" fill="none"
+        stroke="#39d353" stroke-width="26"
+        stroke-dasharray="222.17 205.08"
+        stroke-dashoffset="0.00"
+        transform="rotate(-90 1020 668)"
+        style="animation: donut_commit_0 7s infinite; animation-delay: 0.00s"/>
+
+      <style>
+        @keyframes donut_commit_1 {
+          0%   { stroke-dasharray: 0 427.26; }
+          5.714% { stroke-dasharray: 0 427.26; }
+          34.286% { stroke-dasharray: 72.63 354.62; }
+          100% { stroke-dasharray: 72.63 354.62; }
+        }
+      </style>
+      <circle cx="1020" cy="668" r="68" fill="none"
+        stroke="#f778ba" stroke-width="26"
+        stroke-dasharray="72.63 354.62"
+        stroke-dashoffset="-222.17"
+        transform="rotate(-90 1020 668)"
+        style="animation: donut_commit_1 7s infinite; animation-delay: 0.15s"/>
+
+      <style>
+        @keyframes donut_commit_2 {
+          0%   { stroke-dasharray: 0 427.26; }
+          5.714% { stroke-dasharray: 0 427.26; }
+          34.286% { stroke-dasharray: 38.45 388.80; }
+          100% { stroke-dasharray: 38.45 388.80; }
+        }
+      </style>
+      <circle cx="1020" cy="668" r="68" fill="none"
+        stroke="#f0883e" stroke-width="26"
+        stroke-dasharray="38.45 388.80"
+        stroke-dashoffset="-294.81"
+        transform="rotate(-90 1020 668)"
+        style="animation: donut_commit_2 7s infinite; animation-delay: 0.30s"/>
+
+      <style>
+        @keyframes donut_commit_3 {
+          0%   { stroke-dasharray: 0 427.26; }
+          5.714% { stroke-dasharray: 0 427.26; }
+          34.286% { stroke-dasharray: 8.55 418.71; }
+          100% { stroke-dasharray: 8.55 418.71; }
+        }
+      </style>
+      <circle cx="1020" cy="668" r="68" fill="none"
+        stroke="#58a6ff" stroke-width="26"
+        stroke-dasharray="8.55 418.71"
+        stroke-dashoffset="-333.26"
+        transform="rotate(-90 1020 668)"
+        style="animation: donut_commit_3 7s infinite; animation-delay: 0.45s"/>
+
+      <style>
+        @keyframes donut_commit_4 {
+          0%   { stroke-dasharray: 0 427.26; }
+          5.714% { stroke-dasharray: 0 427.26; }
+          34.286% { stroke-dasharray: 4.27 422.98; }
+          100% { stroke-dasharray: 4.27 422.98; }
+        }
+      </style>
+      <circle cx="1020" cy="668" r="68" fill="none"
+        stroke="#a371f7" stroke-width="26"
+        stroke-dasharray="4.27 422.98"
+        stroke-dashoffset="-341.81"
+        transform="rotate(-90 1020 668)"
+        style="animation: donut_commit_4 7s infinite; animation-delay: 0.60s"/>
   <text x="1020" y="672" text-anchor="middle"
     font-size="24" font-weight="800" fill="url(#numfill)">52%</text>
   <text x="1020" y="690" text-anchor="middle"
