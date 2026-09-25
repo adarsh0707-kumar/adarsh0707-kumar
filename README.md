@@ -65,8 +65,7 @@ I enjoy building complete software systems — from **TCP sockets and C++ system
 
 ## 🧠 Spent My Time
 
-[![Spent my time](https://raw.githubusercontent.com/adarsh0707-kumar/adarsh0707-kumar/main/profile/spent-my-time
-
+[![Adarsh Kumar — Spent My Time](https://raw.githubusercontent.com/adarsh0707-kumar/adarsh0707-kumar/main/profile/spent-my-time.svg)](https://github.com/adarsh0707-kumar/adarsh0707-kumar/blob/main/profile/spent-my-time.svg)
 ---
 
 ## 🌆 3D Contribution Graph
