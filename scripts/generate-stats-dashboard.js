@@ -320,7 +320,7 @@ async function main() {
     pct: i === 0 ? Math.min(l.pct + 8, 60) : Math.max(l.pct - 2 * i, 1),
   }));
 
-  const W = 1200, H = 800, PAD = 40;
+  const W = 1200, H = 860, PAD = 40;
 
   const rollTotal = rollingNumber({
     x: PAD + 150, y: 218, value: contrib.total,
