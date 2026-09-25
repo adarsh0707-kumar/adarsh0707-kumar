@@ -92,7 +92,7 @@ I enjoy building complete software systems — from **TCP sockets and C++ system
 
 ## 📈 Activity Graph
 
-<img src="https://github-readme-activity-graph.vercel.app/graph?username=adarsh0707-kumar&theme=react-dark&hide_border=true" alt="Adarsh Kumar activity graph" />
+<img src="https://fabianocouto-activity-graph.vercel.app/graph/?username=adarsh0707-kumar&theme=react-dark&hide_border=true" alt="Adarsh Kumar activity graph" />
 
 ---
 
