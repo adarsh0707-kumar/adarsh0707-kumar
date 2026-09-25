@@ -54,18 +54,18 @@ I enjoy building complete software systems — from **TCP sockets and C++ system
 
 ## 📊 GitHub Stats
 
-<img src="https://raw.githubusercontent.com/adarsh0707-kumar/adarsh0707-kumar/main/profile/stats-dashboard.svg" alt="Adarsh Kumar GitHub stats dashboard" />
+<img src="https://raw.githubusercontent.com/adarsh0707-kumar/adarsh0707-kumar/main/profile/stats-dashboard.svg" alt="Adarsh Kumar GitHub stats dashboard" width="100%" />
 
 <p align="center">
-  <img src="https://raw.githubusercontent.com/adarsh0707-kumar/adarsh0707-kumar/main/profile/stats.svg" alt="Adarsh Kumar GitHub stats" height="160" />
-  <img src="https://raw.githubusercontent.com/adarsh0707-kumar/adarsh0707-kumar/main/profile/top-langs.svg" alt="Adarsh Kumar top languages" height="160" />
+  <img src="https://raw.githubusercontent.com/adarsh0707-kumar/adarsh0707-kumar/main/profile/stats.svg" alt="Adarsh Kumar GitHub stats" height="170" />
+  <img src="https://raw.githubusercontent.com/adarsh0707-kumar/adarsh0707-kumar/main/profile/top-langs.svg" alt="Adarsh Kumar top languages" height="170" />
 </p>
 
 ---
 
 ## 🧠 Spent My Time
 
-[![Adarsh Kumar — Spent My Time](https://raw.githubusercontent.com/adarsh0707-kumar/adarsh0707-kumar/main/profile/spent-my-time.svg)](https://github.com/adarsh0707-kumar/adarsh0707-kumar/blob/main/profile/spent-my-time.svg)
+<img src="https://raw.githubusercontent.com/adarsh0707-kumar/adarsh0707-kumar/main/profile/spent-my-time.svg" alt="Adarsh Kumar — Spent My Time" width="100%" />
 
 ---
 
@@ -100,13 +100,13 @@ I enjoy building complete software systems — from **TCP sockets and C++ system
 
 ## 📈 Activity Graph
 
-<img src="https://fabianocouto-activity-graph.vercel.app/graph/?username=adarsh0707-kumar&theme=react-dark&hide_border=true" alt="Adarsh Kumar activity graph" />
+<img src="https://fabianocouto-activity-graph.vercel.app/graph/?username=adarsh0707-kumar&theme=react-dark&hide_border=true" alt="Adarsh Kumar activity graph" width="100%" />
 
 ---
 
-### 🎯 Certifications Hero
+## 🏆 Certifications
 
-[![Certifications hero](https://raw.githubusercontent.com/adarsh0707-kumar/adarsh0707-kumar/main/profile/certifications-hero.svg)](https://github.com/adarsh0707-kumar/adarsh0707-kumar/blob/main/profile/certifications-hero.svg)
+<img src="https://raw.githubusercontent.com/adarsh0707-kumar/adarsh0707-kumar/main/profile/certifications-hero.svg" alt="Adarsh Kumar — Certifications & Professional Achievements" width="100%" />
 
 ### 🎯 Learning Tracks
 
@@ -116,9 +116,7 @@ I enjoy building complete software systems — from **TCP sockets and C++ system
 ![INFRASTRUCTURE & DEVOPS](https://img.shields.io/badge/INFRA_%26_DEVOPS-22c55e?style=for-the-badge)
 ![DISTRIBUTED SYSTEMS](https://img.shields.io/badge/DISTRIBUTED_SYSTEMS-f59e0b?style=for-the-badge)
 
-## 🌱 Currently Exploring
-
-[![Currently exploring](https://raw.githubusercontent.com/adarsh0707-kumar/adarsh0707-kumar/main/profile/exploring-hero.svg)](https://github.com/adarsh0707-kumar/adarsh0707-kumar/blob/main/profile/exploring-hero.svg)
+**CERTIFICATES `6`** &nbsp;&nbsp; **LEARNING TRACKS `3`** &nbsp;&nbsp; **LEARNING MODE `ALWAYS ON`**
 
 ### 💻 Software Engineering
 
@@ -145,12 +143,58 @@ I enjoy building complete software systems — from **TCP sockets and C++ system
 
 ---
 
+## 🌱 Currently Exploring
+
+<img src="https://raw.githubusercontent.com/adarsh0707-kumar/adarsh0707-kumar/main/profile/exploring-hero.svg" alt="Adarsh Kumar — Currently Exploring" width="100%" />
+
+---
+
 ## 💬 Session Feedback
 
-[![Session feedback](https://raw.githubusercontent.com/adarsh0707-kumar/adarsh0707-kumar/main/profile/session-feedback.svg)](https://github.com/adarsh0707-kumar/adarsh0707-kumar/blob/main/profile/session-feedback.svg)
+<img src="https://raw.githubusercontent.com/adarsh0707-kumar/adarsh0707-kumar/main/profile/session-feedback.svg" alt="Adarsh Kumar — Session Feedback" width="100%" />
+
+---
 
 ## ⭐ Submit Your Rating & Feedback
 
 Enjoyed my work? Pick a star rating below — it opens your email client with the rating pre-filled, straight to my inbox.
 
-| Rating |
+| Rating | Click to rate |
+|---|---|
+| ⭐⭐⭐⭐⭐ | [![RATE](https://img.shields.io/badge/RATE-5_STARS_--_EXCELLENT-14b8a6?style=for-the-badge)](mailto:adarshku.offical@gmail.com?subject=Feedback%3A%205%20Stars%20-%20Excellent&body=Hi%20Adarsh%2C%0A%0AI%20wanted%20to%20share%20some%20feedback%20on%20your%20work%3A%0A) |
+| ⭐⭐⭐⭐ | [![RATE](https://img.shields.io/badge/RATE-4_STARS_--_VERY_GOOD-14b8a6?style=for-the-badge)](mailto:adarshku.offical@gmail.com?subject=Feedback%3A%204%20Stars%20-%20Very%20Good&body=Hi%20Adarsh%2C%0A%0AI%20wanted%20to%20share%20some%20feedback%20on%20your%20work%3A%0A) |
+| ⭐⭐⭐ | [![RATE](https://img.shields.io/badge/RATE-3_STARS_--_GOOD-f59e0b?style=for-the-badge)](mailto:adarshku.offical@gmail.com?subject=Feedback%3A%203%20Stars%20-%20Good&body=Hi%20Adarsh%2C%0A%0AI%20wanted%20to%20share%20some%20feedback%20on%20your%20work%3A%0A) |
+| ⭐⭐ | [![RATE](https://img.shields.io/badge/RATE-2_STARS_--_FAIR-f59e0b?style=for-the-badge)](mailto:adarshku.offical@gmail.com?subject=Feedback%3A%202%20Stars%20-%20Fair&body=Hi%20Adarsh%2C%0A%0AI%20wanted%20to%20share%20some%20feedback%20on%20your%20work%3A%0A) |
+| ⭐ | [![RATE](https://img.shields.io/badge/RATE-1_STAR_--_POOR-f87171?style=for-the-badge)](mailto:adarshku.offical@gmail.com?subject=Feedback%3A%201%20Star%20-%20Poor&body=Hi%20Adarsh%2C%0A%0AI%20wanted%20to%20share%20some%20feedback%20on%20your%20work%3A%0A) |
+
+[![Email](https://img.shields.io/badge/EMAIL-adarshku.offical%40gmail.com-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:adarshku.offical@gmail.com)
+
+---
+
+## 📚 Training
+
+**AI and ML Training Program** · ITS Engineering College, Noida · Apr 2025
+
+---
+
+## 🤝 Open to Collaborating On
+
+**Backend systems** · **Full-stack applications** · **Databases** · **Networking** · **Distributed systems** · **DevOps** · **Open source**
+
+---
+
+## 🎯 What I'm Looking For
+
+Software engineering opportunities where I can work on **real systems**, learn from experienced engineers, and contribute across backend, infrastructure, databases, networking, and distributed applications.
+
+---
+
+## 📫 Let's Connect
+
+[![LinkedIn](https://img.shields.io/badge/LINKEDIN-CONNECT-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://linkedin.com/in/Adarsh-kumar-657315251)
+[![Email](https://img.shields.io/badge/EMAIL-SAY_HELLO-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:adarshku.offical@gmail.com)
+[![GitHub](https://img.shields.io/badge/GITHUB-PROFILE-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/adarsh0707-kumar)
+
+[![Profile views](https://komarev.com/ghpvc/?username=adarsh0707-kumar&style=for-the-badge&label=PROFILE+VIEWS)](https://github.com/adarsh0707-kumar)
+
+[![Adarsh Kumar footer](https://raw.githubusercontent.com/adarsh0707-kumar/adarsh0707-kumar/main/profile/footer.svg)](https://github.com/adarsh0707-kumar/adarsh0707-kumar/blob/main/profile/footer.svg)
