@@ -179,8 +179,8 @@
         @keyframes roll_rT_3 {
           0%   { transform: translateY(0); }
           5.714% { transform: translateY(0); }
-          34.286% { transform: translateY(-302.4px); }
-          100% { transform: translateY(-302.4px); }
+          34.286% { transform: translateY(-403.2px); }
+          100% { transform: translateY(-403.2px); }
         }
       </style>
       <clipPath id="rT_3">
@@ -535,8 +535,8 @@
           100% { transform: scaleY(1); }
         }
       </style>
-      <rect x="387.6" y="467.1"
-        width="27.4" height="8.9" rx="4"
+      <rect x="387.6" y="471.6"
+        width="27.4" height="4.4" rx="4"
         fill="#39d353" opacity="0.8"
         style="animation: bar_7 7s infinite; animation-delay: 0.21s; transform-origin: 401.2px 476.0px; transform-box: view-box;"/>
 
@@ -665,8 +665,8 @@
           100% { transform: scaleY(1); }
         }
       </style>
-      <rect x="829.2" y="467.1"
-        width="27.4" height="8.9" rx="4"
+      <rect x="829.2" y="462.7"
+        width="27.4" height="13.3" rx="4"
         fill="#39d353" opacity="0.8"
         style="animation: bar_17 7s infinite; animation-delay: 0.51s; transform-origin: 842.9px 476.0px; transform-box: view-box;"/>
 
