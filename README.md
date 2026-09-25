@@ -51,6 +51,10 @@ I enjoy building complete software systems — from **TCP sockets and C++ system
 
 ---
 
+<img src="https://raw.githubusercontent.com/adarsh0707-kumar/adarsh0707-kumar/main/profile/stats-dashboard.svg" alt="Adarsh Kumar GitHub stats dashboard" />
+
+---
+
 ## 📊 GitHub Stats
 
 <img src="https://streak-stats.demolab.com/?user=adarsh0707-kumar&theme=tokyonight&hide_border=true" alt="Adarsh Kumar GitHub streak stats" />
