@@ -18,11 +18,12 @@ if (!USERNAME) { console.error("Missing GH_USERNAME"); process.exit(1); }
 if (!TOKEN)    { console.error("Missing GITHUB_TOKEN"); process.exit(1); }
 
 // ─── Animation timing (seconds) ──────────────────────────────────────
-const LOOP       = 7.0;   // total loop duration
+// 2s roll-in, then hold. LOOP controls total cycle length.
+const LOOP       = 14.0;  // total loop duration
 const ROLL_START = 0.4;   // when roll begins
 const ROLL_END   = 2.4;   // when roll finishes (2s roll)
-const HOLD_END   = 6.6;   // when fade-out begins
-const FADE_OUT   = 7.0;   // end of loop
+const HOLD_END   = 13.6;  // when fade-out begins
+const FADE_OUT   = 14.0;  // end of loop
 
 // ─── merko theme ─────────────────────────────────────────────────────
 const T = {
