@@ -80,13 +80,13 @@ I enjoy building complete software systems — from **TCP sockets and C++ system
 
 ## 🏆 Trophy Case
 
-<img src="https://github-profile-trophy.vercel.app/?username=adarsh0707-kumar&theme=onedark&no-frame=true&row=1&column=6" alt="Adarsh Kumar GitHub trophies" />
+[![Adarsh Kumar GitHub trophies](https://raw.githubusercontent.com/adarsh0707-kumar/adarsh0707-kumar/main/profile/trophy.svg)](https://github.com/adarsh0707-kumar/adarsh0707-kumar/blob/main/profile/trophy.svg)
 
 ---
 
 ## 🐍 Contribution Snake
 
-[![Animated GitHub contribution snake](https://raw.githubusercontent.com/adarsh0707-kumar/adarsh0707-kumar/output/github-contribution-grid-snake.svg)](https://raw.githubusercontent.com/adarsh0707-kumar/adarsh0707-kumar/output/github-contribution-grid-snake.svg)
+[![Animated GitHub contribution snake](https://raw.githubusercontent.com/adarsh0707-kumar/adarsh0707-kumar/gh-pages/github-contribution-grid-snake.svg)](https://raw.githubusercontent.com/adarsh0707-kumar/adarsh0707-kumar/gh-pages/github-contribution-grid-snake.svg)
 
 ---
 
