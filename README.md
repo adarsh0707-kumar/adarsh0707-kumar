@@ -63,6 +63,12 @@ I enjoy building complete software systems — from **TCP sockets and C++ system
 
 ---
 
+## 🧠 Spent My Time
+
+[![Spent my time](https://raw.githubusercontent.com/adarsh0707-kumar/adarsh0707-kumar/main/profile/spent-my-time
+
+---
+
 ## 🌆 3D Contribution Graph
 
 <img src="https://raw.githubusercontent.com/adarsh0707-kumar/adarsh0707-kumar/main/profile-3d-contrib/profile-night-rainbow.svg" alt="Adarsh Kumar 3D contribution graph — night rainbow" width="100%" />
@@ -109,6 +115,11 @@ I enjoy building complete software systems — from **TCP sockets and C++ system
 ![DATABASES](https://img.shields.io/badge/DATABASES-14b8a6?style=for-the-badge)
 ![INFRASTRUCTURE & DEVOPS](https://img.shields.io/badge/INFRA_%26_DEVOPS-22c55e?style=for-the-badge)
 ![DISTRIBUTED SYSTEMS](https://img.shields.io/badge/DISTRIBUTED_SYSTEMS-f59e0b?style=for-the-badge)
+
+## 🌱 Currently Exploring
+
+[![Currently exploring](https://raw.githubusercontent.com/adarsh0707-kumar/adarsh0707-kumar/main/profile/exploring-hero.svg)](https://github.com/adarsh0707-kumar/adarsh0707-kumar/blob/main/profile/exploring-hero.svg)
+
 ### 💻 Software Engineering
 
 | Certificate | Issuer | Date |
@@ -133,6 +144,10 @@ I enjoy building complete software systems — from **TCP sockets and C++ system
 [![View all certifications on LinkedIn](https://img.shields.io/badge/VIEW_ALL_CREDENTIALS-LINKEDIN-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://linkedin.com/in/Adarsh-kumar-657315251/details/certifications/)
 
 ---
+
+## 💬 Session Feedback
+
+[![Session feedback](https://raw.githubusercontent.com/adarsh0707-kumar/adarsh0707-kumar/main/profile/session-feedback.svg)](https://github.com/adarsh0707-kumar/adarsh0707-kumar/blob/main/profile/session-feedback.svg)
 
 ## ⭐ Submit Your Rating & Feedback
 
