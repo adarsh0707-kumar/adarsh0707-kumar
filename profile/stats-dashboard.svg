@@ -1,5 +1,5 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="800"
-    viewBox="0 0 1200 800" role="img" aria-label="GitHub stats for adarsh0707-kumar">
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="860"
+    viewBox="0 0 1200 860" role="img" aria-label="GitHub stats for adarsh0707-kumar">
   <style>
     @media (prefers-reduced-motion: reduce) {
       * { animation: none !important; }
@@ -40,16 +40,16 @@
       <feGaussianBlur stdDeviation="5" result="b"/>
       <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
     </filter>
-    <clipPath id="frameClip"><rect width="1200" height="800" rx="28"/></clipPath>
+    <clipPath id="frameClip"><rect width="1200" height="860" rx="28"/></clipPath>
   </defs>
 
   <g clip-path="url(#frameClip)">
-    <rect width="1200" height="800" fill="url(#bg)"/>
-    <rect width="1200" height="800" fill="url(#dots)"/>
-    <rect width="1200" height="800" fill="url(#glowA)"/>
-    <rect width="1200" height="800" fill="url(#glowB)"/>
+    <rect width="1200" height="860" fill="url(#bg)"/>
+    <rect width="1200" height="860" fill="url(#dots)"/>
+    <rect width="1200" height="860" fill="url(#glowA)"/>
+    <rect width="1200" height="860" fill="url(#glowB)"/>
   </g>
-  <rect x="0.5" y="0.5" width="1199" height="799" rx="28"
+  <rect x="0.5" y="0.5" width="1199" height="859" rx="28"
     fill="none" stroke="#ffffff14" stroke-width="1"/>
 
   <text x="40" y="54" font-size="27" font-weight="800" fill="#e6edf3"
@@ -179,8 +179,8 @@
         @keyframes roll_rT_3 {
           0%   { transform: translateY(0); }
           2.857% { transform: translateY(0); }
-          17.143% { transform: translateY(-806.4px); }
-          100% { transform: translateY(-806.4px); }
+          17.143% { transform: translateY(-907.1999999999999px); }
+          100% { transform: translateY(-907.1999999999999px); }
         }
       </style>
       <clipPath id="rT_3">
@@ -483,8 +483,8 @@
           100% { transform: scaleY(1); }
         }
       </style>
-      <rect x="210.9" y="444.9"
-        width="27.4" height="31.1" rx="4"
+      <rect x="210.9" y="449.3"
+        width="27.4" height="26.7" rx="4"
         fill="#39d353" opacity="0.8"
         style="animation: bar_3 14s infinite; animation-delay: 0.09s; transform-origin: 224.6px 476.0px; transform-box: view-box;"/>
 
@@ -665,8 +665,8 @@
           100% { transform: scaleY(1); }
         }
       </style>
-      <rect x="829.2" y="453.8"
-        width="27.4" height="22.2" rx="4"
+      <rect x="829.2" y="449.3"
+        width="27.4" height="26.7" rx="4"
         fill="#39d353" opacity="0.8"
         style="animation: bar_17 14s infinite; animation-delay: 0.51s; transform-origin: 842.9px 476.0px; transform-box: view-box;"/>
 
