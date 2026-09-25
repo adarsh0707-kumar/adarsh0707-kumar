@@ -29,9 +29,8 @@ jobs:
 
       - name: Generate dashboard
         env:
-          # PAT with at least public_repo scope (repo scope for private contribs).
-          # The default GITHUB_TOKEN cannot read the GraphQL contributionsCollection
-          # for a user profile.
+          # PAT with read:user scope. The default GITHUB_TOKEN cannot read the
+          # GraphQL contributionsCollection for a user profile.
           GITHUB_TOKEN: ${{ secrets.PROFILE_TOKEN }}
           GH_USERNAME: adarsh0707-kumar
         run: node scripts/generate-stats-dashboard.js
@@ -40,11 +39,32 @@ jobs:
         run: |
           git config user.name  "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+
           git add profile/stats-dashboard.svg
 
           if git diff --cached --quiet; then
             echo "No changes to profile/stats-dashboard.svg"
-          else
-            git commit -m "chore: update stats dashboard"
-            git push
+            exit 0
           fi
+
+          git commit -m "chore: update stats dashboard"
+
+          # Another workflow may have pushed to main since checkout.
+          # Rebase our single commit on top of latest remote, then retry push.
+          for attempt in 1 2 3; do
+            echo "Push attempt $attempt..."
+
+            # Pull latest; tolerate failure (rebase may no-op if already current)
+            git pull --rebase origin main || true
+
+            if git push; then
+              echo "Pushed on attempt $attempt"
+              exit 0
+            fi
+
+            echo "Push rejected; retrying in 5s..."
+            sleep 5
+          done
+
+          echo "Push failed after 3 attempts"
+          exit 1
