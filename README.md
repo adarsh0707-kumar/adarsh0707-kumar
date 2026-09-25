@@ -98,11 +98,9 @@ I enjoy building complete software systems — from **TCP sockets and C++ system
 
 ---
 
-## 🏆 Certifications
+### 🎯 Certifications Hero
 
-[![Certifications and professional learning](https://raw.githubusercontent.com/adarsh0707-kumar/adarsh0707-kumar/main/profile/certifications.svg)](https://github.com/adarsh0707-kumar/adarsh0707-kumar/blob/main/profile/certifications.svg)
-
-**CERTIFICATES `6`** &nbsp;&nbsp; **LEARNING TRACKS `3`** &nbsp;&nbsp; **LEARNING MODE `ALWAYS ON`**
+[![Certifications hero](https://raw.githubusercontent.com/adarsh0707-kumar/adarsh0707-kumar/main/profile/certifications-hero.svg)](https://github.com/adarsh0707-kumar/adarsh0707-kumar/blob/main/profile/certifications-hero.svg)
 
 ### 🎯 Learning Tracks
 
@@ -111,7 +109,6 @@ I enjoy building complete software systems — from **TCP sockets and C++ system
 ![DATABASES](https://img.shields.io/badge/DATABASES-14b8a6?style=for-the-badge)
 ![INFRASTRUCTURE & DEVOPS](https://img.shields.io/badge/INFRA_%26_DEVOPS-22c55e?style=for-the-badge)
 ![DISTRIBUTED SYSTEMS](https://img.shields.io/badge/DISTRIBUTED_SYSTEMS-f59e0b?style=for-the-badge)
-
 ### 💻 Software Engineering
 
 | Certificate | Issuer | Date |
