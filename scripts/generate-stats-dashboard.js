@@ -342,7 +342,7 @@ async function main() {
   <text x="888" y="138" font-size="15" font-weight="600"
     fill="${T.muted}">Longest streak</text>
   ${rollLongest}
-  <text x="988" y="218" font-size="20" font-weight="600" fill="${T.muted}">days</text>
+  <text x="1030" y="218" font-size="20" font-weight="600" fill="${T.muted}">days</text>
   <text x="888" y="260" font-size="13" font-weight="600" fill="${T.accent}">All-time best</text>
 
   <!-- Row 2 — Commits by hour -->
