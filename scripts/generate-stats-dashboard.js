@@ -335,25 +335,25 @@ async function main() {
     fontSize: 72, height: 100.8, keyPrefix: "rL", delay: 0,
   });
 
-  const barsSvg = barChart(hours, PAD, 306, W - PAD * 2, 200);
+  const barsSvg = barChart(hours, PAD, 336, W - PAD * 2, 200);
   const ringSvg = streakRing(472, 191, 62, 0, "current");
 
-  const donutRepoCenter   = { cx: 450, cy: 668 };
-  const donutCommitCenter = { cx: 1020, cy: 668 };
+  const donutRepoCenter   = { cx: 450, cy: 698 };
+  const donutCommitCenter = { cx: 1020, cy: 698 };
 
   const donutRepo   = donutArcs(donutRepoCenter.cx,   donutRepoCenter.cy,   68, 26, langsByRepo,   "repo");
   const donutCommit = donutArcs(donutCommitCenter.cx, donutCommitCenter.cy, 68, 26, langsByCommit, "commit");
 
   const repoLegend = langsByRepo.map((l, i) => `
-    <circle cx="${PAD + 34}" cy="${611 + i * 31}" r="5" fill="${T.donut[i % T.donut.length]}"/>
-    <text x="${PAD + 52}" y="${616 + i * 31}" font-size="14" fill="${T.text}">${escapeXml(l.name)}</text>
-    <text x="${PAD + 320}" y="${616 + i * 31}" text-anchor="end" font-size="14"
+    <circle cx="${PAD + 34}" cy="${641 + i * 31}" r="5" fill="${T.donut[i % T.donut.length]}"/>
+    <text x="${PAD + 52}" y="${646 + i * 31}" font-size="14" fill="${T.text}">${escapeXml(l.name)}</text>
+    <text x="${PAD + 320}" y="${646 + i * 31}" text-anchor="end" font-size="14"
       font-weight="600" fill="${T.muted}">${l.pct}%</text>`).join("\n");
 
   const commitLegend = langsByCommit.map((l, i) => `
-    <circle cx="${610 + 34}" cy="${611 + i * 31}" r="5" fill="${T.donut[i % T.donut.length]}"/>
-    <text x="${610 + 52}" y="${616 + i * 31}" font-size="14" fill="${T.text}">${escapeXml(l.name)}</text>
-    <text x="${610 + 320}" y="${616 + i * 31}" text-anchor="end" font-size="14"
+    <circle cx="${610 + 34}" cy="${641 + i * 31}" r="5" fill="${T.donut[i % T.donut.length]}"/>
+    <text x="${610 + 52}" y="${646 + i * 31}" font-size="14" fill="${T.text}">${escapeXml(l.name)}</text>
+    <text x="${610 + 320}" y="${646 + i * 31}" text-anchor="end" font-size="14"
       font-weight="600" fill="${T.muted}">${l.pct}%</text>`).join("\n");
 
   const topRepo   = langsByRepo[0]   || { name: "—", pct: 0 };
@@ -445,16 +445,16 @@ async function main() {
     font-weight="600" fill="${T.muted}">days</text>
   <text x="888" y="260" font-size="13" font-weight="600" fill="${T.accent}">All-time best</text>
 
-  <rect x="${PAD}" y="306" width="${W - PAD * 2}" height="200" rx="20"
+  <rect x="${PAD}" y="336" width="${W - PAD * 2}" height="200" rx="20"
     fill="${T.panel}" stroke="${T.panelEdge}"/>
-  <text x="${PAD + 28}" y="344" font-size="17" font-weight="700" fill="${T.text}">Commits by hour</text>
-  <text x="${W - PAD - 28}" y="344" text-anchor="end" font-size="13"
+  <text x="${PAD + 28}" y="374" font-size="17" font-weight="700" fill="${T.text}">Commits by hour</text>
+  <text x="${W - PAD - 28}" y="374" text-anchor="end" font-size="13"
     fill="${T.muted}">UTC+5:30</text>
   ${barsSvg}
 
-  <rect x="${PAD}" y="526" width="550" height="250" rx="20"
+  <rect x="${PAD}" y="556" width="550" height="250" rx="20"
     fill="${T.panel}" stroke="${T.panelEdge}"/>
-  <text x="${PAD + 28}" y="566" font-size="17" font-weight="700" fill="${T.text}">Top languages by repository</text>
+  <text x="${PAD + 28}" y="596" font-size="17" font-weight="700" fill="${T.text}">Top languages by repository</text>
   ${repoLegend}
   <circle cx="${donutRepoCenter.cx}" cy="${donutRepoCenter.cy}" r="68" fill="none"
     stroke="${T.frame}" stroke-width="26"/>
@@ -464,9 +464,9 @@ async function main() {
   <text x="${donutRepoCenter.cx}" y="${donutRepoCenter.cy + 22}" text-anchor="middle"
     font-size="12" fill="${T.muted}">${escapeXml(topRepo.name)}</text>
 
-  <rect x="610" y="526" width="550" height="250" rx="20"
+  <rect x="610" y="556" width="550" height="250" rx="20"
     fill="${T.panel}" stroke="${T.panelEdge}"/>
-  <text x="638" y="566" font-size="17" font-weight="700" fill="${T.text}">Top languages by commit</text>
+  <text x="638" y="596" font-size="17" font-weight="700" fill="${T.text}">Top languages by commit</text>
   ${commitLegend}
   <circle cx="${donutCommitCenter.cx}" cy="${donutCommitCenter.cy}" r="68" fill="none"
     stroke="${T.frame}" stroke-width="26"/>
