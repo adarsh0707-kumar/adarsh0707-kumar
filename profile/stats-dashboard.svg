@@ -112,7 +112,7 @@
 
       <clipPath id="rT_2"><rect x="190" y="146" width="41.76" height="100.8"/></clipPath>
       <g clip-path="url(#rT_2)">
-        <g transform="translate(210.88, 50.959999999999994)">
+        <g transform="translate(210.88, -49.84)">
           <text x="0" y="66.24000000000001" text-anchor="middle"
         font-size="72" font-weight="800" fill="#ffffff">0</text>
 <text x="0" y="167.04000000000002" text-anchor="middle"
@@ -138,7 +138,7 @@
 
       <clipPath id="rT_3"><rect x="231.76" y="146" width="41.76" height="100.8"/></clipPath>
       <g clip-path="url(#rT_3)">
-        <g transform="translate(252.64, -755.4399999999999)">
+        <g transform="translate(252.64, 151.76)">
           <text x="0" y="66.24000000000001" text-anchor="middle"
         font-size="72" font-weight="800" fill="#ffffff">0</text>
 <text x="0" y="167.04000000000002" text-anchor="middle"
@@ -286,7 +286,7 @@
         font-size="72" font-weight="800" fill="#ffffff">9</text>
         </g>
       </g>
-  <text x="988" y="218" font-size="20" font-weight="600" fill="#8b949e">days</text>
+  <text x="1030" y="218" font-size="20" font-weight="600" fill="#8b949e">days</text>
   <text x="888" y="260" font-size="13" font-weight="600" fill="#39d353">All-time best</text>
 
   <!-- Row 2 — Commits by hour -->
