@@ -10,7 +10,7 @@
   <text x="30" y="58" font-family="Arial" font-size="12" fill="#94a3b8">adarsh0707-kumar</text>
 
   <text x="30" y="100" font-family="Arial" font-size="12" fill="#93c5fd">TOTAL CONTRIBUTIONS</text>
-  <text x="30" y="132" font-family="Arial" font-size="34" font-weight="800" fill="#fff">1198</text>
+  <text x="30" y="132" font-family="Arial" font-size="34" font-weight="800" fill="#fff">1207</text>
 
   <text x="220" y="100" font-family="Arial" font-size="12" fill="#93c5fd">CURRENT STREAK</text>
   <text x="220" y="132" font-family="Arial" font-size="34" font-weight="800" fill="#fff">44<tspan font-size="14"> days</tspan></text>
@@ -20,21 +20,21 @@
 
   <text x="30" y="170" font-family="Arial" font-size="12" fill="#93c5fd">COMMITS BY HOUR (last ~90 public events)</text>
   <rect x="40" y="140" width="14" height="0" rx="3" fill="#818cf8"/>
-<rect x="62" y="128.88888888888889" width="14" height="11.11111111111111" rx="3" fill="#818cf8"/>
-<rect x="84" y="124.44444444444444" width="14" height="15.555555555555555" rx="3" fill="#818cf8"/>
-<rect x="106" y="115.55555555555556" width="14" height="24.444444444444443" rx="3" fill="#818cf8"/>
-<rect x="128" y="137.77777777777777" width="14" height="2.2222222222222223" rx="3" fill="#818cf8"/>
-<rect x="150" y="126.66666666666667" width="14" height="13.333333333333332" rx="3" fill="#818cf8"/>
-<rect x="172" y="137.77777777777777" width="14" height="2.2222222222222223" rx="3" fill="#818cf8"/>
-<rect x="194" y="128.88888888888889" width="14" height="11.11111111111111" rx="3" fill="#818cf8"/>
-<rect x="216" y="137.77777777777777" width="14" height="2.2222222222222223" rx="3" fill="#818cf8"/>
-<rect x="238" y="117.77777777777777" width="14" height="22.22222222222222" rx="3" fill="#818cf8"/>
-<rect x="260" y="131.11111111111111" width="14" height="8.88888888888889" rx="3" fill="#818cf8"/>
-<rect x="282" y="133.33333333333334" width="14" height="6.666666666666666" rx="3" fill="#818cf8"/>
+<rect x="62" y="129.28571428571428" width="14" height="10.714285714285715" rx="3" fill="#818cf8"/>
+<rect x="84" y="125" width="14" height="15" rx="3" fill="#818cf8"/>
+<rect x="106" y="116.42857142857143" width="14" height="23.57142857142857" rx="3" fill="#818cf8"/>
+<rect x="128" y="137.85714285714286" width="14" height="2.142857142857143" rx="3" fill="#818cf8"/>
+<rect x="150" y="131.42857142857142" width="14" height="8.571428571428571" rx="3" fill="#818cf8"/>
+<rect x="172" y="137.85714285714286" width="14" height="2.142857142857143" rx="3" fill="#818cf8"/>
+<rect x="194" y="133.57142857142858" width="14" height="6.428571428571428" rx="3" fill="#818cf8"/>
+<rect x="216" y="137.85714285714286" width="14" height="2.142857142857143" rx="3" fill="#818cf8"/>
+<rect x="238" y="118.57142857142857" width="14" height="21.42857142857143" rx="3" fill="#818cf8"/>
+<rect x="260" y="131.42857142857142" width="14" height="8.571428571428571" rx="3" fill="#818cf8"/>
+<rect x="282" y="133.57142857142858" width="14" height="6.428571428571428" rx="3" fill="#818cf8"/>
 <rect x="304" y="140" width="14" height="0" rx="3" fill="#818cf8"/>
-<rect x="326" y="122.22222222222223" width="14" height="17.77777777777778" rx="3" fill="#818cf8"/>
-<rect x="348" y="135.55555555555554" width="14" height="4.444444444444445" rx="3" fill="#818cf8"/>
-<rect x="370" y="131.11111111111111" width="14" height="8.88888888888889" rx="3" fill="#818cf8"/>
+<rect x="326" y="122.85714285714286" width="14" height="17.142857142857142" rx="3" fill="#818cf8"/>
+<rect x="348" y="135.71428571428572" width="14" height="4.285714285714286" rx="3" fill="#818cf8"/>
+<rect x="370" y="122.85714285714286" width="14" height="17.142857142857142" rx="3" fill="#818cf8"/>
 <rect x="392" y="80" width="14" height="60" rx="3" fill="#818cf8"/>
 <rect x="414" y="140" width="14" height="0" rx="3" fill="#818cf8"/>
 <rect x="436" y="140" width="14" height="0" rx="3" fill="#818cf8"/>
