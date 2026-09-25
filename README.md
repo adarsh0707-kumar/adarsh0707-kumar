@@ -1,25 +1,18 @@
-<div align="center">
+[![Adarsh Kumar — Backend and Systems Engineer](https://raw.githubusercontent.com/adarsh0707-kumar/adarsh0707-kumar/main/profile/header.svg)](https://github.com/adarsh0707-kumar/adarsh0707-kumar/blob/main/profile/header.svg)
+[![Building from the socket layer up](https://raw.githubusercontent.com/adarsh0707-kumar/adarsh0707-kumar/main/profile/specialization.svg)](https://github.com/adarsh0707-kumar/adarsh0707-kumar/blob/main/profile/specialization.svg)
 
-<img src="./profile/header.svg" width="100%" alt="Adarsh Kumar — Backend and Systems Engineer"/>
-
-<img src="./profile/specialization.svg" width="88%" alt="Building from the socket layer up"/>
-
-<p>
-  <a href="https://github.com/adarsh0707-kumar"><img src="https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white"/></a>
-  <a href="https://linkedin.com/in/Adarsh-kumar-657315251"><img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white"/></a>
-  <a href="mailto:adarshku.offical@gmail.com"><img src="https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail&logoColor=white"/></a>
-  <a href="https://instagram.com/i_.a_k"><img src="https://img.shields.io/badge/Instagram-E4405F?style=for-the-badge&logo=instagram&logoColor=white"/></a>
-</p>
-
-</div>
+[![GitHub](https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/adarsh0707-kumar)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://linkedin.com/in/Adarsh-kumar-657315251)
+[![Email](https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:adarshku.offical@gmail.com)
+[![Instagram](https://img.shields.io/badge/Instagram-E4405F?style=for-the-badge&logo=instagram&logoColor=white)](https://instagram.com/i_.a_k)
 
 ---
 
-# 👨‍💻 About Me
+## 👨‍💻 About Me
 
-## Adarsh Kumar
+### Adarsh Kumar
 
-**B.Tech Computer Science Engineering Graduate · 2026**  
+**B.Tech Computer Science Engineering Graduate · 2026**
 **Backend & Systems Engineer · Noida, India**
 
 I enjoy building complete software systems — from **TCP sockets and C++ systems programming** to **databases, backend APIs, distributed services, and cloud infrastructure**.
@@ -35,235 +28,71 @@ I enjoy building complete software systems — from **TCP sockets and C++ system
 
 ## 🚀 Featured Projects
 
-<table>
-<tr>
-<td width="50%" valign="top">
-
-### ⚡ Cloud-Based Trading Engine
-
-A polyglot trading simulation combining a **C++ matching engine**, Python streaming analytics, Node.js gateway, PostgreSQL persistence, and observability.
-
-<img src="https://img.shields.io/badge/C%2B%2B-Systems-00599C?style=flat-square"/>
-<img src="https://img.shields.io/badge/Python-Analytics-3776AB?style=flat-square"/>
-<img src="https://img.shields.io/badge/PostgreSQL-Data-4169E1?style=flat-square"/>
-
-<br/><br/>
-<a href="https://github.com/adarsh0707-kumar/Trading-Engine">View Repository →</a>
-
-</td>
-<td width="50%" valign="top">
-
-### ☁️ CodeForge Cloud
-
-Cloud-oriented developer platform exploring backend services, execution workflows, APIs, and production-style infrastructure.
-
-<img src="https://img.shields.io/badge/Node.js-Backend-339933?style=flat-square&logo=node.js&logoColor=white"/>
-<img src="https://img.shields.io/badge/React-Frontend-61DAFB?style=flat-square&logo=react&logoColor=black"/>
-<img src="https://img.shields.io/badge/Docker-Infrastructure-2496ED?style=flat-square&logo=docker&logoColor=white"/>
-
-<br/><br/>
-<a href="https://github.com/adarsh0707-kumar/CodeForge-Cloud">View Repository →</a>
-
-</td>
-</tr>
-<tr>
-<td width="50%" valign="top">
-
-### 🗄️ Database Engine
-
-A from-the-ground-up database project exploring storage, parsing, query execution, and systems-level design.
-
-<img src="https://img.shields.io/badge/C%2B%2B-Systems-00599C?style=flat-square"/>
-<img src="https://img.shields.io/badge/SQL-Database-4479A1?style=flat-square"/>
-<img src="https://img.shields.io/badge/CMake-Build-064F8C?style=flat-square"/>
-
-<br/><br/>
-<a href="https://github.com/adarsh0707-kumar/Database-engine">View Repository →</a>
-
-</td>
-<td width="50%" valign="top">
-
-### 🔴 Redis Clone
-
-A systems-focused Redis implementation exploring networking, commands, in-memory data structures, and protocol handling.
-
-<img src="https://img.shields.io/badge/C%2B%2B-Networking-00599C?style=flat-square"/>
-<img src="https://img.shields.io/badge/TCP-Protocols-161B22?style=flat-square"/>
-<img src="https://img.shields.io/badge/Data%20Structures-Core-7C3AED?style=flat-square"/>
-
-<br/><br/>
-<a href="https://github.com/adarsh0707-kumar/redis-clone">View Repository →</a>
-
-</td>
-</tr>
-</table>
+- ⚡ **[Cloud-Based Trading Engine](https://github.com/adarsh0707-kumar/Trading-Engine)** — A polyglot trading simulation combining a C++ matching engine, Python streaming analytics, Node.js gateway, PostgreSQL persistence, and observability.
+- ☁️ **[CodeForge Cloud](https://github.com/adarsh0707-kumar/CodeForge-Cloud)** — Cloud-oriented developer platform exploring backend services, execution workflows, APIs, and production-style infrastructure.
+- 🗄️ **[Database Engine](https://github.com/adarsh0707-kumar/Database-engine)** — A from-the-ground-up database project exploring storage, parsing, query execution, and systems-level design.
+- 🔴 **[Redis Clone](https://github.com/adarsh0707-kumar/redis-clone)** — A systems-focused Redis implementation exploring networking, commands, in-memory data structures, and protocol handling.
 
 ---
 
 ## 🛠️ Tech Stack
 
 **Languages**
-
-<p>
-<img src="https://skillicons.dev/icons?i=cpp,c,python,typescript,javascript,java"/>
-</p>
+![](https://skillicons.dev/icons?i=cpp,c,python,typescript,javascript,java)
 
 **Backend & Data**
-
-<p>
-<img src="https://skillicons.dev/icons?i=nodejs,express,postgres,redis,prisma"/>
-</p>
+![](https://skillicons.dev/icons?i=nodejs,express,postgres,redis,prisma)
 
 **Frontend**
-
-<p>
-<img src="https://skillicons.dev/icons?i=react,nextjs,vite,tailwind"/>
-</p>
+![](https://skillicons.dev/icons?i=react,nextjs,vite,tailwind)
 
 **Infrastructure & Systems**
-
-<p>
-<img src="https://skillicons.dev/icons?i=linux,docker,aws,githubactions,cmake,git"/>
-</p>
+![](https://skillicons.dev/icons?i=linux,docker,aws,githubactions,cmake,git)
 
 ---
 
 ## 📊 GitHub Stats
 
-<div align="center">
+<img src="https://streak-stats.demolab.com/?user=adarsh0707-kumar&theme=tokyonight&hide_border=true" alt="Adarsh Kumar GitHub streak stats" />
 
-<img src="./profile/stats.svg" width="72%" alt="Adarsh Kumar GitHub statistics"/>
+[![Adarsh Kumar GitHub statistics](https://raw.githubusercontent.com/adarsh0707-kumar/adarsh0707-kumar/main/profile/stats.svg)](https://github.com/adarsh0707-kumar/adarsh0707-kumar/blob/main/profile/stats.svg)
 
-</div>
-
----
-
-## 💻 Engineering Focus
-
-<div align="center">
-
-<img src="./profile/top-langs.svg" width="72%" alt="Adarsh Kumar top languages"/>
-
-</div>
-
----
-
-## 🔥 Contribution Streak
-
-<div align="center">
-
-<img src="./profile/streak.svg" width="72%" alt="Adarsh Kumar GitHub contribution streak"/>
-
-</div>
+[![Adarsh Kumar top languages](https://raw.githubusercontent.com/adarsh0707-kumar/adarsh0707-kumar/main/profile/top-langs.svg)](https://github.com/adarsh0707-kumar/adarsh0707-kumar/blob/main/profile/top-langs.svg)
 
 ---
 
 ## 🌆 3D Contribution Graph
 
-   ![Adarsh Kumar 3D contribution graph](https://raw.githubusercontent.com/adarsh0707-kumar/adarsh0707-kumar/main/profile-3d-contrib/profile-night-rainbow.svg)
+<img src="https://raw.githubusercontent.com/adarsh0707-kumar/adarsh0707-kumar/main/profile-3d-contrib/profile-night-rainbow.svg" alt="Adarsh Kumar 3D contribution graph" />
 
 ---
 
-## 🐍 Contribution Activity
+## 🐍 Contribution Snake
 
-<div align="center">
-
-<img src="https://raw.githubusercontent.com/adarsh0707-kumar/adarsh0707-kumar/output/github-contribution-grid-snake.svg" width="94%" alt="Animated GitHub contribution snake"/>
-
-</div>
+[![Animated GitHub contribution snake](https://raw.githubusercontent.com/adarsh0707-kumar/adarsh0707-kumar/output/github-contribution-grid-snake.svg)](https://raw.githubusercontent.com/adarsh0707-kumar/adarsh0707-kumar/output/github-contribution-grid-snake.svg)
 
 ---
 
-<div align="center">
+## 📈 Activity Graph
 
-<img src="./profile/certifications.svg" width="92%" alt="Certifications and professional learning"/>
+<img src="https://github-readme-activity-graph.vercel.app/graph?username=adarsh0707-kumar&theme=react-dark&hide_border=true" alt="Adarsh Kumar activity graph" />
 
-<br/><br/>
+---
 
-<table>
-<tr>
-<td align="center" width="33%">
+## 🏆 Certifications
 
-<a href="https://portfolio-orpin-zeta-77.vercel.app/certificates/satyam-internship.jpg">
-<img src="https://portfolio-orpin-zeta-77.vercel.app/certificates/satyam-internship.jpg" width="270" alt="Software Development Internship certificate"/>
-</a>
+[![Certifications and professional learning](https://raw.githubusercontent.com/adarsh0707-kumar/adarsh0707-kumar/main/profile/certifications.svg)](https://github.com/adarsh0707-kumar/adarsh0707-kumar/blob/main/profile/certifications.svg)
 
-**Software Development Internship**
+| Certificate | Issuer | Date |
+|---|---|---|
+| [Software Development Internship](https://portfolio-orpin-zeta-77.vercel.app/certificates/satyam-internship.jpg) | Satyam Software Solutions Pvt. Ltd. | Jan – Mar 2026 |
+| [Data Science with Python](https://portfolio-orpin-zeta-77.vercel.app/certificates/rcpl-data-science-python.png) | RCPL × ITS Engineering College | Aug – Sep 2025 |
+| [Power BI Micro Course](https://edu.skillcourse.in/view-certificate/SC-41TV1QU1VH) | Credential: SC-41TV1QU1VH | — |
+| [Python Micro Course](https://edu.skillcourse.in/view-certificate/SC-BAXUXNTSMF) | Credential: SC-BAXUXNTSMF | — |
+| [SQL Micro Course](https://edu.skillcourse.in/view-certificate/SC-I5EZD3SUZQ) | Credential: SC-I5EZD3SUZQ | — |
+| [Microsoft Excel — Beginners to Advance](https://edu.skillcourse.in/view-certificate/SC-S73ZDEN3I8) | Credential: SC-S73ZDEN3I8 | — |
 
-Satyam Software Solutions Pvt. Ltd.  
-*Jan – Mar 2026*
-
-<a href="https://linkedin.com/in/adarsh-kumar-657315251/details/certifications/"><img src="https://img.shields.io/badge/VIEW-CREDENTIAL-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white"/></a>
-
-</td>
-<td align="center" width="33%">
-
-<a href="https://portfolio-orpin-zeta-77.vercel.app/certificates/rcpl-data-science-python.png">
-<img src="https://portfolio-orpin-zeta-77.vercel.app/certificates/rcpl-data-science-python.png" width="270" alt="Data Science with Python certificate"/>
-</a>
-
-**Data Science with Python**
-
-RCPL × ITS Engineering College  
-*Aug – Sep 2025*
-
-<a href="https://linkedin.com/in/adarsh-kumar-657315251/details/certifications/"><img src="https://img.shields.io/badge/VIEW-CREDENTIAL-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white"/></a>
-
-</td>
-<td align="center" width="33%">
-
-<img src="https://portfolio-orpin-zeta-77.vercel.app/certificates/skillcourse-power-bi.jpg" width="270" alt="Power BI certificate"/>
-
-**Power BI Micro Course**
-
-Credential: **SC-41TV1QU1VH**
-
-<a href="https://edu.skillcourse.in/view-certificate/SC-41TV1QU1VH"><img src="https://img.shields.io/badge/VERIFY-CREDENTIAL-7C3AED?style=for-the-badge&logo=googledocs&logoColor=white"/></a>
-
-</td>
-</tr>
-<tr>
-<td align="center">
-
-<img src="https://portfolio-orpin-zeta-77.vercel.app/certificates/skillcourse-python.jpg" width="270" alt="Python certificate"/>
-
-**Python Micro Course**
-
-Credential: **SC-BAXUXNTSMF**
-
-<a href="https://edu.skillcourse.in/view-certificate/SC-BAXUXNTSMF"><img src="https://img.shields.io/badge/VERIFY-CREDENTIAL-7C3AED?style=for-the-badge&logo=googledocs&logoColor=white"/></a>
-
-</td>
-<td align="center">
-
-<img src="https://portfolio-orpin-zeta-77.vercel.app/certificates/skillcourse-sql.png" width="270" alt="SQL certificate"/>
-
-**SQL Micro Course**
-
-Credential: **SC-I5EZD3SUZQ**
-
-<a href="https://edu.skillcourse.in/view-certificate/SC-I5EZD3SUZQ"><img src="https://img.shields.io/badge/VERIFY-CREDENTIAL-7C3AED?style=for-the-badge&logo=googledocs&logoColor=white"/></a>
-
-</td>
-<td align="center">
-
-<img src="https://portfolio-orpin-zeta-77.vercel.app/certificates/skillcourse-excel.jpg" width="270" alt="Microsoft Excel certificate"/>
-
-**Microsoft Excel — Beginners to Advance**
-
-Credential: **SC-S73ZDEN3I8**
-
-<a href="https://edu.skillcourse.in/view-certificate/SC-S73ZDEN3I8"><img src="https://img.shields.io/badge/VERIFY-CREDENTIAL-7C3AED?style=for-the-badge&logo=googledocs&logoColor=white"/></a>
-
-</td>
-</tr>
-</table>
-
-<br/>
-
-<a href="https://linkedin.com/in/Adarsh-kumar-657315251/details/certifications/"><img src="https://img.shields.io/badge/VIEW_ALL_CREDENTIALS-LINKEDIN-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white"/></a>
-
-</div>
+[![View all certifications on LinkedIn](https://img.shields.io/badge/VIEW_ALL_CREDENTIALS-LINKEDIN-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://linkedin.com/in/Adarsh-kumar-657315251/details/certifications/)
 
 ---
 
@@ -275,9 +104,7 @@ Credential: **SC-S73ZDEN3I8**
 
 ## 🌱 Currently Exploring
 
-<div align="center">
-<img src="./profile/exploring.svg" width="92%" alt="Currently exploring"/>
-</div>
+[![Currently exploring](https://raw.githubusercontent.com/adarsh0707-kumar/adarsh0707-kumar/main/profile/exploring.svg)](https://github.com/adarsh0707-kumar/adarsh0707-kumar/blob/main/profile/exploring.svg)
 
 ---
 
@@ -285,28 +112,18 @@ Credential: **SC-S73ZDEN3I8**
 
 **Backend systems** · **Full-stack applications** · **Databases** · **Networking** · **Distributed systems** · **DevOps** · **Open source**
 
----
-
 ## 🎯 What I'm Looking For
 
 Software engineering opportunities where I can work on **real systems**, learn from experienced engineers, and contribute across backend, infrastructure, databases, networking, and distributed applications.
 
 ---
 
-<div align="center">
-
 ## 📫 Let's Connect
 
-<a href="https://linkedin.com/in/Adarsh-kumar-657315251"><img src="https://img.shields.io/badge/LINKEDIN-CONNECT-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white"/></a>
-<a href="mailto:adarshku.offical@gmail.com"><img src="https://img.shields.io/badge/EMAIL-SAY_HELLO-D14836?style=for-the-badge&logo=gmail&logoColor=white"/></a>
-<a href="https://github.com/adarsh0707-kumar"><img src="https://img.shields.io/badge/GITHUB-PROFILE-181717?style=for-the-badge&logo=github&logoColor=white"/></a>
+[![LinkedIn](https://img.shields.io/badge/LINKEDIN-CONNECT-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://linkedin.com/in/Adarsh-kumar-657315251)
+[![Email](https://img.shields.io/badge/EMAIL-SAY_HELLO-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:adarshku.offical@gmail.com)
+[![GitHub](https://img.shields.io/badge/GITHUB-PROFILE-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/adarsh0707-kumar)
 
-<br/><br/>
+[![Profile views](https://komarev.com/ghpvc/?username=adarsh0707-kumar&style=for-the-badge&label=PROFILE+VIEWS)](https://github.com/adarsh0707-kumar)
 
-<img src="https://komarev.com/ghpvc/?username=adarsh0707-kumar&style=for-the-badge&label=PROFILE+VIEWS" alt="Profile views"/>
-
-<br/><br/>
-
-<img src="./profile/footer.svg" width="100%" alt="Adarsh Kumar footer"/>
-
-</div>
+[![Adarsh Kumar footer](https://raw.githubusercontent.com/adarsh0707-kumar/adarsh0707-kumar/main/profile/footer.svg)](https://github.com/adarsh0707-kumar/adarsh0707-kumar/blob/main/profile/footer.svg)
