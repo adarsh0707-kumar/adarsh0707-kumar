@@ -51,11 +51,9 @@ I enjoy building complete software systems — from **TCP sockets and C++ system
 
 ---
 
-<img src="https://raw.githubusercontent.com/adarsh0707-kumar/adarsh0707-kumar/main/profile/stats-dashboard.svg" alt="Adarsh Kumar GitHub stats dashboard" />
-
----
-
 ## 📊 GitHub Stats
+
+<img src="https://raw.githubusercontent.com/adarsh0707-kumar/adarsh0707-kumar/main/profile/stats-dashboard.svg" alt="Adarsh Kumar GitHub stats dashboard" />
 
 <img src="https://streak-stats.demolab.com/?user=adarsh0707-kumar&theme=tokyonight&hide_border=true" alt="Adarsh Kumar GitHub streak stats" />
 
@@ -104,16 +102,46 @@ I enjoy building complete software systems — from **TCP sockets and C++ system
 
 [![Certifications and professional learning](https://raw.githubusercontent.com/adarsh0707-kumar/adarsh0707-kumar/main/profile/certifications.svg)](https://github.com/adarsh0707-kumar/adarsh0707-kumar/blob/main/profile/certifications.svg)
 
+**CERTIFICATES `6`** &nbsp;&nbsp; **LEARNING TRACKS `3`** &nbsp;&nbsp; **LEARNING MODE `ALWAYS ON`**
+
+### 💻 Software Engineering
+
 | Certificate | Issuer | Date |
 |---|---|---|
 | [Software Development Internship](https://portfolio-orpin-zeta-77.vercel.app/certificates/satyam-internship.jpg) | Satyam Software Solutions Pvt. Ltd. | Jan – Mar 2026 |
+
+### 📊 Data & Analytics
+
+| Certificate | Issuer | Date |
+|---|---|---|
 | [Data Science with Python](https://portfolio-orpin-zeta-77.vercel.app/certificates/rcpl-data-science-python.png) | RCPL × ITS Engineering College | Aug – Sep 2025 |
-| [Power BI Micro Course](https://edu.skillcourse.in/view-certificate/SC-41TV1QU1VH) | Credential: SC-41TV1QU1VH | — |
-| [Python Micro Course](https://edu.skillcourse.in/view-certificate/SC-BAXUXNTSMF) | Credential: SC-BAXUXNTSMF | — |
-| [SQL Micro Course](https://edu.skillcourse.in/view-certificate/SC-I5EZD3SUZQ) | Credential: SC-I5EZD3SUZQ | — |
-| [Microsoft Excel — Beginners to Advance](https://edu.skillcourse.in/view-certificate/SC-S73ZDEN3I8) | Credential: SC-S73ZDEN3I8 | — |
+| [Power BI Micro Course](https://edu.skillcourse.in/view-certificate/SC-41TV1QU1VH) | SkillCourse | — |
+| [SQL Micro Course](https://edu.skillcourse.in/view-certificate/SC-I5EZD3SUZQ) | SkillCourse | — |
+| [Microsoft Excel — Beginners to Advance](https://edu.skillcourse.in/view-certificate/SC-S73ZDEN3I8) | SkillCourse | — |
+
+### 🐍 Programming Foundations
+
+| Certificate | Issuer | Date |
+|---|---|---|
+| [Python Micro Course](https://edu.skillcourse.in/view-certificate/SC-BAXUXNTSMF) | SkillCourse | — |
 
 [![View all certifications on LinkedIn](https://img.shields.io/badge/VIEW_ALL_CREDENTIALS-LINKEDIN-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://linkedin.com/in/Adarsh-kumar-657315251/details/certifications/)
+
+---
+
+## ⭐ Submit Your Rating & Feedback
+
+Enjoyed my work? Pick a star rating below — it opens your email client with the rating pre-filled, straight to my inbox.
+
+| Rating | Click to rate |
+|---|---|
+| ⭐⭐⭐⭐⭐ | [![RATE](https://img.shields.io/badge/RATE-5_STARS_--_EXCELLENT-14b8a6?style=for-the-badge)](mailto:adarshku.offical@gmail.com?subject=Feedback%3A%205%20Stars%20-%20Excellent&body=Hi%20Adarsh%2C%0A%0AI%20wanted%20to%20share%20some%20feedback%20on%20your%20work%3A%0A) |
+| ⭐⭐⭐⭐ | [![RATE](https://img.shields.io/badge/RATE-4_STARS_--_VERY_GOOD-14b8a6?style=for-the-badge)](mailto:adarshku.offical@gmail.com?subject=Feedback%3A%204%20Stars%20-%20Very%20Good&body=Hi%20Adarsh%2C%0A%0AI%20wanted%20to%20share%20some%20feedback%20on%20your%20work%3A%0A) |
+| ⭐⭐⭐ | [![RATE](https://img.shields.io/badge/RATE-3_STARS_--_GOOD-f59e0b?style=for-the-badge)](mailto:adarshku.offical@gmail.com?subject=Feedback%3A%203%20Stars%20-%20Good&body=Hi%20Adarsh%2C%0A%0AI%20wanted%20to%20share%20some%20feedback%20on%20your%20work%3A%0A) |
+| ⭐⭐ | [![RATE](https://img.shields.io/badge/RATE-2_STARS_--_FAIR-f59e0b?style=for-the-badge)](mailto:adarshku.offical@gmail.com?subject=Feedback%3A%202%20Stars%20-%20Fair&body=Hi%20Adarsh%2C%0A%0AI%20wanted%20to%20share%20some%20feedback%20on%20your%20work%3A%0A) |
+| ⭐ | [![RATE](https://img.shields.io/badge/RATE-1_STAR_--_POOR-f87171?style=for-the-badge)](mailto:adarshku.offical@gmail.com?subject=Feedback%3A%201%20Star%20-%20Poor&body=Hi%20Adarsh%2C%0A%0AI%20wanted%20to%20share%20some%20feedback%20on%20your%20work%3A%0A) |
+
+[![Email](https://img.shields.io/badge/EMAIL-adarshku.offical%40gmail.com-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:adarshku.offical@gmail.com)
 
 ---
 
