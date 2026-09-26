@@ -323,12 +323,6 @@ I enjoy building complete software systems — from **TCP sockets and C++ system
 
 ---
 
-## 💬 Session Feedback
-
-<img src="https://raw.githubusercontent.com/adarsh0707-kumar/adarsh0707-kumar/main/profile/session-feedback.svg" alt="Adarsh Kumar — Session Feedback" width="100%" />
-
----
-
 ## ⭐ Submit Your Rating & Feedback
 
 <p align="center">
@@ -396,6 +390,12 @@ I enjoy building complete software systems — from **TCP sockets and C++ system
     <img src="https://img.shields.io/badge/WRITE_FEEDBACK-SHARE_YOUR_SUGGESTIONS-14b8a6?style=for-the-badge&logo=gmail&logoColor=white" />
   </a>
 </p>
+
+---
+
+## 💬 Session Feedback
+
+<img src="https://raw.githubusercontent.com/adarsh0707-kumar/adarsh0707-kumar/main/profile/session-feedback.svg" alt="Adarsh Kumar — Session Feedback" width="100%" />
 
 ---
 
