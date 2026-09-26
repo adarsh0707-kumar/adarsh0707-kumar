@@ -1,61 +1,275 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="900" height="360" viewBox="0 0 900 360" font-family="-apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 860" width="1600" height="860"
+  role="img" aria-label="Session Feedback — animated rating and feedback card">
+  <title>Session Feedback</title>
+  <desc>Animated session feedback card: a five-star rating fills in, two optional comments are typed, and the Submit Feedback button is clicked.</desc>
+
   <defs>
-    <linearGradient id="fb-bg" x1="0" y1="0" x2="1" y2="1">
-      <stop offset="0%" stop-color="#0b1220"/>
-      <stop offset="60%" stop-color="#0f172a"/>
-      <stop offset="100%" stop-color="#111a33"/>
+    <style>
+      .sans { font-family: Inter, "Segoe UI", "Helvetica Neue", Arial, sans-serif; }
+      .mono { font-family: "JetBrains Mono", "SFMono-Regular", Consolas, monospace; }
+      @media (prefers-reduced-motion: reduce) {
+        * { animation: none !important; }
+      }
+    </style>
+
+    <pattern id="dots" width="32" height="32" patternUnits="userSpaceOnUse">
+      <circle cx="2" cy="2" r="1.2" fill="#1a2542"/>
+    </pattern>
+
+    <radialGradient id="gA" cx="50%" cy="50%" r="50%">
+      <stop offset="0" stop-color="#39d353" stop-opacity="0.16"/>
+      <stop offset="1" stop-color="#39d353" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="gB" cx="50%" cy="50%" r="50%">
+      <stop offset="0" stop-color="#58a6ff" stop-opacity="0.16"/>
+      <stop offset="1" stop-color="#58a6ff" stop-opacity="0"/>
+    </radialGradient>
+
+    <linearGradient id="gBtn" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#7ee787"/>
+      <stop offset="1" stop-color="#39d353"/>
     </linearGradient>
-    <linearGradient id="fb-btn" x1="0" y1="0" x2="1" y2="0">
-      <stop offset="0%" stop-color="#34d399"/>
-      <stop offset="100%" stop-color="#10b981"/>
-    </linearGradient>
-    <linearGradient id="fb-star" x1="0" y1="0" x2="0" y2="1">
-      <stop offset="0%" stop-color="#fde047"/>
-      <stop offset="100%" stop-color="#f59e0b"/>
-    </linearGradient>
+
+    <filter id="blur" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="26"/>
+    </filter>
+    <filter id="soft" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="7"/>
+    </filter>
+
+    <clipPath id="frame"><rect width="1600" height="860" rx="28"/></clipPath>
   </defs>
 
-  <!-- Card background -->
-  <rect width="900" height="360" rx="18" fill="url(#fb-bg)"/>
-  <rect x="1" y="1" width="898" height="358" rx="17" fill="none" stroke="#1e293b" stroke-width="1"/>
+  <!-- Background -->
+  <g clip-path="url(#frame)">
+    <rect width="1600" height="860" fill="#0a0f1e"/>
+    <rect width="1600" height="860" fill="url(#dots)"/>
+    <ellipse cx="220"  cy="120" rx="560" ry="360" fill="url(#gA)"/>
+    <ellipse cx="1420" cy="800" rx="640" ry="380" fill="url(#gB)"/>
+  </g>
+  <rect x=".5" y=".5" width="1599" height="859" rx="28" fill="none" stroke="#1f2b47"/>
 
-  <!-- Left pane -->
-  <rect x="40" y="40" width="22" height="22" rx="6" fill="#0f2a3a" stroke="#0ea5e9" stroke-width="1"/>
-  <circle cx="51" cy="51" r="3" fill="#0ea5e9"/>
-  <text x="72" y="57" font-size="12" fill="#7dd3fc" font-weight="500">One last thing</text>
+  <!-- ══ PILL: One last thing ══ -->
+  <rect x="64" y="72" width="214" height="44" rx="22" fill="#39d353" fill-opacity=".1" stroke="#39d353" stroke-opacity=".45"/>
+  <circle cx="90" cy="94" r="5.5" fill="#39d353">
+    <animate attributeName="opacity" values="1;.3;1" dur="2s" repeatCount="indefinite"/>
+  </circle>
+  <circle cx="90" cy="94" r="5.5" fill="none" stroke="#39d353" stroke-width="2">
+    <animate attributeName="r" values="5.5;14" dur="2s" repeatCount="indefinite"/>
+    <animate attributeName="opacity" values=".7;0" dur="2s" repeatCount="indefinite"/>
+  </circle>
+  <text class="sans" x="112" y="102" font-size="22" font-weight="600" fill="#7ee787">One last thing</text>
 
-  <text x="40" y="115" font-size="34" fill="#e2e8f0" font-weight="800">Session Feedback</text>
+  <!-- ══ Headline + intro ══ -->
+  <text class="sans" x="64" y="212" font-size="68" font-weight="700" fill="#e6edf3" letter-spacing="-1.5">Session Feedback</text>
+  <text class="sans" x="64" y="278" font-size="27" fill="#8b949e">After our session, please rate</text>
+  <text class="sans" x="64" y="320" font-size="27" fill="#8b949e">your experience and share any thoughts.</text>
+  <text class="sans" x="64" y="362" font-size="27" fill="#8b949e">This helps me improve future sessions.</text>
 
-  <text x="40" y="152" font-size="14" fill="#94a3b8">After your guidance session, please rate</text>
-  <text x="40" y="172" font-size="14" fill="#94a3b8">your experience and share any thoughts.</text>
-  <text x="40" y="192" font-size="14" fill="#94a3b8">This helps me improve future sessions.</text>
+  <rect x="64" y="424" width="576" height="1.5" fill="#1f2b47"/>
 
-  <text x="40" y="238" font-size="14" fill="#e2e8f0" font-weight="600">How would you rate the session?</text>
+  <text class="sans" x="64" y="492" font-size="30" font-weight="600" fill="#e6edf3">How would you rate the session?</text>
 
-  <!-- 5 stars -->
-  <g fill="url(#fb-star)">
-    <path d="M50 262 l7 15 16 2 -12 11 3 16 -14 -8 -14 8 3 -16 -12 -11 16 -2 z"/>
-    <path d="M90 262 l7 15 16 2 -12 11 3 16 -14 -8 -14 8 3 -16 -12 -11 16 -2 z"/>
-    <path d="M130 262 l7 15 16 2 -12 11 3 16 -14 -8 -14 8 3 -16 -12 -11 16 -2 z"/>
-    <path d="M170 262 l7 15 16 2 -12 11 3 16 -14 -8 -14 8 3 -16 -12 -11 16 -2 z"/>
-    <path d="M210 262 l7 15 16 2 -12 11 3 16 -14 -8 -14 8 3 -16 -12 -11 16 -2 z"/>
+  <!-- ══ STARS (empty outlines) ══ -->
+  <polygon transform="translate(104,574)" points="0.00,-38.00 9.99,-13.75 36.14,-11.74 16.17,5.25 22.34,30.74 0.00,17.00 -22.34,30.74 -16.17,5.25 -36.14,-11.74 -9.99,-13.75" fill="#141e37" stroke="#2d3d62" stroke-width="3" stroke-linejoin="round"/>
+  <polygon transform="translate(200,574)" points="0.00,-38.00 9.99,-13.75 36.14,-11.74 16.17,5.25 22.34,30.74 0.00,17.00 -22.34,30.74 -16.17,5.25 -36.14,-11.74 -9.99,-13.75" fill="#141e37" stroke="#2d3d62" stroke-width="3" stroke-linejoin="round"/>
+  <polygon transform="translate(296,574)" points="0.00,-38.00 9.99,-13.75 36.14,-11.74 16.17,5.25 22.34,30.74 0.00,17.00 -22.34,30.74 -16.17,5.25 -36.14,-11.74 -9.99,-13.75" fill="#141e37" stroke="#2d3d62" stroke-width="3" stroke-linejoin="round"/>
+  <polygon transform="translate(392,574)" points="0.00,-38.00 9.99,-13.75 36.14,-11.74 16.17,5.25 22.34,30.74 0.00,17.00 -22.34,30.74 -16.17,5.25 -36.14,-11.74 -9.99,-13.75" fill="#141e37" stroke="#2d3d62" stroke-width="3" stroke-linejoin="round"/>
+  <polygon transform="translate(488,574)" points="0.00,-38.00 9.99,-13.75 36.14,-11.74 16.17,5.25 22.34,30.74 0.00,17.00 -22.34,30.74 -16.17,5.25 -36.14,-11.74 -9.99,-13.75" fill="#141e37" stroke="#2d3d62" stroke-width="3" stroke-linejoin="round"/>
+
+  <!-- Clock icon + hint -->
+  <g transform="translate(64,764)">
+    <circle cx="14" cy="14" r="12" fill="none" stroke="#8b949e" stroke-width="2.4"/>
+    <path d="M14 7v7l5 3" fill="none" stroke="#8b949e" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+  <text class="sans" x="100" y="786" font-size="23" fill="#8b949e">Takes about a minute. Both comments are optional.</text>
+
+  <!-- ══ RIGHT PANEL (form) ══ -->
+  <rect x="704" y="56" width="832" height="748" rx="28" fill="#111a30" stroke="#1f2b47" stroke-width="1.5"/>
+
+  <text class="sans" x="752" y="130" font-size="30" font-weight="600" fill="#e6edf3">What did you like most about the session?</text>
+  <rect x="752" y="156" width="736" height="170" rx="16" fill="#0c1425" stroke="#1f2b47" stroke-width="1.5"/>
+
+  <text class="sans" x="752" y="400" font-size="30" font-weight="600" fill="#e6edf3">Any suggestions for improvement?</text>
+  <rect x="752" y="426" width="736" height="170" rx="16" fill="#0c1425" stroke="#1f2b47" stroke-width="1.5"/>
+
+  <!-- Button pulse ring -->
+  <rect x="752" y="650" width="340" height="84" rx="42" fill="none" stroke="#39d353" stroke-width="2">
+    <animate attributeName="x" values="752;738" dur="2.4s" repeatCount="indefinite"/>
+    <animate attributeName="y" values="650;636" dur="2.4s" repeatCount="indefinite"/>
+    <animate attributeName="width" values="340;368" dur="2.4s" repeatCount="indefinite"/>
+    <animate attributeName="height" values="84;112" dur="2.4s" repeatCount="indefinite"/>
+    <animate attributeName="rx" values="42;56" dur="2.4s" repeatCount="indefinite"/>
+    <animate attributeName="stroke-opacity" values=".6;0" dur="2.4s" repeatCount="indefinite"/>
+    <animate attributeName="opacity" values="1;1;0;0;1" keyTimes="0;0.7571;0.7714;0.9929;1" dur="14.0s" repeatCount="indefinite"/>
+  </rect>
+
+  <!-- Button -->
+  <g transform="translate(922,692)">
+    <g>
+      <animateTransform attributeName="transform" type="scale" values="1;1;.96;1;1"
+        keyTimes="0;0.7714;0.7857;0.8036;1" dur="14.0s" repeatCount="indefinite"/>
+      <g transform="translate(-922,-692)">
+        <rect x="752" y="650" width="340" height="84" rx="42" fill="url(#gBtn)">
+          <animate attributeName="width" values="340;340;470;470;340;340" keyTimes="0;0.8071;0.8393;0.9643;0.9964;1" dur="14.0s" repeatCount="indefinite"/>
+        </rect>
+        <text class="sans" x="922" y="703" font-size="28" font-weight="700" fill="#06231f" text-anchor="middle">
+          Submit Feedback
+          <animate attributeName="opacity" values="1;1;0;0;1;1" keyTimes="0;0.8;0.8143;0.9714;0.9929;1" dur="14.0s" repeatCount="indefinite"/>
+        </text>
+
+        <!-- Success state -->
+        <g opacity="0">
+          <animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.8214;0.8429;0.9643;0.9857;1" dur="14.0s" repeatCount="indefinite"/>
+          <circle cx="804" cy="692" r="20" fill="#06231f" fill-opacity=".16"/>
+          <path d="M794 692l7 7 13-14" fill="none" stroke="#06231f" stroke-width="4.5" stroke-linecap="round" stroke-linejoin="round"/>
+          <text class="sans" x="838" y="703" font-size="28" font-weight="700" fill="#06231f">Thank you, feedback sent</text>
+        </g>
+      </g>
+    </g>
   </g>
 
-  <text x="40" y="320" font-size="15" fill="#fbbf24" font-weight="700">Excellent</text>
-  <text x="120" y="320" font-size="13" fill="#94a3b8">5 out of 5</text>
+  <!-- ══ ANIMATED LAYER ══ -->
+  <g opacity="0">
+    <animate attributeName="opacity" values="0;1;1;0;0" keyTimes="0;0.025;0.9536;0.9929;1" dur="14.0s" repeatCount="indefinite"/>
 
-  <!-- Divider -->
-  <line x1="470" y1="60" x2="470" y2="300" stroke="#1e293b" stroke-width="1"/>
+    <!-- Star glow behind stars -->
+    <ellipse cx="296" cy="574" rx="250" ry="60" fill="#fbbf24" opacity="0" filter="url(#blur)">
+      <animate attributeName="opacity" values="0;0;0.32;0.32" keyTimes="0;0.0714;0.1643;1" dur="14.0s" repeatCount="indefinite"/>
+    </ellipse>
 
-  <!-- Right pane (fake form) -->
-  <text x="510" y="80" font-size="13" fill="#e2e8f0" font-weight="600">What did you like most about the session?</text>
-  <rect x="510" y="94" width="350" height="70" rx="10" fill="#0b1220" stroke="#1e293b"/>
-  <text x="524" y="120" font-size="12" fill="#94a3b8">The clear guidance and real examples</text>
-  <text x="524" y="138" font-size="12" fill="#94a3b8">made every step easy to follow.</text>
+    <!-- Filled stars, staggered -->
+    <g transform="translate(104,574)"><g>
+      <animateTransform attributeName="transform" type="scale" values="0;0;1.28;1;1" keyTimes="0;0.0536;0.0693;0.0821;1" dur="14.0s" repeatCount="indefinite"/>
+      <polygon points="0.00,-38.00 9.99,-13.75 36.14,-11.74 16.17,5.25 22.34,30.74 0.00,17.00 -22.34,30.74 -16.17,5.25 -36.14,-11.74 -9.99,-13.75" fill="#fbbf24" stroke="#fbbf24" stroke-width="3" stroke-linejoin="round"/>
+    </g></g>
+    <g transform="translate(200,574)"><g>
+      <animateTransform attributeName="transform" type="scale" values="0;0;1.28;1;1" keyTimes="0;0.0821;0.0979;0.1107;1" dur="14.0s" repeatCount="indefinite"/>
+      <polygon points="0.00,-38.00 9.99,-13.75 36.14,-11.74 16.17,5.25 22.34,30.74 0.00,17.00 -22.34,30.74 -16.17,5.25 -36.14,-11.74 -9.99,-13.75" fill="#fbbf24" stroke="#fbbf24" stroke-width="3" stroke-linejoin="round"/>
+    </g></g>
+    <g transform="translate(296,574)"><g>
+      <animateTransform attributeName="transform" type="scale" values="0;0;1.28;1;1" keyTimes="0;0.1107;0.1264;0.1393;1" dur="14.0s" repeatCount="indefinite"/>
+      <polygon points="0.00,-38.00 9.99,-13.75 36.14,-11.74 16.17,5.25 22.34,30.74 0.00,17.00 -22.34,30.74 -16.17,5.25 -36.14,-11.74 -9.99,-13.75" fill="#fbbf24" stroke="#fbbf24" stroke-width="3" stroke-linejoin="round"/>
+    </g></g>
+    <g transform="translate(392,574)"><g>
+      <animateTransform attributeName="transform" type="scale" values="0;0;1.28;1;1" keyTimes="0;0.1393;0.155;0.1679;1" dur="14.0s" repeatCount="indefinite"/>
+      <polygon points="0.00,-38.00 9.99,-13.75 36.14,-11.74 16.17,5.25 22.34,30.74 0.00,17.00 -22.34,30.74 -16.17,5.25 -36.14,-11.74 -9.99,-13.75" fill="#fbbf24" stroke="#fbbf24" stroke-width="3" stroke-linejoin="round"/>
+    </g></g>
+    <g transform="translate(488,574)"><g>
+      <animateTransform attributeName="transform" type="scale" values="0;0;1.28;1;1" keyTimes="0;0.1679;0.1836;0.1964;1" dur="14.0s" repeatCount="indefinite"/>
+      <polygon points="0.00,-38.00 9.99,-13.75 36.14,-11.74 16.17,5.25 22.34,30.74 0.00,17.00 -22.34,30.74 -16.17,5.25 -36.14,-11.74 -9.99,-13.75" fill="#fbbf24" stroke="#fbbf24" stroke-width="3" stroke-linejoin="round"/>
+    </g></g>
 
-  <text x="510" y="196" font-size="13" fill="#e2e8f0" font-weight="600">Any suggestions for improvement?</text>
-  <rect x="510" y="210" width="350" height="70" rx="10" fill="#0b1220" stroke="#10b981" stroke-opacity="0.5" stroke-width="1.5"/>
+    <!-- "Excellent 5 out of 5" -->
+    <g opacity="0">
+      <animate attributeName="opacity" values="0;0;1;1" keyTimes="0;0.1857;0.2071;1" dur="14.0s" repeatCount="indefinite"/>
+      <text class="sans" x="64" y="686" font-size="32" font-weight="700" fill="#fbbf24">Excellent</text>
+      <text class="sans" x="222" y="686" font-size="26" fill="#8b949e">5 out of 5</text>
+    </g>
 
-  <rect x="510" y="294" width="180" height="40" rx="8" fill="url(#fb-btn)"/>
-  <text x="600" y="319" font-size="14" fill="#0b1220" font-weight="800" text-anchor="middle">Submit Feedback</text>
+    <!-- First field typing -->
+    <text class="sans" x="784" y="208" font-size="27" fill="#8b949e" fill-opacity=".8">
+      Optional
+      <animate attributeName="opacity" values="1;1;0;0" keyTimes="0;0.2143;0.2321;1" dur="14.0s" repeatCount="indefinite"/>
+    </text>
+    <rect x="752" y="156" width="736" height="170" rx="16" fill="none" stroke="#39d353" stroke-width="6" filter="url(#soft)" opacity="0">
+      <animate attributeName="opacity" values="0;0;0.5;0.5;0;0" keyTimes="0;0.2143;0.2321;0.4643;0.4821;1" dur="14.0s" repeatCount="indefinite"/>
+    </rect>
+    <rect x="752" y="156" width="736" height="170" rx="16" fill="none" stroke="#39d353" stroke-width="2.5" opacity="0">
+      <animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.2143;0.2321;0.4643;0.4821;1" dur="14.0s" repeatCount="indefinite"/>
+    </rect>
+
+    <clipPath id="tc0"><rect x="782" y="182" width="0" height="44">
+      <animate attributeName="width" values="0;0;560.5625;560.5625" keyTimes="0;0.2393;0.3473;1" dur="14.0s" repeatCount="indefinite"/>
+    </rect></clipPath>
+    <text class="sans" x="784" y="214" font-size="28" fill="#e6edf3" clip-path="url(#tc0)">The clear guidance and real examples made</text>
+    <rect x="784" y="187" width="3" height="34" rx="1.5" fill="#39d353" opacity="0">
+      <animate attributeName="x" values="784;784;1336.5625;1336.5625" keyTimes="0;0.2393;0.3473;1" dur="14.0s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.2393;0.2407;0.3473;0.3487;1" dur="14.0s" repeatCount="indefinite"/>
+    </rect>
+
+    <clipPath id="tc1"><rect x="782" y="228" width="0" height="44">
+      <animate attributeName="width" values="0;0;449.5156;449.5156" keyTimes="0;0.358;0.4546;1" dur="14.0s" repeatCount="indefinite"/>
+    </rect></clipPath>
+    <text class="sans" x="784" y="260" font-size="28" fill="#e6edf3" clip-path="url(#tc1)">every step easy to follow and apply.</text>
+    <rect x="784" y="233" width="3" height="34" rx="1.5" fill="#39d353" opacity="0">
+      <animate attributeName="x" values="784;784;1225.5156;1225.5156" keyTimes="0;0.358;0.4546;1" dur="14.0s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.358;0.3594;0.4546;0.456;1" dur="14.0s" repeatCount="indefinite"/>
+    </rect>
+
+    <!-- Second field -->
+    <text class="sans" x="784" y="478" font-size="27" fill="#8b949e" fill-opacity=".8">
+      Optional
+      <animate attributeName="opacity" values="1;1;0;0" keyTimes="0;0.4786;0.4964;1" dur="14.0s" repeatCount="indefinite"/>
+    </text>
+    <rect x="752" y="426" width="736" height="170" rx="16" fill="none" stroke="#39d353" stroke-width="6" filter="url(#soft)" opacity="0">
+      <animate attributeName="opacity" values="0;0;0.5;0.5;0;0" keyTimes="0;0.4786;0.4964;0.7357;0.7536;1" dur="14.0s" repeatCount="indefinite"/>
+    </rect>
+    <rect x="752" y="426" width="736" height="170" rx="16" fill="none" stroke="#39d353" stroke-width="2.5" opacity="0">
+      <animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.4786;0.4964;0.7357;0.7536;1" dur="14.0s" repeatCount="indefinite"/>
+    </rect>
+
+    <clipPath id="tc2"><rect x="782" y="452" width="0" height="44">
+      <animate attributeName="width" values="0;0;453.1094;453.1094" keyTimes="0;0.5036;0.6024;1" dur="14.0s" repeatCount="indefinite"/>
+    </rect></clipPath>
+    <text class="sans" x="784" y="484" font-size="28" fill="#e6edf3" clip-path="url(#tc2)">A little more time for Q&amp;A at the end</text>
+    <rect x="784" y="457" width="3" height="34" rx="1.5" fill="#39d353" opacity="0">
+      <animate attributeName="x" values="784;784;1229.1094;1229.1094" keyTimes="0;0.5036;0.6024;1" dur="14.0s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.5036;0.505;0.6024;0.6039;1" dur="14.0s" repeatCount="indefinite"/>
+    </rect>
+
+    <clipPath id="tc3"><rect x="782" y="498" width="0" height="44">
+      <animate attributeName="width" values="0;0;460.9375;460.9375" keyTimes="0;0.6131;0.7074;1" dur="14.0s" repeatCount="indefinite"/>
+    </rect></clipPath>
+    <text class="sans" x="784" y="530" font-size="28" fill="#e6edf3" clip-path="url(#tc3)">would make the session even better.</text>
+    <rect x="784" y="503" width="3" height="34" rx="1.5" fill="#39d353" opacity="0">
+      <animate attributeName="x" values="784;784;1236.9375;1236.9375" keyTimes="0;0.6131;0.7074;1" dur="14.0s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.6131;0.6146;0.7074;0.7089;1" dur="14.0s" repeatCount="indefinite"/>
+    </rect>
+
+    <!-- Cursor -->
+    <g opacity="0">
+      <animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.6857;0.7036;0.8214;0.8429;1" dur="14.0s" repeatCount="indefinite"/>
+      <g>
+        <animateTransform attributeName="transform" type="translate"
+          values="1370,480;1370,480;900,690;900,690"
+          keyTimes="0;0.6857;0.7571;1" calcMode="spline"
+          keySplines="0 0 1 1;.4 0 .2 1;0 0 1 1" dur="14.0s" repeatCount="indefinite"/>
+        <path d="M0 0L0 27L7.5 20.5L12.5 32.5L18 30L13 18.5L22 18.5Z" fill="#fff" stroke="#0a0f1e" stroke-width="2.2" stroke-linejoin="round"/>
+      </g>
+    </g>
+
+    <!-- Click ripple -->
+    <circle cx="900" cy="694" r="0" fill="none" stroke="#39d353" stroke-width="4" opacity="0">
+      <animate attributeName="r" values="0;0;90;90" keyTimes="0;0.7857;0.8429;1" dur="14.0s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0;0;0.8;0;0" keyTimes="0;0.7857;0.7893;0.8429;1" dur="14.0s" repeatCount="indefinite"/>
+    </circle>
+
+    <!-- Confetti burst -->
+    <rect width="9" height="9" rx="2" fill="#39d353" x="987" y="692" opacity="0">
+      <animate attributeName="x" values="987;987;1107;1107" keyTimes="0;0.825;0.9107;1" calcMode="spline" keySplines="0 0 1 1;.2 .7 .3 1;0 0 1 1" dur="14.0s" repeatCount="indefinite"/>
+      <animate attributeName="y" values="692;692;718;718" keyTimes="0;0.825;0.9107;1" calcMode="spline" keySplines="0 0 1 1;.2 .7 .3 1;0 0 1 1" dur="14.0s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.825;0.8286;0.8821;0.9107;1" dur="14.0s" repeatCount="indefinite"/>
+    </rect>
+    <circle r="6" fill="#fbbf24" cx="987" cy="692" opacity="0">
+      <animate attributeName="cx" values="987;987;1131.875;1131.875" keyTimes="0;0.825;0.9107;1" calcMode="spline" keySplines="0 0 1 1;.2 .7 .3 1;0 0 1 1" dur="14.0s" repeatCount="indefinite"/>
+      <animate attributeName="cy" values="692;692;781.1759;781.1759" keyTimes="0;0.825;0.9107;1" calcMode="spline" keySplines="0 0 1 1;.2 .7 .3 1;0 0 1 1" dur="14.0s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.825;0.8286;0.8821;0.9107;1" dur="14.0s" repeatCount="indefinite"/>
+    </circle>
+    <rect width="11" height="11" rx="2" fill="#58a6ff" x="987" y="692" opacity="0">
+      <animate attributeName="x" values="987;987;1147.8693;1147.8693" keyTimes="0;0.825;0.9107;1" calcMode="spline" keySplines="0 0 1 1;.2 .7 .3 1;0 0 1 1" dur="14.0s" repeatCount="indefinite"/>
+      <animate attributeName="y" values="692;692;825.9883;825.9883" keyTimes="0;0.825;0.9107;1" calcMode="spline" keySplines="0 0 1 1;.2 .7 .3 1;0 0 1 1" dur="14.0s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.825;0.8286;0.8821;0.9107;1" dur="14.0s" repeatCount="indefinite"/>
+    </rect>
+    <circle r="5" fill="#7ee787" cx="987" cy="692" opacity="0">
+      <animate attributeName="cx" values="987;987;1030.7962;1030.7962" keyTimes="0;0.825;0.9107;1" calcMode="spline" keySplines="0 0 1 1;.2 .7 .3 1;0 0 1 1" dur="14.0s" repeatCount="indefinite"/>
+      <animate attributeName="cy" values="692;692;807.3779;807.3779" keyTimes="0;0.825;0.9107;1" calcMode="spline" keySplines="0 0 1 1;.2 .7 .3 1;0 0 1 1" dur="14.0s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.825;0.8286;0.8821;0.9107;1" dur="14.0s" repeatCount="indefinite"/>
+    </circle>
+    <rect width="10" height="10" rx="2" fill="#fbbf24" x="987" y="692" opacity="0">
+      <animate attributeName="x" values="987;987;1015.6519;1015.6519" keyTimes="0;0.825;0.9107;1" calcMode="spline" keySplines="0 0 1 1;.2 .7 .3 1;0 0 1 1" dur="14.0s" repeatCount="indefinite"/>
+      <animate attributeName="y" values="692;692;847.9946;847.9946" keyTimes="0;0.825;0.9107;1" calcMode="spline" keySplines="0 0 1 1;.2 .7 .3 1;0 0 1 1" dur="14.0s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.825;0.8286;0.8821;0.9107;1" dur="14.0s" repeatCount="indefinite"/>
+    </rect>
+  </g>
 </svg>
