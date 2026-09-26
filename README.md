@@ -470,7 +470,7 @@ A machine-learning-powered movie recommender that suggests 5 similar films based
 
 ---
 
-## ⭐ Submit Your Rating & Feedback
+<h2 align="center">⭐ Submit Your Rating & Feedback</h2>
 
 <p align="center">
   Enjoyed my work? Pick a star rating below.<br/>
