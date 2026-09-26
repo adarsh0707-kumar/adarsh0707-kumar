@@ -179,8 +179,8 @@
         @keyframes roll_rT_3 {
           0%   { transform: translateY(0); }
           2.857% { transform: translateY(0); }
-          17.143% { transform: translateY(-100.8px); }
-          100% { transform: translateY(-100.8px); }
+          17.143% { transform: translateY(-806.4px); }
+          100% { transform: translateY(-806.4px); }
         }
       </style>
       <clipPath id="rT_3">
@@ -238,16 +238,54 @@
         @keyframes roll_rC_0 {
           0%   { transform: translateY(0); }
           2.857% { transform: translateY(0); }
-          17.143% { transform: translateY(0px); }
-          100% { transform: translateY(0px); }
+          17.143% { transform: translateY(-257.6px); }
+          100% { transform: translateY(-257.6px); }
         }
       </style>
       <clipPath id="rC_0">
-        <rect x="458.66" y="161" width="26.68" height="64.4"/>
+        <rect x="445.32" y="161" width="26.68" height="64.4"/>
       </clipPath>
       <g clip-path="url(#rC_0)">
         <g style="animation: roll_rC_0 14s infinite; animation-delay: 0.00s; transform-box: fill-box;">
-          <g transform="translate(472, 164.68)">
+          <g transform="translate(458.65999999999997, 164.68)">
+            <text x="0" y="42.32" text-anchor="middle"
+        font-size="46" font-weight="800" fill="url(#numfill)">0</text>
+<text x="0" y="106.72" text-anchor="middle"
+        font-size="46" font-weight="800" fill="url(#numfill)">1</text>
+<text x="0" y="171.12" text-anchor="middle"
+        font-size="46" font-weight="800" fill="url(#numfill)">2</text>
+<text x="0" y="235.52" text-anchor="middle"
+        font-size="46" font-weight="800" fill="url(#numfill)">3</text>
+<text x="0" y="299.92" text-anchor="middle"
+        font-size="46" font-weight="800" fill="url(#numfill)">4</text>
+<text x="0" y="364.32" text-anchor="middle"
+        font-size="46" font-weight="800" fill="url(#numfill)">5</text>
+<text x="0" y="428.72" text-anchor="middle"
+        font-size="46" font-weight="800" fill="url(#numfill)">6</text>
+<text x="0" y="493.12000000000006" text-anchor="middle"
+        font-size="46" font-weight="800" fill="url(#numfill)">7</text>
+<text x="0" y="557.5200000000001" text-anchor="middle"
+        font-size="46" font-weight="800" fill="url(#numfill)">8</text>
+<text x="0" y="621.9200000000001" text-anchor="middle"
+        font-size="46" font-weight="800" fill="url(#numfill)">9</text>
+          </g>
+        </g>
+      </g>
+
+      <style>
+        @keyframes roll_rC_1 {
+          0%   { transform: translateY(0); }
+          2.857% { transform: translateY(0); }
+          17.143% { transform: translateY(-322px); }
+          100% { transform: translateY(-322px); }
+        }
+      </style>
+      <clipPath id="rC_1">
+        <rect x="472" y="161" width="26.68" height="64.4"/>
+      </clipPath>
+      <g clip-path="url(#rC_1)">
+        <g style="animation: roll_rC_1 14s infinite; animation-delay: 0.08s; transform-box: fill-box;">
+          <g transform="translate(485.34, 164.68)">
             <text x="0" y="42.32" text-anchor="middle"
         font-size="46" font-weight="800" fill="url(#numfill)">0</text>
 <text x="0" y="106.72" text-anchor="middle"
@@ -274,8 +312,8 @@
   <text x="472" y="229" text-anchor="middle" font-size="12"
     font-weight="600" fill="#8b949e">days</text>
   <text x="574" y="174" font-size="19" font-weight="700" fill="#e6edf3">Current streak</text>
-  <text x="574" y="200" font-size="14" fill="#39d353" font-weight="600">0 day run</text>
-  <text x="574" y="228" font-size="13" fill="#8b949e">Personal record approaching</text>
+  <text x="574" y="200" font-size="14" fill="#39d353" font-weight="600">45 day run</text>
+  <text x="574" y="228" font-size="13" fill="#8b949e">Matches the longest streak</text>
 
   <rect x="860" y="96" width="300" height="190" rx="20"
     fill="#ffffff08" stroke="#ffffff16"/>
@@ -324,8 +362,8 @@
         @keyframes roll_rL_1 {
           0%   { transform: translateY(0); }
           2.857% { transform: translateY(0); }
-          17.143% { transform: translateY(-403.2px); }
-          100% { transform: translateY(-403.2px); }
+          17.143% { transform: translateY(-504px); }
+          100% { transform: translateY(-504px); }
         }
       </style>
       <clipPath id="rL_1">
@@ -419,8 +457,8 @@
           100% { transform: scaleY(1); }
         }
       </style>
-      <rect x="122.6" y="484.9"
-        width="27.4" height="21.1" rx="4"
+      <rect x="122.6" y="486.5"
+        width="27.4" height="19.5" rx="4"
         fill="#39d353" opacity="0.8"
         style="animation: bar_1 14s infinite; animation-delay: 0.03s; transform-origin: 136.3px 506.0px; transform-box: view-box;"/>
 
@@ -445,8 +483,8 @@
           100% { transform: scaleY(1); }
         }
       </style>
-      <rect x="210.9" y="497.6"
-        width="27.4" height="8.4" rx="4"
+      <rect x="210.9" y="504.5"
+        width="27.4" height="1.5" rx="4"
         fill="#39d353" opacity="0.8"
         style="animation: bar_3 14s infinite; animation-delay: 0.09s; transform-origin: 224.6px 506.0px; transform-box: view-box;"/>
 
@@ -458,8 +496,8 @@
           100% { transform: scaleY(1); }
         }
       </style>
-      <rect x="255.1" y="501.8"
-        width="27.4" height="4.2" rx="4"
+      <rect x="255.1" y="494.3"
+        width="27.4" height="11.7" rx="4"
         fill="#39d353" opacity="0.8"
         style="animation: bar_4 14s infinite; animation-delay: 0.12s; transform-origin: 268.8px 506.0px; transform-box: view-box;"/>
 
@@ -471,8 +509,8 @@
           100% { transform: scaleY(1); }
         }
       </style>
-      <rect x="299.2" y="504.5"
-        width="27.4" height="1.5" rx="4"
+      <rect x="299.2" y="498.2"
+        width="27.4" height="7.8" rx="4"
         fill="#39d353" opacity="0.8"
         style="animation: bar_5 14s infinite; animation-delay: 0.15s; transform-origin: 312.9px 506.0px; transform-box: view-box;"/>
 
@@ -484,8 +522,8 @@
           100% { transform: scaleY(1); }
         }
       </style>
-      <rect x="343.4" y="501.8"
-        width="27.4" height="4.2" rx="4"
+      <rect x="343.4" y="502.1"
+        width="27.4" height="3.9" rx="4"
         fill="#39d353" opacity="0.8"
         style="animation: bar_6 14s infinite; animation-delay: 0.18s; transform-origin: 357.1px 506.0px; transform-box: view-box;"/>
 
@@ -497,8 +535,8 @@
           100% { transform: scaleY(1); }
         }
       </style>
-      <rect x="387.6" y="501.8"
-        width="27.4" height="4.2" rx="4"
+      <rect x="387.6" y="502.1"
+        width="27.4" height="3.9" rx="4"
         fill="#39d353" opacity="0.8"
         style="animation: bar_7 14s infinite; animation-delay: 0.21s; transform-origin: 401.2px 506.0px; transform-box: view-box;"/>
 
@@ -510,8 +548,8 @@
           100% { transform: scaleY(1); }
         }
       </style>
-      <rect x="431.7" y="501.8"
-        width="27.4" height="4.2" rx="4"
+      <rect x="431.7" y="502.1"
+        width="27.4" height="3.9" rx="4"
         fill="#39d353" opacity="0.8"
         style="animation: bar_8 14s infinite; animation-delay: 0.24s; transform-origin: 445.4px 506.0px; transform-box: view-box;"/>
 
@@ -523,8 +561,8 @@
           100% { transform: scaleY(1); }
         }
       </style>
-      <rect x="475.9" y="463.9"
-        width="27.4" height="42.1" rx="4"
+      <rect x="475.9" y="486.5"
+        width="27.4" height="19.5" rx="4"
         fill="#39d353" opacity="0.8"
         style="animation: bar_9 14s infinite; animation-delay: 0.27s; transform-origin: 489.6px 506.0px; transform-box: view-box;"/>
 
@@ -536,8 +574,8 @@
           100% { transform: scaleY(1); }
         }
       </style>
-      <rect x="520.1" y="484.9"
-        width="27.4" height="21.1" rx="4"
+      <rect x="520.1" y="498.2"
+        width="27.4" height="7.8" rx="4"
         fill="#39d353" opacity="0.8"
         style="animation: bar_10 14s infinite; animation-delay: 0.30s; transform-origin: 533.8px 506.0px; transform-box: view-box;"/>
 
@@ -549,8 +587,8 @@
           100% { transform: scaleY(1); }
         }
       </style>
-      <rect x="564.2" y="493.4"
-        width="27.4" height="12.6" rx="4"
+      <rect x="564.2" y="504.5"
+        width="27.4" height="1.5" rx="4"
         fill="#39d353" opacity="0.8"
         style="animation: bar_11 14s infinite; animation-delay: 0.33s; transform-origin: 577.9px 506.0px; transform-box: view-box;"/>
 
@@ -575,8 +613,8 @@
           100% { transform: scaleY(1); }
         }
       </style>
-      <rect x="652.6" y="472.3"
-        width="27.4" height="33.7" rx="4"
+      <rect x="652.6" y="474.8"
+        width="27.4" height="31.2" rx="4"
         fill="#39d353" opacity="0.8"
         style="animation: bar_13 14s infinite; animation-delay: 0.39s; transform-origin: 666.3px 506.0px; transform-box: view-box;"/>
 
@@ -588,8 +626,8 @@
           100% { transform: scaleY(1); }
         }
       </style>
-      <rect x="696.7" y="497.6"
-        width="27.4" height="8.4" rx="4"
+      <rect x="696.7" y="498.2"
+        width="27.4" height="7.8" rx="4"
         fill="#39d353" opacity="0.8"
         style="animation: bar_14 14s infinite; animation-delay: 0.42s; transform-origin: 710.4px 506.0px; transform-box: view-box;"/>
 
@@ -601,8 +639,8 @@
           100% { transform: scaleY(1); }
         }
       </style>
-      <rect x="740.9" y="468.1"
-        width="27.4" height="37.9" rx="4"
+      <rect x="740.9" y="467.0"
+        width="27.4" height="39.0" rx="4"
         fill="#39d353" opacity="0.8"
         style="animation: bar_15 14s infinite; animation-delay: 0.45s; transform-origin: 754.6px 506.0px; transform-box: view-box;"/>
 
@@ -627,8 +665,8 @@
           100% { transform: scaleY(1); }
         }
       </style>
-      <rect x="829.2" y="480.7"
-        width="27.4" height="25.3" rx="4"
+      <rect x="829.2" y="467.0"
+        width="27.4" height="39.0" rx="4"
         fill="#39d353" opacity="0.8"
         style="animation: bar_17 14s infinite; animation-delay: 0.51s; transform-origin: 842.9px 506.0px; transform-box: view-box;"/>
 
@@ -640,8 +678,8 @@
           100% { transform: scaleY(1); }
         }
       </style>
-      <rect x="873.4" y="501.8"
-        width="27.4" height="4.2" rx="4"
+      <rect x="873.4" y="502.1"
+        width="27.4" height="3.9" rx="4"
         fill="#39d353" opacity="0.8"
         style="animation: bar_18 14s infinite; animation-delay: 0.54s; transform-origin: 887.1px 506.0px; transform-box: view-box;"/>
 
