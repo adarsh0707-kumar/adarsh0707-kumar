@@ -17,20 +17,20 @@
 
     <clipPath id="role1clip">
       <rect x="170" y="530" width="0" height="110">
-        <animate attributeName="width" values="0;0;1180;1180;0;0"
+        <animate attributeName="width" values="0;0;1500;1500;0;0"
           keyTimes="0;0.02;0.15;0.28;0.32;1" dur="14s" repeatCount="indefinite"/>
       </rect>
     </clipPath>
     <clipPath id="role2clip">
       <rect x="170" y="530" width="0" height="110">
-        <animate attributeName="width" values="0;0;1120;1120;0;0"
-          keyTimes="0;0.33;0.46;0.62;0.66;1" dur="14s" repeatCount="indefinite"/>
+        <animate attributeName="width" values="0;0;1450;1450;0;0"
+  keyTimes="0;0.33;0.46;0.62;0.66;1" dur="14s" repeatCount="indefinite"/>
       </rect>
     </clipPath>
     <clipPath id="role3clip">
       <rect x="170" y="530" width="0" height="110">
-        <animate attributeName="width" values="0;0;840;840;0"
-          keyTimes="0;0.67;0.80;0.96;1" dur="14s" repeatCount="indefinite"/>
+        <animate attributeName="width" values="0;0;1100;1100;0"
+  keyTimes="0;0.67;0.80;0.96;1" dur="14s" repeatCount="indefinite"/>
       </rect>
     </clipPath>
 
