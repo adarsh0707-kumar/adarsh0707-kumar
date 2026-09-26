@@ -461,8 +461,10 @@ async function main() {
   if (bad) throw new Error("Refusing to write — data looks invalid");
 
   fs.mkdirSync("profile", { recursive: true });
-  fs.writeFileSync(path.join("profile", "stats-dashboard.svg"), svg);
-  console.log(`Wrote profile/stats-dashboard.svg (${svg.length} bytes)`);
+  const outputPath = path.join("profile", "stats-dashboard.svg");
+  fs.writeFileSync(outputPath, svg);
+  const writtenBytes = fs.statSync(outputPath).size;
+  console.log(`Wrote profile/stats-dashboard.svg (${writtenBytes} bytes)`);
   console.log(`  current streak: ${contrib.current} days (${currentRange})`);
   console.log(`  longest streak: ${contrib.longest} days (${longestRange})`);
 }
