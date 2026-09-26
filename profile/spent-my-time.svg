@@ -593,9 +593,9 @@
     <line x1="14" y1="14" x2="20" y2="26" stroke="#2DD4BF" stroke-width="3"/>
     <line x1="26" y1="14" x2="20" y2="26" stroke="#2DD4BF" stroke-width="3"/>
   </g>
-  <text class="sans" x="140" y="778" font-size="26" font-weight="700" fill="#E8EEF9">Systems &amp; Networking</text>
-  <text class="sans" x="88" y="838" font-size="21" fill="#8A97B5">TCP sockets, protocols,</text>
-  <text class="sans" x="88" y="870" font-size="21" fill="#8A97B5">concurrency, threading</text>
+  <text class="sans" x="140" y="778" font-size="23" font-weight="700" fill="#E8EEF9">Systems &amp; Networking</text>
+  <text class="sans" x="88" y="838" font-size="20" fill="#8A97B5">TCP sockets, protocols,</text>
+  <text class="sans" x="88" y="870" font-size="20" fill="#8A97B5">concurrency, threading</text>
 
   <!-- Card 2: Backend & Databases -->
   <rect x="423" y="716" width="355" height="188" rx="18" fill="#111A30" stroke="#1F2B47" stroke-width="1.5"/>
@@ -609,9 +609,9 @@
     <line x1="4"  y1="18" x2="36" y2="18" stroke="#FFB84D" stroke-width="2" opacity=".5"/>
     <line x1="4"  y1="26" x2="36" y2="26" stroke="#FFB84D" stroke-width="2" opacity=".5"/>
   </g>
-  <text class="sans" x="507" y="778" font-size="26" font-weight="700" fill="#E8EEF9">Backend &amp; Databases</text>
-  <text class="sans" x="455" y="838" font-size="21" fill="#8A97B5">APIs, query planning,</text>
-  <text class="sans" x="455" y="870" font-size="21" fill="#8A97B5">indexing, transactions</text>
+  <text class="sans" x="507" y="778" font-size="23" font-weight="700" fill="#E8EEF9">Backend &amp; Databases</text>
+  <text class="sans" x="455" y="838" font-size="20" fill="#8A97B5">APIs, query planning,</text>
+  <text class="sans" x="455" y="870" font-size="20" fill="#8A97B5">indexing, transactions</text>
 
   <!-- Card 3: Infrastructure & DevOps -->
   <rect x="790" y="716" width="355" height="188" rx="18" fill="#111A30" stroke="#1F2B47" stroke-width="1.5"/>
@@ -625,9 +625,9 @@
     <circle cx="11" cy="13" r="1.5" fill="#B48CFF"/>
     <circle cx="11" cy="33" r="1.5" fill="#B48CFF"/>
   </g>
-  <text class="sans" x="874" y="778" font-size="26" font-weight="700" fill="#E8EEF9">Infrastructure &amp; DevOps</text>
-  <text class="sans" x="822" y="838" font-size="21" fill="#8A97B5">Docker, AWS, CI/CD,</text>
-  <text class="sans" x="822" y="870" font-size="21" fill="#8A97B5">observability, monitoring</text>
+  <text class="sans" x="874" y="778" font-size="23" font-weight="700" fill="#E8EEF9">Infrastructure &amp; DevOps</text>
+  <text class="sans" x="822" y="838" font-size="20" fill="#8A97B5">Docker, AWS, CI/CD,</text>
+  <text class="sans" x="822" y="870" font-size="20" fill="#8A97B5">observability, monitoring</text>
 
   <!-- Card 4: Distributed Systems -->
   <rect x="1157" y="716" width="387" height="188" rx="18" fill="#111A30" stroke="#1F2B47" stroke-width="1.5"/>
@@ -643,9 +643,9 @@
     <line x1="8"  y1="11" x2="15" y2="26" stroke="#58a6ff" stroke-width="3"/>
     <line x1="28" y1="11" x2="21" y2="26" stroke="#58a6ff" stroke-width="3"/>
   </g>
-  <text class="sans" x="1241" y="778" font-size="26" font-weight="700" fill="#E8EEF9">Distributed Systems</text>
-  <text class="sans" x="1189" y="838" font-size="21" fill="#8A97B5">Consensus, replication,</text>
-  <text class="sans" x="1189" y="870" font-size="21" fill="#8A97B5">sharding, fault tolerance</text>
+  <text class="sans" x="1241" y="778" font-size="23" font-weight="700" fill="#E8EEF9">Distributed Systems</text>
+  <text class="sans" x="1189" y="838" font-size="20" fill="#8A97B5">Consensus, replication,</text>
+  <text class="sans" x="1189" y="870" font-size="20" fill="#8A97B5">sharding, fault tolerance</text>
 
   <!-- ══════ SLIDING TIMELINE DOT ══════ -->
   <circle r="20" cy="690" fill="#2DD4BF" opacity=".28" filter="url(#soft)">
