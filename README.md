@@ -101,7 +101,7 @@ I enjoy building complete software systems — from **TCP sockets and C++ system
 
 ## 📈 Activity Graph
 
-<img src="https://fabianocouto-activity-graph.vercel.app/graph/?username=adarsh0707-kumar&theme=react-dark&hide_border=true" alt="Adarsh Kumar activity graph" width="100%" />
+<img src="https://fabianocouto-activity-graph.vercel.app/graph/?username=adarsh0707-kumar&theme=merko&hide_border=true&bg_color=0d1117&color=39d353&line=39d353&point=7ee787&area=true&area_color=39d353" alt="Adarsh Kumar activity graph" width="100%" />
 
 ---
 
