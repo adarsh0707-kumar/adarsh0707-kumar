@@ -107,44 +107,140 @@ I enjoy building complete software systems — from **TCP sockets and C++ system
 
 ## 🏆 Certifications
 
-<img src="https://raw.githubusercontent.com/adarsh0707-kumar/adarsh0707-kumar/main/profile/certifications-hero.svg" alt="Adarsh Kumar — Certifications & Professional Achievements" width="100%" />
-
 <p align="center">
   <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=18&duration=3000&pause=1000&color=39D353&center=true&vCenter=true&width=800&lines=6+Certificates+%7C+3+Learning+Tracks;Systems+%E2%80%A2+Backend+%E2%80%A2+Infrastructure+%E2%80%A2+Distributed;Always+learning.+Always+building." alt="Certifications and learning tracks" />
 </p>
 
-### 🎯 Learning Tracks
+<br/>
 
-![SYSTEMS & NETWORKING](https://img.shields.io/badge/SYSTEMS_%26_NETWORKING-8b5cf6?style=for-the-badge)
-![BACKEND & APIs](https://img.shields.io/badge/BACKEND_%26_APIs-0ea5e9?style=for-the-badge)
-![DATABASES](https://img.shields.io/badge/DATABASES-14b8a6?style=for-the-badge)
-![INFRASTRUCTURE & DEVOPS](https://img.shields.io/badge/INFRA_%26_DEVOPS-22c55e?style=for-the-badge)
-![DISTRIBUTED SYSTEMS](https://img.shields.io/badge/DISTRIBUTED_SYSTEMS-f59e0b?style=for-the-badge)
+<p align="center">
+  <img src="https://raw.githubusercontent.com/adarsh0707-kumar/adarsh0707-kumar/main/profile/certifications-hero.svg" alt="Adarsh Kumar — Certifications & Professional Achievements" width="100%" />
+</p>
 
-**CERTIFICATES `6`** &nbsp;&nbsp; **LEARNING TRACKS `3`** &nbsp;&nbsp; **LEARNING MODE `ALWAYS ON`**
+<br/><br/><br/>
 
-### 💻 Software Engineering
+<p align="center">
+  <img src="https://img.shields.io/badge/CERTIFICATES-6-39d353?style=for-the-badge&labelColor=0d1117" />
+  <img src="https://img.shields.io/badge/LEARNING_TRACKS-3-58a6ff?style=for-the-badge&labelColor=0d1117" />
+  <img src="https://img.shields.io/badge/FEATURED_PROJECTS-4-7ee787?style=for-the-badge&labelColor=0d1117" />
+  <img src="https://img.shields.io/badge/LEARNING_MODE-ALWAYS_ON-2ea043?style=for-the-badge&labelColor=0d1117" />
+</p>
 
-| Certificate | Issuer | Date |
-|---|---|---|
-| [Software Development Internship](https://portfolio-orpin-zeta-77.vercel.app/certificates/satyam-internship.jpg) | Satyam Software Solutions Pvt. Ltd. | Jan – Mar 2026 |
+<p align="center">
+  <img src="https://img.shields.io/badge/SYSTEMS_%26_NETWORKING-8b5cf6?style=for-the-badge" />
+  <img src="https://img.shields.io/badge/BACKEND_%26_DATABASES-0ea5e9?style=for-the-badge" />
+  <img src="https://img.shields.io/badge/WEB_%26_MEDIA-14b8a6?style=for-the-badge" />
+  <img src="https://img.shields.io/badge/INFRA_%26_DEVOPS-22c55e?style=for-the-badge" />
+  <img src="https://img.shields.io/badge/PROFESSIONAL-f59e0b?style=for-the-badge" />
+</p>
 
-### 📊 Data & Analytics
+<br/><br/><br/>
 
-| Certificate | Issuer | Date |
-|---|---|---|
-| [Data Science with Python](https://portfolio-orpin-zeta-77.vercel.app/certificates/rcpl-data-science-python.png) | RCPL × ITS Engineering College | Aug – Sep 2025 |
-| [Power BI Micro Course](https://edu.skillcourse.in/view-certificate/SC-41TV1QU1VH) | SkillCourse | — |
-| [SQL Micro Course](https://edu.skillcourse.in/view-certificate/SC-I5EZD3SUZQ) | SkillCourse | — |
-| [Microsoft Excel — Beginners to Advance](https://edu.skillcourse.in/view-certificate/SC-S73ZDEN3I8) | SkillCourse | — |
+<p align="center">
+  <b>💻 Software Engineering</b><br/><br/>
+  <img src="https://img.shields.io/badge/TRACK-SOFTWARE_ENGINEERING-39d353?style=flat-square&labelColor=0d1117" />
+</p>
 
-### 🐍 Programming Foundations
+<table align="center">
+<tr>
+<td align="center">
+  <a href="https://raw.githubusercontent.com/adarsh0707-kumar/portfolio/main/public/certificates/satyam-internship.jpg">
+    <img src="https://raw.githubusercontent.com/adarsh0707-kumar/portfolio/main/public/certificates/satyam-internship.jpg" width="220" alt="Software Development Internship" />
+  </a><br/><br/>
+  <a href="https://raw.githubusercontent.com/adarsh0707-kumar/portfolio/main/public/certificates/satyam-internship.jpg"><b>Software Development Internship</b></a><br/><br/>
+  <img src="https://img.shields.io/badge/Satyam_Software_Solutions-0369a1?style=flat-square" /><br/><br/>
+  <a href="https://raw.githubusercontent.com/adarsh0707-kumar/portfolio/main/public/certificates/satyam-internship.jpg">
+    <img src="https://img.shields.io/badge/VIEW-CERTIFICATE-39d353?style=for-the-badge" />
+  </a>
+</td>
+<!-- <td align="center" width="33%"></td>
+<td align="center" width="33%"></td> -->
+</tr>
+</table>
 
-| Certificate | Issuer | Date |
-|---|---|---|
-| [Python Micro Course](https://edu.skillcourse.in/view-certificate/SC-BAXUXNTSMF) | SkillCourse | — |
+<br/><br/><br/>
 
-[![View all certifications on LinkedIn](https://img.shields.io/badge/VIEW_ALL_CREDENTIALS-LINKEDIN-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://linkedin.com/in/Adarsh-kumar-657315251/details/certifications/)
+<p align="center">
+  <b>📊 Data & Analytics</b><br/><br/>
+  <img src="https://img.shields.io/badge/TRACK-DATA_%26_ANALYTICS-a371f7?style=flat-square&labelColor=0d1117" />
+</p>
+
+<table align="center">
+<tr>
+<td align="center" width="33%">
+  <a href="https://raw.githubusercontent.com/adarsh0707-kumar/portfolio/main/public/certificates/rcpl-data-science-python.png">
+    <img src="https://raw.githubusercontent.com/adarsh0707-kumar/portfolio/main/public/certificates/rcpl-data-science-python.png" width="220" alt="Data Science with Python" />
+  </a><br/><br/>
+  <a href="https://raw.githubusercontent.com/adarsh0707-kumar/portfolio/main/public/certificates/rcpl-data-science-python.png"><b>Data Science with Python</b></a><br/><br/>
+  <img src="https://img.shields.io/badge/RCPL_×_ITS_College-a371f7?style=flat-square" /><br/><br/>
+  <a href="https://raw.githubusercontent.com/adarsh0707-kumar/portfolio/main/public/certificates/rcpl-data-science-python.png">
+    <img src="https://img.shields.io/badge/VIEW-CERTIFICATE-39d353?style=for-the-badge" />
+  </a>
+</td>
+<td align="center" width="33%">
+  <a href="https://raw.githubusercontent.com/adarsh0707-kumar/portfolio/main/public/certificates/skillcourse-power-bi.jpg">
+    <img src="https://raw.githubusercontent.com/adarsh0707-kumar/portfolio/main/public/certificates/skillcourse-power-bi.jpg" width="220" alt="Power BI Micro Course" />
+  </a><br/><br/>
+  <a href="https://raw.githubusercontent.com/adarsh0707-kumar/portfolio/main/public/certificates/skillcourse-power-bi.jpg"><b>Power BI Micro Course</b></a><br/><br/>
+  <img src="https://img.shields.io/badge/SkillCourse-f0883e?style=flat-square" /><br/><br/>
+  <a href="https://raw.githubusercontent.com/adarsh0707-kumar/portfolio/main/public/certificates/skillcourse-power-bi.jpg">
+    <img src="https://img.shields.io/badge/VIEW-CERTIFICATE-39d353?style=for-the-badge" />
+  </a>
+</td>
+<td align="center" width="33%">
+  <a href="https://raw.githubusercontent.com/adarsh0707-kumar/portfolio/main/public/certificates/skillcourse-sql.png">
+    <img src="https://raw.githubusercontent.com/adarsh0707-kumar/portfolio/main/public/certificates/skillcourse-sql.png" width="220" alt="SQL Micro Course" />
+  </a><br/><br/>
+  <a href="https://raw.githubusercontent.com/adarsh0707-kumar/portfolio/main/public/certificates/skillcourse-sql.png"><b>SQL Micro Course</b></a><br/><br/>
+  <img src="https://img.shields.io/badge/SkillCourse-f0883e?style=flat-square" /><br/><br/>
+  <a href="https://raw.githubusercontent.com/adarsh0707-kumar/portfolio/main/public/certificates/skillcourse-sql.png">
+    <img src="https://img.shields.io/badge/VIEW-CERTIFICATE-39d353?style=for-the-badge" />
+  </a>
+</td>
+</tr>
+<tr>
+<td align="center">
+  <a href="https://raw.githubusercontent.com/adarsh0707-kumar/portfolio/main/public/certificates/skillcourse-excel.jpg">
+    <img src="https://raw.githubusercontent.com/adarsh0707-kumar/portfolio/main/public/certificates/skillcourse-excel.jpg" width="220" alt="Microsoft Excel" />
+  </a><br/><br/>
+  <a href="https://raw.githubusercontent.com/adarsh0707-kumar/portfolio/main/public/certificates/skillcourse-excel.jpg"><b>Microsoft Excel — Beginners to Advance</b></a><br/><br/>
+  <img src="https://img.shields.io/badge/SkillCourse-f0883e?style=flat-square" /><br/><br/>
+  <a href="https://raw.githubusercontent.com/adarsh0707-kumar/portfolio/main/public/certificates/skillcourse-excel.jpg">
+    <img src="https://img.shields.io/badge/VIEW-CERTIFICATE-39d353?style=for-the-badge" />
+  </a>
+</td>
+
+</tr>
+</table>
+
+<br/><br/><br/>
+
+<p align="center">
+  <b>🐍 Programming Foundations</b><br/><br/>
+  <img src="https://img.shields.io/badge/TRACK-PROGRAMMING_FOUNDATIONS-58a6ff?style=flat-square&labelColor=0d1117" />
+</p>
+
+<table align="center">
+<tr>
+<td align="center" >
+  <a href="https://raw.githubusercontent.com/adarsh0707-kumar/portfolio/main/public/certificates/skillcourse-python.jpg">
+    <img src="https://raw.githubusercontent.com/adarsh0707-kumar/portfolio/main/public/certificates/skillcourse-python.jpg" width="220" alt="Python Micro Course" />
+  </a><br/><br/>
+  <a href="https://raw.githubusercontent.com/adarsh0707-kumar/portfolio/main/public/certificates/skillcourse-python.jpg"><b>Python Micro Course</b></a><br/><br/>
+  <img src="https://img.shields.io/badge/SkillCourse-f0883e?style=flat-square" /><br/><br/>
+  <a href="https://raw.githubusercontent.com/adarsh0707-kumar/portfolio/main/public/certificates/skillcourse-python.jpg">
+    <img src="https://img.shields.io/badge/VIEW-CERTIFICATE-39d353?style=for-the-badge" />
+  </a>
+</td>
+
+</tr>
+</table>
+
+<p align="center">
+  <a href="https://linkedin.com/in/Adarsh-kumar-657315251/details/certifications/">
+    <img src="https://img.shields.io/badge/VIEW_ALL_CREDENTIALS-LINKEDIN-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" />
+  </a>
+</p>
 
 ---
 
