@@ -1,5 +1,5 @@
 <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
-  width="100%" height="840" viewBox="0 0 1600 840" role="img"
+  width="100%" height="800" viewBox="0 0 1600 800" role="img"
   aria-label="Adarsh Kumar — Backend and Systems Engineer">
 <title>Adarsh Kumar — Backend &amp; Systems Engineer</title>
 <defs>
@@ -34,7 +34,7 @@
   <stop offset="0" stop-color="#000"/>
   <stop offset="1" stop-color="#fff"/>
 </linearGradient>
-<mask id="fadeL"><rect width="1600" height="840" fill="url(#gFade)"/></mask>
+<mask id="fadeL"><rect width="1600" height="800" fill="url(#gFade)"/></mask>
 <linearGradient id="gShine" gradientUnits="userSpaceOnUse" x1="-260" y1="0" x2="0" y2="0">
   <stop offset="0" stop-color="#2DD4BF" stop-opacity="0"/>
   <stop offset=".5" stop-color="#9FFBEF" stop-opacity=".95"/>
@@ -51,13 +51,13 @@
 </linearGradient>
 <filter id="blur" x="-50%" y="-50%" width="200%" height="200%"><feGaussianBlur stdDeviation="30"/></filter>
 <filter id="soft" x="-100%" y="-100%" width="300%" height="300%"><feGaussianBlur stdDeviation="5"/></filter>
-<clipPath id="frame"><rect width="1600" height="840" rx="28"/></clipPath>
+<clipPath id="frame"><rect width="1600" height="800" rx="28"/></clipPath>
 <clipPath id="face"><circle cx="1322" cy="390" r="205"/></clipPath>
 </defs>
 
 <g clip-path="url(#frame)">
-  <rect width="1600" height="840" fill="#0A0F1E"/>
-  <rect width="1600" height="840" fill="url(#dots)"/>
+  <rect width="1600" height="800" fill="#0A0F1E"/>
+  <rect width="1600" height="800" fill="url(#dots)"/>
   <ellipse cx="180" cy="90" rx="600" ry="340" fill="url(#gA)"/>
   <ellipse cx="1322" cy="430" rx="520" ry="420" fill="url(#gB)" opacity="0.5"/>
 
@@ -111,11 +111,11 @@
   </g>
 
   <!-- Bottom beam -->
-  <rect x="0" y="835" width="1600" height="5" fill="url(#gBeam)"/>
+  <rect x="0" y="795" width="1600" height="5" fill="url(#gBeam)"/>
 </g>
 
 <!-- Outer frame -->
-<rect x=".5" y=".5" width="1599" height="839" rx="28" fill="none" stroke="#1F2B47"/>
+<rect x=".5" y=".5" width="1599" height="799" rx="28" fill="none" stroke="#1F2B47"/>
 
 <!-- Badge: Backend & Systems -->
 <g class="in" style="animation-delay:.05s">
@@ -144,48 +144,48 @@
 
 <!-- Pills row 1 -->
 <g class="in" style="animation-delay:0.55s">
-  <rect x="72" y="360" width="175" height="48" rx="24" fill="#111A30" stroke="#1F2B47" stroke-width="1.5"/>
-  <rect x="72" y="360" width="175" height="48" rx="24" fill="#2DD4BF" fill-opacity=".16" stroke="#2DD4BF" stroke-width="2" opacity="0"><animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.04;0.06;0.15;0.17;1" dur="16s" repeatCount="indefinite"/></rect>
+  <rect x="72" y="360" width="195" height="48" rx="24" fill="#111A30" stroke="#1F2B47" stroke-width="1.5"/>
+  <rect x="72" y="360" width="195" height="48" rx="24" fill="#2DD4BF" fill-opacity=".16" stroke="#2DD4BF" stroke-width="2" opacity="0"><animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.04;0.06;0.15;0.17;1" dur="16s" repeatCount="indefinite"/></rect>
   <circle cx="96" cy="384" r="5.5" fill="#2DD4BF"/>
-  <text class="sans" x="112" y="391" font-size="22" font-weight="600" fill="#E8EEF9">C++ Systems</text>
+  <text class="sans" x="118" y="391" font-size="22" font-weight="600" fill="#E8EEF9">C++ Systems</text>
 </g>
 <g class="in" style="animation-delay:0.64s">
-  <rect x="260" y="360" width="180" height="48" rx="24" fill="#111A30" stroke="#1F2B47" stroke-width="1.5"/>
-  <rect x="260" y="360" width="180" height="48" rx="24" fill="#B48CFF" fill-opacity=".16" stroke="#B48CFF" stroke-width="2" opacity="0"><animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.17;0.19;0.28;0.30;1" dur="16s" repeatCount="indefinite"/></rect>
-  <circle cx="284" cy="384" r="5.5" fill="#B48CFF"/>
-  <text class="sans" x="300" y="391" font-size="22" font-weight="600" fill="#E8EEF9">POSIX Sockets</text>
+  <rect x="282" y="360" width="215" height="48" rx="24" fill="#111A30" stroke="#1F2B47" stroke-width="1.5"/>
+  <rect x="282" y="360" width="215" height="48" rx="24" fill="#B48CFF" fill-opacity=".16" stroke="#B48CFF" stroke-width="2" opacity="0"><animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.17;0.19;0.28;0.30;1" dur="16s" repeatCount="indefinite"/></rect>
+  <circle cx="306" cy="384" r="5.5" fill="#B48CFF"/>
+  <text class="sans" x="328" y="391" font-size="22" font-weight="600" fill="#E8EEF9">POSIX Sockets</text>
 </g>
 <g class="in" style="animation-delay:0.73s">
-  <rect x="453" y="360" width="180" height="48" rx="24" fill="#111A30" stroke="#1F2B47" stroke-width="1.5"/>
-  <rect x="453" y="360" width="180" height="48" rx="24" fill="#FFB84D" fill-opacity=".16" stroke="#FFB84D" stroke-width="2" opacity="0"><animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.29;0.31;0.40;0.42;1" dur="16s" repeatCount="indefinite"/></rect>
-  <circle cx="477" cy="384" r="5.5" fill="#FFB84D"/>
-  <text class="sans" x="493" y="391" font-size="22" font-weight="600" fill="#E8EEF9">Networking</text>
+  <rect x="512" y="360" width="175" height="48" rx="24" fill="#111A30" stroke="#1F2B47" stroke-width="1.5"/>
+  <rect x="512" y="360" width="175" height="48" rx="24" fill="#FFB84D" fill-opacity=".16" stroke="#FFB84D" stroke-width="2" opacity="0"><animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.29;0.31;0.40;0.42;1" dur="16s" repeatCount="indefinite"/></rect>
+  <circle cx="536" cy="384" r="5.5" fill="#FFB84D"/>
+  <text class="sans" x="558" y="391" font-size="22" font-weight="600" fill="#E8EEF9">Networking</text>
 </g>
 <g class="in" style="animation-delay:0.82s">
-  <rect x="646" y="360" width="140" height="48" rx="24" fill="#111A30" stroke="#1F2B47" stroke-width="1.5"/>
-  <rect x="646" y="360" width="140" height="48" rx="24" fill="#2DD4BF" fill-opacity=".16" stroke="#2DD4BF" stroke-width="2" opacity="0"><animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.42;0.44;0.53;0.55;1" dur="16s" repeatCount="indefinite"/></rect>
-  <circle cx="670" cy="384" r="5.5" fill="#2DD4BF"/>
-  <text class="sans" x="686" y="391" font-size="22" font-weight="600" fill="#E8EEF9">Linux</text>
+  <rect x="702" y="360" width="110" height="48" rx="24" fill="#111A30" stroke="#1F2B47" stroke-width="1.5"/>
+  <rect x="702" y="360" width="110" height="48" rx="24" fill="#2DD4BF" fill-opacity=".16" stroke="#2DD4BF" stroke-width="2" opacity="0"><animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.42;0.44;0.53;0.55;1" dur="16s" repeatCount="indefinite"/></rect>
+  <circle cx="726" cy="384" r="5.5" fill="#2DD4BF"/>
+  <text class="sans" x="748" y="391" font-size="22" font-weight="600" fill="#E8EEF9">Linux</text>
 </g>
 
 <!-- Pills row 2 -->
 <g class="in" style="animation-delay:0.91s">
-  <rect x="72" y="422" width="170" height="48" rx="24" fill="#111A30" stroke="#1F2B47" stroke-width="1.5"/>
-  <rect x="72" y="422" width="170" height="48" rx="24" fill="#B48CFF" fill-opacity=".16" stroke="#B48CFF" stroke-width="2" opacity="0"><animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.54;0.56;0.65;0.67;1" dur="16s" repeatCount="indefinite"/></rect>
+  <rect x="72" y="422" width="175" height="48" rx="24" fill="#111A30" stroke="#1F2B47" stroke-width="1.5"/>
+  <rect x="72" y="422" width="175" height="48" rx="24" fill="#B48CFF" fill-opacity=".16" stroke="#B48CFF" stroke-width="2" opacity="0"><animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.54;0.56;0.65;0.67;1" dur="16s" repeatCount="indefinite"/></rect>
   <circle cx="96" cy="446" r="5.5" fill="#B48CFF"/>
-  <text class="sans" x="112" y="453" font-size="22" font-weight="600" fill="#E8EEF9">PostgreSQL</text>
+  <text class="sans" x="118" y="453" font-size="22" font-weight="600" fill="#E8EEF9">PostgreSQL</text>
 </g>
 <g class="in" style="animation-delay:1.00s">
-  <rect x="255" y="422" width="120" height="48" rx="24" fill="#111A30" stroke="#1F2B47" stroke-width="1.5"/>
-  <rect x="255" y="422" width="120" height="48" rx="24" fill="#FFB84D" fill-opacity=".16" stroke="#FFB84D" stroke-width="2" opacity="0"><animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.67;0.69;0.78;0.80;1" dur="16s" repeatCount="indefinite"/></rect>
-  <circle cx="279" cy="446" r="5.5" fill="#FFB84D"/>
-  <text class="sans" x="295" y="453" font-size="22" font-weight="600" fill="#E8EEF9">Docker</text>
+  <rect x="262" y="422" width="125" height="48" rx="24" fill="#111A30" stroke="#1F2B47" stroke-width="1.5"/>
+  <rect x="262" y="422" width="125" height="48" rx="24" fill="#FFB84D" fill-opacity=".16" stroke="#FFB84D" stroke-width="2" opacity="0"><animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.67;0.69;0.78;0.80;1" dur="16s" repeatCount="indefinite"/></rect>
+  <circle cx="286" cy="446" r="5.5" fill="#FFB84D"/>
+  <text class="sans" x="308" y="453" font-size="22" font-weight="600" fill="#E8EEF9">Docker</text>
 </g>
 <g class="in" style="animation-delay:1.09s">
-  <rect x="388" y="422" width="248" height="48" rx="24" fill="#111A30" stroke="#1F2B47" stroke-width="1.5"/>
-  <rect x="388" y="422" width="248" height="48" rx="24" fill="#2DD4BF" fill-opacity=".16" stroke="#2DD4BF" stroke-width="2" opacity="0"><animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.79;0.81;0.90;0.92;1" dur="16s" repeatCount="indefinite"/></rect>
-  <circle cx="412" cy="446" r="5.5" fill="#2DD4BF"/>
-  <text class="sans" x="428" y="453" font-size="22" font-weight="600" fill="#E8EEF9">Distributed Systems</text>
+  <rect x="402" y="422" width="290" height="48" rx="24" fill="#111A30" stroke="#1F2B47" stroke-width="1.5"/>
+  <rect x="402" y="422" width="290" height="48" rx="24" fill="#2DD4BF" fill-opacity=".16" stroke="#2DD4BF" stroke-width="2" opacity="0"><animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.79;0.81;0.90;0.92;1" dur="16s" repeatCount="indefinite"/></rect>
+  <circle cx="426" cy="446" r="5.5" fill="#2DD4BF"/>
+  <text class="sans" x="448" y="453" font-size="22" font-weight="600" fill="#E8EEF9">Distributed Systems</text>
 </g>
 
 <!-- Divider -->
