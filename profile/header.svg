@@ -233,19 +233,19 @@
     </g>
 
     <!-- CORNER BRACKETS -->
-    <g stroke="#39ff7a" stroke-width="6" fill="none" stroke-linecap="round" opacity="0.85">
-      <animate attributeName="opacity" values="0.35;0.95;0.35" dur="3.4s" repeatCount="indefinite"/>
-      <path d="M2770 350V270H2850"/><path d="M3300 270H3380V350"/>
-      <path d="M2770 1005V1085H2850"/><path d="M3300 1085H3380V1005"/>
+    <g stroke="#39ff7a" stroke-width="6" fill="none" stroke-linecap="round" opacity="0.9">
+      <animate attributeName="opacity" values="0.5;1;0.5" dur="3.4s" repeatCount="indefinite"/>
+      <path d="M2790 200V130H2870"/><path d="M3340 130H3420V200"/>
+      <path d="M2790 780V850H2870"/><path d="M3340 850H3420V780"/>
     </g>
 
     <!-- SCAN LINE -->
     <g clip-path="url(#frame)">
-      <rect x="2770" y="270" width="610" height="4" fill="#39ff7a" opacity="0.5">
-        <animate attributeName="y" values="270;1085;270" dur="6s" repeatCount="indefinite"/>
+      <rect x="2790" y="130" width="630" height="3" fill="#39ff7a" opacity="0.6">
+        <animate attributeName="y" values="130;850;130" dur="4s" repeatCount="indefinite"/>
       </rect>
-      <rect x="2770" y="200" width="610" height="70" fill="url(#scanG)">
-        <animate attributeName="y" values="200;1015;200" dur="6s" repeatCount="indefinite"/>
+      <rect x="2790" y="90" width="630" height="70" fill="url(#scanG)">
+        <animate attributeName="y" values="90;810;90" dur="4s" repeatCount="indefinite"/>
       </rect>
     </g>
 
