@@ -286,7 +286,40 @@ I enjoy building complete software systems — from **TCP sockets and C++ system
 
 ## 🌱 Currently Exploring
 
-<img src="https://raw.githubusercontent.com/adarsh0707-kumar/adarsh0707-kumar/main/profile/exploring-hero.svg" alt="Adarsh Kumar — Currently Exploring" width="100%" />
+<table align="center">
+<tr>
+<td valign="top" width="50%">
+
+- 🧠 **Large Language Models (LLMs)**
+  *Fine-tuning, prompt engineering, local inference*
+
+- 🔍 **Retrieval-Augmented Generation (RAG)**
+  *Vector DBs, embeddings, hybrid search*
+
+- ⚡ **Distributed Systems**
+  *Consensus, replication, sharding*
+
+- ☁️ **Cloud-Native Backend**
+  *Containers, service mesh, K8s operators*
+
+</td>
+<td valign="top" width="50%">
+
+- 🤖 **AI Infrastructure & MLOps**
+  *Model serving, GPU orchestration, monitoring*
+
+- 📦 **Microservices Architecture**
+  *gRPC, event-driven design, API gateways*
+
+- 🚀 **High-Performance Backend**
+  *Lock-free structures, zero-copy I/O, eBPF*
+
+- 🔐 **Systems Security**
+  *TLS, auth protocols, threat modeling*
+
+</td>
+</tr>
+</table>
 
 ---
 
@@ -298,17 +331,71 @@ I enjoy building complete software systems — from **TCP sockets and C++ system
 
 ## ⭐ Submit Your Rating & Feedback
 
-Enjoyed my work? Pick a star rating below — it opens your email client with the rating pre-filled, straight to my inbox.
+<p align="center">
+  Enjoyed my work? Pick a star rating below.<br/>
+  The form opens with your rating pre-selected — your message goes straight to my inbox.
+</p>
 
-| Rating | Click to rate |
-|---|---|
-| ⭐⭐⭐⭐⭐ | [![RATE](https://img.shields.io/badge/RATE-5_STARS_--_EXCELLENT-14b8a6?style=for-the-badge)](mailto:adarshku.offical@gmail.com?subject=Feedback%3A%205%20Stars%20-%20Excellent&body=Hi%20Adarsh%2C%0A%0AI%20wanted%20to%20share%20some%20feedback%20on%20your%20work%3A%0A) |
-| ⭐⭐⭐⭐ | [![RATE](https://img.shields.io/badge/RATE-4_STARS_--_VERY_GOOD-14b8a6?style=for-the-badge)](mailto:adarshku.offical@gmail.com?subject=Feedback%3A%204%20Stars%20-%20Very%20Good&body=Hi%20Adarsh%2C%0A%0AI%20wanted%20to%20share%20some%20feedback%20on%20your%20work%3A%0A) |
-| ⭐⭐⭐ | [![RATE](https://img.shields.io/badge/RATE-3_STARS_--_GOOD-f59e0b?style=for-the-badge)](mailto:adarshku.offical@gmail.com?subject=Feedback%3A%203%20Stars%20-%20Good&body=Hi%20Adarsh%2C%0A%0AI%20wanted%20to%20share%20some%20feedback%20on%20your%20work%3A%0A) |
-| ⭐⭐ | [![RATE](https://img.shields.io/badge/RATE-2_STARS_--_FAIR-f59e0b?style=for-the-badge)](mailto:adarshku.offical@gmail.com?subject=Feedback%3A%202%20Stars%20-%20Fair&body=Hi%20Adarsh%2C%0A%0AI%20wanted%20to%20share%20some%20feedback%20on%20your%20work%3A%0A) |
-| ⭐ | [![RATE](https://img.shields.io/badge/RATE-1_STAR_--_POOR-f87171?style=for-the-badge)](mailto:adarshku.offical@gmail.com?subject=Feedback%3A%201%20Star%20-%20Poor&body=Hi%20Adarsh%2C%0A%0AI%20wanted%20to%20share%20some%20feedback%20on%20your%20work%3A%0A) |
+<p align="center">
+  <table align="center">
+    <tr>
+      <th align="center">Rating</th>
+      <th align="center">Click to rate</th>
+    </tr>
+    <tr>
+      <td align="center">⭐⭐⭐⭐⭐</td>
+      <td align="center">
+        <a href="mailto:adarshku.offical@gmail.com?subject=Feedback%3A%205%20Stars%20-%20Excellent&body=Hi%20Adarsh%2C%0A%0AI%20wanted%20to%20share%20some%20feedback%20on%20your%20work%3A%0A">
+          <img src="https://img.shields.io/badge/RATE-5_STARS_--_EXCELLENT-14b8a6?style=for-the-badge&labelColor=555555" />
+        </a>
+      </td>
+    </tr>
+    <tr>
+      <td align="center">⭐⭐⭐⭐</td>
+      <td align="center">
+        <a href="mailto:adarshku.offical@gmail.com?subject=Feedback%3A%204%20Stars%20-%20Very%20Good&body=Hi%20Adarsh%2C%0A%0AI%20wanted%20to%20share%20some%20feedback%20on%20your%20work%3A%0A">
+          <img src="https://img.shields.io/badge/RATE-4_STARS_--_VERY_GOOD-14b8a6?style=for-the-badge&labelColor=555555" />
+        </a>
+      </td>
+    </tr>
+    <tr>
+      <td align="center">⭐⭐⭐</td>
+      <td align="center">
+        <a href="mailto:adarshku.offical@gmail.com?subject=Feedback%3A%203%20Stars%20-%20Good&body=Hi%20Adarsh%2C%0A%0AI%20wanted%20to%20share%20some%20feedback%20on%20your%20work%3A%0A">
+          <img src="https://img.shields.io/badge/RATE-3_STARS_--_GOOD-f59e0b?style=for-the-badge&labelColor=555555" />
+        </a>
+      </td>
+    </tr>
+    <tr>
+      <td align="center">⭐⭐</td>
+      <td align="center">
+        <a href="mailto:adarshku.offical@gmail.com?subject=Feedback%3A%202%20Stars%20-%20Fair&body=Hi%20Adarsh%2C%0A%0AI%20wanted%20to%20share%20some%20feedback%20on%20your%20work%3A%0A">
+          <img src="https://img.shields.io/badge/RATE-2_STARS_--_FAIR-f59e0b?style=for-the-badge&labelColor=555555" />
+        </a>
+      </td>
+    </tr>
+    <tr>
+      <td align="center">⭐</td>
+      <td align="center">
+        <a href="mailto:adarshku.offical@gmail.com?subject=Feedback%3A%201%20Star%20-%20Poor&body=Hi%20Adarsh%2C%0A%0AI%20wanted%20to%20share%20some%20feedback%20on%20your%20work%3A%0A">
+          <img src="https://img.shields.io/badge/RATE-1_STAR_--_POOR-f87171?style=for-the-badge&labelColor=555555" />
+        </a>
+      </td>
+    </tr>
+  </table>
+</p>
 
-[![Email](https://img.shields.io/badge/EMAIL-adarshku.offical%40gmail.com-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:adarshku.offical@gmail.com)
+<br/>
+
+<p align="center">
+  <a href="mailto:adarshku.offical@gmail.com">
+    <img src="https://img.shields.io/badge/EMAIL-adarshku.offical%40gmail.com-D14836?style=for-the-badge&logo=gmail&logoColor=white" />
+  </a>
+  &nbsp;
+  <a href="mailto:adarshku.offical@gmail.com?subject=Feedback%20on%20your%20GitHub%20profile&body=Hi%20Adarsh%2C%0A%0AHere%20are%20my%20suggestions%3A%0A">
+    <img src="https://img.shields.io/badge/WRITE_FEEDBACK-SHARE_YOUR_SUGGESTIONS-14b8a6?style=for-the-badge&logo=gmail&logoColor=white" />
+  </a>
+</p>
 
 ---
 
