@@ -28,19 +28,10 @@
 
 ## 👨‍💻 About Me
 
-### Adarsh Kumar
 
-**B.Tech Computer Science Engineering Graduate · 2026**
-**Backend & Systems Engineer · Noida, India**
-
-I enjoy building complete software systems — from **TCP sockets and C++ systems programming** to **databases, backend APIs, distributed services, and cloud infrastructure**.
-
-- 🎓 **Degree:** B.Tech CSE · 2026
-- ⚙️ **Focus:** Backend Engineering · Systems Programming · Databases · Networking
-- 🧩 **Stack:** C++ · Python · Node.js · React · PostgreSQL
-- 🌐 **Systems:** TCP/IP · POSIX Sockets · CMake · Linux
-- ☁️ **Infrastructure:** Docker · AWS · CI/CD
-- 💼 **Open to:** Full-time Software Engineering & Freelance opportunities
+<p align="center">
+  <img src="https://raw.githubusercontent.com/adarsh0707-kumar/adarsh0707-kumar/main/profile/about.svg" alt="Adarsh Kumar — Backend & Systems Engineer" width="100%" />
+</p>
 
 ---
 
