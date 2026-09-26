@@ -85,15 +85,15 @@
   <text class="sans" x="56" y="112" font-size="56" font-weight="700" fill="#E8EEF9" letter-spacing="-1">Spent My Time</text>
   <text class="sans" x="56" y="154" font-size="26" fill="#8A97B5">Building systems, writing code, and shipping from the socket layer up.</text>
 
-  <!-- ══════ LEGEND — 4 items now ══════ -->
-  <circle cx="760"  cy="98" r="8" fill="#2DD4BF"/>
-  <text class="sans" x="778"  y="106" font-size="22" fill="#E8EEF9">Systems</text>
-  <circle cx="920"  cy="98" r="8" fill="#FFB84D"/>
-  <text class="sans" x="938"  y="106" font-size="22" fill="#E8EEF9">Backend</text>
-  <circle cx="1096" cy="98" r="8" fill="#B48CFF"/>
-  <text class="sans" x="1114" y="106" font-size="22" fill="#E8EEF9">Infra</text>
-  <circle cx="1208" cy="98" r="8" fill="#58a6ff"/>
-  <text class="sans" x="1226" y="106" font-size="22" fill="#E8EEF9">Distributed</text>
+   <!-- ══════ LEGEND — 4 items, evenly spaced ══════ -->
+  <circle cx="785"  cy="98" r="8" fill="#2DD4BF"/>
+  <text class="sans" x="803"  y="106" font-size="22" fill="#E8EEF9">Systems</text>
+  <circle cx="990"  cy="98" r="8" fill="#FFB84D"/>
+  <text class="sans" x="1008" y="106" font-size="22" fill="#E8EEF9">Backend</text>
+  <circle cx="1195" cy="98" r="8" fill="#B48CFF"/>
+  <text class="sans" x="1213" y="106" font-size="22" fill="#E8EEF9">Infra</text>
+  <circle cx="1400" cy="98" r="8" fill="#58a6ff"/>
+  <text class="sans" x="1418" y="106" font-size="22" fill="#E8EEF9">Distributed</text>
 
   <!-- ══════ LAPTOP ══════ -->
   <g transform="translate(0,30)">
