@@ -405,7 +405,7 @@ async function main() {
 
   fs.mkdirSync("profile", { recursive: true });
   fs.writeFileSync(path.join("profile", "stats-summary.svg"), svg);
-  console.log(`Wrote profile/stats-summary.svg (${svg.length} bytes)`);
+  console.log("Wrote profile/stats-summary.svg");
 }
 
 main().catch(e => { console.error(e); process.exit(1); });
