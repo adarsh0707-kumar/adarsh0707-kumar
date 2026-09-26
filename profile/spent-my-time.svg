@@ -10,7 +10,6 @@
       .code { font-size: 21px; fill: #D6DEEB; }
       .k { fill: #FF7AC6; } .s { fill: #8FE3A1; } .f { fill: #7CC4FF; } .n { fill: #FFB84D; } .c { fill: #8A97B5; }
 
-      /* Ambient heatmap cell wave */
       .cell {
         transform-box: fill-box;
         transform-origin: center;
@@ -73,7 +72,6 @@
     <clipPath id="heat"><rect x="698" y="270" width="844" height="240"/></clipPath>
   </defs>
 
-  <!-- Background -->
   <g clip-path="url(#frame)">
     <rect width="1600" height="960" fill="#0A0F1E"/>
     <rect width="1600" height="960" fill="url(#dots)"/>
@@ -82,11 +80,9 @@
   </g>
   <rect x=".5" y=".5" width="1599" height="959" rx="28" fill="none" stroke="#1F2B47"/>
 
-  <!-- Header -->
   <text class="sans" x="56" y="112" font-size="56" font-weight="700" fill="#E8EEF9" letter-spacing="-1">Spent My Time</text>
   <text class="sans" x="56" y="154" font-size="26" fill="#8A97B5">Building systems, writing code, and shipping from the socket layer up.</text>
 
-  <!-- Legend -->
   <circle cx="1008" cy="98" r="8" fill="#2DD4BF"/>
   <text class="sans" x="1026" y="106" font-size="24" fill="#E8EEF9">Systems</text>
   <circle cx="1172" cy="98" r="8" fill="#FFB84D"/>
@@ -94,10 +90,7 @@
   <circle cx="1400" cy="98" r="8" fill="#B48CFF"/>
   <text class="sans" x="1418" y="106" font-size="24" fill="#E8EEF9">Infra</text>
 
-  <!-- ══════ LAPTOP ══════ -->
   <g transform="translate(0,30)">
-
-    <!-- Phase glows (behind laptop) -->
     <ellipse cx="316" cy="370" rx="250" ry="170" fill="#2DD4BF" opacity="0" filter="url(#blur)">
       <animate attributeName="opacity" values="0;0.34;0.34;0;0"
         keyTimes="0;0.014;0.3214;0.3357;1" dur="14.0s" repeatCount="indefinite"/>
@@ -111,22 +104,18 @@
         keyTimes="0;0.6686;0.6829;0.9857;1" dur="14.0s" repeatCount="indefinite"/>
     </ellipse>
 
-    <!-- Laptop base shadow -->
     <ellipse cx="316" cy="556" rx="260" ry="12" fill="#000" opacity=".45" filter="url(#soft)"/>
 
-    <!-- Laptop shell -->
     <rect x="96" y="214" width="440" height="296" rx="20" fill="#182338" stroke="#2C3D62" stroke-width="2"/>
     <rect x="108" y="226" width="416" height="272" rx="10" fill="#0B1222"/>
 
     <g clip-path="url(#screen)">
-      <!-- Top bar -->
       <rect x="108" y="226" width="416" height="36" fill="#101A2F"/>
       <rect x="108" y="261" width="416" height="1" fill="#1F2B47"/>
       <circle cx="128" cy="244" r="5" fill="#2DD4BF"/>
       <circle cx="146" cy="244" r="5" fill="#FFB84D"/>
       <circle cx="164" cy="244" r="5" fill="#B48CFF"/>
 
-      <!-- ── Phase 1 tab: server.py ── -->
       <g opacity="0">
         <animate attributeName="opacity" values="0;1;1;0;0"
           keyTimes="0;0.014;0.3214;0.3357;1" dur="14.0s" repeatCount="indefinite"/>
@@ -134,7 +123,6 @@
         <rect x="184" y="259" width="92" height="3" fill="#2DD4BF"/>
       </g>
 
-      <!-- ── Phase 2 tab: query_engine.py ── -->
       <g opacity="0">
         <animate attributeName="opacity" values="0;0;1;1;0;0"
           keyTimes="0;0.3357;0.3493;0.6543;0.6686;1" dur="14.0s" repeatCount="indefinite"/>
@@ -142,7 +130,6 @@
         <rect x="184" y="259" width="176" height="3" fill="#FFB84D"/>
       </g>
 
-      <!-- ── Phase 3 tab: deploy.py ── -->
       <g opacity="0">
         <animate attributeName="opacity" values="0;0;1;1;0"
           keyTimes="0;0.6686;0.6829;0.9857;1" dur="14.0s" repeatCount="indefinite"/>
@@ -150,7 +137,6 @@
         <rect x="184" y="259" width="92" height="3" fill="#B48CFF"/>
       </g>
 
-      <!-- ── PHASE 1 CODE: server.py (TCP accept loop) ── -->
       <g opacity="0">
         <animate attributeName="opacity" values="0;1;1;0;0"
           keyTimes="0;0.014;0.3214;0.3357;1" dur="14.0s" repeatCount="indefinite"/>
@@ -210,7 +196,6 @@
           <animate attributeName="opacity" values="0;0;.9;.9;0;0" keyTimes="0;0.24;0.242;0.28;0.282;1" dur="14.0s" repeatCount="indefinite"/>
         </rect>
 
-        <!-- Status bar -->
         <g>
           <animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.295;0.315;0.3214;0.3357;1" dur="14.0s" repeatCount="indefinite"/>
           <rect x="108" y="462" width="416" height="36" fill="#101A2F"/>
@@ -221,7 +206,6 @@
         </g>
       </g>
 
-      <!-- ── PHASE 2 CODE: query_engine.py (SQL) ── -->
       <g opacity="0">
         <animate attributeName="opacity" values="0;0;1;1;0;0"
           keyTimes="0;0.3357;0.3493;0.6543;0.6686;1" dur="14.0s" repeatCount="indefinite"/>
@@ -291,7 +275,6 @@
         </g>
       </g>
 
-      <!-- ── PHASE 3 CODE: deploy.py (Dockerfile) ── -->
       <g opacity="0">
         <animate attributeName="opacity" values="0;0;1;1;0"
           keyTimes="0;0.6686;0.6829;0.9857;1" dur="14.0s" repeatCount="indefinite"/>
@@ -362,13 +345,11 @@
       </g>
     </g>
 
-    <!-- Laptop base -->
     <path d="M74 510 H558 L586 536 Q588 540 583 540 H49 Q44 540 46 536 Z"
       fill="url(#gBase)" stroke="#2C3D62" stroke-width="1.5" stroke-linejoin="round"/>
     <rect x="266" y="510" width="100" height="9" rx="4.5" fill="#0E1729"/>
   </g>
 
-  <!-- ══════ DAILY CONTRIBUTIONS HEATMAP ══════ -->
   <text class="sans" x="620" y="224" font-size="28" font-weight="600" fill="#E8EEF9">Daily contributions</text>
   <text class="sans" x="1544" y="222" font-size="20" fill="#8A97B5" text-anchor="end">More</text>
   <text class="sans" x="1352" y="222" font-size="20" fill="#8A97B5" text-anchor="end">Less</text>
@@ -389,9 +370,7 @@
   <text class="sans" x="620" y="405" font-size="20" fill="#8A97B5">Wed</text>
   <text class="sans" x="620" y="473" font-size="20" fill="#8A97B5">Fri</text>
 
-  <!-- Heatmap cells (repeating pattern; wave animation via CSS) -->
   <g>
-    <!-- Row 1 (y=282) -->
     <rect x="698" y="282" width="28" height="28" rx="6" fill="#17213A"/>
     <rect class="cell" x="732" y="282" width="28" height="28" rx="6" fill="#2DD4BF" fill-opacity="0.6" style="animation-delay:0.48s"/>
     <rect class="cell" x="766" y="282" width="28" height="28" rx="6" fill="#FFB84D" fill-opacity="0.38" style="animation-delay:0.96s"/>
@@ -418,7 +397,6 @@
     <rect class="cell" x="1480" y="282" width="28" height="28" rx="6" fill="#FFB84D" fill-opacity="1" style="animation-delay:11.04s"/>
     <rect class="cell" x="1514" y="282" width="28" height="28" rx="6" fill="#B48CFF" fill-opacity="1" style="animation-delay:11.52s"/>
 
-    <!-- Row 2 (y=316) -->
     <rect x="698" y="316" width="28" height="28" rx="6" fill="#17213A"/>
     <rect class="cell" x="732" y="316" width="28" height="28" rx="6" fill="#FFB84D" fill-opacity="0.38" style="animation-delay:0.48s"/>
     <rect class="cell" x="766" y="316" width="28" height="28" rx="6" fill="#2DD4BF" fill-opacity="0.82" style="animation-delay:0.96s"/>
@@ -445,7 +423,6 @@
     <rect class="cell" x="1480" y="316" width="28" height="28" rx="6" fill="#2DD4BF" fill-opacity="0.82" style="animation-delay:11.04s"/>
     <rect x="1514" y="316" width="28" height="28" rx="6" fill="#17213A"/>
 
-    <!-- Row 3 (y=350) -->
     <rect x="698" y="350" width="28" height="28" rx="6" fill="#17213A"/>
     <rect class="cell" x="732" y="350" width="28" height="28" rx="6" fill="#B48CFF" fill-opacity="0.82" style="animation-delay:0.48s"/>
     <rect class="cell" x="766" y="350" width="28" height="28" rx="6" fill="#2DD4BF" fill-opacity="0.6" style="animation-delay:0.96s"/>
@@ -472,7 +449,6 @@
     <rect class="cell" x="1480" y="350" width="28" height="28" rx="6" fill="#B48CFF" fill-opacity="0.82" style="animation-delay:11.04s"/>
     <rect x="1514" y="350" width="28" height="28" rx="6" fill="#17213A"/>
 
-    <!-- Row 4 (y=384) -->
     <rect x="698" y="384" width="28" height="28" rx="6" fill="#17213A"/>
     <rect class="cell" x="732" y="384" width="28" height="28" rx="6" fill="#2DD4BF" fill-opacity="0.6" style="animation-delay:0.48s"/>
     <rect class="cell" x="766" y="384" width="28" height="28" rx="6" fill="#FFB84D" fill-opacity="1" style="animation-delay:0.96s"/>
@@ -499,7 +475,6 @@
     <rect class="cell" x="1480" y="384" width="28" height="28" rx="6" fill="#2DD4BF" fill-opacity="0.82" style="animation-delay:11.04s"/>
     <rect x="1514" y="384" width="28" height="28" rx="6" fill="#17213A"/>
 
-    <!-- Row 5 (y=418) -->
     <rect x="698" y="418" width="28" height="28" rx="6" fill="#17213A"/>
     <rect class="cell" x="732" y="418" width="28" height="28" rx="6" fill="#FFB84D" fill-opacity="0.82" style="animation-delay:0.48s"/>
     <rect class="cell" x="766" y="418" width="28" height="28" rx="6" fill="#2DD4BF" fill-opacity="0.6" style="animation-delay:0.96s"/>
@@ -527,14 +502,12 @@
     <rect x="1514" y="418" width="28" height="28" rx="6" fill="#17213A"/>
   </g>
 
-  <!-- Heatmap scan line -->
   <g clip-path="url(#heat)">
     <rect x="618" y="270" width="80" height="240" fill="url(#gScan)">
       <animate attributeName="x" values="638;1522" dur="14.0s" repeatCount="indefinite"/>
     </rect>
   </g>
 
-  <!-- ══════ CODING TIME BAR ══════ -->
   <text class="sans" x="620" y="556" font-size="28" font-weight="600" fill="#E8EEF9">Coding time by stage</text>
   <rect x="620" y="574" width="924" height="30" rx="15" fill="#17213A"/>
   <g clip-path="url(#barclip)">
@@ -562,29 +535,24 @@
     <text class="sans" x="1220.0" y="644" font-size="23" fill="#8A97B5">Infra <tspan font-weight="700" fill="#B48CFF">35%</tspan></text>
   </g>
 
-  <!-- ══════ TIMELINE ══════ -->
   <rect x="56" y="688" width="1488" height="4" rx="2" fill="#1B2846"/>
   <rect x="56" y="688" width="0" height="4" rx="2" fill="url(#gProg)">
     <animate attributeName="width" values="0;1488" dur="14.0s" repeatCount="indefinite"/>
   </rect>
 
-  <!-- 4 phase markers -->
-  <line x1="293"  y1="692" x2="293"  y2="716" stroke="#1F2B47" stroke-width="2"/>
-  <circle cx="293"  cy="690" r="9" fill="#0A0F1E" stroke="#2DD4BF" stroke-width="3"/>
-  <line x1="568"  y1="692" x2="568"  y2="716" stroke="#1F2B47" stroke-width="2"/>
-  <circle cx="568"  cy="690" r="9" fill="#0A0F1E" stroke="#FFB84D" stroke-width="3"/>
-  <line x1="924"  y1="692" x2="924"  y2="716" stroke="#1F2B47" stroke-width="2"/>
-  <circle cx="924"  cy="690" r="9" fill="#0A0F1E" stroke="#B48CFF" stroke-width="3"/>
-  <line x1="1307" y1="692" x2="1307" y2="716" stroke="#1F2B47" stroke-width="2"/>
-  <circle cx="1307" cy="690" r="9" fill="#0A0F1E" stroke="#58a6ff" stroke-width="3"/>
+  <line x1="237.5" y1="692" x2="237.5" y2="716" stroke="#1F2B47" stroke-width="2"/>
+  <circle cx="237.5" cy="690" r="9" fill="#0A0F1E" stroke="#2DD4BF" stroke-width="3"/>
+  <line x1="612.5" y1="692" x2="612.5" y2="716" stroke="#1F2B47" stroke-width="2"/>
+  <circle cx="612.5" cy="690" r="9" fill="#0A0F1E" stroke="#FFB84D" stroke-width="3"/>
+  <line x1="987.5" y1="692" x2="987.5" y2="716" stroke="#1F2B47" stroke-width="2"/>
+  <circle cx="987.5" cy="690" r="9" fill="#0A0F1E" stroke="#B48CFF" stroke-width="3"/>
+  <line x1="1362.5" y1="692" x2="1362.5" y2="716" stroke="#1F2B47" stroke-width="2"/>
+  <circle cx="1362.5" cy="690" r="9" fill="#0A0F1E" stroke="#58a6ff" stroke-width="3"/>
 
-  <!-- ══════ 4 BOTTOM CARDS ══════ -->
-
-  <!-- Card 1: Systems & Networking -->
-  <rect x="56" y="716" width="355" height="188" rx="18" fill="#111A30" stroke="#1F2B47" stroke-width="1.5"/>
+  <rect x="56" y="716" width="363" height="188" rx="18" fill="#111A30" stroke="#1F2B47" stroke-width="1.5"/>
   <g opacity="0">
     <animate attributeName="opacity" values="0;1;1;0;0" keyTimes="0;0.014;0.3214;0.3357;1" dur="14.0s" repeatCount="indefinite"/>
-    <rect x="56" y="716" width="355" height="188" rx="18" fill="#2DD4BF" fill-opacity=".07" stroke="#2DD4BF" stroke-width="2.5"/>
+    <rect x="56" y="716" width="363" height="188" rx="18" fill="#2DD4BF" fill-opacity=".07" stroke="#2DD4BF" stroke-width="2.5"/>
   </g>
   <g transform="translate(88,746)">
     <circle cx="10" cy="10" r="6" fill="none" stroke="#2DD4BF" stroke-width="3"/>
@@ -593,49 +561,46 @@
     <line x1="14" y1="14" x2="20" y2="26" stroke="#2DD4BF" stroke-width="3"/>
     <line x1="26" y1="14" x2="20" y2="26" stroke="#2DD4BF" stroke-width="3"/>
   </g>
-  <text class="sans" x="140" y="778" font-size="23" font-weight="700" fill="#E8EEF9">Systems &amp; Networking</text>
+  <text class="sans" x="144" y="778" font-size="21" font-weight="700" fill="#E8EEF9">Systems &amp; Networking</text>
   <text class="sans" x="88" y="838" font-size="20" fill="#8A97B5">TCP sockets, protocols,</text>
   <text class="sans" x="88" y="870" font-size="20" fill="#8A97B5">concurrency, threading</text>
 
-  <!-- Card 2: Backend & Databases -->
-  <rect x="423" y="716" width="355" height="188" rx="18" fill="#111A30" stroke="#1F2B47" stroke-width="1.5"/>
+  <rect x="431" y="716" width="363" height="188" rx="18" fill="#111A30" stroke="#1F2B47" stroke-width="1.5"/>
   <g opacity="0">
     <animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.3357;0.3493;0.6543;0.6686;1" dur="14.0s" repeatCount="indefinite"/>
-    <rect x="423" y="716" width="355" height="188" rx="18" fill="#FFB84D" fill-opacity=".07" stroke="#FFB84D" stroke-width="2.5"/>
+    <rect x="431" y="716" width="363" height="188" rx="18" fill="#FFB84D" fill-opacity=".07" stroke="#FFB84D" stroke-width="2.5"/>
   </g>
-  <g transform="translate(455,746)">
+  <g transform="translate(463,746)">
     <ellipse cx="20" cy="6" rx="16" ry="6" fill="none" stroke="#FFB84D" stroke-width="3"/>
     <path d="M4 6 V32 A16 6 0 0 0 36 32 V6" fill="none" stroke="#FFB84D" stroke-width="3"/>
     <line x1="4"  y1="18" x2="36" y2="18" stroke="#FFB84D" stroke-width="2" opacity=".5"/>
     <line x1="4"  y1="26" x2="36" y2="26" stroke="#FFB84D" stroke-width="2" opacity=".5"/>
   </g>
-  <text class="sans" x="507" y="778" font-size="23" font-weight="700" fill="#E8EEF9">Backend &amp; Databases</text>
-  <text class="sans" x="455" y="838" font-size="20" fill="#8A97B5">APIs, query planning,</text>
-  <text class="sans" x="455" y="870" font-size="20" fill="#8A97B5">indexing, transactions</text>
+  <text class="sans" x="519" y="778" font-size="21" font-weight="700" fill="#E8EEF9">Backend &amp; Databases</text>
+  <text class="sans" x="463" y="838" font-size="20" fill="#8A97B5">APIs, query planning,</text>
+  <text class="sans" x="463" y="870" font-size="20" fill="#8A97B5">indexing, transactions</text>
 
-  <!-- Card 3: Infrastructure & DevOps -->
-  <rect x="790" y="716" width="355" height="188" rx="18" fill="#111A30" stroke="#1F2B47" stroke-width="1.5"/>
+  <rect x="806" y="716" width="363" height="188" rx="18" fill="#111A30" stroke="#1F2B47" stroke-width="1.5"/>
   <g opacity="0">
     <animate attributeName="opacity" values="0;0;1;1;0" keyTimes="0;0.6686;0.6829;0.9857;1" dur="14.0s" repeatCount="indefinite"/>
-    <rect x="790" y="716" width="355" height="188" rx="18" fill="#B48CFF" fill-opacity=".07" stroke="#B48CFF" stroke-width="2.5"/>
+    <rect x="806" y="716" width="363" height="188" rx="18" fill="#B48CFF" fill-opacity=".07" stroke="#B48CFF" stroke-width="2.5"/>
   </g>
-  <g transform="translate(822,746)">
+  <g transform="translate(838,746)">
     <rect x="2"  y="26" width="34" height="14" rx="2" fill="none" stroke="#B48CFF" stroke-width="3"/>
     <rect x="2"  y="6"  width="34" height="14" rx="2" fill="none" stroke="#B48CFF" stroke-width="3"/>
     <circle cx="11" cy="13" r="1.5" fill="#B48CFF"/>
     <circle cx="11" cy="33" r="1.5" fill="#B48CFF"/>
   </g>
-  <text class="sans" x="874" y="778" font-size="23" font-weight="700" fill="#E8EEF9">Infrastructure &amp; DevOps</text>
-  <text class="sans" x="822" y="838" font-size="20" fill="#8A97B5">Docker, AWS, CI/CD,</text>
-  <text class="sans" x="822" y="870" font-size="20" fill="#8A97B5">observability, monitoring</text>
+  <text class="sans" x="894" y="778" font-size="21" font-weight="700" fill="#E8EEF9">Infrastructure &amp; DevOps</text>
+  <text class="sans" x="838" y="838" font-size="20" fill="#8A97B5">Docker, AWS, CI/CD,</text>
+  <text class="sans" x="838" y="870" font-size="20" fill="#8A97B5">observability, monitoring</text>
 
-  <!-- Card 4: Distributed Systems -->
-  <rect x="1157" y="716" width="387" height="188" rx="18" fill="#111A30" stroke="#1F2B47" stroke-width="1.5"/>
+  <rect x="1181" y="716" width="363" height="188" rx="18" fill="#111A30" stroke="#1F2B47" stroke-width="1.5"/>
   <g opacity="0">
-    <animate attributeName="opacity" values="0;0;1;1;0" keyTimes="0;0.6686;0.6829;0.9857;1" dur="14.0s" repeatCount="indefinite"/>
-    <rect x="1157" y="716" width="387" height="188" rx="18" fill="#58a6ff" fill-opacity=".07" stroke="#58a6ff" stroke-width="2.5"/>
+    <animate attributeName="opacity" values="0;0;0;0.5;0.5;0" keyTimes="0;0.6686;0.75;0.78;0.95;1" dur="14.0s" repeatCount="indefinite"/>
+    <rect x="1181" y="716" width="363" height="188" rx="18" fill="#58a6ff" fill-opacity=".07" stroke="#58a6ff" stroke-width="2.5"/>
   </g>
-  <g transform="translate(1189,746)">
+  <g transform="translate(1213,746)">
     <circle cx="6"  cy="6"  r="5" fill="none" stroke="#58a6ff" stroke-width="3"/>
     <circle cx="30" cy="6"  r="5" fill="none" stroke="#58a6ff" stroke-width="3"/>
     <circle cx="18" cy="30" r="5" fill="none" stroke="#58a6ff" stroke-width="3"/>
@@ -643,11 +608,10 @@
     <line x1="8"  y1="11" x2="15" y2="26" stroke="#58a6ff" stroke-width="3"/>
     <line x1="28" y1="11" x2="21" y2="26" stroke="#58a6ff" stroke-width="3"/>
   </g>
-  <text class="sans" x="1241" y="778" font-size="23" font-weight="700" fill="#E8EEF9">Distributed Systems</text>
-  <text class="sans" x="1189" y="838" font-size="20" fill="#8A97B5">Consensus, replication,</text>
-  <text class="sans" x="1189" y="870" font-size="20" fill="#8A97B5">sharding, fault tolerance</text>
+  <text class="sans" x="1265" y="778" font-size="21" font-weight="700" fill="#E8EEF9">Distributed Systems</text>
+  <text class="sans" x="1213" y="838" font-size="20" fill="#8A97B5">Consensus, replication,</text>
+  <text class="sans" x="1213" y="870" font-size="20" fill="#8A97B5">sharding, fault tolerance</text>
 
-  <!-- ══════ SLIDING TIMELINE DOT ══════ -->
   <circle r="20" cy="690" fill="#2DD4BF" opacity=".28" filter="url(#soft)">
     <animate attributeName="cx" values="56;1544" dur="14.0s" repeatCount="indefinite"/>
     <animate attributeName="fill" values="#2DD4BF;#FFB84D;#B48CFF;#58a6ff;#2DD4BF"
