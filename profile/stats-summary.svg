@@ -60,7 +60,7 @@
       font-size="12.5" font-weight="600" fill="#7ee787">Total PRs:</text>
     <text x="340" y="184"
       text-anchor="end" font-size="13" font-weight="600"
-      fill="#e6edf3">103</text>
+      fill="#e6edf3">104</text>
 
     <text x="44" y="208"
       font-size="12.5" font-weight="600" fill="#7ee787">Total Issues:</text>
