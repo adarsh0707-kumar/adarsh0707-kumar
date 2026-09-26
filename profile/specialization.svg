@@ -1,25 +1,25 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100" viewBox="0 0 3840 100" preserveAspectRatio="xMidYMid meet">
-  <rect width="3840" height="100" rx="18" fill="#0d1117"/>
+<svg xmlns="http://www.w3.org/2000/svg" width="100%" height="200" viewBox="0 0 3840 200" preserveAspectRatio="xMidYMid meet">
+  <rect width="3840" height="200" rx="24" fill="#0d1117"/>
 
   <!-- Title -->
-  <text x="1920" y="45" text-anchor="middle" fill="#f0f6fc"
-    font-family="Arial,Helvetica,sans-serif" font-size="34" font-weight="700">
+  <text x="1920" y="88" text-anchor="middle" fill="#f0f6fc"
+    font-family="Arial,Helvetica,sans-serif" font-size="56" font-weight="700">
     BUILDING FROM THE SOCKET LAYER UP
   </text>
 
   <!-- Subtitle -->
-  <text x="1920" y="78" text-anchor="middle" fill="#8b949e"
-    font-family="Arial,Helvetica,sans-serif" font-size="24">
+  <text x="1920" y="140" text-anchor="middle" fill="#8b949e"
+    font-family="Arial,Helvetica,sans-serif" font-size="34">
     Systems • Networking • Databases • APIs • Cloud Infrastructure
   </text>
 
   <!-- Left animated dot (cyan) -->
-  <circle cx="80" cy="50" r="8" fill="#06b6d4">
+  <circle cx="90" cy="100" r="12" fill="#06b6d4">
     <animate attributeName="opacity" values=".2;1;.2" dur="1.8s" repeatCount="indefinite"/>
   </circle>
 
   <!-- Right animated dot (purple) -->
-  <circle cx="3760" cy="50" r="8" fill="#7c3aed">
+  <circle cx="3750" cy="100" r="12" fill="#7c3aed">
     <animate attributeName="opacity" values="1;.2;1" dur="1.8s" repeatCount="indefinite"/>
   </circle>
 </svg>
