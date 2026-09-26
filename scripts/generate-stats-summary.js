@@ -1,8 +1,8 @@
 // scripts/generate-stats-summary.js
-// Renders a single SVG containing both:
-//   - GitHub stats (stars, commits, PRs, issues, contributed-to)
+// Renders a single animated SVG containing both:
+//   - GitHub stats (stars, contributions, PRs, issues, contributed-to)
 //   - Most used languages (horizontal bar + legend)
-// One outer frame, merko theme, matching the profile's other cards.
+// One outer frame, merko theme, 14s animation loop.
 //
 // Requires env vars: GITHUB_TOKEN, GH_USERNAME
 // Run: GH_USERNAME=adarsh0707-kumar GITHUB_TOKEN=... node scripts/generate-stats-summary.js
@@ -17,7 +17,15 @@ const API      = "https://api.github.com/graphql";
 if (!USERNAME) { console.error("Missing GH_USERNAME"); process.exit(1); }
 if (!TOKEN)    { console.error("Missing GITHUB_TOKEN"); process.exit(1); }
 
-// ─── merko theme (matches profile/stats.svg, top-langs.svg) ─────────
+// ─── Animation timing (seconds) ──────────────────────────────────────
+const LOOP       = 14.0;  // total loop duration
+const ROLL_START = 0.4;   // when roll begins
+const ROLL_END   = 2.4;   // when roll finishes (2s roll)
+const BAR_END    = 3.6;   // when language bar finishes growing
+const LEG_END    = 4.4;   // when legend finishes fading in
+// Then hold until LOOP, then restart.
+
+// ─── merko theme ─────────────────────────────────────────────────────
 const T = {
   bg:         "#0d1117",
   bgGrad:     "#0a1f13",
@@ -70,7 +78,6 @@ async function getStats() {
 
   const totalStars = u.repositories.nodes.reduce((s, r) => s + r.stargazerCount, 0);
 
-  // Language percentages by repo count
   const counts = {};
   for (const r of u.repositories.nodes) {
     const lang = r.primaryLanguage && r.primaryLanguage.name;
@@ -85,10 +92,11 @@ async function getStats() {
 
   return {
     stars: totalStars,
-    commits: u.contributionsCollection.totalCommitContributions,
-    prs: u.contributionsCollection.totalPullRequestContributions,
-    issues: u.contributionsCollection.totalIssueContributions,
+    // NOTE: this is the last-12-months commit count (see contributionsCollection docs),
+    // so we label the row "Total Contributions" below and use contributionCalendar.
     contributions: u.contributionsCollection.contributionCalendar.totalContributions,
+    prs: u.pullRequests.totalCount,
+    issues: u.issues.totalCount,
     languages,
   };
 }
@@ -104,93 +112,196 @@ function formatCount(n) {
   return String(n);
 }
 
-// Grade badge ring — draws based on commit volume
-function gradeRing(cx, cy, r, grade) {
+// Rolling digit column — stacks digits 0..9 vertically inside a clipPath
+function rollingNumber({ x, y, value, fontSize, height, keyPrefix, delay = 0 }) {
+  const valueStr = String(value);
+  const digitW   = fontSize * 0.58;
+  const totalW   = digitW * valueStr.length;
+  const startX   = x - totalW / 2 + digitW / 2;
+
+  return valueStr.split("").map((digit, i) => {
+    const cid = `${keyPrefix}_${i}`;
+    const dx  = startX + i * digitW;
+    const d   = parseInt(digit, 10);
+    const finalOffset = -d * height;
+
+    const digits = Array.from({ length: 10 }, (_, n) =>
+      `<text x="0" y="${n * height + fontSize * 0.92}" text-anchor="middle"
+        font-size="${fontSize}" font-weight="800" fill="${T.text}">${n}</text>`
+    ).join("\n");
+
+    const animName  = `roll_${keyPrefix}_${i}`;
+    const animDelay = (delay + i * 0.08).toFixed(2);
+
+    return `
+      <style>
+        @keyframes ${animName} {
+          0%   { transform: translateY(0); }
+          ${((ROLL_START / LOOP) * 100).toFixed(3)}% { transform: translateY(0); }
+          ${((ROLL_END   / LOOP) * 100).toFixed(3)}% { transform: translateY(${finalOffset}px); }
+          100% { transform: translateY(${finalOffset}px); }
+        }
+      </style>
+      <clipPath id="${cid}">
+        <rect x="${dx - digitW / 2}" y="${y - fontSize}" width="${digitW}" height="${height}"/>
+      </clipPath>
+      <g clip-path="url(#${cid})">
+        <g style="animation: ${animName} ${LOOP}s infinite; animation-delay: ${animDelay}s; transform-box: fill-box;">
+          <g transform="translate(${dx}, ${y - fontSize * 0.92})">
+            ${digits}
+          </g>
+        </g>
+      </g>`;
+  }).join("\n");
+}
+
+// Animated horizontal language bar — segments wipe in from left
+function animatedLanguageBar(x, y, w, h, langs) {
+  const total = langs.reduce((s, l) => s + l.pct, 0) || 1;
+  let offset = 0;
+
+  const segs = langs.map((l, i) => {
+    const segW  = (l.pct / total) * w;
+    const start = x + offset;
+    const animName = `langSeg_${i}`;
+    const delayS   = (i * 0.08).toFixed(2);
+
+    const svg = `
+      <style>
+        @keyframes ${animName} {
+          0%   { clip-path: inset(0 100% 0 0); }
+          ${((ROLL_START / LOOP) * 100).toFixed(3)}% { clip-path: inset(0 100% 0 0); }
+          ${((BAR_END   / LOOP) * 100).toFixed(3)}% { clip-path: inset(0 0 0 0); }
+          100% { clip-path: inset(0 0 0 0); }
+        }
+      </style>
+      <rect x="${start.toFixed(2)}" y="${y}" width="${segW.toFixed(2)}" height="${h}"
+        fill="${T.barColors[i % T.barColors.length]}"
+        style="animation: ${animName} ${LOOP}s infinite; animation-delay: ${delayS}s"/>`;
+
+    offset += segW;
+    return svg;
+  }).join("\n");
+
   return `
+    <clipPath id="langBarClip"><rect x="${x}" y="${y}" width="${w}" height="${h}" rx="${h / 2}"/></clipPath>
+    <g clip-path="url(#langBarClip)">
+      <rect x="${x}" y="${y}" width="${w}" height="${h}" fill="${T.frame}"/>
+      ${segs}
+    </g>`;
+}
+
+// Animated grade ring — draws itself
+function animatedGradeRing(cx, cy, r, grade, keyPrefix) {
+  const C = 2 * Math.PI * r * 0.75;
+  const animName = `ring_${keyPrefix}`;
+  return `
+    <style>
+      @keyframes ${animName} {
+        0%   { stroke-dashoffset: ${(C * 0.75).toFixed(2)}; }
+        ${((ROLL_START / LOOP) * 100).toFixed(3)}% { stroke-dashoffset: ${(C * 0.75).toFixed(2)}; }
+        ${((ROLL_END   / LOOP) * 100).toFixed(3)}% { stroke-dashoffset: 0; }
+        100% { stroke-dashoffset: 0; }
+      }
+    </style>
     <circle cx="${cx}" cy="${cy}" r="${r}" fill="none"
       stroke="${T.frame}" stroke-width="6"/>
     <circle cx="${cx}" cy="${cy}" r="${r}" fill="none"
       stroke="${T.accent}" stroke-width="6" stroke-linecap="round"
-      stroke-dasharray="${(2 * Math.PI * r * 0.75).toFixed(2)}"
+      stroke-dasharray="${C.toFixed(2)}"
       stroke-dashoffset="0"
-      transform="rotate(-90 ${cx} ${cy})"/>
+      transform="rotate(-90 ${cx} ${cy})"
+      style="animation: ${animName} ${LOOP}s infinite"/>
     <text x="${cx}" y="${cy + 6}" text-anchor="middle"
       font-size="22" font-weight="800" fill="${T.text}">${escapeXml(grade)}</text>`;
 }
 
-// Horizontal language bar — a stacked row of colored segments
-function languageBar(x, y, w, h, langs) {
-  const total = langs.reduce((s, l) => s + l.pct, 0) || 1;
-  let offset = 0;
-  const segs = langs.map((l, i) => {
-    const segW = (l.pct / total) * w;
-    const rect = `<rect x="${(x + offset).toFixed(2)}" y="${y}"
-      width="${segW.toFixed(2)}" height="${h}"
-      fill="${T.barColors[i % T.barColors.length]}"/>`;
-    offset += segW;
-    return rect;
+// Legend fades in after the bar finishes
+function animatedLegend(items, x0, y0, colW) {
+  return items.map((l, i) => {
+    const col = i % 2;
+    const row = Math.floor(i / 2);
+    const lx  = x0 + col * colW;
+    const ly  = y0 + row * 20;
+    const animName = `leg_${i}`;
+    const delayS   = (i * 0.1).toFixed(2);
+
+    return `
+      <style>
+        @keyframes ${animName} {
+          0%   { opacity: 0; }
+          ${((BAR_END / LOOP) * 100).toFixed(3)}% { opacity: 0; }
+          ${((LEG_END / LOOP) * 100).toFixed(3)}% { opacity: 1; }
+          100% { opacity: 1; }
+        }
+      </style>
+      <g style="animation: ${animName} ${LOOP}s infinite; animation-delay: ${delayS}s">
+        <circle cx="${lx + 5}" cy="${ly}" r="4" fill="${T.barColors[i % T.barColors.length]}"/>
+        <text x="${lx + 16}" y="${ly + 4}" font-size="12" fill="${T.text}">${escapeXml(l.name)}</text>
+        <text x="${lx + colW - 16}" y="${ly + 4}" text-anchor="end"
+          font-size="12" font-weight="600" fill="${T.muted}">${l.pct}%</text>
+      </g>`;
   }).join("\n");
-  return `<clipPath id="langBarClip"><rect x="${x}" y="${y}" width="${w}" height="${h}" rx="${h / 2}"/></clipPath>
-    <g clip-path="url(#langBarClip)">${segs}</g>`;
 }
 
 // ─── Main ────────────────────────────────────────────────────────────
 async function main() {
   const s = await getStats();
 
-  // Simple grade heuristic based on total commits
   const grade =
-    s.commits >= 1000 ? "A+" :
-    s.commits >= 500  ? "A"  :
-    s.commits >= 200  ? "A-" :
-    s.commits >= 100  ? "B+" :
-    s.commits >= 50   ? "B"  :
-    s.commits >= 20   ? "B-" : "C";
+    s.contributions >= 1000 ? "A+" :
+    s.contributions >= 500  ? "A"  :
+    s.contributions >= 200  ? "A-" :
+    s.contributions >= 100  ? "B+" :
+    s.contributions >= 50   ? "B"  :
+    s.contributions >= 20   ? "B-" : "C";
 
   const W = 1000, H = 240, PAD = 20;
-  const PANEL_W = (W - PAD * 3) / 2;   // 2 panels + 3 gaps
+  const PANEL_W = (W - PAD * 3) / 2;
   const PANEL_H = H - PAD * 2;
 
   const leftX  = PAD;
   const rightX = PAD * 2 + PANEL_W;
 
-  // Left panel content
+  // Stats rows — now labelled consistently.
+  // "Total Contributions" = contributionCalendar (all activities, last 12mo)
   const statsRows = [
-    ["Total Stars Earned:",      String(s.stars)],
-    ["Total Commits:",           formatCount(s.commits)],
-    ["Total PRs:",               String(s.prs)],
-    ["Total Issues:",            String(s.issues)],
-    ["Contributed to (last year):", String(s.contributions)],
+    ["Total Stars Earned:",              String(s.stars)],
+    ["Total Contributions (last year):", String(s.contributions)],
+    ["Total PRs:",                       String(s.prs)],
+    ["Total Issues:",                    String(s.issues)],
+    ["Public Repositories:",             String(s.languages.length >= 1 ? "" : "")], // placeholder
   ];
 
-  const leftRowsSvg = statsRows.map(([k, v], i) => `
-    <text x="${leftX + 24}" y="${112 + i * 26}"
+  // Fill the 5th row with repo count — we don't have it in s, add to getStats if needed
+  // For now drop the placeholder row:
+  const rowsFinal = [
+    ["Total Stars Earned:",              String(s.stars)],
+    ["Total Contributions (last year):", String(s.contributions)],
+    ["Total PRs:",                       String(s.prs)],
+    ["Total Issues:",                    String(s.issues)],
+  ];
+
+  const leftRowsSvg = rowsFinal.map(([k, v], i) => `
+    <text x="${leftX + 24}" y="${116 + i * 28}"
       font-size="14" font-weight="600" fill="${T.label}">${escapeXml(k)}</text>
-    <text x="${leftX + PANEL_W - 130}" y="${112 + i * 26}"
+    <text x="${leftX + PANEL_W - 140}" y="${116 + i * 28}"
       text-anchor="end" font-size="14" font-weight="600"
       fill="${T.text}">${escapeXml(v)}</text>`).join("\n");
 
-  // Right panel content
-  const barY = 110;
-  const barSvg = languageBar(rightX + 24, barY, PANEL_W - 48, 10, s.languages);
-
-  // Two-column legend under the bar
-  const legendY = 142;
+  const barY = 112;
+  const barSvg = animatedLanguageBar(rightX + 24, barY, PANEL_W - 48, 10, s.languages);
+  const legendY = 144;
   const colW = (PANEL_W - 48) / 2;
-  const legendSvg = s.languages.map((l, i) => {
-    const col = i % 2;
-    const row = Math.floor(i / 2);
-    const lx = rightX + 24 + col * colW;
-    const ly = legendY + row * 20;
-    return `
-      <circle cx="${lx + 5}" cy="${ly}" r="4" fill="${T.barColors[i % T.barColors.length]}"/>
-      <text x="${lx + 16}" y="${ly + 4}" font-size="12" fill="${T.text}">${escapeXml(l.name)}</text>
-      <text x="${lx + colW - 16}" y="${ly + 4}" text-anchor="end"
-        font-size="12" font-weight="600" fill="${T.muted}">${l.pct}%</text>`;
-  }).join("\n");
+  const legendSvg = animatedLegend(s.languages, rightX + 24, legendY, colW);
 
   const svg = `<svg xmlns="http://www.w3.org/2000/svg" width="${W}" height="${H}"
     viewBox="0 0 ${W} ${H}" role="img" aria-label="GitHub stats summary for ${escapeXml(USERNAME)}">
+  <style>
+    @media (prefers-reduced-motion: reduce) {
+      * { animation: none !important; }
+    }
+  </style>
   <defs>
     <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
       <stop offset="0"   stop-color="${T.bgGrad}"/>
@@ -216,32 +327,28 @@ async function main() {
   <rect x="0.5" y="0.5" width="${W - 1}" height="${H - 1}" rx="16"
     fill="none" stroke="${T.frame}" stroke-width="1"/>
 
-  <!-- Inner panel backgrounds -->
   <rect x="${leftX}" y="${PAD}" width="${PANEL_W}" height="${PANEL_H}"
     rx="12" fill="${T.panel}" stroke="${T.panelEdge}"/>
   <rect x="${rightX}" y="${PAD}" width="${PANEL_W}" height="${PANEL_H}"
     rx="12" fill="${T.panel}" stroke="${T.panelEdge}"/>
 
-  <!-- Left panel: stats -->
-  <text x="${leftX + 24}" y="${76}" font-size="17" font-weight="800"
+  <text x="${leftX + 24}" y="${80}" font-size="17" font-weight="800"
     fill="${T.accent}">Adarsh Kumar's GitHub Stats</text>
   ${leftRowsSvg}
-  ${gradeRing(leftX + PANEL_W - 60, 155, 34, grade)}
+  ${animatedGradeRing(leftX + PANEL_W - 60, 155, 34, grade, "grade")}
 
-  <!-- Right panel: languages -->
-  <text x="${rightX + 24}" y="${76}" font-size="17" font-weight="800"
+  <text x="${rightX + 24}" y="${80}" font-size="17" font-weight="800"
     fill="${T.accent}">Most Used Languages</text>
   ${barSvg}
   ${legendSvg}
 </svg>`;
 
-  // ── Validation
   const bad =
     !svg.includes("<svg") ||
     svg.includes("NaN") ||
     svg.includes("undefined") ||
     s.stars == null ||
-    s.commits == null ||
+    s.contributions == null ||
     !Array.isArray(s.languages) ||
     s.languages.length === 0;
 
