@@ -7,6 +7,7 @@
 [![Email](https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:adarshku.offical@gmail.com)
 [![Instagram](https://img.shields.io/badge/Instagram-E4405F?style=for-the-badge&logo=instagram&logoColor=white)](https://instagram.com/i_.a_k)
 
+
 ---
 
 ## 👨‍💻 About Me
@@ -33,6 +34,7 @@ I enjoy building complete software systems — from **TCP sockets and C++ system
 - ☁️ **[CodeForge Cloud](https://github.com/adarsh0707-kumar/CodeForge-Cloud)** — Cloud-oriented developer platform exploring backend services, execution workflows, APIs, and production-style infrastructure.
 - 🗄️ **[Database Engine](https://github.com/adarsh0707-kumar/Database-engine)** — A from-the-ground-up database project exploring storage, parsing, query execution, and systems-level design.
 - 🔴 **[Redis Clone](https://github.com/adarsh0707-kumar/redis-clone)** — A systems-focused Redis implementation exploring networking, commands, in-memory data structures, and protocol handling.
+
 
 ---
 
@@ -64,13 +66,17 @@ I enjoy building complete software systems — from **TCP sockets and C++ system
 
 <img src="https://raw.githubusercontent.com/adarsh0707-kumar/adarsh0707-kumar/main/profile/spent-my-time.svg" alt="Adarsh Kumar — Spent My Time" width="100%" />
 
+<br/>
+
 ---
 
 ## 🌆 3D Contribution Graph
 
 <p align="center">
-  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=18&duration=5000&pause=2000&color=39D353&center=true&vCenter=true&width=900&lines=Building+from+the+socket+layer+up;C%2B%2B+%E2%80%A2+Python+%E2%80%A2+Node.js+%E2%80%A2+PostgreSQL+%E2%80%A2+AWS;Open+to+Software+Engineering+%26+Backend+roles" alt="Building from the socket layer up" />
+  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=22&duration=5000&pause=2000&color=39D353&center=true&vCenter=true&width=900&lines=Building+from+the+socket+layer+up;C%2B%2B+%E2%80%A2+Python+%E2%80%A2+Node.js+%E2%80%A2+PostgreSQL+%E2%80%A2+AWS;Open+to+Software+Engineering+%26+Backend+roles" alt="Building from the socket layer up" />
 </p>
+
+<br/>
 
 <img src="https://raw.githubusercontent.com/adarsh0707-kumar/adarsh0707-kumar/main/profile-3d-contrib/profile-night-rainbow.svg" alt="Adarsh Kumar 3D contribution graph — night rainbow" width="100%" />
 
@@ -86,8 +92,13 @@ I enjoy building complete software systems — from **TCP sockets and C++ system
 </table>
 
 
+## 📈 Activity Graph
 
----
+<img src="https://fabianocouto-activity-graph.vercel.app/graph/?username=adarsh0707-kumar&theme=merko&hide_border=true&bg_color=0d1117&color=39d353&line=39d353&point=7ee787&area=true&area_color=39d353" alt="Adarsh Kumar activity graph" width="100%" />
+
+<a href="https://raw.githubusercontent.com/adarsh0707-kumar/adarsh0707-kumar/gh-pages/github-contribution-grid-snake.svg">
+  <img src="https://raw.githubusercontent.com/adarsh0707-kumar/adarsh0707-kumar/gh-pages/github-contribution-grid-snake.svg" alt="Animated GitHub contribution snake" width="100%" />
+</a>
 
 ## 🏆 Trophy Case
 
@@ -95,22 +106,10 @@ I enjoy building complete software systems — from **TCP sockets and C++ system
 
 ---
 
-## 🐍 Contribution Snake
-
-[![Animated GitHub contribution snake](https://raw.githubusercontent.com/adarsh0707-kumar/adarsh0707-kumar/gh-pages/github-contribution-grid-snake.svg)](https://raw.githubusercontent.com/adarsh0707-kumar/adarsh0707-kumar/gh-pages/github-contribution-grid-snake.svg)
-
----
-
-## 📈 Activity Graph
-
-<img src="https://fabianocouto-activity-graph.vercel.app/graph/?username=adarsh0707-kumar&theme=merko&hide_border=true&bg_color=0d1117&color=39d353&line=39d353&point=7ee787&area=true&area_color=39d353" alt="Adarsh Kumar activity graph" width="100%" />
-
----
-
 ## 🏆 Certifications
 
 <p align="center">
-  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=18&duration=5000&pause=2000&color=39D353&center=true&vCenter=true&width=800&lines=6+Certificates+%7C+3+Learning+Tracks;Systems+%E2%80%A2+Backend+%E2%80%A2+Infrastructure+%E2%80%A2+Distributed;Always+learning.+Always+building." alt="Certifications and learning tracks" />
+  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=22&duration=5000&pause=2000&color=39D353&center=true&vCenter=true&width=800&lines=6+Certificates+%7C+3+Learning+Tracks;Systems+%E2%80%A2+Backend+%E2%80%A2+Infrastructure+%E2%80%A2+Distributed;Always+learning.+Always+building." alt="Certifications and learning tracks" />
 </p>
 
 <br/>
