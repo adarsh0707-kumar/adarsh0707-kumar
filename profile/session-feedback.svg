@@ -179,51 +179,51 @@
       <animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.2143;0.2321;0.4643;0.4821;1" dur="14.0s" repeatCount="indefinite"/>
     </rect>
 
-    <clipPath id="tc0"><rect x="782" y="182" width="0" height="44">
-      <animate attributeName="width" values="0;0;560.5625;560.5625" keyTimes="0;0.2393;0.3473;1" dur="14.0s" repeatCount="indefinite"/>
-    </rect></clipPath>
+        <!-- Line 1: The clear guidance and real examples made -->
+    <clipPath id="tc0">
+      <rect x="782" y="182" width="0" height="44">
+        <animate attributeName="width" values="0;0;650;650" keyTimes="0;0.2393;0.3473;1" dur="14.0s" repeatCount="indefinite"/>
+      </rect>
+    </clipPath>
     <text class="sans" x="784" y="214" font-size="28" fill="#e6edf3" clip-path="url(#tc0)">The clear guidance and real examples made</text>
     <rect x="784" y="187" width="3" height="34" rx="1.5" fill="#39d353" opacity="0">
-      <animate attributeName="x" values="784;784;1336.5625;1336.5625" keyTimes="0;0.2393;0.3473;1" dur="14.0s" repeatCount="indefinite"/>
+      <animate attributeName="x" values="784;784;1434;1434" keyTimes="0;0.2393;0.3473;1" dur="14.0s" repeatCount="indefinite"/>
       <animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.2393;0.2407;0.3473;0.3487;1" dur="14.0s" repeatCount="indefinite"/>
     </rect>
 
-    <clipPath id="tc1"><rect x="782" y="228" width="0" height="44">
-      <animate attributeName="width" values="0;0;449.5156;449.5156" keyTimes="0;0.358;0.4546;1" dur="14.0s" repeatCount="indefinite"/>
-    </rect></clipPath>
+    <!-- Line 2: every step easy to follow and apply. -->
+    <clipPath id="tc1">
+      <rect x="782" y="228" width="0" height="44">
+        <animate attributeName="width" values="0;0;530;530" keyTimes="0;0.358;0.4546;1" dur="14.0s" repeatCount="indefinite"/>
+      </rect>
+    </clipPath>
     <text class="sans" x="784" y="260" font-size="28" fill="#e6edf3" clip-path="url(#tc1)">every step easy to follow and apply.</text>
     <rect x="784" y="233" width="3" height="34" rx="1.5" fill="#39d353" opacity="0">
-      <animate attributeName="x" values="784;784;1225.5156;1225.5156" keyTimes="0;0.358;0.4546;1" dur="14.0s" repeatCount="indefinite"/>
+      <animate attributeName="x" values="784;784;1314;1314" keyTimes="0;0.358;0.4546;1" dur="14.0s" repeatCount="indefinite"/>
       <animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.358;0.3594;0.4546;0.456;1" dur="14.0s" repeatCount="indefinite"/>
     </rect>
 
-    <!-- Second field -->
-    <text class="sans" x="784" y="478" font-size="27" fill="#8b949e" fill-opacity=".8">
-      Optional
-      <animate attributeName="opacity" values="1;1;0;0" keyTimes="0;0.4786;0.4964;1" dur="14.0s" repeatCount="indefinite"/>
-    </text>
-    <rect x="752" y="426" width="736" height="170" rx="16" fill="none" stroke="#39d353" stroke-width="6" filter="url(#soft)" opacity="0">
-      <animate attributeName="opacity" values="0;0;0.5;0.5;0;0" keyTimes="0;0.4786;0.4964;0.7357;0.7536;1" dur="14.0s" repeatCount="indefinite"/>
-    </rect>
-    <rect x="752" y="426" width="736" height="170" rx="16" fill="none" stroke="#39d353" stroke-width="2.5" opacity="0">
-      <animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.4786;0.4964;0.7357;0.7536;1" dur="14.0s" repeatCount="indefinite"/>
-    </rect>
-
-    <clipPath id="tc2"><rect x="782" y="452" width="0" height="44">
-      <animate attributeName="width" values="0;0;453.1094;453.1094" keyTimes="0;0.5036;0.6024;1" dur="14.0s" repeatCount="indefinite"/>
-    </rect></clipPath>
+    <!-- Line 3: A little more time for Q&A at the end -->
+    <clipPath id="tc2">
+      <rect x="782" y="452" width="0" height="44">
+        <animate attributeName="width" values="0;0;600;600" keyTimes="0;0.5036;0.6024;1" dur="14.0s" repeatCount="indefinite"/>
+      </rect>
+    </clipPath>
     <text class="sans" x="784" y="484" font-size="28" fill="#e6edf3" clip-path="url(#tc2)">A little more time for Q&amp;A at the end</text>
     <rect x="784" y="457" width="3" height="34" rx="1.5" fill="#39d353" opacity="0">
-      <animate attributeName="x" values="784;784;1229.1094;1229.1094" keyTimes="0;0.5036;0.6024;1" dur="14.0s" repeatCount="indefinite"/>
+      <animate attributeName="x" values="784;784;1384;1384" keyTimes="0;0.5036;0.6024;1" dur="14.0s" repeatCount="indefinite"/>
       <animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.5036;0.505;0.6024;0.6039;1" dur="14.0s" repeatCount="indefinite"/>
     </rect>
 
-    <clipPath id="tc3"><rect x="782" y="498" width="0" height="44">
-      <animate attributeName="width" values="0;0;460.9375;460.9375" keyTimes="0;0.6131;0.7074;1" dur="14.0s" repeatCount="indefinite"/>
-    </rect></clipPath>
+    <!-- Line 4: would make the session even better. -->
+    <clipPath id="tc3">
+      <rect x="782" y="498" width="0" height="44">
+        <animate attributeName="width" values="0;0;550;550" keyTimes="0;0.6131;0.7074;1" dur="14.0s" repeatCount="indefinite"/>
+      </rect>
+    </clipPath>
     <text class="sans" x="784" y="530" font-size="28" fill="#e6edf3" clip-path="url(#tc3)">would make the session even better.</text>
     <rect x="784" y="503" width="3" height="34" rx="1.5" fill="#39d353" opacity="0">
-      <animate attributeName="x" values="784;784;1236.9375;1236.9375" keyTimes="0;0.6131;0.7074;1" dur="14.0s" repeatCount="indefinite"/>
+      <animate attributeName="x" values="784;784;1334;1334" keyTimes="0;0.6131;0.7074;1" dur="14.0s" repeatCount="indefinite"/>
       <animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.6131;0.6146;0.7074;0.7089;1" dur="14.0s" repeatCount="indefinite"/>
     </rect>
 
