@@ -2,7 +2,7 @@
 [![Building from the socket layer up](https://raw.githubusercontent.com/adarsh0707-kumar/adarsh0707-kumar/main/profile/specialization.svg)](https://github.com/adarsh0707-kumar/adarsh0707-kumar/blob/main/profile/specialization.svg)
 [![Typing SVG](https://raw.githubusercontent.com/adarsh0707-kumar/adarsh0707-kumar/main/profile/typing.svg)](https://github.com/adarsh0707-kumar/adarsh0707-kumar/blob/main/profile/typing.svg)
 
-<br/><br/>
+<br/>
 
 <p align="center">
   <a href="https://github.com/adarsh0707-kumar">
@@ -22,7 +22,7 @@
   </a>
 </p>
 
-<br/><br/>
+<br/>
 
 ---
 
