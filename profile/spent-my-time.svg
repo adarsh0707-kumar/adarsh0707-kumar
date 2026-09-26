@@ -623,19 +623,19 @@
 
   <g opacity="0">
     <animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.07;0.09;0.9857;0.99;1" dur="14.0s" repeatCount="indefinite"/>
-    <text class="sans" x="620.0" y="644" font-size="21" fill="#8A97B5">Systems <tspan font-weight="700" fill="#2DD4BF">30%</tspan></text>
+    <text class="sans" x="620.0" y="644" font-size="21" fill="#8A97B5">Systems <tspan font-weight="700" fill="#2DD4BF">34.23%</tspan></text>
   </g>
   <g opacity="0">
     <animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.13;0.15;0.9857;0.99;1" dur="14.0s" repeatCount="indefinite"/>
-    <text class="sans" x="897.0" y="644" font-size="21" fill="#8A97B5">Backend <tspan font-weight="700" fill="#FFB84D">20%</tspan></text>
+    <text class="sans" x="897.0" y="644" font-size="21" fill="#8A97B5">Backend <tspan font-weight="700" fill="#FFB84D">29.39%</tspan></text>
   </g>
   <g opacity="0">
     <animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.19;0.21;0.9857;0.99;1" dur="14.0s" repeatCount="indefinite"/>
-    <text class="sans" x="1082.0" y="644" font-size="21" fill="#8A97B5">Infra <tspan font-weight="700" fill="#B48CFF">25%</tspan></text>
+    <text class="sans" x="1082.0" y="644" font-size="21" fill="#8A97B5">Infra <tspan font-weight="700" fill="#B48CFF">14.11%</tspan></text>
   </g>
   <g opacity="0">
     <animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.25;0.27;0.9857;0.99;1" dur="14.0s" repeatCount="indefinite"/>
-    <text class="sans" x="1313.0" y="644" font-size="21" fill="#8A97B5">Distributed <tspan font-weight="700" fill="#58a6ff">25%</tspan></text>
+    <text class="sans" x="1313.0" y="644" font-size="21" fill="#8A97B5">Distributed <tspan font-weight="700" fill="#58a6ff">22.27%</tspan></text>
   </g>
 
   <!-- Timeline -->
