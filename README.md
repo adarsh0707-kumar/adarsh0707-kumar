@@ -68,6 +68,10 @@ I enjoy building complete software systems — from **TCP sockets and C++ system
 
 ## 🌆 3D Contribution Graph
 
+<p align="center">
+  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=18&duration=5000&pause=2000&color=39D353&center=true&vCenter=true&width=900&lines=Building+from+the+socket+layer+up;C%2B%2B+%E2%80%A2+Python+%E2%80%A2+Node.js+%E2%80%A2+PostgreSQL+%E2%80%A2+AWS;Open+to+Software+Engineering+%26+Backend+roles" alt="Building from the socket layer up" />
+</p>
+
 <img src="https://raw.githubusercontent.com/adarsh0707-kumar/adarsh0707-kumar/main/profile-3d-contrib/profile-night-rainbow.svg" alt="Adarsh Kumar 3D contribution graph — night rainbow" width="100%" />
 
 <table>
@@ -81,9 +85,7 @@ I enjoy building complete software systems — from **TCP sockets and C++ system
 </tr>
 </table>
 
-<p align="center">
-  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=18&duration=3000&pause=1000&color=39D353&center=true&vCenter=true&width=900&lines=Building+from+the+socket+layer+up;C%2B%2B+%E2%80%A2+Python+%E2%80%A2+Node.js+%E2%80%A2+PostgreSQL+%E2%80%A2+AWS;Open+to+Software+Engineering+%26+Backend+roles" alt="Building from the socket layer up" />
-</p>
+
 
 ---
 
@@ -108,7 +110,7 @@ I enjoy building complete software systems — from **TCP sockets and C++ system
 ## 🏆 Certifications
 
 <p align="center">
-  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=18&duration=3000&pause=1000&color=39D353&center=true&vCenter=true&width=800&lines=6+Certificates+%7C+3+Learning+Tracks;Systems+%E2%80%A2+Backend+%E2%80%A2+Infrastructure+%E2%80%A2+Distributed;Always+learning.+Always+building." alt="Certifications and learning tracks" />
+  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=18&duration=5000&pause=2000&color=39D353&center=true&vCenter=true&width=800&lines=6+Certificates+%7C+3+Learning+Tracks;Systems+%E2%80%A2+Backend+%E2%80%A2+Infrastructure+%E2%80%A2+Distributed;Always+learning.+Always+building." alt="Certifications and learning tracks" />
 </p>
 
 <br/>
