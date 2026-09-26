@@ -48,13 +48,13 @@
       font-size="12.5" font-weight="600" fill="#7ee787">Total Contributions (all-time):</text>
     <text x="340" y="136"
       text-anchor="end" font-size="13" font-weight="600"
-      fill="#e6edf3">1.6k</text>
+      fill="#e6edf3">1.7k</text>
 
     <text x="44" y="160"
       font-size="12.5" font-weight="600" fill="#7ee787">Contributions (last 12 months):</text>
     <text x="340" y="160"
       text-anchor="end" font-size="13" font-weight="600"
-      fill="#e6edf3">1.2k</text>
+      fill="#e6edf3">1.3k</text>
 
     <text x="44" y="184"
       font-size="12.5" font-weight="600" fill="#7ee787">Total PRs:</text>
