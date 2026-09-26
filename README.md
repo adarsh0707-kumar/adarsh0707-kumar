@@ -162,17 +162,41 @@ A machine-learning-powered movie recommender that suggests 5 similar films based
 
 ## 🛠️ Tech Stack
 
-**Languages**
-![](https://skillicons.dev/icons?i=cpp,c,python,typescript,javascript,java)
-
-**Backend & Data**
-![](https://skillicons.dev/icons?i=nodejs,express,postgres,redis,prisma)
-
-**Frontend**
-![](https://skillicons.dev/icons?i=react,nextjs,vite,tailwind)
-
-**Infrastructure & Systems**
-![](https://skillicons.dev/icons?i=linux,docker,aws,githubactions,cmake,git)
+<table>
+<tr>
+<td width="180" valign="middle"><b>Languages</b></td>
+<td>
+  <img src="https://skillicons.dev/icons?i=cpp,c,python,ts,js,java" height="44" />
+</td>
+</tr>
+<tr>
+<td valign="middle"><b>Backend &amp; Data</b></td>
+<td>
+  <img src="https://skillicons.dev/icons?i=nodejs,express,postgres,redis,prisma" height="44" />
+</td>
+</tr>
+<tr>
+<td valign="middle"><b>Frontend</b></td>
+<td>
+  <img src="https://skillicons.dev/icons?i=react,nextjs,vite,tailwind" height="44" />
+</td>
+</tr>
+<tr>
+<td valign="middle"><b>Infrastructure</b></td>
+<td>
+  <img src="https://skillicons.dev/icons?i=linux,docker,aws,githubactions,cmake,git" height="44" />
+</td>
+</tr>
+<tr>
+<td valign="middle"><b>AI / ML</b></td>
+<td>
+  <img src="https://skillicons.dev/icons?i=python,sklearn,tensorflow" height="44" />
+  <img src="https://img.shields.io/badge/Streamlit-FF4B4B?style=for-the-badge&logo=streamlit&logoColor=white" height="28" />
+  <img src="https://img.shields.io/badge/pandas-150458?style=for-the-badge&logo=pandas&logoColor=white" height="28" />
+  <img src="https://img.shields.io/badge/NumPy-013243?style=for-the-badge&logo=numpy&logoColor=white" height="28" />
+</td>
+</tr>
+</table>
 
 ---
 
