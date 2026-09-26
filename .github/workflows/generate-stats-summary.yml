@@ -1,0 +1,62 @@
+name: Generate Stats Summary (merged)
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - ".github/workflows/generate-stats-summary.yml"
+      - "scripts/generate-stats-summary.js"
+  workflow_dispatch:
+  schedule:
+    # 17:23 UTC = 10:53 PM IST. Staggered between stats-dashboard (17:07) and
+    # 3d-contrib (17:43) so no two main-pushing jobs collide.
+    - cron: "23 17 * * *"
+
+permissions:
+  contents: write
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      - name: Generate merged stats summary
+        env:
+          GITHUB_TOKEN: ${{ secrets.PROFILE_TOKEN }}
+          GH_USERNAME: adarsh0707-kumar
+        run: node scripts/generate-stats-summary.js
+
+      - name: Commit and push
+        run: |
+          git config user.name  "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+
+          git add profile/stats-summary.svg
+
+          if git diff --cached --quiet; then
+            echo "No changes to profile/stats-summary.svg"
+            exit 0
+          fi
+
+          git commit -m "chore: update merged stats summary"
+
+          for attempt in 1 2 3; do
+            echo "Push attempt $attempt..."
+            git pull --rebase origin main || true
+            if git push; then
+              echo "Pushed on attempt $attempt"
+              exit 0
+            fi
+            echo "Push rejected; retrying in 5s..."
+            sleep 5
+          done
+
+          echo "Push failed after 3 attempts"
+          exit 1
