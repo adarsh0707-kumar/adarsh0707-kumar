@@ -338,4 +338,51 @@
       <line x1="3470" y1="120" x2="3420" y2="300"/>
       <line x1="3420" y1="300" x2="3500" y2="420"/>
       <line x1="3640" y1="350" x2="3760" y2="470"/>
-      <line x1="3700" y
+      <line x1="3700" y1="160" x2="3700" y2="60"/>
+      <line x1="3700" y1="160" x2="3640" y2="350"/>
+      <line x1="3420" y1="300" x2="3560" y2="250"/>
+    </g>
+
+    <circle cx="3470" cy="120" r="11" fill="#03130a" stroke="#39ff7a" stroke-width="4"/>
+    <circle class="pulse" cx="3470" cy="120" r="5" fill="#39ff7a" style="animation-delay:-0.0s"/>
+    <circle cx="3560" cy="250" r="11" fill="#03130a" stroke="#39ff7a" stroke-width="4"/>
+    <circle class="pulse" cx="3560" cy="250" r="5" fill="#39ff7a" style="animation-delay:-0.4s"/>
+    <circle cx="3700" cy="160" r="11" fill="#03130a" stroke="#39ff7a" stroke-width="4"/>
+    <circle class="pulse" cx="3700" cy="160" r="5" fill="#39ff7a" style="animation-delay:-0.8s"/>
+    <circle cx="3640" cy="350" r="11" fill="#03130a" stroke="#39ff7a" stroke-width="4"/>
+    <circle class="pulse" cx="3640" cy="350" r="5" fill="#39ff7a" style="animation-delay:-1.2s"/>
+    <circle cx="3500" cy="420" r="11" fill="#03130a" stroke="#39ff7a" stroke-width="4"/>
+    <circle class="pulse" cx="3500" cy="420" r="5" fill="#39ff7a" style="animation-delay:-1.6s"/>
+    <circle cx="3760" cy="470" r="11" fill="#03130a" stroke="#39ff7a" stroke-width="4"/>
+    <circle class="pulse" cx="3760" cy="470" r="5" fill="#39ff7a" style="animation-delay:-2.0s"/>
+    <circle cx="3420" cy="300" r="11" fill="#03130a" stroke="#39ff7a" stroke-width="4"/>
+    <circle class="pulse" cx="3420" cy="300" r="5" fill="#39ff7a" style="animation-delay:-2.4s"/>
+    <circle cx="3700" cy="60" r="11" fill="#03130a" stroke="#39ff7a" stroke-width="4"/>
+    <circle class="pulse" cx="3700" cy="60" r="5" fill="#39ff7a" style="animation-delay:-2.8s"/>
+
+    <!-- Traveling dots -->
+    <circle r="6" fill="#eafff2" filter="url(#glowsm)"><animateMotion dur="2.6s" begin="-0.0s" repeatCount="indefinite" path="M3470,120 L3560,250"/></circle>
+    <circle r="6" fill="#eafff2" filter="url(#glowsm)"><animateMotion dur="3.1s" begin="-0.7s" repeatCount="indefinite" path="M3560,250 L3700,160"/></circle>
+    <circle r="6" fill="#eafff2" filter="url(#glowsm)"><animateMotion dur="3.6s" begin="-1.4s" repeatCount="indefinite" path="M3560,250 L3640,350"/></circle>
+    <circle r="6" fill="#eafff2" filter="url(#glowsm)"><animateMotion dur="4.1s" begin="-2.1s" repeatCount="indefinite" path="M3640,350 L3500,420"/></circle>
+    <circle r="6" fill="#eafff2" filter="url(#glowsm)"><animateMotion dur="4.6s" begin="-2.8s" repeatCount="indefinite" path="M3470,120 L3420,300"/></circle>
+    <circle r="6" fill="#eafff2" filter="url(#glowsm)"><animateMotion dur="5.1s" begin="-3.5s" repeatCount="indefinite" path="M3420,300 L3500,420"/></circle>
+
+    <!-- Bottom progress bar -->
+    <rect x="0" y="1272" width="3840" height="8" fill="#1c7a40" opacity="0.5"/>
+    <rect x="-600" y="1272" width="600" height="8" fill="#39ff7a" filter="url(#glowsm)">
+      <animate attributeName="x" values="-600;3840" dur="5s" repeatCount="indefinite"/>
+    </rect>
+  </g>
+
+  <!-- Outer frame -->
+  <rect x="9" y="9" width="3822" height="1262" rx="44" fill="none" stroke="#1c7a40" stroke-opacity="0.75" stroke-width="4"/>
+
+  <!-- Corner accents -->
+  <g stroke="#39ff7a" stroke-width="8" fill="none" filter="url(#glow)">
+    <path d="M9 110V53a44 44 0 0 1 44-44h57"/>
+    <path d="M3730 9h57a44 44 0 0 1 44 44v57"/>
+    <path d="M9 1170v57a44 44 0 0 0 44 44h57"/>
+    <path d="M3730 1271h57a44 44 0 0 0 44-44v-57"/>
+  </g>
+</svg>
