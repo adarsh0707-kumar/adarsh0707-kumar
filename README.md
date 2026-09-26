@@ -1,5 +1,3 @@
-<img src="https://raw.githubusercontent.com/adarsh0707-kumar/adarsh0707-kumar/main/profile/top-accent.svg" width="100%" />
-
 [![Adarsh Kumar — Backend and Systems Engineer](https://raw.githubusercontent.com/adarsh0707-kumar/adarsh0707-kumar/main/profile/header.svg)](https://github.com/adarsh0707-kumar/adarsh0707-kumar/blob/main/profile/header.svg)
 [![Building from the socket layer up](https://raw.githubusercontent.com/adarsh0707-kumar/adarsh0707-kumar/main/profile/specialization.svg)](https://github.com/adarsh0707-kumar/adarsh0707-kumar/blob/main/profile/specialization.svg)
 [![Typing SVG](https://raw.githubusercontent.com/adarsh0707-kumar/adarsh0707-kumar/main/profile/typing.svg)](https://github.com/adarsh0707-kumar/adarsh0707-kumar/blob/main/profile/typing.svg)
@@ -26,7 +24,7 @@
 
 <br/>
 
-<img src="https://raw.githubusercontent.com/adarsh0707-kumar/adarsh0707-kumar/main/profile/section-divider.svg" width="100%" alt="" />
+---
 
 <h2 align="center">👨‍💻 About Me</h2>
 
@@ -35,7 +33,7 @@
   <img src="https://raw.githubusercontent.com/adarsh0707-kumar/adarsh0707-kumar/main/profile/about.svg" alt="Adarsh Kumar — Backend & Systems Engineer" width="100%" />
 </p>
 
-<img src="https://raw.githubusercontent.com/adarsh0707-kumar/adarsh0707-kumar/main/profile/section-divider.svg" width="100%" alt="" />
+---
 
 <h2 align="center">🚀 Featured Projects</h2>
 
@@ -159,7 +157,8 @@ A machine-learning-powered movie recommender that suggests 5 similar films based
 </tr>
 </table>
 
-<img src="https://raw.githubusercontent.com/adarsh0707-kumar/adarsh0707-kumar/main/profile/section-divider.svg" width="100%" alt="" />
+
+---
 
 <h2 align="center">🛠️ Tech Stack</h2>
 
@@ -199,7 +198,7 @@ A machine-learning-powered movie recommender that suggests 5 similar films based
 </tr>
 </table>
 
-<img src="https://raw.githubusercontent.com/adarsh0707-kumar/adarsh0707-kumar/main/profile/section-divider.svg" width="100%" alt="" />
+---
 
 <h2 align="center">📊 GitHub Stats</h2>
 
@@ -207,7 +206,7 @@ A machine-learning-powered movie recommender that suggests 5 similar films based
 
 <img src="https://raw.githubusercontent.com/adarsh0707-kumar/adarsh0707-kumar/main/profile/stats-summary.svg" alt="Adarsh Kumar GitHub stats summary" width="100%" />
 
-<img src="https://raw.githubusercontent.com/adarsh0707-kumar/adarsh0707-kumar/main/profile/section-divider.svg" width="100%" alt="" />
+---
 
 <h2 align="center">🧠 Spent My Time</h2>
 
@@ -215,7 +214,7 @@ A machine-learning-powered movie recommender that suggests 5 similar films based
 
 <br/>
 
-<img src="https://raw.githubusercontent.com/adarsh0707-kumar/adarsh0707-kumar/main/profile/section-divider.svg" width="100%" alt="" />
+---
 
 <h2 align="center">🌆 3D Contribution Graph</h2>
 
@@ -251,7 +250,7 @@ A machine-learning-powered movie recommender that suggests 5 similar films based
 
 [![Adarsh Kumar GitHub trophies](https://raw.githubusercontent.com/adarsh0707-kumar/adarsh0707-kumar/main/profile/trophy.svg)](https://github.com/adarsh0707-kumar/adarsh0707-kumar/blob/main/profile/trophy.svg)
 
-<img src="https://raw.githubusercontent.com/adarsh0707-kumar/adarsh0707-kumar/main/profile/section-divider.svg" width="100%" alt="" />
+---
 
 <h2 align="center">🏆 Certifications</h2>
 
@@ -390,7 +389,7 @@ A machine-learning-powered movie recommender that suggests 5 similar films based
   </a>
 </p>
 
-<img src="https://raw.githubusercontent.com/adarsh0707-kumar/adarsh0707-kumar/main/profile/section-divider.svg" width="100%" alt="" />
+---
 
 <p align="center">
   <img src="https://img.shields.io/badge/-VERIFIED_LEARNING_PORTFOLIO-0d1117?style=for-the-badge" height="36" />
@@ -430,7 +429,7 @@ A machine-learning-powered movie recommender that suggests 5 similar films based
   </a>
 </p>
 
-<img src="https://raw.githubusercontent.com/adarsh0707-kumar/adarsh0707-kumar/main/profile/section-divider.svg" width="100%" alt="" />
+---
 
 <h2 align="center">🌱 Currently Exploring</h2>
 
@@ -469,7 +468,7 @@ A machine-learning-powered movie recommender that suggests 5 similar films based
 </tr>
 </table>
 
-<img src="https://raw.githubusercontent.com/adarsh0707-kumar/adarsh0707-kumar/main/profile/section-divider.svg" width="100%" alt="" />
+---
 
 ## ⭐ Submit Your Rating & Feedback
 
@@ -539,13 +538,13 @@ A machine-learning-powered movie recommender that suggests 5 similar films based
   </a>
 </p>
 
-<img src="https://raw.githubusercontent.com/adarsh0707-kumar/adarsh0707-kumar/main/profile/section-divider.svg" width="100%" alt="" />
+---
 
 <h2 align="center">💬 Session Feedback</h2>
 
 <img src="https://raw.githubusercontent.com/adarsh0707-kumar/adarsh0707-kumar/main/profile/session-feedback.svg" alt="Adarsh Kumar — Session Feedback" width="100%" />
 
-<img src="https://raw.githubusercontent.com/adarsh0707-kumar/adarsh0707-kumar/main/profile/section-divider.svg" width="100%" alt="" />
+---
 
 <h2 align="center">⭐ Support</h2>
 
@@ -570,7 +569,7 @@ A machine-learning-powered movie recommender that suggests 5 similar films based
   Made with ❤️ for learning, experimentation, and continuous improvement.
 </p>
 
-<img src="https://raw.githubusercontent.com/adarsh0707-kumar/adarsh0707-kumar/main/profile/section-divider.svg" width="100%" alt="" />
+---
 
 <h2 align="center">🎯 What I'm Looking For</h2>
 
@@ -584,7 +583,8 @@ A machine-learning-powered movie recommender that suggests 5 similar films based
   If you'd like to collaborate, discuss an opportunity, or just connect — feel free to reach out.
 </p>
 
-<img src="https://raw.githubusercontent.com/adarsh0707-kumar/adarsh0707-kumar/main/profile/section-divider.svg" width="100%" alt="" />
+
+---
 
 <p align="center">
   <b>Thanks for visiting my profile!</b>
