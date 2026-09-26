@@ -43,9 +43,11 @@
     </radialGradient>
 
     <linearGradient id="gProg" gradientUnits="userSpaceOnUse" x1="56" y1="0" x2="1544" y2="0">
-      <stop offset="0"   stop-color="#2DD4BF"/>
-      <stop offset=".5"  stop-color="#FFB84D"/>
-      <stop offset="1"   stop-color="#B48CFF"/>
+      <stop offset="0"    stop-color="#2DD4BF"/>
+      <stop offset="0.25" stop-color="#FFB84D"/>
+      <stop offset="0.5"  stop-color="#B48CFF"/>
+      <stop offset="0.75" stop-color="#58a6ff"/>
+      <stop offset="1"    stop-color="#2DD4BF"/>
     </linearGradient>
 
     <linearGradient id="gBase" x1="0" y1="0" x2="0" y2="1">
@@ -83,25 +85,34 @@
   <text class="sans" x="56" y="112" font-size="56" font-weight="700" fill="#E8EEF9" letter-spacing="-1">Spent My Time</text>
   <text class="sans" x="56" y="154" font-size="26" fill="#8A97B5">Building systems, writing code, and shipping from the socket layer up.</text>
 
-  <circle cx="1008" cy="98" r="8" fill="#2DD4BF"/>
-  <text class="sans" x="1026" y="106" font-size="24" fill="#E8EEF9">Systems</text>
-  <circle cx="1172" cy="98" r="8" fill="#FFB84D"/>
-  <text class="sans" x="1190" y="106" font-size="24" fill="#E8EEF9">Backend</text>
-  <circle cx="1400" cy="98" r="8" fill="#B48CFF"/>
-  <text class="sans" x="1418" y="106" font-size="24" fill="#E8EEF9">Infra</text>
+  <!-- ══════ LEGEND — 4 items now ══════ -->
+  <circle cx="760"  cy="98" r="8" fill="#2DD4BF"/>
+  <text class="sans" x="778"  y="106" font-size="22" fill="#E8EEF9">Systems</text>
+  <circle cx="920"  cy="98" r="8" fill="#FFB84D"/>
+  <text class="sans" x="938"  y="106" font-size="22" fill="#E8EEF9">Backend</text>
+  <circle cx="1096" cy="98" r="8" fill="#B48CFF"/>
+  <text class="sans" x="1114" y="106" font-size="22" fill="#E8EEF9">Infra</text>
+  <circle cx="1208" cy="98" r="8" fill="#58a6ff"/>
+  <text class="sans" x="1226" y="106" font-size="22" fill="#E8EEF9">Distributed</text>
 
+  <!-- ══════ LAPTOP ══════ -->
   <g transform="translate(0,30)">
+    <!-- Phase glows — 4 phases now, each 3.5s -->
     <ellipse cx="316" cy="370" rx="250" ry="170" fill="#2DD4BF" opacity="0" filter="url(#blur)">
       <animate attributeName="opacity" values="0;0.34;0.34;0;0"
-        keyTimes="0;0.014;0.3214;0.3357;1" dur="14.0s" repeatCount="indefinite"/>
+        keyTimes="0;0.01;0.24;0.25;1" dur="14.0s" repeatCount="indefinite"/>
     </ellipse>
     <ellipse cx="316" cy="370" rx="250" ry="170" fill="#FFB84D" opacity="0" filter="url(#blur)">
       <animate attributeName="opacity" values="0;0;0.34;0.34;0;0"
-        keyTimes="0;0.3357;0.3493;0.6543;0.6686;1" dur="14.0s" repeatCount="indefinite"/>
+        keyTimes="0;0.25;0.26;0.49;0.50;1" dur="14.0s" repeatCount="indefinite"/>
     </ellipse>
     <ellipse cx="316" cy="370" rx="250" ry="170" fill="#B48CFF" opacity="0" filter="url(#blur)">
+      <animate attributeName="opacity" values="0;0;0.34;0.34;0;0"
+        keyTimes="0;0.50;0.51;0.74;0.75;1" dur="14.0s" repeatCount="indefinite"/>
+    </ellipse>
+    <ellipse cx="316" cy="370" rx="250" ry="170" fill="#58a6ff" opacity="0" filter="url(#blur)">
       <animate attributeName="opacity" values="0;0;0.34;0.34;0"
-        keyTimes="0;0.6686;0.6829;0.9857;1" dur="14.0s" repeatCount="indefinite"/>
+        keyTimes="0;0.75;0.76;0.99;1" dur="14.0s" repeatCount="indefinite"/>
     </ellipse>
 
     <ellipse cx="316" cy="556" rx="260" ry="12" fill="#000" opacity=".45" filter="url(#soft)"/>
@@ -116,88 +127,100 @@
       <circle cx="146" cy="244" r="5" fill="#FFB84D"/>
       <circle cx="164" cy="244" r="5" fill="#B48CFF"/>
 
+      <!-- Phase 1 tab: server.py -->
       <g opacity="0">
         <animate attributeName="opacity" values="0;1;1;0;0"
-          keyTimes="0;0.014;0.3214;0.3357;1" dur="14.0s" repeatCount="indefinite"/>
+          keyTimes="0;0.01;0.24;0.25;1" dur="14.0s" repeatCount="indefinite"/>
         <text class="mono" x="190" y="251" font-size="18" fill="#E8EEF9">server.py</text>
         <rect x="184" y="259" width="92" height="3" fill="#2DD4BF"/>
       </g>
 
+      <!-- Phase 2 tab: query_engine.py -->
       <g opacity="0">
         <animate attributeName="opacity" values="0;0;1;1;0;0"
-          keyTimes="0;0.3357;0.3493;0.6543;0.6686;1" dur="14.0s" repeatCount="indefinite"/>
+          keyTimes="0;0.25;0.26;0.49;0.50;1" dur="14.0s" repeatCount="indefinite"/>
         <text class="mono" x="190" y="251" font-size="18" fill="#E8EEF9">query_engine.py</text>
         <rect x="184" y="259" width="176" height="3" fill="#FFB84D"/>
       </g>
 
+      <!-- Phase 3 tab: deploy.py -->
       <g opacity="0">
-        <animate attributeName="opacity" values="0;0;1;1;0"
-          keyTimes="0;0.6686;0.6829;0.9857;1" dur="14.0s" repeatCount="indefinite"/>
+        <animate attributeName="opacity" values="0;0;1;1;0;0"
+          keyTimes="0;0.50;0.51;0.74;0.75;1" dur="14.0s" repeatCount="indefinite"/>
         <text class="mono" x="190" y="251" font-size="18" fill="#E8EEF9">deploy.py</text>
         <rect x="184" y="259" width="92" height="3" fill="#B48CFF"/>
       </g>
 
+      <!-- Phase 4 tab: cluster.py -->
+      <g opacity="0">
+        <animate attributeName="opacity" values="0;0;1;1;0"
+          keyTimes="0;0.75;0.76;0.99;1" dur="14.0s" repeatCount="indefinite"/>
+        <text class="mono" x="190" y="251" font-size="18" fill="#E8EEF9">cluster.py</text>
+        <rect x="184" y="259" width="92" height="3" fill="#58a6ff"/>
+      </g>
+
+      <!-- ── PHASE 1 CODE: server.py ── -->
       <g opacity="0">
         <animate attributeName="opacity" values="0;1;1;0;0"
-          keyTimes="0;0.014;0.3214;0.3357;1" dur="14.0s" repeatCount="indefinite"/>
+          keyTimes="0;0.01;0.24;0.25;1" dur="14.0s" repeatCount="indefinite"/>
 
         <clipPath id="p1_l1"><rect x="126" y="280" width="0" height="32">
-          <animate attributeName="width" values="0;0;342;342" keyTimes="0;0.04;0.08;1" dur="14.0s" repeatCount="indefinite"/>
+          <animate attributeName="width" values="0;0;342;342" keyTimes="0;0.03;0.06;1" dur="14.0s" repeatCount="indefinite"/>
         </rect></clipPath>
         <text class="mono code" x="128" y="304" clip-path="url(#p1_l1)">
           <tspan>void </tspan><tspan class="f">accept_loop</tspan><tspan>(</tspan><tspan class="k">int</tspan><tspan> fd) {</tspan>
         </text>
         <rect x="128" y="285" width="9" height="24" fill="#2DD4BF" opacity="0">
-          <animate attributeName="x" values="128;128;470;470" keyTimes="0;0.04;0.08;1" dur="14.0s" repeatCount="indefinite"/>
-          <animate attributeName="opacity" values="0;0;.9;.9;0;0" keyTimes="0;0.04;0.042;0.08;0.082;1" dur="14.0s" repeatCount="indefinite"/>
+          <animate attributeName="x" values="128;128;470;470" keyTimes="0;0.03;0.06;1" dur="14.0s" repeatCount="indefinite"/>
+          <animate attributeName="opacity" values="0;0;.9;.9;0;0" keyTimes="0;0.03;0.032;0.06;0.062;1" dur="14.0s" repeatCount="indefinite"/>
         </rect>
 
         <clipPath id="p1_l2"><rect x="126" y="316" width="0" height="32">
-          <animate attributeName="width" values="0;0;280;280" keyTimes="0;0.09;0.13;1" dur="14.0s" repeatCount="indefinite"/>
+          <animate attributeName="width" values="0;0;280;280" keyTimes="0;0.07;0.10;1" dur="14.0s" repeatCount="indefinite"/>
         </rect></clipPath>
         <text class="mono code" x="128" y="340" clip-path="url(#p1_l2)">
           <tspan>  while (</tspan><tspan>running</tspan><tspan>) {</tspan>
         </text>
         <rect x="128" y="321" width="9" height="24" fill="#2DD4BF" opacity="0">
-          <animate attributeName="x" values="128;128;408;408" keyTimes="0;0.09;0.13;1" dur="14.0s" repeatCount="indefinite"/>
-          <animate attributeName="opacity" values="0;0;.9;.9;0;0" keyTimes="0;0.09;0.092;0.13;0.132;1" dur="14.0s" repeatCount="indefinite"/>
+          <animate attributeName="x" values="128;128;408;408" keyTimes="0;0.07;0.10;1" dur="14.0s" repeatCount="indefinite"/>
+          <animate attributeName="opacity" values="0;0;.9;.9;0;0" keyTimes="0;0.07;0.072;0.10;0.102;1" dur="14.0s" repeatCount="indefinite"/>
         </rect>
 
         <clipPath id="p1_l3"><rect x="126" y="352" width="0" height="32">
-          <animate attributeName="width" values="0;0;356;356" keyTimes="0;0.14;0.18;1" dur="14.0s" repeatCount="indefinite"/>
+          <animate attributeName="width" values="0;0;356;356" keyTimes="0;0.11;0.14;1" dur="14.0s" repeatCount="indefinite"/>
         </rect></clipPath>
         <text class="mono code" x="128" y="376" clip-path="url(#p1_l3)">
           <tspan>    </tspan><tspan class="k">int</tspan><tspan> c = </tspan><tspan class="f">accept</tspan><tspan>(fd, NULL, NULL);</tspan>
         </text>
         <rect x="128" y="357" width="9" height="24" fill="#2DD4BF" opacity="0">
-          <animate attributeName="x" values="128;128;484;484" keyTimes="0;0.14;0.18;1" dur="14.0s" repeatCount="indefinite"/>
-          <animate attributeName="opacity" values="0;0;.9;.9;0;0" keyTimes="0;0.14;0.142;0.18;0.182;1" dur="14.0s" repeatCount="indefinite"/>
+          <animate attributeName="x" values="128;128;484;484" keyTimes="0;0.11;0.14;1" dur="14.0s" repeatCount="indefinite"/>
+          <animate attributeName="opacity" values="0;0;.9;.9;0;0" keyTimes="0;0.11;0.112;0.14;0.142;1" dur="14.0s" repeatCount="indefinite"/>
         </rect>
 
         <clipPath id="p1_l4"><rect x="126" y="388" width="0" height="32">
-          <animate attributeName="width" values="0;0;340;340" keyTimes="0;0.19;0.23;1" dur="14.0s" repeatCount="indefinite"/>
+          <animate attributeName="width" values="0;0;340;340" keyTimes="0;0.15;0.18;1" dur="14.0s" repeatCount="indefinite"/>
         </rect></clipPath>
         <text class="mono code" x="128" y="412" clip-path="url(#p1_l4)">
           <tspan>    </tspan><tspan class="f">handle</tspan><tspan>(c, </tspan><tspan>req</tspan><tspan>.</tspan><tspan class="f">buf</tspan><tspan>);</tspan>
         </text>
         <rect x="128" y="393" width="9" height="24" fill="#2DD4BF" opacity="0">
-          <animate attributeName="x" values="128;128;468;468" keyTimes="0;0.19;0.23;1" dur="14.0s" repeatCount="indefinite"/>
-          <animate attributeName="opacity" values="0;0;.9;.9;0;0" keyTimes="0;0.19;0.192;0.23;0.232;1" dur="14.0s" repeatCount="indefinite"/>
+          <animate attributeName="x" values="128;128;468;468" keyTimes="0;0.15;0.18;1" dur="14.0s" repeatCount="indefinite"/>
+          <animate attributeName="opacity" values="0;0;.9;.9;0;0" keyTimes="0;0.15;0.152;0.18;0.182;1" dur="14.0s" repeatCount="indefinite"/>
         </rect>
 
         <clipPath id="p1_l5"><rect x="126" y="424" width="0" height="32">
-          <animate attributeName="width" values="0;0;190;190" keyTimes="0;0.24;0.28;1" dur="14.0s" repeatCount="indefinite"/>
+          <animate attributeName="width" values="0;0;190;190" keyTimes="0;0.19;0.22;1" dur="14.0s" repeatCount="indefinite"/>
         </rect></clipPath>
         <text class="mono code" x="128" y="448" clip-path="url(#p1_l5)">
           <tspan>  }</tspan>
         </text>
         <rect x="128" y="429" width="9" height="24" fill="#2DD4BF" opacity="0">
-          <animate attributeName="x" values="128;128;318;318" keyTimes="0;0.24;0.28;1" dur="14.0s" repeatCount="indefinite"/>
-          <animate attributeName="opacity" values="0;0;.9;.9;0;0" keyTimes="0;0.24;0.242;0.28;0.282;1" dur="14.0s" repeatCount="indefinite"/>
+          <animate attributeName="x" values="128;128;318;318" keyTimes="0;0.19;0.22;1" dur="14.0s" repeatCount="indefinite"/>
+          <animate attributeName="opacity" values="0;0;.9;.9;0;0" keyTimes="0;0.19;0.192;0.22;0.222;1" dur="14.0s" repeatCount="indefinite"/>
         </rect>
 
         <g>
-          <animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.295;0.315;0.3214;0.3357;1" dur="14.0s" repeatCount="indefinite"/>
+          <animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.225;0.235;0.24;0.25;1" dur="14.0s" repeatCount="indefinite"/>
           <rect x="108" y="462" width="416" height="36" fill="#101A2F"/>
           <rect x="108" y="462" width="416" height="1" fill="#1F2B47"/>
           <circle cx="132" cy="480" r="9" fill="#2DD4BF" opacity=".18"/>
@@ -206,67 +229,68 @@
         </g>
       </g>
 
+      <!-- ── PHASE 2 CODE: query_engine.py ── -->
       <g opacity="0">
         <animate attributeName="opacity" values="0;0;1;1;0;0"
-          keyTimes="0;0.3357;0.3493;0.6543;0.6686;1" dur="14.0s" repeatCount="indefinite"/>
+          keyTimes="0;0.25;0.26;0.49;0.50;1" dur="14.0s" repeatCount="indefinite"/>
 
         <clipPath id="p2_l1"><rect x="126" y="280" width="0" height="32">
-          <animate attributeName="width" values="0;0;290;290" keyTimes="0;0.375;0.415;1" dur="14.0s" repeatCount="indefinite"/>
+          <animate attributeName="width" values="0;0;290;290" keyTimes="0;0.28;0.31;1" dur="14.0s" repeatCount="indefinite"/>
         </rect></clipPath>
         <text class="mono code" x="128" y="304" clip-path="url(#p2_l1)">
           <tspan class="k">def</tspan><tspan> </tspan><tspan class="f">execute</tspan><tspan>(sql):</tspan>
         </text>
         <rect x="128" y="285" width="9" height="24" fill="#FFB84D" opacity="0">
-          <animate attributeName="x" values="128;128;418;418" keyTimes="0;0.375;0.415;1" dur="14.0s" repeatCount="indefinite"/>
-          <animate attributeName="opacity" values="0;0;.9;.9;0;0" keyTimes="0;0.375;0.377;0.415;0.417;1" dur="14.0s" repeatCount="indefinite"/>
+          <animate attributeName="x" values="128;128;418;418" keyTimes="0;0.28;0.31;1" dur="14.0s" repeatCount="indefinite"/>
+          <animate attributeName="opacity" values="0;0;.9;.9;0;0" keyTimes="0;0.28;0.282;0.31;0.312;1" dur="14.0s" repeatCount="indefinite"/>
         </rect>
 
         <clipPath id="p2_l2"><rect x="126" y="316" width="0" height="32">
-          <animate attributeName="width" values="0;0;340;340" keyTimes="0;0.425;0.465;1" dur="14.0s" repeatCount="indefinite"/>
+          <animate attributeName="width" values="0;0;340;340" keyTimes="0;0.32;0.35;1" dur="14.0s" repeatCount="indefinite"/>
         </rect></clipPath>
         <text class="mono code" x="128" y="340" clip-path="url(#p2_l2)">
           <tspan>  ast = </tspan><tspan class="f">parse_sql</tspan><tspan>(sql)</tspan>
         </text>
         <rect x="128" y="321" width="9" height="24" fill="#FFB84D" opacity="0">
-          <animate attributeName="x" values="128;128;468;468" keyTimes="0;0.425;0.465;1" dur="14.0s" repeatCount="indefinite"/>
-          <animate attributeName="opacity" values="0;0;.9;.9;0;0" keyTimes="0;0.425;0.427;0.465;0.467;1" dur="14.0s" repeatCount="indefinite"/>
+          <animate attributeName="x" values="128;128;468;468" keyTimes="0;0.32;0.35;1" dur="14.0s" repeatCount="indefinite"/>
+          <animate attributeName="opacity" values="0;0;.9;.9;0;0" keyTimes="0;0.32;0.322;0.35;0.352;1" dur="14.0s" repeatCount="indefinite"/>
         </rect>
 
         <clipPath id="p2_l3"><rect x="126" y="352" width="0" height="32">
-          <animate attributeName="width" values="0;0;340;340" keyTimes="0;0.475;0.515;1" dur="14.0s" repeatCount="indefinite"/>
+          <animate attributeName="width" values="0;0;340;340" keyTimes="0;0.36;0.39;1" dur="14.0s" repeatCount="indefinite"/>
         </rect></clipPath>
         <text class="mono code" x="128" y="376" clip-path="url(#p2_l3)">
           <tspan>  plan = </tspan><tspan class="f">optimize</tspan><tspan>(ast)</tspan>
         </text>
         <rect x="128" y="357" width="9" height="24" fill="#FFB84D" opacity="0">
-          <animate attributeName="x" values="128;128;468;468" keyTimes="0;0.475;0.515;1" dur="14.0s" repeatCount="indefinite"/>
-          <animate attributeName="opacity" values="0;0;.9;.9;0;0" keyTimes="0;0.475;0.477;0.515;0.517;1" dur="14.0s" repeatCount="indefinite"/>
+          <animate attributeName="x" values="128;128;468;468" keyTimes="0;0.36;0.39;1" dur="14.0s" repeatCount="indefinite"/>
+          <animate attributeName="opacity" values="0;0;.9;.9;0;0" keyTimes="0;0.36;0.362;0.39;0.392;1" dur="14.0s" repeatCount="indefinite"/>
         </rect>
 
         <clipPath id="p2_l4"><rect x="126" y="388" width="0" height="32">
-          <animate attributeName="width" values="0;0;340;340" keyTimes="0;0.525;0.565;1" dur="14.0s" repeatCount="indefinite"/>
+          <animate attributeName="width" values="0;0;340;340" keyTimes="0;0.40;0.43;1" dur="14.0s" repeatCount="indefinite"/>
         </rect></clipPath>
         <text class="mono code" x="128" y="412" clip-path="url(#p2_l4)">
           <tspan>  rows = </tspan><tspan class="f">btree_scan</tspan><tspan>(plan)</tspan>
         </text>
         <rect x="128" y="393" width="9" height="24" fill="#FFB84D" opacity="0">
-          <animate attributeName="x" values="128;128;468;468" keyTimes="0;0.525;0.565;1" dur="14.0s" repeatCount="indefinite"/>
-          <animate attributeName="opacity" values="0;0;.9;.9;0;0" keyTimes="0;0.525;0.527;0.565;0.567;1" dur="14.0s" repeatCount="indefinite"/>
+          <animate attributeName="x" values="128;128;468;468" keyTimes="0;0.40;0.43;1" dur="14.0s" repeatCount="indefinite"/>
+          <animate attributeName="opacity" values="0;0;.9;.9;0;0" keyTimes="0;0.40;0.402;0.43;0.432;1" dur="14.0s" repeatCount="indefinite"/>
         </rect>
 
         <clipPath id="p2_l5"><rect x="126" y="424" width="0" height="32">
-          <animate attributeName="width" values="0;0;290;290" keyTimes="0;0.575;0.615;1" dur="14.0s" repeatCount="indefinite"/>
+          <animate attributeName="width" values="0;0;290;290" keyTimes="0;0.44;0.47;1" dur="14.0s" repeatCount="indefinite"/>
         </rect></clipPath>
         <text class="mono code" x="128" y="448" clip-path="url(#p2_l5)">
           <tspan>  </tspan><tspan class="k">return</tspan><tspan> </tspan><tspan class="f">project</tspan><tspan>(rows)</tspan>
         </text>
         <rect x="128" y="429" width="9" height="24" fill="#FFB84D" opacity="0">
-          <animate attributeName="x" values="128;128;418;418" keyTimes="0;0.575;0.615;1" dur="14.0s" repeatCount="indefinite"/>
-          <animate attributeName="opacity" values="0;0;.9;.9;0;0" keyTimes="0;0.575;0.577;0.615;0.617;1" dur="14.0s" repeatCount="indefinite"/>
+          <animate attributeName="x" values="128;128;418;418" keyTimes="0;0.44;0.47;1" dur="14.0s" repeatCount="indefinite"/>
+          <animate attributeName="opacity" values="0;0;.9;.9;0;0" keyTimes="0;0.44;0.442;0.47;0.472;1" dur="14.0s" repeatCount="indefinite"/>
         </rect>
 
         <g>
-          <animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.63;0.65;0.6543;0.6686;1" dur="14.0s" repeatCount="indefinite"/>
+          <animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.475;0.485;0.49;0.50;1" dur="14.0s" repeatCount="indefinite"/>
           <rect x="108" y="462" width="416" height="36" fill="#101A2F"/>
           <rect x="108" y="462" width="416" height="1" fill="#1F2B47"/>
           <circle cx="132" cy="480" r="9" fill="#FFB84D" opacity=".18"/>
@@ -275,72 +299,143 @@
         </g>
       </g>
 
+      <!-- ── PHASE 3 CODE: deploy.py ── -->
       <g opacity="0">
-        <animate attributeName="opacity" values="0;0;1;1;0"
-          keyTimes="0;0.6686;0.6829;0.9857;1" dur="14.0s" repeatCount="indefinite"/>
+        <animate attributeName="opacity" values="0;0;1;1;0;0"
+          keyTimes="0;0.50;0.51;0.74;0.75;1" dur="14.0s" repeatCount="indefinite"/>
 
         <clipPath id="p3_l1"><rect x="126" y="280" width="0" height="32">
-          <animate attributeName="width" values="0;0;340;340" keyTimes="0;0.708;0.748;1" dur="14.0s" repeatCount="indefinite"/>
+          <animate attributeName="width" values="0;0;340;340" keyTimes="0;0.53;0.56;1" dur="14.0s" repeatCount="indefinite"/>
         </rect></clipPath>
         <text class="mono code" x="128" y="304" clip-path="url(#p3_l1)">
           <tspan class="k">FROM</tspan><tspan> golang:1.22-alpine</tspan>
         </text>
         <rect x="128" y="285" width="9" height="24" fill="#B48CFF" opacity="0">
-          <animate attributeName="x" values="128;128;468;468" keyTimes="0;0.708;0.748;1" dur="14.0s" repeatCount="indefinite"/>
-          <animate attributeName="opacity" values="0;0;.9;.9;0;0" keyTimes="0;0.708;0.71;0.748;0.75;1" dur="14.0s" repeatCount="indefinite"/>
+          <animate attributeName="x" values="128;128;468;468" keyTimes="0;0.53;0.56;1" dur="14.0s" repeatCount="indefinite"/>
+          <animate attributeName="opacity" values="0;0;.9;.9;0;0" keyTimes="0;0.53;0.532;0.56;0.562;1" dur="14.0s" repeatCount="indefinite"/>
         </rect>
 
         <clipPath id="p3_l2"><rect x="126" y="316" width="0" height="32">
-          <animate attributeName="width" values="0;0;230;230" keyTimes="0;0.758;0.798;1" dur="14.0s" repeatCount="indefinite"/>
+          <animate attributeName="width" values="0;0;230;230" keyTimes="0;0.57;0.60;1" dur="14.0s" repeatCount="indefinite"/>
         </rect></clipPath>
         <text class="mono code" x="128" y="340" clip-path="url(#p3_l2)">
           <tspan class="k">WORKDIR</tspan><tspan> /app</tspan>
         </text>
         <rect x="128" y="321" width="9" height="24" fill="#B48CFF" opacity="0">
-          <animate attributeName="x" values="128;128;358;358" keyTimes="0;0.758;0.798;1" dur="14.0s" repeatCount="indefinite"/>
-          <animate attributeName="opacity" values="0;0;.9;.9;0;0" keyTimes="0;0.758;0.76;0.798;0.8;1" dur="14.0s" repeatCount="indefinite"/>
+          <animate attributeName="x" values="128;128;358;358" keyTimes="0;0.57;0.60;1" dur="14.0s" repeatCount="indefinite"/>
+          <animate attributeName="opacity" values="0;0;.9;.9;0;0" keyTimes="0;0.57;0.572;0.60;0.602;1" dur="14.0s" repeatCount="indefinite"/>
         </rect>
 
         <clipPath id="p3_l3"><rect x="126" y="352" width="0" height="32">
-          <animate attributeName="width" values="0;0;160;160" keyTimes="0;0.808;0.848;1" dur="14.0s" repeatCount="indefinite"/>
+          <animate attributeName="width" values="0;0;160;160" keyTimes="0;0.61;0.64;1" dur="14.0s" repeatCount="indefinite"/>
         </rect></clipPath>
         <text class="mono code" x="128" y="376" clip-path="url(#p3_l3)">
           <tspan class="k">COPY</tspan><tspan> . .</tspan>
         </text>
         <rect x="128" y="357" width="9" height="24" fill="#B48CFF" opacity="0">
-          <animate attributeName="x" values="128;128;288;288" keyTimes="0;0.808;0.848;1" dur="14.0s" repeatCount="indefinite"/>
-          <animate attributeName="opacity" values="0;0;.9;.9;0;0" keyTimes="0;0.808;0.81;0.848;0.85;1" dur="14.0s" repeatCount="indefinite"/>
+          <animate attributeName="x" values="128;128;288;288" keyTimes="0;0.61;0.64;1" dur="14.0s" repeatCount="indefinite"/>
+          <animate attributeName="opacity" values="0;0;.9;.9;0;0" keyTimes="0;0.61;0.612;0.64;0.642;1" dur="14.0s" repeatCount="indefinite"/>
         </rect>
 
         <clipPath id="p3_l4"><rect x="126" y="388" width="0" height="32">
-          <animate attributeName="width" values="0;0;360;360" keyTimes="0;0.858;0.898;1" dur="14.0s" repeatCount="indefinite"/>
+          <animate attributeName="width" values="0;0;360;360" keyTimes="0;0.65;0.68;1" dur="14.0s" repeatCount="indefinite"/>
         </rect></clipPath>
         <text class="mono code" x="128" y="412" clip-path="url(#p3_l4)">
           <tspan class="k">RUN</tspan><tspan> go build -o server ./cmd</tspan>
         </text>
         <rect x="128" y="393" width="9" height="24" fill="#B48CFF" opacity="0">
-          <animate attributeName="x" values="128;128;488;488" keyTimes="0;0.858;0.898;1" dur="14.0s" repeatCount="indefinite"/>
-          <animate attributeName="opacity" values="0;0;.9;.9;0;0" keyTimes="0;0.858;0.86;0.898;0.9;1" dur="14.0s" repeatCount="indefinite"/>
+          <animate attributeName="x" values="128;128;488;488" keyTimes="0;0.65;0.68;1" dur="14.0s" repeatCount="indefinite"/>
+          <animate attributeName="opacity" values="0;0;.9;.9;0;0" keyTimes="0;0.65;0.652;0.68;0.682;1" dur="14.0s" repeatCount="indefinite"/>
         </rect>
 
         <clipPath id="p3_l5"><rect x="126" y="424" width="0" height="32">
-          <animate attributeName="width" values="0;0;200;200" keyTimes="0;0.908;0.948;1" dur="14.0s" repeatCount="indefinite"/>
+          <animate attributeName="width" values="0;0;200;200" keyTimes="0;0.69;0.72;1" dur="14.0s" repeatCount="indefinite"/>
         </rect></clipPath>
         <text class="mono code" x="128" y="448" clip-path="url(#p3_l5)">
           <tspan class="k">EXPOSE</tspan><tspan> 8080</tspan>
         </text>
         <rect x="128" y="429" width="9" height="24" fill="#B48CFF" opacity="0">
-          <animate attributeName="x" values="128;128;328;328" keyTimes="0;0.908;0.948;1" dur="14.0s" repeatCount="indefinite"/>
-          <animate attributeName="opacity" values="0;0;.9;.9;0;0" keyTimes="0;0.908;0.91;0.948;0.95;1" dur="14.0s" repeatCount="indefinite"/>
+          <animate attributeName="x" values="128;128;328;328" keyTimes="0;0.69;0.72;1" dur="14.0s" repeatCount="indefinite"/>
+          <animate attributeName="opacity" values="0;0;.9;.9;0;0" keyTimes="0;0.69;0.692;0.72;0.722;1" dur="14.0s" repeatCount="indefinite"/>
         </rect>
 
         <g>
-          <animate attributeName="opacity" values="0;0;1;1;0" keyTimes="0;0.96;0.975;0.9857;1" dur="14.0s" repeatCount="indefinite"/>
+          <animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.725;0.735;0.74;0.75;1" dur="14.0s" repeatCount="indefinite"/>
           <rect x="108" y="462" width="416" height="36" fill="#101A2F"/>
           <rect x="108" y="462" width="416" height="1" fill="#1F2B47"/>
           <circle cx="132" cy="480" r="9" fill="#B48CFF" opacity=".18"/>
           <path d="M127.5 480.5l3.2 3.2 6-6.6" fill="none" stroke="#B48CFF" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/>
           <text class="sans" x="150" y="486" font-size="19" fill="#E8EEF9">Container deployed</text>
+        </g>
+      </g>
+
+      <!-- ── PHASE 4 CODE: cluster.py (distributed systems) ── -->
+      <g opacity="0">
+        <animate attributeName="opacity" values="0;0;1;1;0"
+          keyTimes="0;0.75;0.76;0.99;1" dur="14.0s" repeatCount="indefinite"/>
+
+        <clipPath id="p4_l1"><rect x="126" y="280" width="0" height="32">
+          <animate attributeName="width" values="0;0;330;330" keyTimes="0;0.78;0.81;1" dur="14.0s" repeatCount="indefinite"/>
+        </rect></clipPath>
+        <text class="mono code" x="128" y="304" clip-path="url(#p4_l1)">
+          <tspan class="k">class</tspan><tspan> </tspan><tspan class="f">RaftNode</tspan><tspan>:</tspan>
+        </text>
+        <rect x="128" y="285" width="9" height="24" fill="#58a6ff" opacity="0">
+          <animate attributeName="x" values="128;128;458;458" keyTimes="0;0.78;0.81;1" dur="14.0s" repeatCount="indefinite"/>
+          <animate attributeName="opacity" values="0;0;.9;.9;0;0" keyTimes="0;0.78;0.782;0.81;0.812;1" dur="14.0s" repeatCount="indefinite"/>
+        </rect>
+
+        <clipPath id="p4_l2"><rect x="126" y="316" width="0" height="32">
+          <animate attributeName="width" values="0;0;350;350" keyTimes="0;0.82;0.85;1" dur="14.0s" repeatCount="indefinite"/>
+        </rect></clipPath>
+        <text class="mono code" x="128" y="340" clip-path="url(#p4_l2)">
+          <tspan>  state = </tspan><tspan class="f">FOLLOWER</tspan>
+        </text>
+        <rect x="128" y="321" width="9" height="24" fill="#58a6ff" opacity="0">
+          <animate attributeName="x" values="128;128;478;478" keyTimes="0;0.82;0.85;1" dur="14.0s" repeatCount="indefinite"/>
+          <animate attributeName="opacity" values="0;0;.9;.9;0;0" keyTimes="0;0.82;0.822;0.85;0.852;1" dur="14.0s" repeatCount="indefinite"/>
+        </rect>
+
+        <clipPath id="p4_l3"><rect x="126" y="352" width="0" height="32">
+          <animate attributeName="width" values="0;0;370;370" keyTimes="0;0.86;0.89;1" dur="14.0s" repeatCount="indefinite"/>
+        </rect></clipPath>
+        <text class="mono code" x="128" y="376" clip-path="url(#p4_l3)">
+          <tspan>  </tspan><tspan class="k">def</tspan><tspan> </tspan><tspan class="f">request_vote</tspan><tspan>(self):</tspan>
+        </text>
+        <rect x="128" y="357" width="9" height="24" fill="#58a6ff" opacity="0">
+          <animate attributeName="x" values="128;128;498;498" keyTimes="0;0.86;0.89;1" dur="14.0s" repeatCount="indefinite"/>
+          <animate attributeName="opacity" values="0;0;.9;.9;0;0" keyTimes="0;0.86;0.862;0.89;0.892;1" dur="14.0s" repeatCount="indefinite"/>
+        </rect>
+
+        <clipPath id="p4_l4"><rect x="126" y="388" width="0" height="32">
+          <animate attributeName="width" values="0;0;340;340" keyTimes="0;0.90;0.93;1" dur="14.0s" repeatCount="indefinite"/>
+        </rect></clipPath>
+        <text class="mono code" x="128" y="412" clip-path="url(#p4_l4)">
+          <tspan>    term += </tspan><tspan class="n">1</tspan>
+        </text>
+        <rect x="128" y="393" width="9" height="24" fill="#58a6ff" opacity="0">
+          <animate attributeName="x" values="128;128;468;468" keyTimes="0;0.90;0.93;1" dur="14.0s" repeatCount="indefinite"/>
+          <animate attributeName="opacity" values="0;0;.9;.9;0;0" keyTimes="0;0.90;0.902;0.93;0.932;1" dur="14.0s" repeatCount="indefinite"/>
+        </rect>
+
+        <clipPath id="p4_l5"><rect x="126" y="424" width="0" height="32">
+          <animate attributeName="width" values="0;0;250;250" keyTimes="0;0.94;0.97;1" dur="14.0s" repeatCount="indefinite"/>
+        </rect></clipPath>
+        <text class="mono code" x="128" y="448" clip-path="url(#p4_l5)">
+          <tspan>    </tspan><tspan class="k">return</tspan><tspan> quorum()</tspan>
+        </text>
+        <rect x="128" y="429" width="9" height="24" fill="#58a6ff" opacity="0">
+          <animate attributeName="x" values="128;128;378;378" keyTimes="0;0.94;0.97;1" dur="14.0s" repeatCount="indefinite"/>
+          <animate attributeName="opacity" values="0;0;.9;.9;0;0" keyTimes="0;0.94;0.942;0.97;0.972;1" dur="14.0s" repeatCount="indefinite"/>
+        </rect>
+
+        <g>
+          <animate attributeName="opacity" values="0;0;1;1;0" keyTimes="0;0.975;0.982;0.99;1" dur="14.0s" repeatCount="indefinite"/>
+          <rect x="108" y="462" width="416" height="36" fill="#101A2F"/>
+          <rect x="108" y="462" width="416" height="1" fill="#1F2B47"/>
+          <circle cx="132" cy="480" r="9" fill="#58a6ff" opacity=".18"/>
+          <path d="M127.5 480.5l3.2 3.2 6-6.6" fill="none" stroke="#58a6ff" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/>
+          <text class="sans" x="150" y="486" font-size="19" fill="#E8EEF9">Cluster formed (5 nodes)</text>
         </g>
       </g>
     </g>
@@ -350,6 +445,7 @@
     <rect x="266" y="510" width="100" height="9" rx="4.5" fill="#0E1729"/>
   </g>
 
+  <!-- ══════ DAILY CONTRIBUTIONS HEATMAP ══════ -->
   <text class="sans" x="620" y="224" font-size="28" font-weight="600" fill="#E8EEF9">Daily contributions</text>
   <text class="sans" x="1544" y="222" font-size="20" fill="#8A97B5" text-anchor="end">More</text>
   <text class="sans" x="1352" y="222" font-size="20" fill="#8A97B5" text-anchor="end">Less</text>
@@ -512,29 +608,37 @@
   <rect x="620" y="574" width="924" height="30" rx="15" fill="#17213A"/>
   <g clip-path="url(#barclip)">
     <rect x="620.0" y="574" width="0" height="30" fill="#2DD4BF">
-      <animate attributeName="width" values="0;0;370;370" keyTimes="0;0.04;0.11;1" dur="14.0s" repeatCount="indefinite"/>
+      <animate attributeName="width" values="0;0;277;277" keyTimes="0;0.03;0.09;1" dur="14.0s" repeatCount="indefinite"/>
     </rect>
-    <rect x="990.0" y="574" width="0" height="30" fill="#FFB84D">
-      <animate attributeName="width" values="0;0;230;230" keyTimes="0;0.11;0.18;1" dur="14.0s" repeatCount="indefinite"/>
+    <rect x="897.0" y="574" width="0" height="30" fill="#FFB84D">
+      <animate attributeName="width" values="0;0;185;185" keyTimes="0;0.09;0.15;1" dur="14.0s" repeatCount="indefinite"/>
     </rect>
-    <rect x="1220.0" y="574" width="0" height="30" fill="#B48CFF">
-      <animate attributeName="width" values="0;0;324;324" keyTimes="0;0.18;0.25;1" dur="14.0s" repeatCount="indefinite"/>
+    <rect x="1082.0" y="574" width="0" height="30" fill="#B48CFF">
+      <animate attributeName="width" values="0;0;231;231" keyTimes="0;0.15;0.21;1" dur="14.0s" repeatCount="indefinite"/>
+    </rect>
+    <rect x="1313.0" y="574" width="0" height="30" fill="#58a6ff">
+      <animate attributeName="width" values="0;0;231;231" keyTimes="0;0.21;0.27;1" dur="14.0s" repeatCount="indefinite"/>
     </rect>
   </g>
 
   <g opacity="0">
-    <animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.085;0.105;0.9857;0.99;1" dur="14.0s" repeatCount="indefinite"/>
-    <text class="sans" x="620.0" y="644" font-size="23" fill="#8A97B5">Systems <tspan font-weight="700" fill="#2DD4BF">40%</tspan></text>
+    <animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.07;0.09;0.9857;0.99;1" dur="14.0s" repeatCount="indefinite"/>
+    <text class="sans" x="620.0" y="644" font-size="21" fill="#8A97B5">Systems <tspan font-weight="700" fill="#2DD4BF">30%</tspan></text>
   </g>
   <g opacity="0">
-    <animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.155;0.175;0.9857;0.99;1" dur="14.0s" repeatCount="indefinite"/>
-    <text class="sans" x="990.0" y="644" font-size="23" fill="#8A97B5">Backend <tspan font-weight="700" fill="#FFB84D">25%</tspan></text>
+    <animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.13;0.15;0.9857;0.99;1" dur="14.0s" repeatCount="indefinite"/>
+    <text class="sans" x="897.0" y="644" font-size="21" fill="#8A97B5">Backend <tspan font-weight="700" fill="#FFB84D">20%</tspan></text>
   </g>
   <g opacity="0">
-    <animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.225;0.245;0.9857;0.99;1" dur="14.0s" repeatCount="indefinite"/>
-    <text class="sans" x="1220.0" y="644" font-size="23" fill="#8A97B5">Infra <tspan font-weight="700" fill="#B48CFF">35%</tspan></text>
+    <animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.19;0.21;0.9857;0.99;1" dur="14.0s" repeatCount="indefinite"/>
+    <text class="sans" x="1082.0" y="644" font-size="21" fill="#8A97B5">Infra <tspan font-weight="700" fill="#B48CFF">25%</tspan></text>
+  </g>
+  <g opacity="0">
+    <animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.25;0.27;0.9857;0.99;1" dur="14.0s" repeatCount="indefinite"/>
+    <text class="sans" x="1313.0" y="644" font-size="21" fill="#8A97B5">Distributed <tspan font-weight="700" fill="#58a6ff">25%</tspan></text>
   </g>
 
+  <!-- Timeline -->
   <rect x="56" y="688" width="1488" height="4" rx="2" fill="#1B2846"/>
   <rect x="56" y="688" width="0" height="4" rx="2" fill="url(#gProg)">
     <animate attributeName="width" values="0;1488" dur="14.0s" repeatCount="indefinite"/>
@@ -549,9 +653,10 @@
   <line x1="1362.5" y1="692" x2="1362.5" y2="716" stroke="#1F2B47" stroke-width="2"/>
   <circle cx="1362.5" cy="690" r="9" fill="#0A0F1E" stroke="#58a6ff" stroke-width="3"/>
 
+  <!-- ══════ 4 BOTTOM CARDS ══════ -->
   <rect x="56" y="716" width="363" height="188" rx="18" fill="#111A30" stroke="#1F2B47" stroke-width="1.5"/>
   <g opacity="0">
-    <animate attributeName="opacity" values="0;1;1;0;0" keyTimes="0;0.014;0.3214;0.3357;1" dur="14.0s" repeatCount="indefinite"/>
+    <animate attributeName="opacity" values="0;1;1;0;0" keyTimes="0;0.01;0.24;0.25;1" dur="14.0s" repeatCount="indefinite"/>
     <rect x="56" y="716" width="363" height="188" rx="18" fill="#2DD4BF" fill-opacity=".07" stroke="#2DD4BF" stroke-width="2.5"/>
   </g>
   <g transform="translate(88,746)">
@@ -567,7 +672,7 @@
 
   <rect x="431" y="716" width="363" height="188" rx="18" fill="#111A30" stroke="#1F2B47" stroke-width="1.5"/>
   <g opacity="0">
-    <animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.3357;0.3493;0.6543;0.6686;1" dur="14.0s" repeatCount="indefinite"/>
+    <animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.25;0.26;0.49;0.50;1" dur="14.0s" repeatCount="indefinite"/>
     <rect x="431" y="716" width="363" height="188" rx="18" fill="#FFB84D" fill-opacity=".07" stroke="#FFB84D" stroke-width="2.5"/>
   </g>
   <g transform="translate(463,746)">
@@ -582,7 +687,7 @@
 
   <rect x="806" y="716" width="363" height="188" rx="18" fill="#111A30" stroke="#1F2B47" stroke-width="1.5"/>
   <g opacity="0">
-    <animate attributeName="opacity" values="0;0;1;1;0" keyTimes="0;0.6686;0.6829;0.9857;1" dur="14.0s" repeatCount="indefinite"/>
+    <animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.50;0.51;0.74;0.75;1" dur="14.0s" repeatCount="indefinite"/>
     <rect x="806" y="716" width="363" height="188" rx="18" fill="#B48CFF" fill-opacity=".07" stroke="#B48CFF" stroke-width="2.5"/>
   </g>
   <g transform="translate(838,746)">
@@ -597,7 +702,7 @@
 
   <rect x="1181" y="716" width="363" height="188" rx="18" fill="#111A30" stroke="#1F2B47" stroke-width="1.5"/>
   <g opacity="0">
-    <animate attributeName="opacity" values="0;0;0;0.5;0.5;0" keyTimes="0;0.6686;0.75;0.78;0.95;1" dur="14.0s" repeatCount="indefinite"/>
+    <animate attributeName="opacity" values="0;0;1;1;0" keyTimes="0;0.75;0.76;0.99;1" dur="14.0s" repeatCount="indefinite"/>
     <rect x="1181" y="716" width="363" height="188" rx="18" fill="#58a6ff" fill-opacity=".07" stroke="#58a6ff" stroke-width="2.5"/>
   </g>
   <g transform="translate(1213,746)">
@@ -612,6 +717,7 @@
   <text class="sans" x="1213" y="838" font-size="20" fill="#8A97B5">Consensus, replication,</text>
   <text class="sans" x="1213" y="870" font-size="20" fill="#8A97B5">sharding, fault tolerance</text>
 
+  <!-- Sliding timeline dot — snaps through 4 colors -->
   <circle r="20" cy="690" fill="#2DD4BF" opacity=".28" filter="url(#soft)">
     <animate attributeName="cx" values="56;1544" dur="14.0s" repeatCount="indefinite"/>
     <animate attributeName="fill" values="#2DD4BF;#FFB84D;#B48CFF;#58a6ff;#2DD4BF"
