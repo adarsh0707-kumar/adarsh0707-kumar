@@ -399,30 +399,70 @@ I enjoy building complete software systems — from **TCP sockets and C++ system
 
 ---
 
-## 📚 Training
+## ⭐ Support
 
-**AI and ML Training Program** · ITS Engineering College, Noida · Apr 2025
+<p align="center">
+  If you find this repository useful for learning <b>Backend</b>, <b>Systems</b>, and <b>Distributed Systems</b>,<br/>
+  consider giving it a ⭐.
+</p>
 
----
+<p align="center">
+  Your feedback, suggestions, and contributions are welcome.
+</p>
 
-## 🤝 Open to Collaborating On
+<br/>
 
-**Backend systems** · **Full-stack applications** · **Databases** · **Networking** · **Distributed systems** · **DevOps** · **Open source**
+<p align="center">
+  ⚙️ <b>Build Systems</b> &nbsp;•&nbsp; 🗄️ <b>Design Databases</b> &nbsp;•&nbsp; 🚀 <b>Ship Backends</b> &nbsp;•&nbsp; 🌐 <b>Learn Networking</b>
+</p>
+
+<br/>
+
+<p align="center">
+  Made with ❤️ for learning, experimentation, and continuous improvement.
+</p>
 
 ---
 
 ## 🎯 What I'm Looking For
 
-Software engineering opportunities where I can work on **real systems**, learn from experienced engineers, and contribute across backend, infrastructure, databases, networking, and distributed applications.
+<p align="center">
+  I'm actively looking for <b>Software Engineering</b>, <b>Backend Engineering</b>, and <b>Systems / Infrastructure</b> roles<br/>
+  where I can contribute to real-world systems, learn from experienced engineers,<br/>
+  and build scalable products from the socket layer up.
+</p>
+
+<p align="center">
+  If you'd like to collaborate, discuss an opportunity, or just connect — feel free to reach out.
+</p>
+
 
 ---
 
-## 📫 Let's Connect
+<p align="center">
+  <b>Thanks for visiting my profile!</b>
+</p>
 
-[![LinkedIn](https://img.shields.io/badge/LINKEDIN-CONNECT-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://linkedin.com/in/Adarsh-kumar-657315251)
-[![Email](https://img.shields.io/badge/EMAIL-SAY_HELLO-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:adarshku.offical@gmail.com)
-[![GitHub](https://img.shields.io/badge/GITHUB-PROFILE-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/adarsh0707-kumar)
+<p align="center">
+  If you like my work, consider giving a ⭐ to the repositories you find useful.
+</p>
 
-[![Profile views](https://komarev.com/ghpvc/?username=adarsh0707-kumar&style=for-the-badge&label=PROFILE+VIEWS)](https://github.com/adarsh0707-kumar)
+<br/>
+
+<p align="center">
+  <a href="https://github.com/adarsh0707-kumar">
+    <img src="https://img.shields.io/badge/⭐_Star_My_Repos-181717?style=for-the-badge&logo=github&logoColor=white" />
+  </a>
+  &nbsp;
+  <a href="https://linkedin.com/in/Adarsh-kumar-657315251">
+    <img src="https://img.shields.io/badge/Connect_on_LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" />
+  </a>
+  &nbsp;
+  <a href="mailto:adarshku.offical@gmail.com">
+    <img src="https://img.shields.io/badge/Say_Hello-D14836?style=for-the-badge&logo=gmail&logoColor=white" />
+  </a>
+</p>
+
+<br/><br/><br/>
 
 [![Adarsh Kumar footer](https://raw.githubusercontent.com/adarsh0707-kumar/adarsh0707-kumar/main/profile/footer.svg)](https://github.com/adarsh0707-kumar/adarsh0707-kumar/blob/main/profile/footer.svg)
