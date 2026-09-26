@@ -1,8 +1,11 @@
 // scripts/generate-stats-summary.js
 // Renders a single animated SVG containing both:
-//   - GitHub stats (stars, contributions, PRs, issues, contributed-to)
+//   - GitHub stats (stars, ALL-TIME commits, contributions, PRs, issues)
 //   - Most used languages (horizontal bar + legend)
 // One outer frame, merko theme, 14s animation loop.
+//
+// All-time commits are fetched via year-by-year GraphQL queries
+// (contributionsCollection only allows a 1-year window per call).
 //
 // Requires env vars: GITHUB_TOKEN, GH_USERNAME
 // Run: GH_USERNAME=adarsh0707-kumar GITHUB_TOKEN=... node scripts/generate-stats-summary.js
@@ -18,12 +21,11 @@ if (!USERNAME) { console.error("Missing GH_USERNAME"); process.exit(1); }
 if (!TOKEN)    { console.error("Missing GITHUB_TOKEN"); process.exit(1); }
 
 // ─── Animation timing (seconds) ──────────────────────────────────────
-const LOOP       = 14.0;  // total loop duration
-const ROLL_START = 0.4;   // when roll begins
-const ROLL_END   = 2.4;   // when roll finishes (2s roll)
-const BAR_END    = 3.6;   // when language bar finishes growing
-const LEG_END    = 4.4;   // when legend finishes fading in
-// Then hold until LOOP, then restart.
+const LOOP       = 14.0;
+const ROLL_START = 0.4;
+const ROLL_END   = 2.4;
+const BAR_END    = 3.6;
+const LEG_END    = 4.4;
 
 // ─── merko theme ─────────────────────────────────────────────────────
 const T = {
@@ -51,6 +53,42 @@ async function gql(query) {
   return json.data;
 }
 
+// Fetch all-time commits by iterating one year at a time.
+// contributionsCollection only accepts ranges up to 1 year.
+async function getAllTimeCommits() {
+  // Find the user's first contribution year via createdAt
+  const userRes = await gql(`{ user(login: "${USERNAME}") { createdAt } }`);
+  const startYear = new Date(userRes.user.createdAt).getUTCFullYear();
+  const currentYear = new Date().getUTCFullYear();
+
+  let total = 0;
+
+  // Iterate from startYear to currentYear (inclusive)
+  for (let year = startYear; year <= currentYear; year++) {
+    const from = `${year}-01-01T00:00:00Z`;
+    // If it's the current year, end at "now"; otherwise end at Dec 31
+    const to = year === currentYear
+      ? new Date().toISOString()
+      : `${year}-12-31T23:59:59Z`;
+
+    try {
+      const data = await gql(`{
+        user(login: "${USERNAME}") {
+          contributionsCollection(from: "${from}", to: "${to}") {
+            totalCommitContributions
+          }
+        }
+      }`);
+      total += data.user.contributionsCollection.totalCommitContributions;
+    } catch (e) {
+      console.error(`  Year ${year} failed: ${e.message}`);
+      // Keep going — a single year failure shouldn't kill the whole card
+    }
+  }
+
+  return total;
+}
+
 async function getStats() {
   const query = `{
     user(login: "${USERNAME}") {
@@ -61,22 +99,20 @@ async function getStats() {
           primaryLanguage { name }
         }
       }
+      pullRequests(first: 1) { totalCount }
+      issues(first: 1) { totalCount }
       contributionsCollection {
-        totalCommitContributions
-        totalPullRequestContributions
-        totalIssueContributions
         contributionCalendar {
           totalContributions
         }
       }
-      pullRequests(first: 1) { totalCount }
-      issues(first: 1) { totalCount }
     }
   }`;
   const data = await gql(query);
   const u = data.user;
 
   const totalStars = u.repositories.nodes.reduce((s, r) => s + r.stargazerCount, 0);
+  const totalRepos = u.repositories.totalCount;
 
   const counts = {};
   for (const r of u.repositories.nodes) {
@@ -92,11 +128,10 @@ async function getStats() {
 
   return {
     stars: totalStars,
-    // NOTE: this is the last-12-months commit count (see contributionsCollection docs),
-    // so we label the row "Total Contributions" below and use contributionCalendar.
-    contributions: u.contributionsCollection.contributionCalendar.totalContributions,
+    repos: totalRepos,
     prs: u.pullRequests.totalCount,
     issues: u.issues.totalCount,
+    contributions: u.contributionsCollection.contributionCalendar.totalContributions,
     languages,
   };
 }
@@ -112,7 +147,6 @@ function formatCount(n) {
   return String(n);
 }
 
-// Rolling digit column — stacks digits 0..9 vertically inside a clipPath
 function rollingNumber({ x, y, value, fontSize, height, keyPrefix, delay = 0 }) {
   const valueStr = String(value);
   const digitW   = fontSize * 0.58;
@@ -155,7 +189,6 @@ function rollingNumber({ x, y, value, fontSize, height, keyPrefix, delay = 0 }) 
   }).join("\n");
 }
 
-// Animated horizontal language bar — segments wipe in from left
 function animatedLanguageBar(x, y, w, h, langs) {
   const total = langs.reduce((s, l) => s + l.pct, 0) || 1;
   let offset = 0;
@@ -191,7 +224,6 @@ function animatedLanguageBar(x, y, w, h, langs) {
     </g>`;
 }
 
-// Animated grade ring — draws itself
 function animatedGradeRing(cx, cy, r, grade, keyPrefix) {
   const C = 2 * Math.PI * r * 0.75;
   const animName = `ring_${keyPrefix}`;
@@ -216,7 +248,6 @@ function animatedGradeRing(cx, cy, r, grade, keyPrefix) {
       font-size="22" font-weight="800" fill="${T.text}">${escapeXml(grade)}</text>`;
 }
 
-// Legend fades in after the bar finishes
 function animatedLegend(items, x0, y0, colW) {
   return items.map((l, i) => {
     const col = i % 2;
@@ -246,52 +277,51 @@ function animatedLegend(items, x0, y0, colW) {
 
 // ─── Main ────────────────────────────────────────────────────────────
 async function main() {
-  const s = await getStats();
+  console.log("Fetching stats…");
+  const [s, allTimeCommits] = await Promise.all([
+    getStats(),
+    getAllTimeCommits(),
+  ]);
+  console.log(`  stars:         ${s.stars}`);
+  console.log(`  allTimeCommits:${allTimeCommits}`);
+  console.log(`  contributions: ${s.contributions}`);
+  console.log(`  prs:           ${s.prs}`);
+  console.log(`  issues:        ${s.issues}`);
 
   const grade =
-    s.contributions >= 1000 ? "A+" :
-    s.contributions >= 500  ? "A"  :
-    s.contributions >= 200  ? "A-" :
-    s.contributions >= 100  ? "B+" :
-    s.contributions >= 50   ? "B"  :
-    s.contributions >= 20   ? "B-" : "C";
+    allTimeCommits >= 5000 ? "A+" :
+    allTimeCommits >= 2000 ? "A"  :
+    allTimeCommits >= 1000 ? "A-" :
+    allTimeCommits >= 500  ? "B+" :
+    allTimeCommits >= 200  ? "B"  :
+    allTimeCommits >= 50   ? "B-" : "C";
 
-  const W = 1000, H = 240, PAD = 20;
+  const W = 1000, H = 260, PAD = 20;
   const PANEL_W = (W - PAD * 3) / 2;
   const PANEL_H = H - PAD * 2;
 
   const leftX  = PAD;
   const rightX = PAD * 2 + PANEL_W;
 
-  // Stats rows — now labelled consistently.
-  // "Total Contributions" = contributionCalendar (all activities, last 12mo)
-  const statsRows = [
-    ["Total Stars Earned:",              String(s.stars)],
-    ["Total Contributions (last year):", String(s.contributions)],
-    ["Total PRs:",                       String(s.prs)],
-    ["Total Issues:",                    String(s.issues)],
-    ["Public Repositories:",             String(s.languages.length >= 1 ? "" : "")], // placeholder
-  ];
-
-  // Fill the 5th row with repo count — we don't have it in s, add to getStats if needed
-  // For now drop the placeholder row:
+  // Stats rows — now with true all-time commits
   const rowsFinal = [
-    ["Total Stars Earned:",              String(s.stars)],
-    ["Total Contributions (last year):", String(s.contributions)],
-    ["Total PRs:",                       String(s.prs)],
-    ["Total Issues:",                    String(s.issues)],
+    ["Total Stars Earned:",       String(s.stars)],
+    ["Total Commits (all-time):", formatCount(allTimeCommits)],
+    ["Total PRs:",                String(s.prs)],
+    ["Total Issues:",             String(s.issues)],
+    ["Contributions (last year):",String(s.contributions)],
   ];
 
   const leftRowsSvg = rowsFinal.map(([k, v], i) => `
-    <text x="${leftX + 24}" y="${116 + i * 28}"
-      font-size="14" font-weight="600" fill="${T.label}">${escapeXml(k)}</text>
-    <text x="${leftX + PANEL_W - 140}" y="${116 + i * 28}"
-      text-anchor="end" font-size="14" font-weight="600"
+    <text x="${leftX + 24}" y="${118 + i * 26}"
+      font-size="13" font-weight="600" fill="${T.label}">${escapeXml(k)}</text>
+    <text x="${leftX + PANEL_W - 150}" y="${118 + i * 26}"
+      text-anchor="end" font-size="13" font-weight="600"
       fill="${T.text}">${escapeXml(v)}</text>`).join("\n");
 
-  const barY = 112;
+  const barY = 130;
   const barSvg = animatedLanguageBar(rightX + 24, barY, PANEL_W - 48, 10, s.languages);
-  const legendY = 144;
+  const legendY = 162;
   const colW = (PANEL_W - 48) / 2;
   const legendSvg = animatedLegend(s.languages, rightX + 24, legendY, colW);
 
@@ -332,12 +362,12 @@ async function main() {
   <rect x="${rightX}" y="${PAD}" width="${PANEL_W}" height="${PANEL_H}"
     rx="12" fill="${T.panel}" stroke="${T.panelEdge}"/>
 
-  <text x="${leftX + 24}" y="${80}" font-size="17" font-weight="800"
+  <text x="${leftX + 24}" y="${82}" font-size="17" font-weight="800"
     fill="${T.accent}">Adarsh Kumar's GitHub Stats</text>
   ${leftRowsSvg}
-  ${animatedGradeRing(leftX + PANEL_W - 60, 155, 34, grade, "grade")}
+  ${animatedGradeRing(leftX + PANEL_W - 60, 165, 34, grade, "grade")}
 
-  <text x="${rightX + 24}" y="${80}" font-size="17" font-weight="800"
+  <text x="${rightX + 24}" y="${82}" font-size="17" font-weight="800"
     fill="${T.accent}">Most Used Languages</text>
   ${barSvg}
   ${legendSvg}
@@ -348,7 +378,8 @@ async function main() {
     svg.includes("NaN") ||
     svg.includes("undefined") ||
     s.stars == null ||
-    s.contributions == null ||
+    allTimeCommits == null ||
+    allTimeCommits === 0 ||
     !Array.isArray(s.languages) ||
     s.languages.length === 0;
 
