@@ -162,7 +162,7 @@ A machine-learning-powered movie recommender that suggests 5 similar films based
 
 ## 🛠️ Tech Stack
 
-<table width="100%">
+<table width="100%" style="width:100%">
 <tr>
 <td width="180" valign="middle"><b>Languages</b></td>
 <td align="center">
