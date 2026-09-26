@@ -37,10 +37,125 @@
 
 ## 🚀 Featured Projects
 
-- ⚡ **[Cloud-Based Trading Engine](https://github.com/adarsh0707-kumar/Trading-Engine)** — A polyglot trading simulation combining a C++ matching engine, Python streaming analytics, Node.js gateway, PostgreSQL persistence, and observability.
-- ☁️ **[CodeForge Cloud](https://github.com/adarsh0707-kumar/CodeForge-Cloud)** — Cloud-oriented developer platform exploring backend services, execution workflows, APIs, and production-style infrastructure.
-- 🗄️ **[Database Engine](https://github.com/adarsh0707-kumar/Database-engine)** — A from-the-ground-up database project exploring storage, parsing, query execution, and systems-level design.
-- 🔴 **[Redis Clone](https://github.com/adarsh0707-kumar/redis-clone)** — A systems-focused Redis implementation exploring networking, commands, in-memory data structures, and protocol handling.
+<table>
+<tr>
+<td width="50%" valign="top">
+
+### ⚡ [Cloud-Based Trading Engine](https://github.com/adarsh0707-kumar/Trading-Engine)
+
+**Polyglot algorithmic trading simulation**
+
+A production-style trading platform demonstrating how modern exchange infrastructure is structured across performance-critical systems, quantitative analytics, and real-time visualization.
+
+**Architecture:**
+- **C++ engine** — Order book, price-time-priority matching, partial fills, market data simulation, TCP/Unix socket server
+- **Python analytics** — VWAP, SMA/EMA, PnL, exposure, drawdown, risk metrics via NumPy/Pandas
+- **Node.js gateway** — REST API, WebSocket streaming, rate limiting, request validation (TypeScript)
+- **React dashboard** — Live market charts, order book, trade feed, portfolio metrics (Vite + Recharts)
+
+**Stack:** C++ · Python · Node.js · TypeScript · React · Docker Compose · GitHub Actions · CMake
+
+**Highlights:**
+- Deterministic price-time-priority matching engine with partial fills
+- End-to-end event flow: tick → match → trade → analytics → API → dashboard
+- Full test pyramid: C++ unit · Pytest · Node test · React component · E2E
+- Architecture Decision Records (ADR-001 through ADR-006)
+
+</td>
+<td width="50%" valign="top">
+
+### 🏥 [Medical Billing System](https://github.com/adarsh0707-kumar/medical-billing)
+
+**Full-stack pharmacy billing, inventory & GST platform**
+
+A production-style multi-tenant SaaS for retail pharmacies handling money, stock, and tax records — where correctness matters more than delivery speed.
+
+**Architecture:**
+- **Frontend** — React 19, TypeScript, Vite, Tailwind v4, shadcn/ui
+- **Backend** — Node 22, Express 5, Zod validation, JWT auth
+- **Database** — PostgreSQL 15 via Prisma ORM
+- **Deployment** — Docker Compose + nginx (same-origin by default)
+
+**Features:**
+- Point-of-sale billing with GST compliance
+- Batch-level stock tracking with expiry alerts
+- Multi-shop tenancy — isolated data per pharmacy via JWT-scoped `shopId`
+- Three role levels: `ADMIN` · `PHARMACIST` · `CASHIER`
+- Daily sales and GST reports
+- HttpOnly refresh cookie with `Origin`-guard CSRF protection
+
+**Stack:** React · TypeScript · Node.js · Express · Prisma · PostgreSQL · Docker · nginx
+
+**Highlights:**
+- 10-document `docs/` set: PRD, architecture, data model, API reference, security, gap analysis
+- GST acceptance fixtures in the test suite
+- Versioned URL scheme with deprecation policy
+
+</td>
+</tr>
+
+<tr>
+<td width="50%" valign="top">
+
+### 🗄️ [MiniDB — SQL Database Engine](https://github.com/adarsh0707-kumar/Database-engine)
+
+**SQL-like database engine built from scratch in C++**
+
+A lightweight database engine demonstrating core database internals — parsing, execution planning, and persistent storage — written from first principles without any external DB libraries.
+
+**Architecture:**
+- **Parser** — Tokenizes SQL input, handles `CREATE`, `INSERT`, `SELECT`, `UPDATE`, `DELETE`, builds structured command objects
+- **Executor** — Routes parsed commands to appropriate storage operations
+- **Storage Engine** — In-memory execution via `std::map<string, vector<vector<string>>>` with file-based persistence (`data/*.table`)
+
+**Features:**
+- CREATE TABLE, INSERT INTO, SELECT with WHERE filtering
+- UPDATE and DELETE with WHERE clauses
+- Loads data at startup from disk, persists on modification
+- Modular separation: parser · executor · storage
+
+**Stack:** C++ · Makefile
+
+**Highlights:**
+- Zero external dependencies — pure C++ standard library
+- Custom tokenizer + command parser (not a full SQL grammar, but principled)
+- Demonstrates low-level systems design often skipped in CRUD applications
+- Clear roadmap: dynamic schemas, B-tree indexing, ACID transactions
+
+</td>
+<td width="50%" valign="top">
+
+### 🎬 [Movie Recommender AI/ML](https://github.com/adarsh0707-kumar/Movie-Recommender-AI-ML)
+
+**Content-based recommendation system** · **[🔗 Live Demo](https://movie-recommender-ai-ml-tlwmplmuwglcjjlqxqg2kx.streamlit.app/)**
+
+A machine-learning-powered movie recommender that suggests 5 similar films based on plot, genre, keywords, cast, and director — deployed live on Streamlit Cloud.
+
+**Architecture:**
+- **Pipeline** — Merge TMDB 5000 movies + credits datasets on title
+- **Feature engineering** — Concatenate overview, genres, keywords, top-3 cast, director into a "tags" string
+- **Text normalization** — Porter stemming via NLTK (e.g. "loving"/"loved" → "love")
+- **Vectorization** — `CountVectorizer` (top 5,000 terms, English stop words removed)
+- **Similarity** — Cosine similarity over a ~4,800 × 4,800 matrix
+- **Serving** — Streamlit app with `st.cache_resource` for one-time model build
+
+**Features:**
+- Select from ~4,800 movies and get 5 recommendations instantly
+- Live poster images pulled from TMDB API
+- Runs without an API key (falls back to placeholders)
+- First-load model build ~20s, subsequent recommendations are near-instant
+
+**Stack:** Python · pandas · scikit-learn · NLTK · Streamlit · TMDB API
+
+**Highlights:**
+- Content-based filtering (no collaborative filtering) — no user data required
+- Graceful degradation when `TMDB_API_KEY` is missing
+- Documented limitations: duplicate-title merge bug, no precision@k metric
+- Roadmap: TF-IDF upgrade, Docker, evaluation harness
+
+</td>
+</tr>
+</table>
 
 
 ---
