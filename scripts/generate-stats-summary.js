@@ -1,14 +1,10 @@
 // scripts/generate-stats-summary.js
 // Renders a single animated SVG containing both:
-//   - GitHub stats (stars, ALL-TIME commits, contributions, PRs, issues)
+//   - GitHub stats (stars, ALL-TIME commits, rolling 12-month commits, PRs, issues)
 //   - Most used languages (horizontal bar + legend)
 // One outer frame, merko theme, 14s animation loop.
 //
-// All-time commits are fetched via year-by-year GraphQL queries
-// (contributionsCollection only allows a 1-year window per call).
-//
 // Requires env vars: GITHUB_TOKEN, GH_USERNAME
-// Run: GH_USERNAME=adarsh0707-kumar GITHUB_TOKEN=... node scripts/generate-stats-summary.js
 
 const fs   = require("fs");
 const path = require("path");
@@ -46,47 +42,69 @@ async function gql(query) {
   const res = await fetch(API, {
     method: "POST",
     headers: { Authorization: `bearer ${TOKEN}`, "Content-Type": "application/json" },
-    body: JSON.stringify({ query }),
+    body: JSON.stringify(query),
   });
   const json = await res.json();
   if (json.errors) throw new Error(JSON.stringify(json.errors));
   return json.data;
 }
 
-// Fetch all-time commits by iterating one year at a time.
-// contributionsCollection only accepts ranges up to 1 year.
+// All-time commits: loop year-by-year since the user joined.
 async function getAllTimeCommits() {
-  // Find the user's first contribution year via createdAt
-  const userRes = await gql(`{ user(login: "${USERNAME}") { createdAt } }`);
-  const startYear = new Date(userRes.user.createdAt).getUTCFullYear();
+  const userRes = await gql({ query: `{ user(login: "${USERNAME}") { createdAt } }` });
+  const startYear   = new Date(userRes.user.createdAt).getUTCFullYear();
   const currentYear = new Date().getUTCFullYear();
 
   let total = 0;
 
-  // Iterate from startYear to currentYear (inclusive)
   for (let year = startYear; year <= currentYear; year++) {
     const from = `${year}-01-01T00:00:00Z`;
-    // If it's the current year, end at "now"; otherwise end at Dec 31
     const to = year === currentYear
       ? new Date().toISOString()
       : `${year}-12-31T23:59:59Z`;
 
     try {
-      const data = await gql(`{
-        user(login: "${USERNAME}") {
-          contributionsCollection(from: "${from}", to: "${to}") {
-            totalCommitContributions
+      const data = await gql({
+        query: `{
+          user(login: "${USERNAME}") {
+            contributionsCollection(from: "${from}", to: "${to}") {
+              totalCommitContributions
+            }
           }
-        }
-      }`);
+        }`,
+      });
       total += data.user.contributionsCollection.totalCommitContributions;
     } catch (e) {
       console.error(`  Year ${year} failed: ${e.message}`);
-      // Keep going — a single year failure shouldn't kill the whole card
     }
   }
 
   return total;
+}
+
+// Rolling 12-month commits: from exactly 1 year ago today, to today.
+// Every day this window shifts forward — the oldest day drops off, a new
+// day's commits are added. Result: a genuine rolling-window count.
+async function getLast12MonthCommits() {
+  const now  = new Date();
+  const from = new Date(now);
+  from.setUTCFullYear(from.getUTCFullYear() - 1);
+
+  // GraphQL requires ISO-8601 with explicit T00:00:00Z suffix
+  const fromIso = from.toISOString();
+  const toIso   = now.toISOString();
+
+  const data = await gql({
+    query: `{
+      user(login: "${USERNAME}") {
+        contributionsCollection(from: "${fromIso}", to: "${toIso}") {
+          totalCommitContributions
+        }
+      }
+    }`,
+  });
+
+  return data.user.contributionsCollection.totalCommitContributions;
 }
 
 async function getStats() {
@@ -101,18 +119,12 @@ async function getStats() {
       }
       pullRequests(first: 1) { totalCount }
       issues(first: 1) { totalCount }
-      contributionsCollection {
-        contributionCalendar {
-          totalContributions
-        }
-      }
     }
   }`;
-  const data = await gql(query);
+  const data = await gql({ query });
   const u = data.user;
 
   const totalStars = u.repositories.nodes.reduce((s, r) => s + r.stargazerCount, 0);
-  const totalRepos = u.repositories.totalCount;
 
   const counts = {};
   for (const r of u.repositories.nodes) {
@@ -128,10 +140,8 @@ async function getStats() {
 
   return {
     stars: totalStars,
-    repos: totalRepos,
-    prs: u.pullRequests.totalCount,
+    prs:   u.pullRequests.totalCount,
     issues: u.issues.totalCount,
-    contributions: u.contributionsCollection.contributionCalendar.totalContributions,
     languages,
   };
 }
@@ -278,15 +288,17 @@ function animatedLegend(items, x0, y0, colW) {
 // ─── Main ────────────────────────────────────────────────────────────
 async function main() {
   console.log("Fetching stats…");
-  const [s, allTimeCommits] = await Promise.all([
+  const [s, allTimeCommits, last12MonthCommits] = await Promise.all([
     getStats(),
     getAllTimeCommits(),
+    getLast12MonthCommits(),
   ]);
-  console.log(`  stars:         ${s.stars}`);
-  console.log(`  allTimeCommits:${allTimeCommits}`);
-  console.log(`  contributions: ${s.contributions}`);
-  console.log(`  prs:           ${s.prs}`);
-  console.log(`  issues:        ${s.issues}`);
+
+  console.log(`  stars:              ${s.stars}`);
+  console.log(`  commits (all-time): ${allTimeCommits}`);
+  console.log(`  commits (12mo):     ${last12MonthCommits}`);
+  console.log(`  prs:                ${s.prs}`);
+  console.log(`  issues:             ${s.issues}`);
 
   const grade =
     allTimeCommits >= 5000 ? "A+" :
@@ -303,19 +315,19 @@ async function main() {
   const leftX  = PAD;
   const rightX = PAD * 2 + PANEL_W;
 
-  // Stats rows — now with true all-time commits
+  // Six rows now: stars, all-time commits, 12mo commits, PRs, issues
   const rowsFinal = [
-    ["Total Stars Earned:",       String(s.stars)],
-    ["Total Commits (all-time):", formatCount(allTimeCommits)],
-    ["Total PRs:",                String(s.prs)],
-    ["Total Issues:",             String(s.issues)],
-    ["Contributions (last year):",String(s.contributions)],
+    ["Total Stars Earned:",           String(s.stars)],
+    ["Total Commits (all-time):",     formatCount(allTimeCommits)],
+    ["Commits (last 12 months):",     formatCount(last12MonthCommits)],
+    ["Total PRs:",                    String(s.prs)],
+    ["Total Issues:",                 String(s.issues)],
   ];
 
   const leftRowsSvg = rowsFinal.map(([k, v], i) => `
-    <text x="${leftX + 24}" y="${118 + i * 26}"
+    <text x="${leftX + 24}" y="${112 + i * 24}"
       font-size="13" font-weight="600" fill="${T.label}">${escapeXml(k)}</text>
-    <text x="${leftX + PANEL_W - 150}" y="${118 + i * 26}"
+    <text x="${leftX + PANEL_W - 150}" y="${112 + i * 24}"
       text-anchor="end" font-size="13" font-weight="600"
       fill="${T.text}">${escapeXml(v)}</text>`).join("\n");
 
@@ -379,7 +391,7 @@ async function main() {
     svg.includes("undefined") ||
     s.stars == null ||
     allTimeCommits == null ||
-    allTimeCommits === 0 ||
+    last12MonthCommits == null ||
     !Array.isArray(s.languages) ||
     s.languages.length === 0;
 
