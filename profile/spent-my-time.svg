@@ -75,7 +75,7 @@
   </defs>
 
   <g clip-path="url(#frame)">
-    <rect width="1600" height="960" fill="#0A0F1E"/>
+    <rect width="1600" height="960" fill="#0d1117"/>
     <rect width="1600" height="960" fill="url(#dots)"/>
     <ellipse cx="180"  cy="120" rx="560" ry="360" fill="url(#gA)"/>
     <ellipse cx="1480" cy="860" rx="620" ry="380" fill="url(#gB)"/>
