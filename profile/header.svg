@@ -179,11 +179,11 @@
         fill="#39ff7a" filter="url(#glowsm)">BACKEND &amp; SYSTEMS ENGINEER</text>
     </g>
     <rect class="blink" x="170" y="550" width="26" height="82" fill="#39ff7a">
-      <animate attributeName="x" values="170;170;1350;1350;1350"
-        keyTimes="0;0.02;0.15;0.28;1" dur="14s" repeatCount="indefinite"/>
-      <animate attributeName="opacity" values="0;1;1;1;0;0"
-        keyTimes="0;0.02;0.15;0.28;0.32;1" dur="14s" repeatCount="indefinite"/>
-    </rect>
+  <animate attributeName="x" values="170;170;2350;2350;2350;2350"
+    keyTimes="0;0.02;0.15;0.28;0.33;1" dur="14s" repeatCount="indefinite"/>
+  <animate attributeName="opacity" values="0;1;1;1;0;0;0;0"
+    keyTimes="0;0.02;0.15;0.28;0.32;0.33;0.34;1" dur="14s" repeatCount="indefinite"/>
+</rect>
 
     <!-- Line 2 -->
     <g clip-path="url(#role2clip)">
@@ -191,11 +191,11 @@
         fill="#39ff7a" filter="url(#glowsm)">FULL STACK WEB DEVELOPER</text>
     </g>
     <rect class="blink" x="170" y="550" width="26" height="82" fill="#39ff7a">
-      <animate attributeName="x" values="170;170;1290;1290;1290"
-        keyTimes="0;0.33;0.46;0.62;1" dur="14s" repeatCount="indefinite"/>
-      <animate attributeName="opacity" values="0;0;1;1;0;0"
-        keyTimes="0;0.33;0.46;0.62;0.66;1" dur="14s" repeatCount="indefinite"/>
-    </rect>
+  <animate attributeName="x" values="170;170;170;2250;2250;2250;2250"
+    keyTimes="0;0.02;0.33;0.46;0.62;0.66;1" dur="14s" repeatCount="indefinite"/>
+  <animate attributeName="opacity" values="0;0;0;1;1;0;0;0"
+    keyTimes="0;0.02;0.33;0.46;0.62;0.66;0.67;1" dur="14s" repeatCount="indefinite"/>
+</rect>
 
     <!-- Line 3 -->
     <g clip-path="url(#role3clip)">
@@ -203,11 +203,11 @@
         fill="#39ff7a" filter="url(#glowsm)">DATA ANALYTICS</text>
     </g>
     <rect class="blink" x="170" y="550" width="26" height="82" fill="#39ff7a">
-      <animate attributeName="x" values="170;170;1010;1010;1010"
-        keyTimes="0;0.67;0.80;0.96;1" dur="14s" repeatCount="indefinite"/>
-      <animate attributeName="opacity" values="0;0;1;1;0"
-        keyTimes="0;0.67;0.80;0.96;1" dur="14s" repeatCount="indefinite"/>
-    </rect>
+  <animate attributeName="x" values="170;170;170;1820;1820"
+    keyTimes="0;0.02;0.67;0.80;1" dur="14s" repeatCount="indefinite"/>
+  <animate attributeName="opacity" values="0;0;0;1;1;0"
+    keyTimes="0;0.02;0.67;0.80;0.96;1" dur="14s" repeatCount="indefinite"/>
+</rect>
 
     <!-- Divider -->
     <rect x="170" y="676" width="0" height="5" fill="#39ff7a" filter="url(#glowsm)">
