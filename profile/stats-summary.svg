@@ -39,31 +39,31 @@
     fill="#39d353">Adarsh Kumar's GitHub Stats</text>
   
     <text x="44" y="112"
-      font-size="13" font-weight="600" fill="#7ee787">Total Stars Earned:</text>
+      font-size="12.5" font-weight="600" fill="#7ee787">Total Stars Earned:</text>
     <text x="340" y="112"
       text-anchor="end" font-size="13" font-weight="600"
       fill="#e6edf3">75</text>
 
     <text x="44" y="136"
-      font-size="13" font-weight="600" fill="#7ee787">Total Commits (all-time):</text>
+      font-size="12.5" font-weight="600" fill="#7ee787">Total Contributions (all-time):</text>
     <text x="340" y="136"
       text-anchor="end" font-size="13" font-weight="600"
-      fill="#e6edf3">1.4k</text>
+      fill="#e6edf3">1.6k</text>
 
     <text x="44" y="160"
-      font-size="13" font-weight="600" fill="#7ee787">Commits (last 12 months):</text>
+      font-size="12.5" font-weight="600" fill="#7ee787">Contributions (last 12 months):</text>
     <text x="340" y="160"
       text-anchor="end" font-size="13" font-weight="600"
-      fill="#e6edf3">1.1k</text>
+      fill="#e6edf3">1.2k</text>
 
     <text x="44" y="184"
-      font-size="13" font-weight="600" fill="#7ee787">Total PRs:</text>
+      font-size="12.5" font-weight="600" fill="#7ee787">Total PRs:</text>
     <text x="340" y="184"
       text-anchor="end" font-size="13" font-weight="600"
       fill="#e6edf3">103</text>
 
     <text x="44" y="208"
-      font-size="13" font-weight="600" fill="#7ee787">Total Issues:</text>
+      font-size="12.5" font-weight="600" fill="#7ee787">Total Issues:</text>
     <text x="340" y="208"
       text-anchor="end" font-size="13" font-weight="600"
       fill="#e6edf3">1</text>
