@@ -244,6 +244,46 @@ I enjoy building complete software systems — from **TCP sockets and C++ system
 
 ---
 
+<p align="center">
+  <img src="https://img.shields.io/badge/-VERIFIED_LEARNING_PORTFOLIO-0d1117?style=for-the-badge" height="36" />
+</p>
+
+<p align="center">
+  <img src="https://img.shields.io/badge/📜_CERTIFICATES-6-39d353?style=for-the-badge&labelColor=555555" />
+  <img src="https://img.shields.io/badge/⚙️_SYSTEMS_%26_NETWORKING-FOCUSED-58a6ff?style=for-the-badge&labelColor=555555" />
+  <img src="https://img.shields.io/badge/💼_BACKEND_%26_DATABASES-ACTIVE-f0883e?style=for-the-badge&labelColor=555555" />
+</p>
+
+<br/>
+
+<p align="center">
+  <a href="https://linkedin.com/in/Adarsh-kumar-657315251/details/certifications/">
+    <img src="https://img.shields.io/badge/📁_BROWSE_ALL_CERTIFICATES-000000?style=for-the-badge&logoColor=white" height="40" />
+  </a>
+</p>
+
+
+<p align="center">
+  <img src="https://img.shields.io/badge/✨_Continuous_Learning_•_Practical_Skills_•_Verified_Knowledge-0d1117?style=for-the-badge" height="34" />
+</p>
+
+<p align="center">
+  <img src="https://komarev.com/ghpvc/?username=adarsh0707-kumar&label=PROFILE+VIEWS&color=39d353&style=for-the-badge" />
+</p>
+
+<br/>
+
+<p align="center">
+  <a href="https://github.com/adarsh0707-kumar">
+    <img src="https://img.shields.io/badge/🐙_GITHUB-PROFILE-181717?style=for-the-badge" />
+  </a>
+  <a href="https://github.com/adarsh0707-kumar?tab=repositories">
+    <img src="https://img.shields.io/badge/📂_REPOSITORIES-EXPLORE-0A66C2?style=for-the-badge" />
+  </a>
+</p>
+
+---
+
 ## 🌱 Currently Exploring
 
 <img src="https://raw.githubusercontent.com/adarsh0707-kumar/adarsh0707-kumar/main/profile/exploring-hero.svg" alt="Adarsh Kumar — Currently Exploring" width="100%" />
