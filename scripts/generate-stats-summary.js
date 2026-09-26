@@ -1,10 +1,14 @@
 // scripts/generate-stats-summary.js
 // Renders a single animated SVG containing both:
-//   - GitHub stats (stars, ALL-TIME commits, rolling 12-month commits, PRs, issues)
+//   - GitHub stats (stars, ALL-TIME contributions, rolling 12-month contributions, PRs, issues)
 //   - Most used languages (horizontal bar + legend)
 // One outer frame, merko theme, 14s animation loop.
 //
+// All-time + rolling 12-month use contributionCalendar.totalContributions
+// (matches GitHub's own profile page count: commits + PRs + issues + reviews + discussions).
+//
 // Requires env vars: GITHUB_TOKEN, GH_USERNAME
+// Run: GH_USERNAME=adarsh0707-kumar GITHUB_TOKEN=... node scripts/generate-stats-summary.js
 
 const fs   = require("fs");
 const path = require("path");
@@ -49,8 +53,8 @@ async function gql(query) {
   return json.data;
 }
 
-// All-time commits: loop year-by-year since the user joined.
-async function getAllTimeCommits() {
+// All-time contributions: loop year-by-year since the user joined.
+async function getAllTimeContributions() {
   const userRes = await gql({ query: `{ user(login: "${USERNAME}") { createdAt } }` });
   const startYear   = new Date(userRes.user.createdAt).getUTCFullYear();
   const currentYear = new Date().getUTCFullYear();
@@ -68,12 +72,16 @@ async function getAllTimeCommits() {
         query: `{
           user(login: "${USERNAME}") {
             contributionsCollection(from: "${from}", to: "${to}") {
-              totalCommitContributions
+              contributionCalendar {
+                totalContributions
+              }
             }
           }
         }`,
       });
-      total += data.user.contributionsCollection.totalCommitContributions;
+      const yearTotal = data.user.contributionsCollection.contributionCalendar.totalContributions;
+      console.log(`  ${year}: ${yearTotal}`);
+      total += yearTotal;
     } catch (e) {
       console.error(`  Year ${year} failed: ${e.message}`);
     }
@@ -82,29 +90,27 @@ async function getAllTimeCommits() {
   return total;
 }
 
-// Rolling 12-month commits: from exactly 1 year ago today, to today.
+// Rolling 12-month contributions: from exactly 1 year ago today, to today.
 // Every day this window shifts forward — the oldest day drops off, a new
-// day's commits are added. Result: a genuine rolling-window count.
-async function getLast12MonthCommits() {
+// day's contributions are added.
+async function getLast12MonthContributions() {
   const now  = new Date();
   const from = new Date(now);
   from.setUTCFullYear(from.getUTCFullYear() - 1);
 
-  // GraphQL requires ISO-8601 with explicit T00:00:00Z suffix
-  const fromIso = from.toISOString();
-  const toIso   = now.toISOString();
-
   const data = await gql({
     query: `{
       user(login: "${USERNAME}") {
-        contributionsCollection(from: "${fromIso}", to: "${toIso}") {
-          totalCommitContributions
+        contributionsCollection(from: "${from.toISOString()}", to: "${now.toISOString()}") {
+          contributionCalendar {
+            totalContributions
+          }
         }
       }
     }`,
   });
 
-  return data.user.contributionsCollection.totalCommitContributions;
+  return data.user.contributionsCollection.contributionCalendar.totalContributions;
 }
 
 async function getStats() {
@@ -288,25 +294,25 @@ function animatedLegend(items, x0, y0, colW) {
 // ─── Main ────────────────────────────────────────────────────────────
 async function main() {
   console.log("Fetching stats…");
-  const [s, allTimeCommits, last12MonthCommits] = await Promise.all([
+  const [s, allTimeContributions, last12MonthContributions] = await Promise.all([
     getStats(),
-    getAllTimeCommits(),
-    getLast12MonthCommits(),
+    getAllTimeContributions(),
+    getLast12MonthContributions(),
   ]);
 
-  console.log(`  stars:              ${s.stars}`);
-  console.log(`  commits (all-time): ${allTimeCommits}`);
-  console.log(`  commits (12mo):     ${last12MonthCommits}`);
-  console.log(`  prs:                ${s.prs}`);
-  console.log(`  issues:             ${s.issues}`);
+  console.log(`  stars:                  ${s.stars}`);
+  console.log(`  contributions (all):    ${allTimeContributions}`);
+  console.log(`  contributions (12mo):   ${last12MonthContributions}`);
+  console.log(`  prs:                    ${s.prs}`);
+  console.log(`  issues:                 ${s.issues}`);
 
   const grade =
-    allTimeCommits >= 5000 ? "A+" :
-    allTimeCommits >= 2000 ? "A"  :
-    allTimeCommits >= 1000 ? "A-" :
-    allTimeCommits >= 500  ? "B+" :
-    allTimeCommits >= 200  ? "B"  :
-    allTimeCommits >= 50   ? "B-" : "C";
+    allTimeContributions >= 5000 ? "A+" :
+    allTimeContributions >= 2000 ? "A"  :
+    allTimeContributions >= 1000 ? "A-" :
+    allTimeContributions >= 500  ? "B+" :
+    allTimeContributions >= 200  ? "B"  :
+    allTimeContributions >= 50   ? "B-" : "C";
 
   const W = 1000, H = 260, PAD = 20;
   const PANEL_W = (W - PAD * 3) / 2;
@@ -315,18 +321,17 @@ async function main() {
   const leftX  = PAD;
   const rightX = PAD * 2 + PANEL_W;
 
-  // Six rows now: stars, all-time commits, 12mo commits, PRs, issues
   const rowsFinal = [
-    ["Total Stars Earned:",           String(s.stars)],
-    ["Total Commits (all-time):",     formatCount(allTimeCommits)],
-    ["Commits (last 12 months):",     formatCount(last12MonthCommits)],
-    ["Total PRs:",                    String(s.prs)],
-    ["Total Issues:",                 String(s.issues)],
+    ["Total Stars Earned:",              String(s.stars)],
+    ["Total Contributions (all-time):",  formatCount(allTimeContributions)],
+    ["Contributions (last 12 months):",  formatCount(last12MonthContributions)],
+    ["Total PRs:",                       String(s.prs)],
+    ["Total Issues:",                    String(s.issues)],
   ];
 
   const leftRowsSvg = rowsFinal.map(([k, v], i) => `
     <text x="${leftX + 24}" y="${112 + i * 24}"
-      font-size="13" font-weight="600" fill="${T.label}">${escapeXml(k)}</text>
+      font-size="12.5" font-weight="600" fill="${T.label}">${escapeXml(k)}</text>
     <text x="${leftX + PANEL_W - 150}" y="${112 + i * 24}"
       text-anchor="end" font-size="13" font-weight="600"
       fill="${T.text}">${escapeXml(v)}</text>`).join("\n");
@@ -390,8 +395,9 @@ async function main() {
     svg.includes("NaN") ||
     svg.includes("undefined") ||
     s.stars == null ||
-    allTimeCommits == null ||
-    last12MonthCommits == null ||
+    allTimeContributions == null ||
+    allTimeContributions === 0 ||
+    last12MonthContributions == null ||
     !Array.isArray(s.languages) ||
     s.languages.length === 0;
 
