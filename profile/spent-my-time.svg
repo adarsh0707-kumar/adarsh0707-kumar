@@ -1,150 +1,358 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="900" height="440" viewBox="0 0 900 440" font-family="-apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 960" width="1600" height="960"
+  role="img" aria-label="Spent My Time — animated view of backend and systems engineering work">
+  <title>Spent My Time</title>
+  <desc>Animated view of daily coding time across systems, backend, infrastructure, and distributed systems work.</desc>
+
   <defs>
-    <radialGradient id="st-bg" cx="25%" cy="20%" r="90%">
-      <stop offset="0%" stop-color="#0b1220"/>
-      <stop offset="100%" stop-color="#050810"/>
+    <style>
+      .sans { font-family: Inter, "Segoe UI", "Helvetica Neue", Arial, sans-serif; }
+      .mono { font-family: "JetBrains Mono", "SFMono-Regular", Consolas, Menlo, monospace; }
+      .code { font-size: 21px; fill: #D6DEEB; }
+      .k { fill: #FF7AC6; } .s { fill: #8FE3A1; } .f { fill: #7CC4FF; } .n { fill: #FFB84D; } .c { fill: #8A97B5; }
+
+      /* Ambient heatmap cell wave */
+      .cell {
+        transform-box: fill-box;
+        transform-origin: center;
+        animation: wave 14.0s ease-in-out infinite;
+        opacity: .8;
+      }
+      @keyframes wave {
+        0%   { opacity: .8; transform: scale(1); }
+        4%   { opacity: 1;  transform: scale(1.14); }
+        12%  { opacity: .9; transform: scale(1); }
+        30%, 100% { opacity: .8; transform: scale(1); }
+      }
+
+      @media (prefers-reduced-motion: reduce) {
+        .cell { animation: none; }
+        * { animation-duration: 0s !important; }
+      }
+    </style>
+
+    <pattern id="dots" width="32" height="32" patternUnits="userSpaceOnUse">
+      <circle cx="2" cy="2" r="1.2" fill="#1A2542"/>
+    </pattern>
+
+    <radialGradient id="gA" cx="50%" cy="50%" r="50%">
+      <stop offset="0" stop-color="#2DD4BF" stop-opacity=".16"/>
+      <stop offset="1" stop-color="#2DD4BF" stop-opacity="0"/>
     </radialGradient>
-    <linearGradient id="st-bar" x1="0" y1="0" x2="1" y2="0">
-      <stop offset="0%"  stop-color="#34d399"/>
-      <stop offset="40%" stop-color="#34d399"/>
-      <stop offset="40%" stop-color="#fbbf24"/>
-      <stop offset="65%" stop-color="#fbbf24"/>
-      <stop offset="65%" stop-color="#a78bfa"/>
-      <stop offset="100%" stop-color="#a78bfa"/>
+    <radialGradient id="gB" cx="50%" cy="50%" r="50%">
+      <stop offset="0" stop-color="#B48CFF" stop-opacity=".16"/>
+      <stop offset="1" stop-color="#B48CFF" stop-opacity="0"/>
+    </radialGradient>
+
+    <linearGradient id="gProg" gradientUnits="userSpaceOnUse" x1="56" y1="0" x2="1544" y2="0">
+      <stop offset="0"   stop-color="#2DD4BF"/>
+      <stop offset=".5"  stop-color="#FFB84D"/>
+      <stop offset="1"   stop-color="#B48CFF"/>
     </linearGradient>
-    <linearGradient id="st-lap" x1="0" y1="0" x2="0" y2="1">
-      <stop offset="0%" stop-color="#1e293b"/>
-      <stop offset="100%" stop-color="#0f172a"/>
+
+    <linearGradient id="gBase" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#2A3958"/>
+      <stop offset="1" stop-color="#172238"/>
     </linearGradient>
+
+    <linearGradient id="gScan" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0"   stop-color="#fff" stop-opacity="0"/>
+      <stop offset=".5"  stop-color="#fff" stop-opacity=".14"/>
+      <stop offset="1"   stop-color="#fff" stop-opacity="0"/>
+    </linearGradient>
+
+    <filter id="blur" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="28"/>
+    </filter>
+    <filter id="soft" x="-100%" y="-100%" width="300%" height="300%">
+      <feGaussianBlur stdDeviation="7"/>
+    </filter>
+
+    <clipPath id="frame"><rect width="1600" height="960" rx="28"/></clipPath>
+    <clipPath id="screen"><rect x="108" y="226" width="416" height="272" rx="10"/></clipPath>
+    <clipPath id="barclip"><rect x="620" y="574" width="924" height="30" rx="15"/></clipPath>
+    <clipPath id="heat"><rect x="698" y="270" width="844" height="240"/></clipPath>
   </defs>
 
-  <rect width="900" height="440" rx="18" fill="url(#st-bg)"/>
-  <rect x="1" y="1" width="898" height="438" rx="17" fill="none" stroke="#1e293b"/>
+  <!-- Background -->
+  <g clip-path="url(#frame)">
+    <rect width="1600" height="960" fill="#0A0F1E"/>
+    <rect width="1600" height="960" fill="url(#dots)"/>
+    <ellipse cx="180"  cy="120" rx="560" ry="360" fill="url(#gA)"/>
+    <ellipse cx="1480" cy="860" rx="620" ry="380" fill="url(#gB)"/>
+  </g>
+  <rect x=".5" y=".5" width="1599" height="959" rx="28" fill="none" stroke="#1F2B47"/>
 
   <!-- Header -->
-  <text x="40" y="56" font-size="30" fill="#fff" font-weight="800">Spent My Time</text>
-  <text x="40" y="82" font-size="13" fill="#94a3b8">Building systems, writing code, and shipping from the socket layer up.</text>
+  <text class="sans" x="56" y="112" font-size="56" font-weight="700" fill="#E8EEF9" letter-spacing="-1">Spent My Time</text>
+  <text class="sans" x="56" y="154" font-size="26" fill="#8A97B5">Building systems, writing code, and shipping from the socket layer up.</text>
 
   <!-- Legend -->
-  <circle cx="600" cy="46" r="5" fill="#34d399"/>
-  <text x="614" y="50" font-size="12" fill="#cbd5e1">Systems</text>
-  <circle cx="680" cy="46" r="5" fill="#fbbf24"/>
-  <text x="694" y="50" font-size="12" fill="#cbd5e1">Backend</text>
-  <circle cx="770" cy="46" r="5" fill="#a78bfa"/>
-  <text x="784" y="50" font-size="12" fill="#cbd5e1">Infrastructure</text>
+  <circle cx="1008" cy="98" r="8" fill="#2DD4BF"/>
+  <text class="sans" x="1026" y="106" font-size="24" fill="#E8EEF9">Systems</text>
+  <circle cx="1172" cy="98" r="8" fill="#FFB84D"/>
+  <text class="sans" x="1190" y="106" font-size="24" fill="#E8EEF9">Backend</text>
+  <circle cx="1400" cy="98" r="8" fill="#B48CFF"/>
+  <text class="sans" x="1418" y="106" font-size="24" fill="#E8EEF9">Infra</text>
 
-  <!-- Laptop mockup -->
-  <g transform="translate(40,120)">
-    <rect x="0" y="0" width="260" height="160" rx="10" fill="url(#st-lap)" stroke="#334155"/>
-    <rect x="0" y="0" width="260" height="18" rx="10" fill="#0f172a"/>
-    <circle cx="10" cy="9" r="3" fill="#ef4444"/>
-    <circle cx="22" cy="9" r="3" fill="#f59e0b"/>
-    <circle cx="34" cy="9" r="3" fill="#10b981"/>
-    <text x="16" y="52" font-size="11" fill="#93c5fd" font-family="monospace">void accept_loop(int fd) {</text>
-    <text x="16" y="70" font-size="11" fill="#a7f3d0" font-family="monospace">  while (1) {</text>
-    <text x="16" y="88" font-size="11" fill="#c7d2fe" font-family="monospace">    int c = accept(fd, ...);</text>
-    <text x="16" y="106" font-size="11" fill="#fde68a" font-family="monospace">    thread(handle, c);</text>
-    <text x="16" y="124" font-size="11" fill="#a7f3d0" font-family="monospace">  }</text>
-    <text x="16" y="142" font-size="11" fill="#93c5fd" font-family="monospace">}</text>
-    <rect x="-10" y="160" width="280" height="8" rx="3" fill="#1e293b"/>
-  </g>
+  <!-- ══════ LAPTOP ══════ -->
+  <g transform="translate(0,30)">
 
-  <!-- Contribution heatmap -->
-  <g transform="translate(340,120)">
-    <text x="0" y="-6" font-size="12" fill="#94a3b8" font-weight="600">Daily contributions</text>
-    <text x="480" y="-6" font-size="10" fill="#64748b" text-anchor="end">Less</text>
-    <text x="520" y="-6" font-size="10" fill="#64748b">More</text>
+    <!-- Phase glows (behind laptop) -->
+    <ellipse cx="316" cy="370" rx="250" ry="170" fill="#2DD4BF" opacity="0" filter="url(#blur)">
+      <animate attributeName="opacity" values="0;0.34;0.34;0;0"
+        keyTimes="0;0.014;0.3214;0.3357;1" dur="14.0s" repeatCount="indefinite"/>
+    </ellipse>
+    <ellipse cx="316" cy="370" rx="250" ry="170" fill="#FFB84D" opacity="0" filter="url(#blur)">
+      <animate attributeName="opacity" values="0;0;0.34;0.34;0;0"
+        keyTimes="0;0.3357;0.3493;0.6543;0.6686;1" dur="14.0s" repeatCount="indefinite"/>
+    </ellipse>
+    <ellipse cx="316" cy="370" rx="250" ry="170" fill="#B48CFF" opacity="0" filter="url(#blur)">
+      <animate attributeName="opacity" values="0;0;0.34;0.34;0"
+        keyTimes="0;0.6686;0.6829;0.9857;1" dur="14.0s" repeatCount="indefinite"/>
+    </ellipse>
 
-    <!-- 12 cols x 5 rows -->
-    <g>
-      <!-- Row 0 -->
-      <rect x="0"   y="0"  width="18" height="18" rx="3" fill="#1e293b"/>
-      <rect x="22"  y="0"  width="18" height="18" rx="3" fill="#34d399"/>
-      <rect x="44"  y="0"  width="18" height="18" rx="3" fill="#fbbf24"/>
-      <rect x="66"  y="0"  width="18" height="18" rx="3" fill="#34d399"/>
-      <rect x="88"  y="0"  width="18" height="18" rx="3" fill="#a78bfa"/>
-      <rect x="110" y="0"  width="18" height="18" rx="3" fill="#34d399"/>
-      <rect x="132" y="0"  width="18" height="18" rx="3" fill="#fbbf24"/>
-      <rect x="154" y="0"  width="18" height="18" rx="3" fill="#1e293b"/>
-      <rect x="176" y="0"  width="18" height="18" rx="3" fill="#34d399"/>
-      <rect x="198" y="0"  width="18" height="18" rx="3" fill="#a78bfa"/>
-      <rect x="220" y="0"  width="18" height="18" rx="3" fill="#fbbf24"/>
-      <rect x="242" y="0"  width="18" height="18" rx="3" fill="#34d399"/>
-      <rect x="264" y="0"  width="18" height="18" rx="3" fill="#1e293b"/>
-      <rect x="286" y="0"  width="18" height="18" rx="3" fill="#34d399"/>
-      <rect x="308" y="0"  width="18" height="18" rx="3" fill="#a78bfa"/>
-      <rect x="330" y="0"  width="18" height="18" rx="3" fill="#34d399"/>
-      <rect x="352" y="0"  width="18" height="18" rx="3" fill="#fbbf24"/>
-      <rect x="374" y="0"  width="18" height="18" rx="3" fill="#34d399"/>
-      <rect x="396" y="0"  width="18" height="18" rx="3" fill="#a78bfa"/>
-      <rect x="418" y="0"  width="18" height="18" rx="3" fill="#34d399"/>
-      <rect x="440" y="0"  width="18" height="18" rx="3" fill="#fbbf24"/>
-      <rect x="462" y="0"  width="18" height="18" rx="3" fill="#34d399"/>
-      <rect x="484" y="0"  width="18" height="18" rx="3" fill="#1e293b"/>
-      <rect x="506" y="0"  width="18" height="18" rx="3" fill="#a78bfa"/>
-      <!-- Row 1 -->
-      <rect x="0"   y="22" width="18" height="18" rx="3" fill="#34d399"/>
-      <rect x="22"  y="22" width="18" height="18" rx="3" fill="#fbbf24"/>
-      <rect x="44"  y="22" width="18" height="18" rx="3" fill="#34d399"/>
-      <rect x="66"  y="22" width="18" height="18" rx="3" fill="#a78bfa"/>
-      <rect x="88"  y="22" width="18" height="18" rx="3" fill="#34d399"/>
-      <rect x="110" y="22" width="18" height="18" rx="3" fill="#fbbf24"/>
-      <rect x="132" y="22" width="18" height="18" rx="3" fill="#1e293b"/>
-      <rect x="154" y="22" width="18" height="18" rx="3" fill="#34d399"/>
-      <rect x="176" y="22" width="18" height="18" rx="3" fill="#a78bfa"/>
-      <rect x="198" y="22" width="18" height="18" rx="3" fill="#34d399"/>
-      <rect x="220" y="22" width="18" height="18" rx="3" fill="#fbbf24"/>
-      <rect x="242" y="22" width="18" height="18" rx="3" fill="#34d399"/>
-      <rect x="264" y="22" width="18" height="18" rx="3" fill="#a78bfa"/>
-      <rect x="286" y="22" width="18" height="18" rx="3" fill="#34d399"/>
-      <rect x="308" y="22" width="18" height="18" rx="3" fill="#1e293b"/>
-      <rect x="330" y="22" width="18" height="18" rx="3" fill="#34d399"/>
-      <rect x="352" y="22" width="18" height="18" rx="3" fill="#fbbf24"/>
-      <rect x="374" y="22" width="18" height="18" rx="3" fill="#34d399"/>
-      <rect x="396" y="22" width="18" height="18" rx="3" fill="#a78bfa"/>
-      <rect x="418" y="22" width="18" height="18" rx="3" fill="#34d399"/>
-      <rect x="440" y="22" width="18" height="18" rx="3" fill="#fbbf24"/>
-      <rect x="462" y="22" width="18" height="18" rx="3" fill="#34d399"/>
-      <rect x="484" y="22" width="18" height="18" rx="3" fill="#1e293b"/>
-      <rect x="506" y="22" width="18" height="18" rx="3" fill="#a78bfa"/>
-      <!-- Row 2 -->
-      <rect x="0"   y="44" width="18" height="18" rx="3" fill="#1e293b"/>
-      <rect x="22"  y="44" width="18" height="18" rx="3" fill="#34d399"/>
-      <rect x="44"  y="44" width="18" height="18" rx="3" fill="#a78bfa"/>
-      <rect x="66"  y="44" width="18" height="18" rx="3" fill="#34d399"/>
-      <rect x="88"  y="44" width="18" height="18" rx="3" fill="#fbbf24"/>
-      <rect x="110" y="44" width="18" height="18" rx="3" fill="#34d399"/>
-      <rect x="132" y="44" width="18" height="18" rx="3" fill="#a78bfa"/>
-      <rect x="154" y="44" width="18" height="18" rx="3" fill="#34d399"/>
-      <rect x="176" y="44" width="18" height="18" rx="3" fill="#1e293b"/>
-      <rect x="198" y="44" width="18" height="18" rx="3" fill="#34d399"/>
-      <rect x="220" y="44" width="18" height="18" rx="3" fill="#fbbf24"/>
-      <rect x="242" y="44" width="18" height="18" rx="3" fill="#34d399"/>
-      <rect x="264" y="44" width="18" height="18" rx="3" fill="#a78bfa"/>
-      <rect x="286" y="44" width="18" height="18" rx="3" fill="#34d399"/>
-      <rect x="308" y="44" width="18" height="18" rx="3" fill="#fbbf24"/>
-      <rect x="330" y="44" width="18" height="18" rx="3" fill="#1e293b"/>
-      <rect x="352" y="44" width="18" height="18" rx="3" fill="#34d399"/>
-      <rect x="374" y="44" width="18" height="18" rx="3" fill="#a78bfa"/>
-      <rect x="396" y="44" width="18" height="18" rx="3" fill="#34d399"/>
-      <rect x="418" y="44" width="18" height="18" rx="3" fill="#fbbf24"/>
-      <rect x="440" y="44" width="18" height="18" rx="3" fill="#34d399"/>
-      <rect x="462" y="44" width="18" height="18" rx="3" fill="#a78bfa"/>
-      <rect x="484" y="44" width="18" height="18" rx="3" fill="#1e293b"/>
-      <rect x="506" y="44" width="18" height="18" rx="3" fill="#34d399"/>
-    </g>
-  </g>
+    <!-- Laptop base shadow -->
+    <ellipse cx="316" cy="556" rx="260" ry="12" fill="#000" opacity=".45" filter="url(#soft)"/>
 
-  <!-- Coding time by stage -->
-  <text x="40" y="330" font-size="13" fill="#e2e8f0" font-weight="700">Coding time by stage</text>
-  <rect x="40" y="344" width="820" height="12" rx="6" fill="#1e293b"/>
-  <rect x="40" y="344" width="820" height="12" rx="6" fill="url(#st-bar)"/>
-  <text x="40" y="382" font-size="11" fill="#34d399" font-weight="600">Systems &amp; Networking 40%</text>
-  <text x="300" y="382" font-size="11" fill="#fbbf24" font-weight="600">Backend &amp; APIs 25%</text>
-  <text x="520" y="382" font-size="11" fill="#a78bfa" font-weight="600">Infrastructure 35%</text>
+    <!-- Laptop shell -->
+    <rect x="96" y="214" width="440" height="296" rx="20" fill="#182338" stroke="#2C3D62" stroke-width="2"/>
+    <rect x="108" y="226" width="416" height="272" rx="10" fill="#0B1222"/>
 
-  <!-- Feature cards -->
-  <g transform="translate(40,400)">
-    <rect x="0" y="0" width="260" height="0" rx="10" fill="#0f172a"/>
-  </g>
-</svg>
+    <g clip-path="url(#screen)">
+      <!-- Top bar -->
+      <rect x="108" y="226" width="416" height="36" fill="#101A2F"/>
+      <rect x="108" y="261" width="416" height="1" fill="#1F2B47"/>
+      <circle cx="128" cy="244" r="5" fill="#2DD4BF"/>
+      <circle cx="146" cy="244" r="5" fill="#FFB84D"/>
+      <circle cx="164" cy="244" r="5" fill="#B48CFF"/>
+
+      <!-- ── Phase 1 tab: server.py ── -->
+      <g opacity="0">
+        <animate attributeName="opacity" values="0;1;1;0;0"
+          keyTimes="0;0.014;0.3214;0.3357;1" dur="14.0s" repeatCount="indefinite"/>
+        <text class="mono" x="190" y="251" font-size="18" fill="#E8EEF9">server.py</text>
+        <rect x="184" y="259" width="92" height="3" fill="#2DD4BF"/>
+      </g>
+
+      <!-- ── Phase 2 tab: query_engine.py ── -->
+      <g opacity="0">
+        <animate attributeName="opacity" values="0;0;1;1;0;0"
+          keyTimes="0;0.3357;0.3493;0.6543;0.6686;1" dur="14.0s" repeatCount="indefinite"/>
+        <text class="mono" x="190" y="251" font-size="18" fill="#E8EEF9">query_engine.py</text>
+        <rect x="184" y="259" width="176" height="3" fill="#FFB84D"/>
+      </g>
+
+      <!-- ── Phase 3 tab: deploy.py ── -->
+      <g opacity="0">
+        <animate attributeName="opacity" values="0;0;1;1;0"
+          keyTimes="0;0.6686;0.6829;0.9857;1" dur="14.0s" repeatCount="indefinite"/>
+        <text class="mono" x="190" y="251" font-size="18" fill="#E8EEF9">deploy.py</text>
+        <rect x="184" y="259" width="92" height="3" fill="#B48CFF"/>
+      </g>
+
+      <!-- ── PHASE 1 CODE: server.py (TCP accept loop) ── -->
+      <g opacity="0">
+        <animate attributeName="opacity" values="0;1;1;0;0"
+          keyTimes="0;0.014;0.3214;0.3357;1" dur="14.0s" repeatCount="indefinite"/>
+
+        <clipPath id="p1_l1"><rect x="126" y="280" width="0" height="32">
+          <animate attributeName="width" values="0;0;342;342" keyTimes="0;0.04;0.08;1" dur="14.0s" repeatCount="indefinite"/>
+        </rect></clipPath>
+        <text class="mono code" x="128" y="304" clip-path="url(#p1_l1)">
+          <tspan>void </tspan><tspan class="f">accept_loop</tspan><tspan>(</tspan><tspan class="k">int</tspan><tspan> fd) {</tspan>
+        </text>
+        <rect x="128" y="285" width="9" height="24" fill="#2DD4BF" opacity="0">
+          <animate attributeName="x" values="128;128;470;470" keyTimes="0;0.04;0.08;1" dur="14.0s" repeatCount="indefinite"/>
+          <animate attributeName="opacity" values="0;0;.9;.9;0;0" keyTimes="0;0.04;0.042;0.08;0.082;1" dur="14.0s" repeatCount="indefinite"/>
+        </rect>
+
+        <clipPath id="p1_l2"><rect x="126" y="316" width="0" height="32">
+          <animate attributeName="width" values="0;0;280;280" keyTimes="0;0.09;0.13;1" dur="14.0s" repeatCount="indefinite"/>
+        </rect></clipPath>
+        <text class="mono code" x="128" y="340" clip-path="url(#p1_l2)">
+          <tspan>  while (</tspan><tspan>running</tspan><tspan>) {</tspan>
+        </text>
+        <rect x="128" y="321" width="9" height="24" fill="#2DD4BF" opacity="0">
+          <animate attributeName="x" values="128;128;408;408" keyTimes="0;0.09;0.13;1" dur="14.0s" repeatCount="indefinite"/>
+          <animate attributeName="opacity" values="0;0;.9;.9;0;0" keyTimes="0;0.09;0.092;0.13;0.132;1" dur="14.0s" repeatCount="indefinite"/>
+        </rect>
+
+        <clipPath id="p1_l3"><rect x="126" y="352" width="0" height="32">
+          <animate attributeName="width" values="0;0;356;356" keyTimes="0;0.14;0.18;1" dur="14.0s" repeatCount="indefinite"/>
+        </rect></clipPath>
+        <text class="mono code" x="128" y="376" clip-path="url(#p1_l3)">
+          <tspan>    </tspan><tspan class="k">int</tspan><tspan> c = </tspan><tspan class="f">accept</tspan><tspan>(fd, NULL, NULL);</tspan>
+        </text>
+        <rect x="128" y="357" width="9" height="24" fill="#2DD4BF" opacity="0">
+          <animate attributeName="x" values="128;128;484;484" keyTimes="0;0.14;0.18;1" dur="14.0s" repeatCount="indefinite"/>
+          <animate attributeName="opacity" values="0;0;.9;.9;0;0" keyTimes="0;0.14;0.142;0.18;0.182;1" dur="14.0s" repeatCount="indefinite"/>
+        </rect>
+
+        <clipPath id="p1_l4"><rect x="126" y="388" width="0" height="32">
+          <animate attributeName="width" values="0;0;340;340" keyTimes="0;0.19;0.23;1" dur="14.0s" repeatCount="indefinite"/>
+        </rect></clipPath>
+        <text class="mono code" x="128" y="412" clip-path="url(#p1_l4)">
+          <tspan>    </tspan><tspan class="f">handle</tspan><tspan>(c, </tspan><tspan>req</tspan><tspan>.</tspan><tspan class="f">buf</tspan><tspan>);</tspan>
+        </text>
+        <rect x="128" y="393" width="9" height="24" fill="#2DD4BF" opacity="0">
+          <animate attributeName="x" values="128;128;468;468" keyTimes="0;0.19;0.23;1" dur="14.0s" repeatCount="indefinite"/>
+          <animate attributeName="opacity" values="0;0;.9;.9;0;0" keyTimes="0;0.19;0.192;0.23;0.232;1" dur="14.0s" repeatCount="indefinite"/>
+        </rect>
+
+        <clipPath id="p1_l5"><rect x="126" y="424" width="0" height="32">
+          <animate attributeName="width" values="0;0;190;190" keyTimes="0;0.24;0.28;1" dur="14.0s" repeatCount="indefinite"/>
+        </rect></clipPath>
+        <text class="mono code" x="128" y="448" clip-path="url(#p1_l5)">
+          <tspan>  }</tspan>
+        </text>
+        <rect x="128" y="429" width="9" height="24" fill="#2DD4BF" opacity="0">
+          <animate attributeName="x" values="128;128;318;318" keyTimes="0;0.24;0.28;1" dur="14.0s" repeatCount="indefinite"/>
+          <animate attributeName="opacity" values="0;0;.9;.9;0;0" keyTimes="0;0.24;0.242;0.28;0.282;1" dur="14.0s" repeatCount="indefinite"/>
+        </rect>
+
+        <!-- Status bar -->
+        <g>
+          <animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.295;0.315;0.3214;0.3357;1" dur="14.0s" repeatCount="indefinite"/>
+          <rect x="108" y="462" width="416" height="36" fill="#101A2F"/>
+          <rect x="108" y="462" width="416" height="1" fill="#1F2B47"/>
+          <circle cx="132" cy="480" r="9" fill="#2DD4BF" opacity=".18"/>
+          <path d="M127.5 480.5l3.2 3.2 6-6.6" fill="none" stroke="#2DD4BF" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/>
+          <text class="sans" x="150" y="486" font-size="19" fill="#E8EEF9">Socket listening on :8080</text>
+        </g>
+      </g>
+
+      <!-- ── PHASE 2 CODE: query_engine.py (SQL) ── -->
+      <g opacity="0">
+        <animate attributeName="opacity" values="0;0;1;1;0;0"
+          keyTimes="0;0.3357;0.3493;0.6543;0.6686;1" dur="14.0s" repeatCount="indefinite"/>
+
+        <clipPath id="p2_l1"><rect x="126" y="280" width="0" height="32">
+          <animate attributeName="width" values="0;0;290;290" keyTimes="0;0.375;0.415;1" dur="14.0s" repeatCount="indefinite"/>
+        </rect></clipPath>
+        <text class="mono code" x="128" y="304" clip-path="url(#p2_l1)">
+          <tspan class="k">def</tspan><tspan> </tspan><tspan class="f">execute</tspan><tspan>(sql):</tspan>
+        </text>
+        <rect x="128" y="285" width="9" height="24" fill="#FFB84D" opacity="0">
+          <animate attributeName="x" values="128;128;418;418" keyTimes="0;0.375;0.415;1" dur="14.0s" repeatCount="indefinite"/>
+          <animate attributeName="opacity" values="0;0;.9;.9;0;0" keyTimes="0;0.375;0.377;0.415;0.417;1" dur="14.0s" repeatCount="indefinite"/>
+        </rect>
+
+        <clipPath id="p2_l2"><rect x="126" y="316" width="0" height="32">
+          <animate attributeName="width" values="0;0;340;340" keyTimes="0;0.425;0.465;1" dur="14.0s" repeatCount="indefinite"/>
+        </rect></clipPath>
+        <text class="mono code" x="128" y="340" clip-path="url(#p2_l2)">
+          <tspan>  ast = </tspan><tspan class="f">parse_sql</tspan><tspan>(sql)</tspan>
+        </text>
+        <rect x="128" y="321" width="9" height="24" fill="#FFB84D" opacity="0">
+          <animate attributeName="x" values="128;128;468;468" keyTimes="0;0.425;0.465;1" dur="14.0s" repeatCount="indefinite"/>
+          <animate attributeName="opacity" values="0;0;.9;.9;0;0" keyTimes="0;0.425;0.427;0.465;0.467;1" dur="14.0s" repeatCount="indefinite"/>
+        </rect>
+
+        <clipPath id="p2_l3"><rect x="126" y="352" width="0" height="32">
+          <animate attributeName="width" values="0;0;340;340" keyTimes="0;0.475;0.515;1" dur="14.0s" repeatCount="indefinite"/>
+        </rect></clipPath>
+        <text class="mono code" x="128" y="376" clip-path="url(#p2_l3)">
+          <tspan>  plan = </tspan><tspan class="f">optimize</tspan><tspan>(ast)</tspan>
+        </text>
+        <rect x="128" y="357" width="9" height="24" fill="#FFB84D" opacity="0">
+          <animate attributeName="x" values="128;128;468;468" keyTimes="0;0.475;0.515;1" dur="14.0s" repeatCount="indefinite"/>
+          <animate attributeName="opacity" values="0;0;.9;.9;0;0" keyTimes="0;0.475;0.477;0.515;0.517;1" dur="14.0s" repeatCount="indefinite"/>
+        </rect>
+
+        <clipPath id="p2_l4"><rect x="126" y="388" width="0" height="32">
+          <animate attributeName="width" values="0;0;340;340" keyTimes="0;0.525;0.565;1" dur="14.0s" repeatCount="indefinite"/>
+        </rect></clipPath>
+        <text class="mono code" x="128" y="412" clip-path="url(#p2_l4)">
+          <tspan>  rows = </tspan><tspan class="f">btree_scan</tspan><tspan>(plan)</tspan>
+        </text>
+        <rect x="128" y="393" width="9" height="24" fill="#FFB84D" opacity="0">
+          <animate attributeName="x" values="128;128;468;468" keyTimes="0;0.525;0.565;1" dur="14.0s" repeatCount="indefinite"/>
+          <animate attributeName="opacity" values="0;0;.9;.9;0;0" keyTimes="0;0.525;0.527;0.565;0.567;1" dur="14.0s" repeatCount="indefinite"/>
+        </rect>
+
+        <clipPath id="p2_l5"><rect x="126" y="424" width="0" height="32">
+          <animate attributeName="width" values="0;0;290;290" keyTimes="0;0.575;0.615;1" dur="14.0s" repeatCount="indefinite"/>
+        </rect></clipPath>
+        <text class="mono code" x="128" y="448" clip-path="url(#p2_l5)">
+          <tspan>  </tspan><tspan class="k">return</tspan><tspan> </tspan><tspan class="f">project</tspan><tspan>(rows)</tspan>
+        </text>
+        <rect x="128" y="429" width="9" height="24" fill="#FFB84D" opacity="0">
+          <animate attributeName="x" values="128;128;418;418" keyTimes="0;0.575;0.615;1" dur="14.0s" repeatCount="indefinite"/>
+          <animate attributeName="opacity" values="0;0;.9;.9;0;0" keyTimes="0;0.575;0.577;0.615;0.617;1" dur="14.0s" repeatCount="indefinite"/>
+        </rect>
+
+        <g>
+          <animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.63;0.65;0.6543;0.6686;1" dur="14.0s" repeatCount="indefinite"/>
+          <rect x="108" y="462" width="416" height="36" fill="#101A2F"/>
+          <rect x="108" y="462" width="416" height="1" fill="#1F2B47"/>
+          <circle cx="132" cy="480" r="9" fill="#FFB84D" opacity=".18"/>
+          <path d="M127.5 480.5l3.2 3.2 6-6.6" fill="none" stroke="#FFB84D" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/>
+          <text class="sans" x="150" y="486" font-size="19" fill="#E8EEF9">Query plan executed (12 rows)</text>
+        </g>
+      </g>
+
+      <!-- ── PHASE 3 CODE: deploy.py (Dockerfile) ── -->
+      <g opacity="0">
+        <animate attributeName="opacity" values="0;0;1;1;0"
+          keyTimes="0;0.6686;0.6829;0.9857;1" dur="14.0s" repeatCount="indefinite"/>
+
+        <clipPath id="p3_l1"><rect x="126" y="280" width="0" height="32">
+          <animate attributeName="width" values="0;0;340;340" keyTimes="0;0.708;0.748;1" dur="14.0s" repeatCount="indefinite"/>
+        </rect></clipPath>
+        <text class="mono code" x="128" y="304" clip-path="url(#p3_l1)">
+          <tspan class="k">FROM</tspan><tspan> golang:1.22-alpine</tspan>
+        </text>
+        <rect x="128" y="285" width="9" height="24" fill="#B48CFF" opacity="0">
+          <animate attributeName="x" values="128;128;468;468" keyTimes="0;0.708;0.748;1" dur="14.0s" repeatCount="indefinite"/>
+          <animate attributeName="opacity" values="0;0;.9;.9;0;0" keyTimes="0;0.708;0.71;0.748;0.75;1" dur="14.0s" repeatCount="indefinite"/>
+        </rect>
+
+        <clipPath id="p3_l2"><rect x="126" y="316" width="0" height="32">
+          <animate attributeName="width" values="0;0;230;230" keyTimes="0;0.758;0.798;1" dur="14.0s" repeatCount="indefinite"/>
+        </rect></clipPath>
+        <text class="mono code" x="128" y="340" clip-path="url(#p3_l2)">
+          <tspan class="k">WORKDIR</tspan><tspan> /app</tspan>
+        </text>
+        <rect x="128" y="321" width="9" height="24" fill="#B48CFF" opacity="0">
+          <animate attributeName="x" values="128;128;358;358" keyTimes="0;0.758;0.798;1" dur="14.0s" repeatCount="indefinite"/>
+          <animate attributeName="opacity" values="0;0;.9;.9;0;0" keyTimes="0;0.758;0.76;0.798;0.8;1" dur="14.0s" repeatCount="indefinite"/>
+        </rect>
+
+        <clipPath id="p3_l3"><rect x="126" y="352" width="0" height="32">
+          <animate attributeName="width" values="0;0;160;160" keyTimes="0;0.808;0.848;1" dur="14.0s" repeatCount="indefinite"/>
+        </rect></clipPath>
+        <text class="mono code" x="128" y="376" clip-path="url(#p3_l3)">
+          <tspan class="k">COPY</tspan><tspan> . .</tspan>
+        </text>
+        <rect x="128" y="357" width="9" height="24" fill="#B48CFF" opacity="0">
+          <animate attributeName="x" values="128;128;288;288" keyTimes="0;0.808;0.848;1" dur="14.0s" repeatCount="indefinite"/>
+          <animate attributeName="opacity" values="0;0;.9;.9;0;0" keyTimes="0;0.808;0.81;0.848;0.85;1" dur="14.0s" repeatCount="indefinite"/>
+        </rect>
+
+        <clipPath id="p3_l4"><rect x="126" y="388" width="0" height="32">
+          <animate attributeName="width" values="0;0;360;360" keyTimes="0;0.858;0.898;1" dur="14.0s" repeatCount="indefinite"/>
+        </rect></clipPath>
+        <text class="mono code" x="128" y="412" clip-path="url(#p3_l4)">
+          <tspan class="k">RUN</tspan><tspan> go build -o server ./cmd</tspan>
+        </text>
+        <rect x="128" y="393" width="9" height="24" fill="#B48CFF" opacity="0">
+          <animate attributeName="x" values="128;128;488;488" keyTimes="0;0.858;0.898;1" dur="14.0s" repeatCount="indefinite"/>
+          <animate attributeName="opacity" values="0;0;.9;.9;0;0" keyTimes="0;0.858;0.86;0.898;0.9;1" dur="14.0s" repeatCount="indefinite"/>
+        </rect>
+
+        <clipPath id="p3_l5"><rect x="126" y="424" width="0" height="32">
+          <animate attributeName="width" values="0;0;200;200" keyTimes="0;0.908;0.948;1" dur="14.0s" repeatCount="indefinite"/>
+        </rect></clipPath>
+        <text class="mono code" x="128" y="448" clip-path="url(#p3_l5)">
+          <tspan class="k">EXPOSE</tspan><tspan> 8080</tspan>
+        </text>
+        <rect x="128" y="429" width="9" height="24" fill="#B48CFF" opacity="0">
+          <animate attributeName="x" values="128;128;328;328" keyTimes="0;0.908;0.948;1" dur="14.0s" repeatCount="indefinite"/>
+          <animate attributeName="opacity" values="0;0;.9;.9;0;0" keyTimes="0;0.908;0.91;0.948;0.95;1" dur="14.0s" repeatCount="indefinite"/>
+        </rect>
+
+        <g>
+          <animate attributeName="opacity" values="0;0;1;1;0" keyTimes="0;0.96;0.975;0.9857;1" dur="14.0s" repeatCount="indefinite"/>
+          <rect x="108" y="462" width="416" height="36" fill="#101A2F"/>
+          <rect x="108" y="462" width="416" height="1" fill="#1F2B47"/>
+          <circle cx="132" cy="480" r="9" fill="#B48CFF" opacity
