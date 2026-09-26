@@ -1,5 +1,3 @@
-<div style="background-image: url('https://raw.githubusercontent.com/adarsh0707-kumar/adarsh0707-kumar/main/profile/bg-wrapper.svg'); background-size: 100% 100%; background-repeat: no-repeat; padding: 24px; border-radius: 12px; border: 1px solid #1c7a40;">
-
 [![Adarsh Kumar — Backend and Systems Engineer](https://raw.githubusercontent.com/adarsh0707-kumar/adarsh0707-kumar/main/profile/header.svg)](https://github.com/adarsh0707-kumar/adarsh0707-kumar/blob/main/profile/header.svg)
 [![Building from the socket layer up](https://raw.githubusercontent.com/adarsh0707-kumar/adarsh0707-kumar/main/profile/specialization.svg)](https://github.com/adarsh0707-kumar/adarsh0707-kumar/blob/main/profile/specialization.svg)
 [![Typing SVG](https://raw.githubusercontent.com/adarsh0707-kumar/adarsh0707-kumar/main/profile/typing.svg)](https://github.com/adarsh0707-kumar/adarsh0707-kumar/blob/main/profile/typing.svg)
@@ -472,7 +470,7 @@ A machine-learning-powered movie recommender that suggests 5 similar films based
 
 ---
 
-<h2 align="center">⭐ Submit Your Rating & Feedback</h2>
+## ⭐ Submit Your Rating & Feedback
 
 <p align="center">
   Enjoyed my work? Pick a star rating below.<br/>
@@ -615,6 +613,3 @@ A machine-learning-powered movie recommender that suggests 5 similar films based
 <br/><br/><br/>
 
 [![Adarsh Kumar footer](https://raw.githubusercontent.com/adarsh0707-kumar/adarsh0707-kumar/main/profile/footer.svg)](https://github.com/adarsh0707-kumar/adarsh0707-kumar/blob/main/profile/footer.svg)
-
-
-</div>
