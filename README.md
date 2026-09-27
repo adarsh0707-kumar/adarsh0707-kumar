@@ -369,7 +369,7 @@ A machine-learning-powered movie recommender that suggests 5 similar films based
 
 <table align="center">
 <tr>
-<td align="center" >
+<td align="center"  width="33%">
   <a href="https://raw.githubusercontent.com/adarsh0707-kumar/portfolio/main/public/certificates/skillcourse-python.jpg">
     <img src="https://raw.githubusercontent.com/adarsh0707-kumar/portfolio/main/public/certificates/skillcourse-python.jpg" width="220" alt="Python Micro Course" />
   </a><br/><br/>
@@ -380,8 +380,21 @@ A machine-learning-powered movie recommender that suggests 5 similar films based
   </a>
 </td>
 
+<td align="center"  width="33%">
+  <a href="https://raw.githubusercontent.com/adarsh0707-kumar/portfolio/main/public/certificates/Simplilearn-C.png">
+    <img src="https://raw.githubusercontent.com/adarsh0707-kumar/portfolio/main/public/certificates/Simplilearn-C.png" width="220" alt="C Basic Course" />
+  </a><br/><br/>
+  <a href="https://raw.githubusercontent.com/adarsh0707-kumar/portfolio/main/public/certificates/Simplilearn-C.png"><b>C Basic Course</b></a><br/><br/>
+  <img src="https://img.shields.io/badge/Simplilearn-f0883e?style=flat-square" /><br/><br/>
+  <a href="https://raw.githubusercontent.com/adarsh0707-kumar/portfolio/main/public/certificates/Simplilearn-C.png">
+    <img src="https://img.shields.io/badge/VIEW-CERTIFICATE-39d353?style=for-the-badge" />
+  </a>
+</td>
+
 </tr>
 </table>
+
+<br/>
 
 <p align="center">
   <a href="https://linkedin.com/in/Adarsh-kumar-657315251/details/certifications/">
