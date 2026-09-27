@@ -140,8 +140,8 @@
         @keyframes roll_rT_2 {
           0%   { transform: translateY(0); }
           2.857% { transform: translateY(0); }
-          17.143% { transform: translateY(-100.8px); }
-          100% { transform: translateY(-100.8px); }
+          17.143% { transform: translateY(-302.4px); }
+          100% { transform: translateY(-302.4px); }
         }
       </style>
       <clipPath id="rT_2">
@@ -178,8 +178,8 @@
         @keyframes roll_rT_3 {
           0%   { transform: translateY(0); }
           2.857% { transform: translateY(0); }
-          17.143% { transform: translateY(-907.1999999999999px); }
-          100% { transform: translateY(-907.1999999999999px); }
+          17.143% { transform: translateY(-806.4px); }
+          100% { transform: translateY(-806.4px); }
         }
       </style>
       <clipPath id="rT_3">
@@ -227,54 +227,16 @@
         @keyframes roll_rC_0 {
           0%   { transform: translateY(0); }
           2.857% { transform: translateY(0); }
-          17.143% { transform: translateY(-257.6px); }
-          100% { transform: translateY(-257.6px); }
+          17.143% { transform: translateY(0px); }
+          100% { transform: translateY(0px); }
         }
       </style>
       <clipPath id="rC_0">
-        <rect x="445.32" y="161" width="26.68" height="64.4"/>
+        <rect x="458.66" y="161" width="26.68" height="64.4"/>
       </clipPath>
       <g clip-path="url(#rC_0)">
         <g style="animation: roll_rC_0 14s infinite; animation-delay: 0.00s; transform-box: fill-box;">
-          <g transform="translate(458.65999999999997, 164.68)">
-            <text x="0" y="42.32" text-anchor="middle"
-        font-size="46" font-weight="800" fill="url(#numfill)">0</text>
-<text x="0" y="106.72" text-anchor="middle"
-        font-size="46" font-weight="800" fill="url(#numfill)">1</text>
-<text x="0" y="171.12" text-anchor="middle"
-        font-size="46" font-weight="800" fill="url(#numfill)">2</text>
-<text x="0" y="235.52" text-anchor="middle"
-        font-size="46" font-weight="800" fill="url(#numfill)">3</text>
-<text x="0" y="299.92" text-anchor="middle"
-        font-size="46" font-weight="800" fill="url(#numfill)">4</text>
-<text x="0" y="364.32" text-anchor="middle"
-        font-size="46" font-weight="800" fill="url(#numfill)">5</text>
-<text x="0" y="428.72" text-anchor="middle"
-        font-size="46" font-weight="800" fill="url(#numfill)">6</text>
-<text x="0" y="493.12000000000006" text-anchor="middle"
-        font-size="46" font-weight="800" fill="url(#numfill)">7</text>
-<text x="0" y="557.5200000000001" text-anchor="middle"
-        font-size="46" font-weight="800" fill="url(#numfill)">8</text>
-<text x="0" y="621.9200000000001" text-anchor="middle"
-        font-size="46" font-weight="800" fill="url(#numfill)">9</text>
-          </g>
-        </g>
-      </g>
-
-      <style>
-        @keyframes roll_rC_1 {
-          0%   { transform: translateY(0); }
-          2.857% { transform: translateY(0); }
-          17.143% { transform: translateY(-386.40000000000003px); }
-          100% { transform: translateY(-386.40000000000003px); }
-        }
-      </style>
-      <clipPath id="rC_1">
-        <rect x="472" y="161" width="26.68" height="64.4"/>
-      </clipPath>
-      <g clip-path="url(#rC_1)">
-        <g style="animation: roll_rC_1 14s infinite; animation-delay: 0.08s; transform-box: fill-box;">
-          <g transform="translate(485.34, 164.68)">
+          <g transform="translate(472, 164.68)">
             <text x="0" y="42.32" text-anchor="middle"
         font-size="46" font-weight="800" fill="url(#numfill)">0</text>
 <text x="0" y="106.72" text-anchor="middle"
@@ -301,9 +263,9 @@
   <text x="472" y="229" text-anchor="middle" font-size="12"
     font-weight="600" fill="#8b949e">days</text>
   <text x="574" y="174" font-size="19" font-weight="700" fill="#e6edf3">Current streak</text>
-  <text x="574" y="200" font-size="14" fill="#39d353" font-weight="600">46 day run</text>
-  <text x="574" y="222" font-size="13" fill="#8b949e">Aug 13 → Sep 27</text>
-  <text x="574" y="244" font-size="12" fill="#8b949e">Matches the longest streak</text>
+  <text x="574" y="200" font-size="14" fill="#39d353" font-weight="600">0 day run</text>
+  <text x="574" y="222" font-size="13" fill="#8b949e"></text>
+  <text x="574" y="244" font-size="12" fill="#8b949e">Personal record approaching</text>
 
   <rect x="860" y="96" width="300" height="190" rx="20"
     fill="#ffffff08" stroke="#ffffff16"/>
@@ -397,9 +359,9 @@
   <text x="1132" y="374" text-anchor="end" font-size="13"
     fill="#8b949e">UTC+5:30</text>
   
-    <rect x="680.3333333333333" y="346" width="148.5"
+    <rect x="415.3333333333333" y="346" width="60.166666666666686"
       height="160" rx="8" fill="#5EEAD4" fill-opacity="0.08"/>
-    <text x="754.6" y="352"
+    <text x="445.4" y="352"
       text-anchor="middle" font-size="11" font-weight="600" fill="#5EEAD4">Peak hours</text>
   
       <line x1="70" y1="506" x2="1130" y2="506"
@@ -429,23 +391,23 @@
 <rect x="210.9" y="506.0"
       width="27.4" height="1.0" rx="4"
       fill="#39d353" opacity="0.8"/>
-<rect x="255.1" y="468.4"
-      width="27.4" height="37.6" rx="4"
+<rect x="255.1" y="495.7"
+      width="27.4" height="10.3" rx="4"
       fill="#39d353" opacity="0.8"/>
-<rect x="299.2" y="421.3"
-      width="27.4" height="84.7" rx="4"
+<rect x="299.2" y="480.2"
+      width="27.4" height="25.8" rx="4"
       fill="#39d353" opacity="0.8"/>
-<rect x="343.4" y="430.7"
-      width="27.4" height="75.3" rx="4"
+<rect x="343.4" y="485.4"
+      width="27.4" height="20.6" rx="4"
       fill="#39d353" opacity="0.8"/>
-<rect x="387.6" y="468.4"
-      width="27.4" height="37.6" rx="4"
+<rect x="387.6" y="485.4"
+      width="27.4" height="20.6" rx="4"
       fill="#39d353" opacity="0.8"/>
-<rect x="431.7" y="411.9"
-      width="27.4" height="94.1" rx="4"
-      fill="#39d353" opacity="0.8"/>
-<rect x="475.9" y="506.0"
-      width="27.4" height="1.0" rx="4"
+<rect x="431.7" y="346.0"
+      width="27.4" height="160.0" rx="4"
+      fill="#7ee787" opacity="1"/>
+<rect x="475.9" y="500.8"
+      width="27.4" height="5.2" rx="4"
       fill="#39d353" opacity="0.8"/>
 <rect x="520.1" y="506.0"
       width="27.4" height="1.0" rx="4"
@@ -453,23 +415,23 @@
 <rect x="564.2" y="506.0"
       width="27.4" height="1.0" rx="4"
       fill="#39d353" opacity="0.8"/>
-<rect x="608.4" y="440.1"
-      width="27.4" height="65.9" rx="4"
+<rect x="608.4" y="469.9"
+      width="27.4" height="36.1" rx="4"
       fill="#39d353" opacity="0.8"/>
-<rect x="652.6" y="458.9"
-      width="27.4" height="47.1" rx="4"
+<rect x="652.6" y="480.2"
+      width="27.4" height="25.8" rx="4"
       fill="#39d353" opacity="0.8"/>
-<rect x="696.7" y="355.4"
-      width="27.4" height="150.6" rx="4"
-      fill="#7ee787" opacity="1"/>
-<rect x="740.9" y="393.1"
-      width="27.4" height="112.9" rx="4"
+<rect x="696.7" y="423.4"
+      width="27.4" height="82.6" rx="4"
       fill="#39d353" opacity="0.8"/>
-<rect x="785.1" y="346.0"
-      width="27.4" height="160.0" rx="4"
-      fill="#7ee787" opacity="1"/>
-<rect x="829.2" y="468.4"
-      width="27.4" height="37.6" rx="4"
+<rect x="740.9" y="449.2"
+      width="27.4" height="56.8" rx="4"
+      fill="#39d353" opacity="0.8"/>
+<rect x="785.1" y="438.9"
+      width="27.4" height="67.1" rx="4"
+      fill="#39d353" opacity="0.8"/>
+<rect x="829.2" y="506.0"
+      width="27.4" height="1.0" rx="4"
       fill="#39d353" opacity="0.8"/>
 <rect x="873.4" y="506.0"
       width="27.4" height="1.0" rx="4"
