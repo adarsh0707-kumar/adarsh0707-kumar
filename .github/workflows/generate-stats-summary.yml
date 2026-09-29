@@ -8,9 +8,17 @@ on:
       - "scripts/generate-stats-summary.js"
   workflow_dispatch:
   schedule:
-    # 17:23 UTC = 10:53 PM IST. Staggered between stats-dashboard (17:07) and
-    # 3d-contrib (17:43) so no two main-pushing jobs collide.
-    - cron: "23 17 * * *"
+    # 03:54 UTC = 09:24 AM IST
+    # 08:54 UTC = 02:24 PM IST
+    # 13:54 UTC = 07:24 PM IST
+    # 16:54 UTC = 10:24 PM IST
+    # 19:24 UTC = 12:54 AM IST (next day)
+    # 6-minute stagger after the stats dashboard.
+    - cron: "54 3 * * *"
+    - cron: "54 8 * * *"
+    - cron: "54 13 * * *"
+    - cron: "54 16 * * *"
+    - cron: "24 19 * * *"
 
 permissions:
   contents: write
