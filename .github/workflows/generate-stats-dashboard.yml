@@ -8,9 +8,17 @@ on:
       - "scripts/generate-stats-dashboard.js"
   workflow_dispatch:
   schedule:
-    # 17:07 UTC = 10:37 PM IST. Between streak's last run (16:00) and 3d-contrib
-    # (17:43), so no two main-pushing jobs collide.
-    - cron: "7 17 * * *"
+    # 03:48 UTC = 09:18 AM IST
+    # 08:48 UTC = 02:18 PM IST
+    # 13:48 UTC = 07:18 PM IST
+    # 16:48 UTC = 10:18 PM IST
+    # 19:18 UTC = 12:48 AM IST (next day)
+    # 6-minute stagger after the previous job.
+    - cron: "48 3 * * *"
+    - cron: "48 8 * * *"
+    - cron: "48 13 * * *"
+    - cron: "48 16 * * *"
+    - cron: "18 19 * * *"
 
 permissions:
   contents: write
