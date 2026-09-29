@@ -7,10 +7,17 @@ on:
       - ".github/workflows/generate-snake.yml"
   workflow_dispatch:
   schedule:
-    # 06:23 UTC = 11:53 IST. Moved off the :30 4 slot to avoid colliding with
-    # the streak job (which runs at :30 4). Pushes to gh-pages, not main, so
-    # it can't collide with the main-targeting jobs.
-    - cron: "23 6 * * *"
+    # 03:42 UTC = 09:12 AM IST
+    # 08:42 UTC = 02:12 PM IST
+    # 13:42 UTC = 07:12 PM IST
+    # 16:42 UTC = 10:12 PM IST
+    # 19:12 UTC = 12:42 AM IST (next day)
+    # 6-minute stagger after contributor stats. Publishes to gh-pages.
+    - cron: "42 3 * * *"
+    - cron: "42 8 * * *"
+    - cron: "42 13 * * *"
+    - cron: "42 16 * * *"
+    - cron: "12 19 * * *"
 
 permissions:
   contents: write
