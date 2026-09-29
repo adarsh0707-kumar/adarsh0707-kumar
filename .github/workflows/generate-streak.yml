@@ -13,8 +13,16 @@ on:
       - ".github/workflows/generate-streak.yml"
   workflow_dispatch:
   schedule:
-    # 04:30 UTC = 10:00 AM IST
-    - cron: "30 4 * * *"
+    # 03:30 UTC = 09:00 AM IST
+    - cron: "30 3 * * *"
+    # 08:30 UTC = 02:00 PM IST
+    - cron: "30 8 * * *"
+    # 13:30 UTC = 07:00 PM IST
+    - cron: "30 13 * * *"
+    # 16:30 UTC = 10:00 PM IST
+    - cron: "30 16 * * *"
+    # 19:00 UTC = 12:30 AM IST (next day)
+    - cron: "0 19 * * *"
 
     # 08:40 UTC = 2:10 PM IST
     - cron: "40 8 * * *"
