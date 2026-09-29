@@ -7,10 +7,17 @@ on:
       - ".github/workflows/3d-contrib.yml"
   workflow_dispatch:
   schedule:
-    # 17:43 UTC = 23:13 IST. Off the hour, off the :00/:30 marks, well clear
-    # of every other card job. Last run of the day so it captures the full
-    # IST day's commits.
-    - cron: "43 17 * * *"
+    # 04:00 UTC = 09:30 AM IST
+    # 09:00 UTC = 02:30 PM IST
+    # 14:00 UTC = 07:30 PM IST
+    # 17:00 UTC = 10:30 PM IST
+    # 20:00 UTC = 01:30 AM IST (next day)
+    # 6-minute stagger after the stats summary.
+    - cron: "0 4 * * *"
+    - cron: "0 9 * * *"
+    - cron: "0 14 * * *"
+    - cron: "0 17 * * *"
+    - cron: "0 20 * * *"
 
 permissions:
   contents: write
