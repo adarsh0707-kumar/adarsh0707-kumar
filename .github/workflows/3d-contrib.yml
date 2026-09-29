@@ -11,13 +11,13 @@ on:
     # 09:00 UTC = 02:30 PM IST
     # 14:00 UTC = 07:30 PM IST
     # 17:00 UTC = 10:30 PM IST
-    # 20:00 UTC = 01:30 AM IST (next day)
+    # 19:30 UTC = 01:00 AM IST (next day)
     # 6-minute stagger after the stats summary.
     - cron: "0 4 * * *"
     - cron: "0 9 * * *"
     - cron: "0 14 * * *"
     - cron: "0 17 * * *"
-    - cron: "0 20 * * *"
+    - cron: "30 19 * * *"
 
 permissions:
   contents: write
