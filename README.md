@@ -255,7 +255,7 @@ A machine-learning-powered movie recommender that suggests 5 similar films based
 <h2 align="center">🏆 Certifications</h2>
 
 <p align="center">
-  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=22&duration=5000&pause=2000&color=39D353&center=true&vCenter=true&width=800&lines=9+Certificates+%7C+3+Learning+Tracks;Systems+%E2%80%A2+Backend+%E2%80%A2+Infrastructure+%E2%80%A2+Distributed;Always+learning.+Always+building." alt="Certifications and learning tracks" />
+  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=22&duration=5000&pause=2000&color=39D353&center=true&vCenter=true&width=800&lines=8+Certificates+%7C+3+Learning+Tracks;Systems+%E2%80%A2+Backend+%E2%80%A2 Infrastructure+%E2%80%A2+Distributed;Always+learning.+Always+building." alt="Certifications and learning tracks" />
 </p>
 
 <br/>
@@ -264,142 +264,108 @@ A machine-learning-powered movie recommender that suggests 5 similar films based
   <img src="https://raw.githubusercontent.com/adarsh0707-kumar/adarsh0707-kumar/main/profile/certifications-hero.svg" alt="Adarsh Kumar — Certifications & Professional Achievements" width="100%" />
 </p>
 
-<br/><br/><br/>
+<br/><br/>
 
 <p align="center">
-  <img src="https://img.shields.io/badge/CERTIFICATES-9-39d353?style=for-the-badge&labelColor=0d1117" />
+  <img src="https://img.shields.io/badge/CERTIFICATES-8-39d353?style=for-the-badge&labelColor=0d1117" />
   <img src="https://img.shields.io/badge/LEARNING_TRACKS-3-58a6ff?style=for-the-badge&labelColor=0d1117" />
   <img src="https://img.shields.io/badge/FEATURED_PROJECTS-4-7ee787?style=for-the-badge&labelColor=0d1117" />
   <img src="https://img.shields.io/badge/LEARNING_MODE-ALWAYS_ON-2ea043?style=for-the-badge&labelColor=0d1117" />
 </p>
 
-<p align="center">
-  <img src="https://img.shields.io/badge/SYSTEMS_%26_NETWORKING-8b5cf6?style=for-the-badge" />
-  <img src="https://img.shields.io/badge/BACKEND_%26_DATABASES-0ea5e9?style=for-the-badge" />
-  <img src="https://img.shields.io/badge/WEB_%26_MEDIA-14b8a6?style=for-the-badge" />
-  <img src="https://img.shields.io/badge/INFRA_%26_DEVOPS-22c55e?style=for-the-badge" />
-  <img src="https://img.shields.io/badge/PROFESSIONAL-f59e0b?style=for-the-badge" />
-</p>
-
-<br/><br/><br/>
-
-<p align="center">
-  <b>💻 Software Engineering</b><br/><br/>
-  <img src="https://img.shields.io/badge/TRACK-SOFTWARE_ENGINEERING-39d353?style=flat-square&labelColor=0d1117" />
-</p>
+<br/><br/>
 
 <table align="center">
 <tr>
-<td align="center">
+
+<td align="center" width="33%" valign="top">
   <a href="https://raw.githubusercontent.com/adarsh0707-kumar/portfolio/main/public/certificates/satyam-internship.jpg">
     <img src="https://raw.githubusercontent.com/adarsh0707-kumar/portfolio/main/public/certificates/satyam-internship.jpg" width="220" alt="Software Development Internship" />
   </a><br/><br/>
   <a href="https://raw.githubusercontent.com/adarsh0707-kumar/portfolio/main/public/certificates/satyam-internship.jpg"><b>Software Development Internship</b></a><br/><br/>
-  <img src="https://img.shields.io/badge/Satyam_Software_Solutions-0369a1?style=flat-square" /><br/><br/>
+  <img src="https://img.shields.io/badge/Satyam_Software_Solutions-39d353?style=flat-square&labelColor=0d1117" /><br/><br/>
   <a href="https://raw.githubusercontent.com/adarsh0707-kumar/portfolio/main/public/certificates/satyam-internship.jpg">
     <img src="https://img.shields.io/badge/VIEW-CERTIFICATE-39d353?style=for-the-badge" />
   </a>
 </td>
-<!-- <td align="center" width="33%"></td>
-<td align="center" width="33%"></td> -->
-</tr>
-</table>
 
-<br/><br/><br/>
-
-<p align="center">
-  <b>📊 Data & Analytics</b><br/><br/>
-  <img src="https://img.shields.io/badge/TRACK-DATA_%26_ANALYTICS-a371f7?style=flat-square&labelColor=0d1117" />
-</p>
-
-<table align="center">
-<tr>
-<td align="center" width="33%">
+<td align="center" width="33%" valign="top">
   <a href="https://raw.githubusercontent.com/adarsh0707-kumar/portfolio/main/public/certificates/rcpl-data-science-python.png">
     <img src="https://raw.githubusercontent.com/adarsh0707-kumar/portfolio/main/public/certificates/rcpl-data-science-python.png" width="220" alt="Data Science with Python" />
   </a><br/><br/>
   <a href="https://raw.githubusercontent.com/adarsh0707-kumar/portfolio/main/public/certificates/rcpl-data-science-python.png"><b>Data Science with Python</b></a><br/><br/>
-  <img src="https://img.shields.io/badge/RCPL_×_ITS_College-a371f7?style=flat-square" /><br/><br/>
+  <img src="https://img.shields.io/badge/RCPL_%C3%97_ITS_College-39d353?style=flat-square&labelColor=0d1117" /><br/><br/>
   <a href="https://raw.githubusercontent.com/adarsh0707-kumar/portfolio/main/public/certificates/rcpl-data-science-python.png">
     <img src="https://img.shields.io/badge/VIEW-CERTIFICATE-39d353?style=for-the-badge" />
   </a>
 </td>
-<td align="center" width="33%">
-  <a href="https://raw.githubusercontent.com/adarsh0707-kumar/portfolio/main/public/certificates/skillcourse-power-bi.jpg">
-    <img src="https://raw.githubusercontent.com/adarsh0707-kumar/portfolio/main/public/certificates/skillcourse-power-bi.jpg" width="220" alt="Power BI Micro Course" />
+
+<td align="center" width="33%" valign="top">
+  <a href="https://certificates.simplicdn.net/share/10790291_11154348_1790418215624.pdf">
+    <img src="https://raw.githubusercontent.com/adarsh0707-kumar/portfolio/main/public/certificates/Simplilearn-C.png" width="220" alt="C Programming Basics" />
   </a><br/><br/>
-  <a href="https://raw.githubusercontent.com/adarsh0707-kumar/portfolio/main/public/certificates/skillcourse-power-bi.jpg"><b>Power BI Micro Course</b></a><br/><br/>
-  <img src="https://img.shields.io/badge/SkillCourse-f0883e?style=flat-square" /><br/><br/>
-  <a href="https://raw.githubusercontent.com/adarsh0707-kumar/portfolio/main/public/certificates/skillcourse-power-bi.jpg">
-    <img src="https://img.shields.io/badge/VIEW-CERTIFICATE-39d353?style=for-the-badge" />
-  </a>
-</td>
-<td align="center" width="33%">
-  <a href="https://raw.githubusercontent.com/adarsh0707-kumar/portfolio/main/public/certificates/skillcourse-sql.png">
-    <img src="https://raw.githubusercontent.com/adarsh0707-kumar/portfolio/main/public/certificates/skillcourse-sql.png" width="220" alt="SQL Micro Course" />
-  </a><br/><br/>
-  <a href="https://raw.githubusercontent.com/adarsh0707-kumar/portfolio/main/public/certificates/skillcourse-sql.png"><b>SQL Micro Course</b></a><br/><br/>
-  <img src="https://img.shields.io/badge/SkillCourse-f0883e?style=flat-square" /><br/><br/>
-  <a href="https://raw.githubusercontent.com/adarsh0707-kumar/portfolio/main/public/certificates/skillcourse-sql.png">
+  <a href="https://certificates.simplicdn.net/share/10790291_11154348_1790418215624.pdf"><b>C Programming Basics</b></a><br/><br/>
+  <img src="https://img.shields.io/badge/Simplilearn-39d353?style=flat-square&labelColor=0d1117" /><br/><br/>
+  <a href="https://certificates.simplicdn.net/share/10790291_11154348_1790418215624.pdf">
     <img src="https://img.shields.io/badge/VIEW-CERTIFICATE-39d353?style=for-the-badge" />
   </a>
 </td>
 </tr>
 <tr>
-<td align="center">
-  <a href="https://raw.githubusercontent.com/adarsh0707-kumar/portfolio/main/public/certificates/skillcourse-excel.jpg">
-    <img src="https://raw.githubusercontent.com/adarsh0707-kumar/portfolio/main/public/certificates/skillcourse-excel.jpg" width="220" alt="Microsoft Excel" />
-  </a><br/><br/>
-  <a href="https://raw.githubusercontent.com/adarsh0707-kumar/portfolio/main/public/certificates/skillcourse-excel.jpg"><b>Microsoft Excel — Beginners to Advance</b></a><br/><br/>
-  <img src="https://img.shields.io/badge/SkillCourse-f0883e?style=flat-square" /><br/><br/>
-  <a href="https://raw.githubusercontent.com/adarsh0707-kumar/portfolio/main/public/certificates/skillcourse-excel.jpg">
-    <img src="https://img.shields.io/badge/VIEW-CERTIFICATE-39d353?style=for-the-badge" />
-  </a>
-</td>
 
-</tr>
-</table>
-
-<br/><br/><br/>
-
-<p align="center">
-  <b>🐍 Programming Foundations</b><br/><br/>
-  <img src="https://img.shields.io/badge/TRACK-PROGRAMMING_FOUNDATIONS-58a6ff?style=flat-square&labelColor=0d1117" />
-</p>
-
-<table align="center">
-<tr>
-<td align="center"  width="33%">
-  <a href="https://raw.githubusercontent.com/adarsh0707-kumar/portfolio/main/public/certificates/skillcourse-python.jpg">
-    <img src="https://raw.githubusercontent.com/adarsh0707-kumar/portfolio/main/public/certificates/skillcourse-python.jpg" width="220" alt="Python Micro Course" />
-  </a><br/><br/>
-  <a href="https://raw.githubusercontent.com/adarsh0707-kumar/portfolio/main/public/certificates/skillcourse-python.jpg"><b>Python Micro Course</b></a><br/><br/>
-  <img src="https://img.shields.io/badge/SkillCourse-f0883e?style=flat-square" /><br/><br/>
-  <a href="https://raw.githubusercontent.com/adarsh0707-kumar/portfolio/main/public/certificates/skillcourse-python.jpg">
-    <img src="https://img.shields.io/badge/VIEW-CERTIFICATE-39d353?style=for-the-badge" />
-  </a>
-</td>
-
-<td align="center"  width="33%">
-  <a href="https://raw.githubusercontent.com/adarsh0707-kumar/portfolio/main/public/certificates/Simplilearn-C.png">
-    <img src="https://raw.githubusercontent.com/adarsh0707-kumar/portfolio/main/public/certificates/Simplilearn-C.png" width="220" alt="C Basic Course" />
-  </a><br/><br/>
-  <a href="https://raw.githubusercontent.com/adarsh0707-kumar/portfolio/main/public/certificates/Simplilearn-C.png"><b>C Basic Course</b></a><br/><br/>
-  <img src="https://img.shields.io/badge/Simplilearn-f0883e?style=flat-square" /><br/><br/>
-  <a href="https://raw.githubusercontent.com/adarsh0707-kumar/portfolio/main/public/certificates/Simplilearn-C.png">
-    <img src="https://img.shields.io/badge/VIEW-CERTIFICATE-39d353?style=for-the-badge" />
-  </a>
-</td>
-
-</tr>
-<tr>
-<td align="center">
-  <a href="https://raw.githubusercontent.com/adarsh0707-kumar/portfolio/main/public/certificates/ReactJS%20for%20Beginners.png">
+<td align="center" width="33%" valign="top">
+  <a href="https://certificates.simplicdn.net/share/10801205_11154348_1790598004800.pdf">
     <img src="https://raw.githubusercontent.com/adarsh0707-kumar/portfolio/main/public/certificates/ReactJS%20for%20Beginners.png" width="220" alt="ReactJS for Beginners" />
   </a><br/><br/>
-  <a href="https://raw.githubusercontent.com/adarsh0707-kumar/portfolio/main/public/certificates/ReactJS%20for%20Beginners.png"><b>ReactJS for Beginners</b></a><br/><br/>
-  <img src="https://img.shields.io/badge/Simplilearn-f0883e?style=flat-square" /><br/><br/>
+  <a href="https://certificates.simplicdn.net/share/10801205_11154348_1790598004800.pdf"><b>ReactJS for Beginners</b></a><br/><br/>
+  <img src="https://img.shields.io/badge/Simplilearn-39d353?style=flat-square&labelColor=0d1117" /><br/><br/>
   <a href="https://certificates.simplicdn.net/share/10801205_11154348_1790598004800.pdf">
+    <img src="https://img.shields.io/badge/VIEW-CERTIFICATE-39d353?style=for-the-badge" />
+  </a>
+</td>
+
+<td align="center" width="33%" valign="top">
+  <a href="https://edu.skillcourse.in/view-certificate/SC-41TV1QU1VH">
+    <img src="https://raw.githubusercontent.com/adarsh0707-kumar/portfolio/main/public/certificates/skillcourse-power-bi.jpg" width="220" alt="30 Days Power BI Micro Course" />
+  </a><br/><br/>
+  <a href="https://edu.skillcourse.in/view-certificate/SC-41TV1QU1VH"><b>30 Days Power BI Micro Course</b></a><br/><br/>
+  <img src="https://img.shields.io/badge/SkillCourse-39d353?style=flat-square&labelColor=0d1117" /><br/><br/>
+  <a href="https://edu.skillcourse.in/view-certificate/SC-41TV1QU1VH">
+    <img src="https://img.shields.io/badge/VIEW-CERTIFICATE-39d353?style=for-the-badge" />
+  </a>
+</td>
+
+<td align="center" width="33%" valign="top">
+  <a href="https://edu.skillcourse.in/view-certificate/SC-BAXUXNTSMF">
+    <img src="https://raw.githubusercontent.com/adarsh0707-kumar/portfolio/main/public/certificates/skillcourse-python.jpg" width="220" alt="30 Days Python Micro Course" />
+  </a><br/><br/>
+  <a href="https://edu.skillcourse.in/view-certificate/SC-BAXUXNTSMF"><b>30 Days Python Micro Course</b></a><br/><br/>
+  <img src="https://img.shields.io/badge/SkillCourse-39d353?style=flat-square&labelColor=0d1117" /><br/><br/>
+  <a href="https://edu.skillcourse.in/view-certificate/SC-BAXUXNTSMF">
+    <img src="https://img.shields.io/badge/VIEW-CERTIFICATE-39d353?style=for-the-badge" />
+  </a>
+</td>
+</tr>
+<tr>
+
+<td align="center" width="33%" valign="top">
+  <a href="https://edu.skillcourse.in/view-certificate/SC-I5EZD3SUZQ">
+    <img src="https://raw.githubusercontent.com/adarsh0707-kumar/portfolio/main/public/certificates/skillcourse-sql.png" width="220" alt="30 Days SQL Micro Course" />
+  </a><br/><br/>
+  <a href="https://edu.skillcourse.in/view-certificate/SC-I5EZD3SUZQ"><b>30 Days SQL Micro Course</b></a><br/><br/>
+  <img src="https://img.shields.io/badge/SkillCourse-39d353?style=flat-square&labelColor=0d1117" /><br/><br/>
+  <a href="https://edu.skillcourse.in/view-certificate/SC-I5EZD3SUZQ">
+    <img src="https://img.shields.io/badge/VIEW-CERTIFICATE-39d353?style=for-the-badge" />
+  </a>
+</td>
+
+<td align="center" width="33%" valign="top">
+  <a href="https://edu.skillcourse.in/view-certificate/SC-S73ZDEN3I8">
+    <img src="https://raw.githubusercontent.com/adarsh0707-kumar/portfolio/main/public/certificates/skillcourse-excel.jpg" width="220" alt="Microsoft Excel — Beginners to Advance" />
+  </a><br/><br/>
+  <a href="https://edu.skillcourse.in/view-certificate/SC-S73ZDEN3I8"><b>Microsoft Excel — Beginners to Advance</b></a><br/><br/>
+  <img src="https://img.shields.io/badge/SkillCourse-39d353?style=flat-square&labelColor=0d1117" /><br/><br/>
+  <a href="https://edu.skillcourse.in/view-certificate/SC-S73ZDEN3I8">
     <img src="https://img.shields.io/badge/VIEW-CERTIFICATE-39d353?style=for-the-badge" />
   </a>
 </td>
@@ -421,7 +387,7 @@ A machine-learning-powered movie recommender that suggests 5 similar films based
 </p>
 
 <p align="center">
-  <img src="https://img.shields.io/badge/📜_CERTIFICATES-9-39d353?style=for-the-badge&labelColor=555555" />
+  <img src="https://img.shields.io/badge/📜_CERTIFICATES-8-39d353?style=for-the-badge&labelColor=555555" />
   <img src="https://img.shields.io/badge/⚙️_SYSTEMS_%26_NETWORKING-FOCUSED-58a6ff?style=for-the-badge&labelColor=555555" />
   <img src="https://img.shields.io/badge/💼_BACKEND_%26_DATABASES-ACTIVE-f0883e?style=for-the-badge&labelColor=555555" />
 </p>
