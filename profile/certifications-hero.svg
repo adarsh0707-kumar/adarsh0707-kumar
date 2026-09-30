@@ -1,7 +1,7 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 560" width="1920" height="560"
   role="img" aria-label="Adarsh Kumar — Certifications and Professional Achievements">
   <title>Certifications and Professional Achievements</title>
-  <desc>Animated banner showing 9 certificates and 3 learning tracks in backend, systems and web development.</desc>
+  <desc>Animated banner showing 8 certificates and 3 learning tracks in backend, systems and web development.</desc>
 
   <defs>
     <style>
@@ -233,7 +233,7 @@
       <g text-anchor="start">
         <g transform="translate(470 0)">
           <animate attributeName="opacity" values="0;0;1" keyTimes="0;0.5;1" dur="1.8s" fill="freeze"/>
-          <text y="420" font-size="46" font-weight="800" fill="#ffffff" >9</text>
+          <text y="420" font-size="46" font-weight="800" fill="#ffffff" >8</text>
           <text y="446" font-size="13" font-weight="600" letter-spacing="3" fill="#7ee787">CERTIFICATES</text>
           <rect x="0" y="454" width="60" height="3" rx="1.5" fill="#39d353">
             <animate attributeName="width" values="20;90;20" dur="4s" repeatCount="indefinite"/>
