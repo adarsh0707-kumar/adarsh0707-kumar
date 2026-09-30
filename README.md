@@ -267,7 +267,7 @@ A machine-learning-powered movie recommender that suggests 5 similar films based
 <br/><br/><br/>
 
 <p align="center">
-  <img src="https://img.shields.io/badge/CERTIFICATES-6-39d353?style=for-the-badge&labelColor=0d1117" />
+  <img src="https://img.shields.io/badge/CERTIFICATES-9-39d353?style=for-the-badge&labelColor=0d1117" />
   <img src="https://img.shields.io/badge/LEARNING_TRACKS-3-58a6ff?style=for-the-badge&labelColor=0d1117" />
   <img src="https://img.shields.io/badge/FEATURED_PROJECTS-4-7ee787?style=for-the-badge&labelColor=0d1117" />
   <img src="https://img.shields.io/badge/LEARNING_MODE-ALWAYS_ON-2ea043?style=for-the-badge&labelColor=0d1117" />
@@ -392,6 +392,18 @@ A machine-learning-powered movie recommender that suggests 5 similar films based
 </td>
 
 </tr>
+<tr>
+<td align="center">
+  <a href="https://raw.githubusercontent.com/adarsh0707-kumar/portfolio/main/public/certificates/ReactJS%20for%20Beginners.png">
+    <img src="https://raw.githubusercontent.com/adarsh0707-kumar/portfolio/main/public/certificates/ReactJS%20for%20Beginners.png" width="220" alt="ReactJS for Beginners" />
+  </a><br/><br/>
+  <a href="https://raw.githubusercontent.com/adarsh0707-kumar/portfolio/main/public/certificates/ReactJS%20for%20Beginners.png"><b>ReactJS for Beginners</b></a><br/><br/>
+  <img src="https://img.shields.io/badge/Simplilearn-f0883e?style=flat-square" /><br/><br/>
+  <a href="https://certificates.simplicdn.net/share/10801205_11154348_1790598004800.pdf">
+    <img src="https://img.shields.io/badge/VIEW-CERTIFICATE-39d353?style=for-the-badge" />
+  </a>
+</td>
+</tr>
 </table>
 
 <br/>
@@ -409,7 +421,7 @@ A machine-learning-powered movie recommender that suggests 5 similar films based
 </p>
 
 <p align="center">
-  <img src="https://img.shields.io/badge/📜_CERTIFICATES-6-39d353?style=for-the-badge&labelColor=555555" />
+  <img src="https://img.shields.io/badge/📜_CERTIFICATES-9-39d353?style=for-the-badge&labelColor=555555" />
   <img src="https://img.shields.io/badge/⚙️_SYSTEMS_%26_NETWORKING-FOCUSED-58a6ff?style=for-the-badge&labelColor=555555" />
   <img src="https://img.shields.io/badge/💼_BACKEND_%26_DATABASES-ACTIVE-f0883e?style=for-the-badge&labelColor=555555" />
 </p>
