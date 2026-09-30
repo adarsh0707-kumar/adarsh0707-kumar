@@ -42,7 +42,7 @@
       font-size="12.5" font-weight="600" fill="#7ee787">Total Stars Earned:</text>
     <text x="340" y="112"
       text-anchor="end" font-size="13" font-weight="600"
-      fill="#e6edf3">75</text>
+      fill="#e6edf3">76</text>
 
     <text x="44" y="136"
       font-size="12.5" font-weight="600" fill="#7ee787">Total Contributions (all-time):</text>
