@@ -140,8 +140,8 @@
         @keyframes roll_rT_2 {
           0%   { transform: translateY(0); }
           2.857% { transform: translateY(0); }
-          17.143% { transform: translateY(-302.4px); }
-          100% { transform: translateY(-302.4px); }
+          17.143% { transform: translateY(-403.2px); }
+          100% { transform: translateY(-403.2px); }
         }
       </style>
       <clipPath id="rT_2">
@@ -178,8 +178,8 @@
         @keyframes roll_rT_3 {
           0%   { transform: translateY(0); }
           2.857% { transform: translateY(0); }
-          17.143% { transform: translateY(-604.8px); }
-          100% { transform: translateY(-604.8px); }
+          17.143% { transform: translateY(0px); }
+          100% { transform: translateY(0px); }
         }
       </style>
       <clipPath id="rT_3">
@@ -450,11 +450,11 @@
 <rect x="520.1" y="506.0"
       width="27.4" height="1.0" rx="4"
       fill="#39d353" opacity="0.8"/>
-<rect x="564.2" y="430.2"
-      width="27.4" height="75.8" rx="4"
+<rect x="564.2" y="438.6"
+      width="27.4" height="67.4" rx="4"
       fill="#39d353" opacity="0.8"/>
-<rect x="608.4" y="463.9"
-      width="27.4" height="42.1" rx="4"
+<rect x="608.4" y="472.3"
+      width="27.4" height="33.7" rx="4"
       fill="#39d353" opacity="0.8"/>
 <rect x="652.6" y="371.3"
       width="27.4" height="134.7" rx="4"
@@ -462,8 +462,8 @@
 <rect x="696.7" y="489.2"
       width="27.4" height="16.8" rx="4"
       fill="#39d353" opacity="0.8"/>
-<rect x="740.9" y="455.5"
-      width="27.4" height="50.5" rx="4"
+<rect x="740.9" y="463.9"
+      width="27.4" height="42.1" rx="4"
       fill="#39d353" opacity="0.8"/>
 <rect x="785.1" y="346.0"
       width="27.4" height="160.0" rx="4"
