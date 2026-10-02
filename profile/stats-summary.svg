@@ -48,7 +48,7 @@
       font-size="12.5" font-weight="600" fill="#7ee787">Total Contributions (all-time):</text>
     <text x="340" y="136"
       text-anchor="end" font-size="13" font-weight="600"
-      fill="#e6edf3">1.8k</text>
+      fill="#e6edf3">1.9k</text>
 
     <text x="44" y="160"
       font-size="12.5" font-weight="600" fill="#7ee787">Contributions (last 12 months):</text>
@@ -60,7 +60,7 @@
       font-size="12.5" font-weight="600" fill="#7ee787">Total PRs:</text>
     <text x="340" y="184"
       text-anchor="end" font-size="13" font-weight="600"
-      fill="#e6edf3">135</text>
+      fill="#e6edf3">138</text>
 
     <text x="44" y="208"
       font-size="12.5" font-weight="600" fill="#7ee787">Total Issues:</text>
