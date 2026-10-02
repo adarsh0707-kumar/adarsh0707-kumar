@@ -54,13 +54,13 @@
       font-size="12.5" font-weight="600" fill="#7ee787">Contributions (last 12 months):</text>
     <text x="340" y="160"
       text-anchor="end" font-size="13" font-weight="600"
-      fill="#e6edf3">1.4k</text>
+      fill="#e6edf3">1.5k</text>
 
     <text x="44" y="184"
       font-size="12.5" font-weight="600" fill="#7ee787">Total PRs:</text>
     <text x="340" y="184"
       text-anchor="end" font-size="13" font-weight="600"
-      fill="#e6edf3">131</text>
+      fill="#e6edf3">135</text>
 
     <text x="44" y="208"
       font-size="12.5" font-weight="600" fill="#7ee787">Total Issues:</text>
