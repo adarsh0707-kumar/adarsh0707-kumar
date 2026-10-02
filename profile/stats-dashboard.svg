@@ -178,8 +178,8 @@
         @keyframes roll_rT_3 {
           0%   { transform: translateY(0); }
           2.857% { transform: translateY(0); }
-          17.143% { transform: translateY(0px); }
-          100% { transform: translateY(0px); }
+          17.143% { transform: translateY(-201.6px); }
+          100% { transform: translateY(-201.6px); }
         }
       </style>
       <clipPath id="rT_3">
@@ -227,16 +227,54 @@
         @keyframes roll_rC_0 {
           0%   { transform: translateY(0); }
           2.857% { transform: translateY(0); }
-          17.143% { transform: translateY(0px); }
-          100% { transform: translateY(0px); }
+          17.143% { transform: translateY(-322px); }
+          100% { transform: translateY(-322px); }
         }
       </style>
       <clipPath id="rC_0">
-        <rect x="458.66" y="161" width="26.68" height="64.4"/>
+        <rect x="445.32" y="161" width="26.68" height="64.4"/>
       </clipPath>
       <g clip-path="url(#rC_0)">
         <g style="animation: roll_rC_0 14s infinite; animation-delay: 0.00s; transform-box: fill-box;">
-          <g transform="translate(472, 164.68)">
+          <g transform="translate(458.65999999999997, 164.68)">
+            <text x="0" y="42.32" text-anchor="middle"
+        font-size="46" font-weight="800" fill="url(#numfill)">0</text>
+<text x="0" y="106.72" text-anchor="middle"
+        font-size="46" font-weight="800" fill="url(#numfill)">1</text>
+<text x="0" y="171.12" text-anchor="middle"
+        font-size="46" font-weight="800" fill="url(#numfill)">2</text>
+<text x="0" y="235.52" text-anchor="middle"
+        font-size="46" font-weight="800" fill="url(#numfill)">3</text>
+<text x="0" y="299.92" text-anchor="middle"
+        font-size="46" font-weight="800" fill="url(#numfill)">4</text>
+<text x="0" y="364.32" text-anchor="middle"
+        font-size="46" font-weight="800" fill="url(#numfill)">5</text>
+<text x="0" y="428.72" text-anchor="middle"
+        font-size="46" font-weight="800" fill="url(#numfill)">6</text>
+<text x="0" y="493.12000000000006" text-anchor="middle"
+        font-size="46" font-weight="800" fill="url(#numfill)">7</text>
+<text x="0" y="557.5200000000001" text-anchor="middle"
+        font-size="46" font-weight="800" fill="url(#numfill)">8</text>
+<text x="0" y="621.9200000000001" text-anchor="middle"
+        font-size="46" font-weight="800" fill="url(#numfill)">9</text>
+          </g>
+        </g>
+      </g>
+
+      <style>
+        @keyframes roll_rC_1 {
+          0%   { transform: translateY(0); }
+          2.857% { transform: translateY(0); }
+          17.143% { transform: translateY(-64.4px); }
+          100% { transform: translateY(-64.4px); }
+        }
+      </style>
+      <clipPath id="rC_1">
+        <rect x="472" y="161" width="26.68" height="64.4"/>
+      </clipPath>
+      <g clip-path="url(#rC_1)">
+        <g style="animation: roll_rC_1 14s infinite; animation-delay: 0.08s; transform-box: fill-box;">
+          <g transform="translate(485.34, 164.68)">
             <text x="0" y="42.32" text-anchor="middle"
         font-size="46" font-weight="800" fill="url(#numfill)">0</text>
 <text x="0" y="106.72" text-anchor="middle"
@@ -263,9 +301,9 @@
   <text x="472" y="229" text-anchor="middle" font-size="12"
     font-weight="600" fill="#8b949e">days</text>
   <text x="574" y="174" font-size="19" font-weight="700" fill="#e6edf3">Current streak</text>
-  <text x="574" y="200" font-size="14" fill="#39d353" font-weight="600">0 day run</text>
-  <text x="574" y="222" font-size="13" fill="#8b949e"></text>
-  <text x="574" y="244" font-size="12" fill="#8b949e">Personal record approaching</text>
+  <text x="574" y="200" font-size="14" fill="#39d353" font-weight="600">51 day run</text>
+  <text x="574" y="222" font-size="13" fill="#8b949e">Aug 13 → Oct 2</text>
+  <text x="574" y="244" font-size="12" fill="#8b949e">Matches the longest streak</text>
 
   <rect x="860" y="96" width="300" height="190" rx="20"
     fill="#ffffff08" stroke="#ffffff16"/>
@@ -314,8 +352,8 @@
         @keyframes roll_rL_1 {
           0%   { transform: translateY(0); }
           2.857% { transform: translateY(0); }
-          17.143% { transform: translateY(0px); }
-          100% { transform: translateY(0px); }
+          17.143% { transform: translateY(-100.8px); }
+          100% { transform: translateY(-100.8px); }
         }
       </style>
       <clipPath id="rL_1">
@@ -349,7 +387,7 @@
       </g>
   <text x="1132" y="218" text-anchor="end" font-size="20"
     font-weight="600" fill="#8b949e">days</text>
-  <text x="888" y="240" font-size="13" fill="#39d353" font-weight="600">Aug 13 → Oct 1</text>
+  <text x="888" y="240" font-size="13" fill="#39d353" font-weight="600">Aug 13 → Oct 2</text>
   <text x="888" y="262" font-size="12" fill="#8b949e">All-time best</text>
 
   <!-- Row 2: Commits by hour -->
