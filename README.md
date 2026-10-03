@@ -133,7 +133,7 @@ A machine-learning-powered movie recommender that suggests 5 similar films based
 
 **Architecture:**
 - **Pipeline** — Merge TMDB 5000 movies + credits datasets on title
-- **Feature engineering** — Concatenate overview, genres, keywords, top-3 cast, director into a "tags" string
+- **Feature engineering** — Concatenate overview, genres, keywords, top-3 cast, director into a "tags" string.
 - **Text normalization** — Porter stemming via NLTK (e.g. "loving"/"loved" → "love")
 - **Vectorization** — `CountVectorizer` (top 5,000 terms, English stop words removed)
 - **Similarity** — Cosine similarity over a ~4,800 × 4,800 matrix
