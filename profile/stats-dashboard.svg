@@ -178,8 +178,8 @@
         @keyframes roll_rT_3 {
           0%   { transform: translateY(0); }
           2.857% { transform: translateY(0); }
-          17.143% { transform: translateY(-403.2px); }
-          100% { transform: translateY(-403.2px); }
+          17.143% { transform: translateY(-504px); }
+          100% { transform: translateY(-504px); }
         }
       </style>
       <clipPath id="rT_3">
@@ -456,8 +456,8 @@
 <rect x="608.4" y="495.3"
       width="27.4" height="10.7" rx="4"
       fill="#39d353" opacity="0.8"/>
-<rect x="652.6" y="459.8"
-      width="27.4" height="46.2" rx="4"
+<rect x="652.6" y="456.2"
+      width="27.4" height="49.8" rx="4"
       fill="#39d353" opacity="0.8"/>
 <rect x="696.7" y="506.0"
       width="27.4" height="1.0" rx="4"
