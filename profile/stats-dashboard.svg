@@ -140,8 +140,8 @@
         @keyframes roll_rT_2 {
           0%   { transform: translateY(0); }
           2.857% { transform: translateY(0); }
-          17.143% { transform: translateY(-403.2px); }
-          100% { transform: translateY(-403.2px); }
+          17.143% { transform: translateY(-604.8px); }
+          100% { transform: translateY(-604.8px); }
         }
       </style>
       <clipPath id="rT_2">
@@ -178,8 +178,8 @@
         @keyframes roll_rT_3 {
           0%   { transform: translateY(0); }
           2.857% { transform: translateY(0); }
-          17.143% { transform: translateY(-403.2px); }
-          100% { transform: translateY(-403.2px); }
+          17.143% { transform: translateY(-907.1999999999999px); }
+          100% { transform: translateY(-907.1999999999999px); }
         }
       </style>
       <clipPath id="rT_3">
@@ -444,29 +444,29 @@
 <rect x="431.7" y="506.0"
       width="27.4" height="1.0" rx="4"
       fill="#39d353" opacity="0.8"/>
-<rect x="475.9" y="454.8"
-      width="27.4" height="51.2" rx="4"
+<rect x="475.9" y="471.7"
+      width="27.4" height="34.3" rx="4"
       fill="#39d353" opacity="0.8"/>
 <rect x="520.1" y="346.0"
       width="27.4" height="160.0" rx="4"
       fill="#7ee787" opacity="1"/>
-<rect x="564.2" y="442.0"
-      width="27.4" height="64.0" rx="4"
+<rect x="564.2" y="479.3"
+      width="27.4" height="26.7" rx="4"
       fill="#39d353" opacity="0.8"/>
-<rect x="608.4" y="493.2"
-      width="27.4" height="12.8" rx="4"
+<rect x="608.4" y="502.2"
+      width="27.4" height="3.8" rx="4"
       fill="#39d353" opacity="0.8"/>
-<rect x="652.6" y="461.2"
-      width="27.4" height="44.8" rx="4"
+<rect x="652.6" y="479.3"
+      width="27.4" height="26.7" rx="4"
       fill="#39d353" opacity="0.8"/>
-<rect x="696.7" y="467.6"
-      width="27.4" height="38.4" rx="4"
+<rect x="696.7" y="502.2"
+      width="27.4" height="3.8" rx="4"
       fill="#39d353" opacity="0.8"/>
-<rect x="740.9" y="416.4"
-      width="27.4" height="89.6" rx="4"
+<rect x="740.9" y="471.7"
+      width="27.4" height="34.3" rx="4"
       fill="#39d353" opacity="0.8"/>
-<rect x="785.1" y="467.6"
-      width="27.4" height="38.4" rx="4"
+<rect x="785.1" y="498.4"
+      width="27.4" height="7.6" rx="4"
       fill="#39d353" opacity="0.8"/>
 <rect x="829.2" y="506.0"
       width="27.4" height="1.0" rx="4"
