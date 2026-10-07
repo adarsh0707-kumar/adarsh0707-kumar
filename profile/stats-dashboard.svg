@@ -359,9 +359,9 @@
   <text x="1132" y="374" text-anchor="end" font-size="13"
     fill="#8b949e">UTC+5:30</text>
   
-    <rect x="680.3333333333333" y="346" width="60.16666666666663"
+    <rect x="592" y="346" width="104.33333333333326"
       height="160" rx="8" fill="#5EEAD4" fill-opacity="0.08"/>
-    <text x="710.4" y="352"
+    <text x="644.2" y="352"
       text-anchor="middle" font-size="11" font-weight="600" fill="#5EEAD4">Peak hours</text>
   
       <line x1="70" y1="506" x2="1130" y2="506"
@@ -379,11 +379,11 @@
       <line x1="70" y1="346" x2="1130" y2="346"
         stroke="#ffffff14" stroke-width="1"/>
       <text x="62" y="350" text-anchor="end"
-        font-size="11" fill="#8b949e">30</text><rect x="78.4" y="506.0"
-      width="27.4" height="1.0" rx="4"
+        font-size="11" fill="#8b949e">30</text><rect x="78.4" y="442.0"
+      width="27.4" height="64.0" rx="4"
       fill="#39d353" opacity="0.8"/>
-<rect x="122.6" y="506.0"
-      width="27.4" height="1.0" rx="4"
+<rect x="122.6" y="474.0"
+      width="27.4" height="32.0" rx="4"
       fill="#39d353" opacity="0.8"/>
 <rect x="166.7" y="506.0"
       width="27.4" height="1.0" rx="4"
@@ -406,29 +406,29 @@
 <rect x="431.7" y="506.0"
       width="27.4" height="1.0" rx="4"
       fill="#39d353" opacity="0.8"/>
-<rect x="475.9" y="470.4"
-      width="27.4" height="35.6" rx="4"
+<rect x="475.9" y="490.0"
+      width="27.4" height="16.0" rx="4"
       fill="#39d353" opacity="0.8"/>
-<rect x="520.1" y="417.1"
-      width="27.4" height="88.9" rx="4"
+<rect x="520.1" y="458.0"
+      width="27.4" height="48.0" rx="4"
       fill="#39d353" opacity="0.8"/>
-<rect x="564.2" y="452.7"
-      width="27.4" height="53.3" rx="4"
+<rect x="564.2" y="458.0"
+      width="27.4" height="48.0" rx="4"
       fill="#39d353" opacity="0.8"/>
-<rect x="608.4" y="434.9"
-      width="27.4" height="71.1" rx="4"
-      fill="#39d353" opacity="0.8"/>
-<rect x="652.6" y="452.7"
-      width="27.4" height="53.3" rx="4"
-      fill="#39d353" opacity="0.8"/>
-<rect x="696.7" y="346.0"
+<rect x="608.4" y="346.0"
       width="27.4" height="160.0" rx="4"
       fill="#7ee787" opacity="1"/>
-<rect x="740.9" y="452.7"
-      width="27.4" height="53.3" rx="4"
+<rect x="652.6" y="378.0"
+      width="27.4" height="128.0" rx="4"
+      fill="#7ee787" opacity="1"/>
+<rect x="696.7" y="426.0"
+      width="27.4" height="80.0" rx="4"
       fill="#39d353" opacity="0.8"/>
-<rect x="785.1" y="470.4"
-      width="27.4" height="35.6" rx="4"
+<rect x="740.9" y="458.0"
+      width="27.4" height="48.0" rx="4"
+      fill="#39d353" opacity="0.8"/>
+<rect x="785.1" y="490.0"
+      width="27.4" height="16.0" rx="4"
       fill="#39d353" opacity="0.8"/>
 <rect x="829.2" y="506.0"
       width="27.4" height="1.0" rx="4"
@@ -448,8 +448,8 @@
 <rect x="1050.1" y="506.0"
       width="27.4" height="1.0" rx="4"
       fill="#39d353" opacity="0.8"/>
-<rect x="1094.2" y="506.0"
-      width="27.4" height="1.0" rx="4"
+<rect x="1094.2" y="458.0"
+      width="27.4" height="48.0" rx="4"
       fill="#39d353" opacity="0.8"/><text x="92.1" y="526"
       text-anchor="middle" font-size="11" fill="#8b949e">00</text>
 <text x="224.6" y="526"
