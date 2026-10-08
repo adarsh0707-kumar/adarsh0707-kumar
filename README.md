@@ -155,6 +155,71 @@ A machine-learning-powered movie recommender that suggests 5 similar films based
 
 </td>
 </tr>
+
+<tr>
+<td width="50%" valign="top">
+
+### 🎥 [High-Performance Distributed Media Analytics Platform](https://github.com/adarsh0707-kumar/High-Performance-Distributed-Media-Analytics-Platform)
+
+**Distributed video/audio processing and analytics infrastructure**
+
+A production-oriented polyglot platform for processing large media assets through an asynchronous pipeline. The design separates the **control plane** from the **data plane**, allowing API workloads and computationally expensive media processing to scale independently.
+
+**Architecture:**
+- **React + TypeScript** — Media Studio for uploads, job status, results, and real-time progress
+- **Node.js + TypeScript** — API gateway, authentication, job orchestration, metadata management, and WebSocket events
+- **PostgreSQL** — Users, media metadata, jobs, processing state, transcripts, detections, and system state
+- **Redis** — Asynchronous job dispatch, queue coordination, retries, and transient processing state
+- **C/C++ + FFmpeg** — Performance-critical decoding, probing, thumbnail generation, clipping, audio extraction, and media processing
+- **Python** — Transcription, detection, analytics, and AI/ML processing
+- **Object storage** — Original media and generated artifacts outside the relational database
+
+**Processing flow:**
+`Upload → Register Media → Object Storage → Queue Job → C++/FFmpeg Processing → Python Analytics → Persist Results → WebSocket Progress → React`
+
+**Highlights:**
+- Explicit control-plane/data-plane separation
+- Asynchronous job lifecycle with retries, leases, cancellation, idempotency, and worker ownership
+- Native FFmpeg integration for performance-critical media workloads
+- PostgreSQL as the durable source of truth while Redis remains the dispatch layer
+- Designed around disposable, independently scalable, observable workers
+
+**Stack:** C/C++ · FFmpeg · Python · Node.js · TypeScript · React · PostgreSQL · Redis · Docker
+
+</td>
+<td width="50%" valign="top">
+
+### ☁️ [CodeForge Cloud](https://github.com/adarsh0707-kumar/CodeForge-Cloud)
+
+**Collaborative real-time online compiler and secure execution platform**
+
+A cloud-native development platform combining a browser IDE, real-time collaboration, distributed execution, and isolated code sandboxes. The core engineering problem is executing **untrusted user code safely and predictably** without exposing the host or other workloads.
+
+**Architecture:**
+- **React IDE** — Browser-based editor, project workspace, terminal output, execution controls, and collaboration UI
+- **Nginx** — Reverse proxy and routing boundary
+- **Node.js gateway** — Authentication, authorization, project/file APIs, execution requests, and WebSocket collaboration
+- **PostgreSQL** — Durable projects, files, execution history, users, and resource policies
+- **Redis** — Queue, cache, pub/sub, and transient execution state
+- **Python evaluator** — Execution validation, orchestration, scheduling, and worker coordination
+- **C++ runtime** — Low-level sandbox execution boundary connected through gRPC
+- **Docker** — Isolated execution environments with namespaces, cgroups, seccomp, capability restrictions, filesystem and network controls
+
+**Execution flow:**
+`Source → Auth → Authorization → Immutable Snapshot → Resource Policy → Queue → Evaluator → C++ Runtime → Sandbox → Compile/Execute → Result`
+
+**Highlights:**
+- Treats every submitted program as hostile input
+- Asynchronous execution with persistent job and execution states
+- Resource controls for CPU, memory, wall-clock time, processes, disk, and output
+- Real-time execution and collaboration events over WebSockets
+- Internal service communication through gRPC/Protocol Buffers
+- Security, testing, observability, and failure handling treated as first-class architecture concerns
+
+**Stack:** C++ · Python · Node.js · TypeScript · React · PostgreSQL · Redis · gRPC · Docker · WebSockets
+
+</td>
+</tr>
 </table>
 
 
@@ -269,7 +334,7 @@ A machine-learning-powered movie recommender that suggests 5 similar films based
 <p align="center">
   <img src="https://img.shields.io/badge/CERTIFICATES-8-39d353?style=for-the-badge&labelColor=0d1117" />
   <img src="https://img.shields.io/badge/LEARNING_TRACKS-3-58a6ff?style=for-the-badge&labelColor=0d1117" />
-  <img src="https://img.shields.io/badge/FEATURED_PROJECTS-4-7ee787?style=for-the-badge&labelColor=0d1117" />
+  <img src="https://img.shields.io/badge/FEATURED_PROJECTS-6-7ee787?style=for-the-badge&labelColor=0d1117" />
   <img src="https://img.shields.io/badge/LEARNING_MODE-ALWAYS_ON-2ea043?style=for-the-badge&labelColor=0d1117" />
 </p>
 
