@@ -279,34 +279,34 @@ A machine-learning-powered movie recommender that suggests 5 similar films based
 <tr>
 
 <td align="center" width="33%" valign="top">
-  <a href="https://raw.githubusercontent.com/adarsh0707-kumar/portfolio/main/public/certificates/satyam-internship.jpg">
-    <img src="https://raw.githubusercontent.com/adarsh0707-kumar/portfolio/main/public/certificates/satyam-internship.jpg" width="220" alt="Software Development Internship" />
+  <a href="https://github.com/adarsh0707-kumar/portfolio/blob/main/public/certificates/satyam-internship.jpg">
+    <img src="https://github.com/adarsh0707-kumar/portfolio/blob/main/public/certificates/satyam-internship.jpg" width="220" alt="Software Development Internship" />
   </a><br/><br/>
-  <a href="https://raw.githubusercontent.com/adarsh0707-kumar/portfolio/main/public/certificates/satyam-internship.jpg"><b>Software Development Internship</b></a><br/><br/>
+  <a href="https://github.com/adarsh0707-kumar/portfolio/blob/main/public/certificates/satyam-internship.jpg"><b>Software Development Internship</b></a><br/><br/>
   <img src="https://img.shields.io/badge/Satyam_Software_Solutions-39d353?style=flat-square&labelColor=0d1117" /><br/><br/>
-  <a href="https://raw.githubusercontent.com/adarsh0707-kumar/portfolio/main/public/certificates/satyam-internship.jpg">
+  <a href="https://github.com/adarsh0707-kumar/portfolio/blob/main/public/certificates/satyam-internship.jpg">
     <img src="https://img.shields.io/badge/VIEW-CERTIFICATE-39d353?style=for-the-badge" />
   </a>
 </td>
 
 <td align="center" width="33%" valign="top">
-  <a href="https://raw.githubusercontent.com/adarsh0707-kumar/portfolio/main/public/certificates/rcpl-data-science-python.png">
-    <img src="https://raw.githubusercontent.com/adarsh0707-kumar/portfolio/main/public/certificates/rcpl-data-science-python.png" width="220" alt="Data Science with Python" />
+  <a href="https://github.com/adarsh0707-kumar/portfolio/blob/main/public/certificates/rcpl-data-science-python.png">
+    <img src="https://github.com/adarsh0707-kumar/portfolio/blob/main/public/certificates/rcpl-data-science-python.png" width="220" alt="Data Science with Python" />
   </a><br/><br/>
-  <a href="https://raw.githubusercontent.com/adarsh0707-kumar/portfolio/main/public/certificates/rcpl-data-science-python.png"><b>Data Science with Python</b></a><br/><br/>
+  <a href="https://github.com/adarsh0707-kumar/portfolio/blob/main/public/certificates/rcpl-data-science-python.png"><b>Data Science with Python</b></a><br/><br/>
   <img src="https://img.shields.io/badge/RCPL_%C3%97_ITS_College-39d353?style=flat-square&labelColor=0d1117" /><br/><br/>
-  <a href="https://raw.githubusercontent.com/adarsh0707-kumar/portfolio/main/public/certificates/rcpl-data-science-python.png">
+  <a href="https://github.com/adarsh0707-kumar/portfolio/blob/main/public/certificates/rcpl-data-science-python.png">
     <img src="https://img.shields.io/badge/VIEW-CERTIFICATE-39d353?style=for-the-badge" />
   </a>
 </td>
 
 <td align="center" width="33%" valign="top">
-  <a href="https://certificates.simplicdn.net/share/10790291_11154348_1790418215624.pdf">
+  <a href="https://github.com/adarsh0707-kumar/portfolio/blob/main/public/certificates/Simplilearn-C.png">
     <img src="https://raw.githubusercontent.com/adarsh0707-kumar/portfolio/main/public/certificates/Simplilearn-C.png" width="220" alt="C Programming Basics" />
   </a><br/><br/>
-  <a href="https://certificates.simplicdn.net/share/10790291_11154348_1790418215624.pdf"><b>C Programming Basics</b></a><br/><br/>
+  <a href="https://github.com/adarsh0707-kumar/portfolio/blob/main/public/certificates/Simplilearn-C.png"><b>C Programming Basics</b></a><br/><br/>
   <img src="https://img.shields.io/badge/Simplilearn-39d353?style=flat-square&labelColor=0d1117" /><br/><br/>
-  <a href="https://certificates.simplicdn.net/share/10790291_11154348_1790418215624.pdf">
+  <a href="https://github.com/adarsh0707-kumar/portfolio/blob/main/public/certificates/Simplilearn-C.png">
     <img src="https://img.shields.io/badge/VIEW-CERTIFICATE-39d353?style=for-the-badge" />
   </a>
 </td>
@@ -314,34 +314,34 @@ A machine-learning-powered movie recommender that suggests 5 similar films based
 <tr>
 
 <td align="center" width="33%" valign="top">
-  <a href="https://certificates.simplicdn.net/share/10801205_11154348_1790598004800.pdf">
+  <a href="https://github.com/adarsh0707-kumar/portfolio/blob/main/public/certificates/ReactJS%20for%20Beginners.png">
     <img src="https://raw.githubusercontent.com/adarsh0707-kumar/portfolio/main/public/certificates/ReactJS%20for%20Beginners.png" width="220" alt="ReactJS for Beginners" />
   </a><br/><br/>
-  <a href="https://certificates.simplicdn.net/share/10801205_11154348_1790598004800.pdf"><b>ReactJS for Beginners</b></a><br/><br/>
+  <a href="https://github.com/adarsh0707-kumar/portfolio/blob/main/public/certificates/ReactJS%20for%20Beginners.png"><b>ReactJS for Beginners</b></a><br/><br/>
   <img src="https://img.shields.io/badge/Simplilearn-39d353?style=flat-square&labelColor=0d1117" /><br/><br/>
-  <a href="https://certificates.simplicdn.net/share/10801205_11154348_1790598004800.pdf">
+  <a href="https://github.com/adarsh0707-kumar/portfolio/blob/main/public/certificates/ReactJS%20for%20Beginners.png">
     <img src="https://img.shields.io/badge/VIEW-CERTIFICATE-39d353?style=for-the-badge" />
   </a>
 </td>
 
 <td align="center" width="33%" valign="top">
-  <a href="https://edu.skillcourse.in/view-certificate/SC-41TV1QU1VH">
+  <a href="https://github.com/adarsh0707-kumar/portfolio/blob/main/public/certificates/skillcourse-power-bi.jpg">
     <img src="https://raw.githubusercontent.com/adarsh0707-kumar/portfolio/main/public/certificates/skillcourse-power-bi.jpg" width="220" alt="30 Days Power BI Micro Course" />
   </a><br/><br/>
-  <a href="https://edu.skillcourse.in/view-certificate/SC-41TV1QU1VH"><b>30 Days Power BI Micro Course</b></a><br/><br/>
+  <a href="https://github.com/adarsh0707-kumar/portfolio/blob/main/public/certificates/skillcourse-power-bi.jpg"><b>30 Days Power BI Micro Course</b></a><br/><br/>
   <img src="https://img.shields.io/badge/SkillCourse-39d353?style=flat-square&labelColor=0d1117" /><br/><br/>
-  <a href="https://edu.skillcourse.in/view-certificate/SC-41TV1QU1VH">
+  <a href="https://github.com/adarsh0707-kumar/portfolio/blob/main/public/certificates/skillcourse-power-bi.jpg">
     <img src="https://img.shields.io/badge/VIEW-CERTIFICATE-39d353?style=for-the-badge" />
   </a>
 </td>
 
 <td align="center" width="33%" valign="top">
-  <a href="https://edu.skillcourse.in/view-certificate/SC-BAXUXNTSMF">
+  <a href="https://github.com/adarsh0707-kumar/portfolio/blob/main/public/certificates/skillcourse-python.jpg">
     <img src="https://raw.githubusercontent.com/adarsh0707-kumar/portfolio/main/public/certificates/skillcourse-python.jpg" width="220" alt="30 Days Python Micro Course" />
   </a><br/><br/>
-  <a href="https://edu.skillcourse.in/view-certificate/SC-BAXUXNTSMF"><b>30 Days Python Micro Course</b></a><br/><br/>
+  <a href="https://github.com/adarsh0707-kumar/portfolio/blob/main/public/certificates/skillcourse-python.jpg"><b>30 Days Python Micro Course</b></a><br/><br/>
   <img src="https://img.shields.io/badge/SkillCourse-39d353?style=flat-square&labelColor=0d1117" /><br/><br/>
-  <a href="https://edu.skillcourse.in/view-certificate/SC-BAXUXNTSMF">
+  <a href="https://github.com/adarsh0707-kumar/portfolio/blob/main/public/certificates/skillcourse-python.jpg">
     <img src="https://img.shields.io/badge/VIEW-CERTIFICATE-39d353?style=for-the-badge" />
   </a>
 </td>
@@ -349,23 +349,23 @@ A machine-learning-powered movie recommender that suggests 5 similar films based
 <tr>
 
 <td align="center" width="33%" valign="top">
-  <a href="https://edu.skillcourse.in/view-certificate/SC-I5EZD3SUZQ">
+  <a href="https://github.com/adarsh0707-kumar/portfolio/blob/main/public/certificates/skillcourse-sql.png">
     <img src="https://raw.githubusercontent.com/adarsh0707-kumar/portfolio/main/public/certificates/skillcourse-sql.png" width="220" alt="30 Days SQL Micro Course" />
   </a><br/><br/>
-  <a href="https://edu.skillcourse.in/view-certificate/SC-I5EZD3SUZQ"><b>30 Days SQL Micro Course</b></a><br/><br/>
+  <a href="https://github.com/adarsh0707-kumar/portfolio/blob/main/public/certificates/skillcourse-sql.png"><b>30 Days SQL Micro Course</b></a><br/><br/>
   <img src="https://img.shields.io/badge/SkillCourse-39d353?style=flat-square&labelColor=0d1117" /><br/><br/>
-  <a href="https://edu.skillcourse.in/view-certificate/SC-I5EZD3SUZQ">
+  <a href="https://github.com/adarsh0707-kumar/portfolio/blob/main/public/certificates/skillcourse-sql.png">
     <img src="https://img.shields.io/badge/VIEW-CERTIFICATE-39d353?style=for-the-badge" />
   </a>
 </td>
 
 <td align="center" width="33%" valign="top">
-  <a href="https://edu.skillcourse.in/view-certificate/SC-S73ZDEN3I8">
+  <a href="https://github.com/adarsh0707-kumar/portfolio/blob/main/public/certificates/skillcourse-excel.jpg">
     <img src="https://raw.githubusercontent.com/adarsh0707-kumar/portfolio/main/public/certificates/skillcourse-excel.jpg" width="220" alt="Microsoft Excel — Beginners to Advance" />
   </a><br/><br/>
-  <a href="https://edu.skillcourse.in/view-certificate/SC-S73ZDEN3I8"><b>Microsoft Excel — Beginners to Advance</b></a><br/><br/>
+  <a href="https://github.com/adarsh0707-kumar/portfolio/blob/main/public/certificates/skillcourse-excel.jpg"><b>Microsoft Excel — Beginners to Advance</b></a><br/><br/>
   <img src="https://img.shields.io/badge/SkillCourse-39d353?style=flat-square&labelColor=0d1117" /><br/><br/>
-  <a href="https://edu.skillcourse.in/view-certificate/SC-S73ZDEN3I8">
+  <a href="https://github.com/adarsh0707-kumar/portfolio/blob/main/public/certificates/skillcourse-excel.jpg">
     <img src="https://img.shields.io/badge/VIEW-CERTIFICATE-39d353?style=for-the-badge" />
   </a>
 </td>
