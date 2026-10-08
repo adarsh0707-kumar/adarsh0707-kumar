@@ -48,7 +48,7 @@
 A production-style trading platform demonstrating how modern exchange infrastructure is structured across performance-critical systems, quantitative analytics, and real-time visualization.
 
 **Architecture:**
-- **C++ engine** — Order book, price-time-priority matching, partial fills, market data simulation, TCP/Unix socket server
+- **C++ engine** — Order book, price-time-priority matching, partial fills, market data simulation, TCP socket transport
 - **Python analytics** — VWAP, SMA/EMA, PnL, exposure, drawdown, risk metrics via NumPy/Pandas
 - **Node.js gateway** — REST API, WebSocket streaming, rate limiting, request validation (TypeScript)
 - **React dashboard** — Live market charts, order book, trade feed, portfolio metrics (Vite + Recharts)
@@ -68,7 +68,7 @@ A production-style trading platform demonstrating how modern exchange infrastruc
 
 **Full-stack pharmacy billing, inventory & GST platform**
 
-A production-style multi-tenant SaaS for retail pharmacies handling money, stock, and tax records — where correctness matters more than delivery speed.
+A production-oriented portfolio application for pharmacy billing, inventory, GST reporting, and role-based operations. It is not a certified accounting, tax, or production pharmacy system.
 
 **Architecture:**
 - **Frontend** — React 19, TypeScript, Vite, Tailwind v4, shadcn/ui
@@ -77,7 +77,7 @@ A production-style multi-tenant SaaS for retail pharmacies handling money, stock
 - **Deployment** — Docker Compose + nginx (same-origin by default)
 
 **Features:**
-- Point-of-sale billing with GST compliance
+- Point-of-sale billing and GST reporting
 - Batch-level stock tracking with expiry alerts
 - Multi-shop tenancy — isolated data per pharmacy via JWT-scoped `shopId`
 - Three role levels: `ADMIN` · `PHARMACIST` · `CASHIER`
@@ -193,7 +193,7 @@ A production-oriented polyglot platform for processing large media assets throug
 
 **Collaborative real-time online compiler and secure execution platform**
 
-A cloud-native development platform combining a browser IDE, real-time collaboration, distributed execution, and isolated code sandboxes. The core engineering problem is executing **untrusted user code safely and predictably** without exposing the host or other workloads.
+An architecture-first cloud development platform exploring browser IDEs, asynchronous execution, collaboration, and isolated code execution. The repository currently contains architecture, contracts, documentation, and implementation skeletons; the end-to-end execution system is still under development.
 
 **Architecture:**
 - **React IDE** — Browser-based editor, project workspace, terminal output, execution controls, and collaboration UI
@@ -203,13 +203,13 @@ A cloud-native development platform combining a browser IDE, real-time collabora
 - **Redis** — Queue, cache, pub/sub, and transient execution state
 - **Python evaluator** — Execution validation, orchestration, scheduling, and worker coordination
 - **C++ runtime** — Low-level sandbox execution boundary connected through gRPC
-- **Docker** — Isolated execution environments with namespaces, cgroups, seccomp, capability restrictions, filesystem and network controls
+- **Docker / Linux isolation** — Target execution boundary with namespaces, cgroups, seccomp, capability restrictions, filesystem and network controls
 
 **Execution flow:**
 `Source → Auth → Authorization → Immutable Snapshot → Resource Policy → Queue → Evaluator → C++ Runtime → Sandbox → Compile/Execute → Result`
 
 **Highlights:**
-- Treats every submitted program as hostile input
+- Treats submitted programs as hostile input in the security model
 - Asynchronous execution with persistent job and execution states
 - Resource controls for CPU, memory, wall-clock time, processes, disk, and output
 - Real-time execution and collaboration events over WebSockets
