@@ -42,7 +42,7 @@
       font-size="12.5" font-weight="600" fill="#7ee787">Total Stars Earned:</text>
     <text x="340" y="112"
       text-anchor="end" font-size="13" font-weight="600"
-      fill="#e6edf3">76</text>
+      fill="#e6edf3">56</text>
 
     <text x="44" y="136"
       font-size="12.5" font-weight="600" fill="#7ee787">Total Contributions (all-time):</text>
@@ -54,13 +54,13 @@
       font-size="12.5" font-weight="600" fill="#7ee787">Contributions (last 12 months):</text>
     <text x="340" y="160"
       text-anchor="end" font-size="13" font-weight="600"
-      fill="#e6edf3">2k</text>
+      fill="#e6edf3">2.1k</text>
 
     <text x="44" y="184"
       font-size="12.5" font-weight="600" fill="#7ee787">Total PRs:</text>
     <text x="340" y="184"
       text-anchor="end" font-size="13" font-weight="600"
-      fill="#e6edf3">188</text>
+      fill="#e6edf3">190</text>
 
     <text x="44" y="208"
       font-size="12.5" font-weight="600" fill="#7ee787">Total Issues:</text>
@@ -102,7 +102,7 @@
           100% { clip-path: inset(0 0 0 0); }
         }
       </style>
-      <rect x="534.00" y="130" width="213.37" height="10"
+      <rect x="534.00" y="130" width="222.85" height="10"
         fill="#39d353"
         style="animation: langSeg_0 14s infinite; animation-delay: 0.00s"/>
 
@@ -114,7 +114,7 @@
           100% { clip-path: inset(0 0 0 0); }
         }
       </style>
-      <rect x="747.37" y="130" width="90.09" height="10"
+      <rect x="756.85" y="130" width="75.87" height="10"
         fill="#f778ba"
         style="animation: langSeg_1 14s infinite; animation-delay: 0.08s"/>
 
@@ -126,7 +126,7 @@
           100% { clip-path: inset(0 0 0 0); }
         }
       </style>
-      <rect x="837.46" y="130" width="52.16" height="10"
+      <rect x="832.72" y="130" width="56.90" height="10"
         fill="#f0883e"
         style="animation: langSeg_2 14s infinite; animation-delay: 0.16s"/>
 
@@ -167,7 +167,7 @@
         <circle cx="539" cy="162" r="4" fill="#39d353"/>
         <text x="550" y="166" font-size="12" fill="#e6edf3">JavaScript</text>
         <text x="729" y="166" text-anchor="end"
-          font-size="12" font-weight="600" fill="#8b949e">45%</text>
+          font-size="12" font-weight="600" fill="#8b949e">47%</text>
       </g>
 
       <style>
@@ -182,7 +182,7 @@
         <circle cx="750" cy="162" r="4" fill="#f778ba"/>
         <text x="761" y="166" font-size="12" fill="#e6edf3">HTML</text>
         <text x="940" y="166" text-anchor="end"
-          font-size="12" font-weight="600" fill="#8b949e">19%</text>
+          font-size="12" font-weight="600" fill="#8b949e">16%</text>
       </g>
 
       <style>
@@ -197,7 +197,7 @@
         <circle cx="539" cy="182" r="4" fill="#f0883e"/>
         <text x="550" y="186" font-size="12" fill="#e6edf3">C++</text>
         <text x="729" y="186" text-anchor="end"
-          font-size="12" font-weight="600" fill="#8b949e">11%</text>
+          font-size="12" font-weight="600" fill="#8b949e">12%</text>
       </g>
 
       <style>
