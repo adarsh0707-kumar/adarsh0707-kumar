@@ -255,7 +255,7 @@ A machine-learning-powered movie recommender that suggests 5 similar films based
 <h2 align="center">🏆 Certifications</h2>
 
 <p align="center">
-  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=22&duration=5000&pause=2000&color=39D353&center=true&vCenter=true&width=800&lines=8+Certificates+%7C+3+Learning+Tracks;Systems+%E2%80%A2+Backend+%E2%80%A2 Infrastructure+%E2%80%A2+Distributed;Always+learning.+Always+building." alt="Certifications and learning tracks" />
+  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=22&duration=5000&pause=2000&color=39D353&center=true&vCenter=true&width=800&lines=8+Certificates+%7C+3+Learning+Tracks;Systems+%E2%80%A2+Backend+%E2%80%A2Infrastructure+%E2%80%A2+Distributed;Always+learning.+Always+building." alt="Certifications and learning tracks" />
 </p>
 
 <br/>
