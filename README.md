@@ -320,7 +320,7 @@ An architecture-first cloud development platform exploring browser IDEs, asynchr
 <h2 align="center">🏆 Certifications</h2>
 
 <p align="center">
-  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=22&duration=5000&pause=2000&color=39D353&center=true&vCenter=true&width=800&lines=8+Certificates+%7C+3+Learning+Tracks;Systems+%E2%80%A2+Backend+%E2%80%A2Infrastructure+%E2%80%A2+Distributed;Always+learning.+Always+building." alt="Certifications and learning tracks" />
+  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=22&duration=5000&pause=2000&color=39D353&center=true&vCenter=true&width=800&lines=9+Certificates+%7C+3+Learning+Tracks;Systems+%E2%80%A2+Backend+%E2%80%A2Infrastructure+%E2%80%A2+Distributed;Always+learning.+Always+building." alt="Certifications and learning tracks" />
 </p>
 
 <br/>
@@ -332,7 +332,7 @@ An architecture-first cloud development platform exploring browser IDEs, asynchr
 <br/><br/>
 
 <p align="center">
-  <img src="https://img.shields.io/badge/CERTIFICATES-8-39d353?style=for-the-badge&labelColor=0d1117" />
+  <img src="https://img.shields.io/badge/CERTIFICATES-9-39d353?style=for-the-badge&labelColor=0d1117" />
   <img src="https://img.shields.io/badge/LEARNING_TRACKS-3-58a6ff?style=for-the-badge&labelColor=0d1117" />
   <img src="https://img.shields.io/badge/FEATURED_PROJECTS-6-7ee787?style=for-the-badge&labelColor=0d1117" />
   <img src="https://img.shields.io/badge/LEARNING_MODE-ALWAYS_ON-2ea043?style=for-the-badge&labelColor=0d1117" />
@@ -434,6 +434,17 @@ An architecture-first cloud development platform exploring browser IDEs, asynchr
     <img src="https://img.shields.io/badge/VIEW-CERTIFICATE-39d353?style=for-the-badge" />
   </a>
 </td>
+
+<td align="center" width="33%" valign="top">
+  <a href="https://github.com/adarsh0707-kumar/portfolio/blob/main/public/certificates/JavaScript.png">
+    <img src="https://raw.githubusercontent.com/adarsh0707-kumar/portfolio/main/public/certificates/JavaScript.png" width="220" alt="JavaScript — Simplilearn SkillUp" />
+  </a><br/><br/>
+  <a href="https://certificates.simplicdn.net/share/10872400_11154348_1791721353919.pdf"><b>JavaScript</b></a><br/><br/>
+  <img src="https://img.shields.io/badge/Simplilearn_SkillUp-39d353?style=flat-square&labelColor=0d1117" /><br/><br/>
+  <a href="https://certificates.simplicdn.net/share/10872400_11154348_1791721353919.pdf">
+    <img src="https://img.shields.io/badge/VIEW-CERTIFICATE-39d353?style=for-the-badge" />
+  </a>
+</td>
 </tr>
 </table>
 
@@ -452,7 +463,7 @@ An architecture-first cloud development platform exploring browser IDEs, asynchr
 </p>
 
 <p align="center">
-  <img src="https://img.shields.io/badge/📜_CERTIFICATES-8-39d353?style=for-the-badge&labelColor=555555" />
+  <img src="https://img.shields.io/badge/📜_CERTIFICATES-9-39d353?style=for-the-badge&labelColor=555555" />
   <img src="https://img.shields.io/badge/⚙️_SYSTEMS_%26_NETWORKING-FOCUSED-58a6ff?style=for-the-badge&labelColor=555555" />
   <img src="https://img.shields.io/badge/💼_BACKEND_%26_DATABASES-ACTIVE-f0883e?style=for-the-badge&labelColor=555555" />
 </p>
