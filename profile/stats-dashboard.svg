@@ -178,8 +178,8 @@
         @keyframes roll_rT_3 {
           0%   { transform: translateY(0); }
           2.857% { transform: translateY(0); }
-          17.143% { transform: translateY(-302.4px); }
-          100% { transform: translateY(-302.4px); }
+          17.143% { transform: translateY(-907.1999999999999px); }
+          100% { transform: translateY(-907.1999999999999px); }
         }
       </style>
       <clipPath id="rT_3">
@@ -444,17 +444,17 @@
 <rect x="431.7" y="506.0"
       width="27.4" height="1.0" rx="4"
       fill="#39d353" opacity="0.8"/>
-<rect x="475.9" y="460.3"
-      width="27.4" height="45.7" rx="4"
+<rect x="475.9" y="454.6"
+      width="27.4" height="51.4" rx="4"
       fill="#39d353" opacity="0.8"/>
 <rect x="520.1" y="477.4"
       width="27.4" height="28.6" rx="4"
       fill="#39d353" opacity="0.8"/>
-<rect x="564.2" y="494.6"
-      width="27.4" height="11.4" rx="4"
+<rect x="564.2" y="477.4"
+      width="27.4" height="28.6" rx="4"
       fill="#39d353" opacity="0.8"/>
-<rect x="608.4" y="426.0"
-      width="27.4" height="80.0" rx="4"
+<rect x="608.4" y="448.9"
+      width="27.4" height="57.1" rx="4"
       fill="#39d353" opacity="0.8"/>
 <rect x="652.6" y="488.9"
       width="27.4" height="17.1" rx="4"
@@ -462,8 +462,8 @@
 <rect x="696.7" y="346.0"
       width="27.4" height="160.0" rx="4"
       fill="#7ee787" opacity="1"/>
-<rect x="740.9" y="477.4"
-      width="27.4" height="28.6" rx="4"
+<rect x="740.9" y="460.3"
+      width="27.4" height="45.7" rx="4"
       fill="#39d353" opacity="0.8"/>
 <rect x="785.1" y="471.7"
       width="27.4" height="34.3" rx="4"
