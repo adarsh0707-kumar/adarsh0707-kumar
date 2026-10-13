@@ -104,7 +104,7 @@ A production-oriented portfolio application for pharmacy billing, inventory, GST
 A lightweight database engine demonstrating core database internals — parsing, execution planning, and persistent storage — written from first principles without any external DB libraries.
 
 **Architecture:**
-- **Parser** — Tokenizes SQL input, handles `CREATE`, `INSERT`, `SELECT`, `UPDATE`, `DELETE`, builds structured command objects
+- **Parser** — Tokenizes SQL input, handles `CREATE`, `INSERT`, `SELECT`, `UPDATE`, `DELETE`, builds structured command objects.
 - **Executor** — Routes parsed commands to appropriate storage operations
 - **Storage Engine** — In-memory execution via `std::map<string, vector<vector<string>>>` with file-based persistence (`data/*.table`)
 
