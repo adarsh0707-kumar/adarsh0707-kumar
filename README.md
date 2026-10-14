@@ -132,7 +132,7 @@ A lightweight database engine demonstrating core database internals — parsing,
 A machine-learning-powered movie recommender that suggests 5 similar films based on plot, genre, keywords, cast, and director — deployed live on Streamlit Cloud.
 
 **Architecture:**
-- **Pipeline** — Merge TMDB 5000 movies + credits datasets on title
+- **Pipeline** — Merge TMDB 5000 movies + credits datasets on title.
 - **Feature engineering** — Concatenate overview, genres, keywords, top-3 cast, director into a "tags" string.
 - **Text normalization** — Porter stemming via NLTK (e.g. "loving"/"loved" → "love")
 - **Vectorization** — `CountVectorizer` (top 5,000 terms, English stop words removed)
