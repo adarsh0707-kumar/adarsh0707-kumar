@@ -106,7 +106,7 @@ A lightweight database engine demonstrating core database internals — parsing,
 **Architecture:**
 - **Parser** — Tokenizes SQL input, handles `CREATE`, `INSERT`, `SELECT`, `UPDATE`, `DELETE`, builds structured command objects.
 - **Executor** — Routes parsed commands to appropriate storage operations.
-- **Storage Engine** — In-memory execution via `std::map<string, vector<vector<string>>>` with file-based persistence (`data/*.table`)
+- **Storage Engine** — In-memory execution via `std::map<string, vector<vector<string>>>` with file-based persistence (`data/*.table`).
 
 **Features:**
 - CREATE TABLE, INSERT INTO, SELECT with WHERE filtering
