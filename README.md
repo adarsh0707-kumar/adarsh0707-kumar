@@ -89,7 +89,7 @@ A production-oriented portfolio application for pharmacy billing, inventory, GST
 **Highlights:**
 - 10-document `docs/` set: PRD, architecture, data model, API reference, security, gap analysis
 - GST acceptance fixtures in the test suite
-- Versioned URL scheme with deprecation policy
+- Versioned URL scheme with deprecation policy.
 
 </td>
 </tr>
