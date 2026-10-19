@@ -172,7 +172,7 @@ A production-oriented polyglot platform for processing large media assets throug
 - **Redis** — Asynchronous job dispatch, queue coordination, retries, and transient processing state
 - **C/C++ + FFmpeg** — Performance-critical decoding, probing, thumbnail generation, clipping, audio extraction, and media processing
 - **Python** — Transcription, detection, analytics, and AI/ML processing
-- **Object storage** — Original media and generated artifacts outside the relational database
+- **Object storage** — Original media and generated artifacts outside the relational database.
 
 **Processing flow:**
 `Upload → Register Media → Object Storage → Queue Job → C++/FFmpeg Processing → Python Analytics → Persist Results → WebSocket Progress → React`
