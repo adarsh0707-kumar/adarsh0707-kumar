@@ -50,7 +50,7 @@ A production-style trading platform demonstrating how modern exchange infrastruc
 **Architecture:**
 - **C++ engine** — Order book, price-time-priority matching, partial fills, market data simulation, TCP socket transport.
 - **Python analytics** — VWAP, SMA/EMA, PnL, exposure, drawdown, risk metrics via NumPy/Pandas
-- **Node.js gateway** — REST API, WebSocket streaming, rate limiting, request validation (TypeScript)
+- **Node.js gateway** — REST API, WebSocket streaming, rate limiting, request validation (TypeScript).
 - **React dashboard** — Live market charts, order book, trade feed, portfolio metrics (Vite + Recharts).
 
 **Stack:** C++ · Python · Node.js · TypeScript · React · Docker Compose · GitHub Actions · CMake.
