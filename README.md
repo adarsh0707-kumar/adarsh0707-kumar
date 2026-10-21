@@ -135,9 +135,9 @@ A machine-learning-powered movie recommender that suggests 5 similar films based
 - **Pipeline** — Merge TMDB 5000 movies + credits datasets on title.
 - **Feature engineering** — Concatenate overview, genres, keywords, top-3 cast, director into a "tags" string.
 - **Text normalization** — Porter stemming via NLTK (e.g. "loving"/"loved" → "love")
-- **Vectorization** — `CountVectorizer` (top 5,000 terms, English stop words removed)
+- **Vectorization** — `CountVectorizer` (top 5,000 terms, English stop words removed).
 - **Similarity** — Cosine similarity over a ~4,800 × 4,800 matrix.
-- **Serving** — Streamlit app with `st.cache_resource` for one-time model build
+- **Serving** — Streamlit app with `st.cache_resource` for one-time model build.
 
 **Features:**
 - Select from ~4,800 movies and get 5 recommendations instantly
