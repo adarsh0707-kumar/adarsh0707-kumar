@@ -71,7 +71,7 @@ A production-style trading platform demonstrating how modern exchange infrastruc
 A production-oriented portfolio application for pharmacy billing, inventory, GST reporting, and role-based operations. It is not a certified accounting, tax, or production pharmacy system.
 
 **Architecture:**
-- **Frontend** — React 19, TypeScript, Vite, Tailwind v4, shadcn/ui
+- **Frontend** — React 19, TypeScript, Vite, Tailwind v4, shadcn/ui.
 - **Backend** — Node 22, Express 5, Zod validation, JWT auth
 - **Database** — PostgreSQL 15 via Prisma ORM
 - **Deployment** — Docker Compose + nginx (same-origin by default)
