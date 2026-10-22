@@ -415,8 +415,8 @@
 <rect x="564.2" y="506.0"
       width="27.4" height="1.0" rx="4"
       fill="#39d353" opacity="0.8"/>
-<rect x="608.4" y="480.4"
-      width="27.4" height="25.6" rx="4"
+<rect x="608.4" y="474.0"
+      width="27.4" height="32.0" rx="4"
       fill="#39d353" opacity="0.8"/>
 <rect x="652.6" y="499.6"
       width="27.4" height="6.4" rx="4"
@@ -424,8 +424,8 @@
 <rect x="696.7" y="410.0"
       width="27.4" height="96.0" rx="4"
       fill="#39d353" opacity="0.8"/>
-<rect x="740.9" y="486.8"
-      width="27.4" height="19.2" rx="4"
+<rect x="740.9" y="474.0"
+      width="27.4" height="32.0" rx="4"
       fill="#39d353" opacity="0.8"/>
 <rect x="785.1" y="346.0"
       width="27.4" height="160.0" rx="4"
