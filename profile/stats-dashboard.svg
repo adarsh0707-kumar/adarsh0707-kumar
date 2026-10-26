@@ -140,8 +140,8 @@
         @keyframes roll_rT_2 {
           0%   { transform: translateY(0); }
           2.857% { transform: translateY(0); }
-          17.143% { transform: translateY(-705.6px); }
-          100% { transform: translateY(-705.6px); }
+          17.143% { transform: translateY(-806.4px); }
+          100% { transform: translateY(-806.4px); }
         }
       </style>
       <clipPath id="rT_2">
