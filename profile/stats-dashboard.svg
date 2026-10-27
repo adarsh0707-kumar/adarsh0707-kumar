@@ -102,8 +102,8 @@
         @keyframes roll_rT_1 {
           0%   { transform: translateY(0); }
           2.857% { transform: translateY(0); }
-          17.143% { transform: translateY(-403.2px); }
-          100% { transform: translateY(-403.2px); }
+          17.143% { transform: translateY(-504px); }
+          100% { transform: translateY(-504px); }
         }
       </style>
       <clipPath id="rT_1">
@@ -140,8 +140,8 @@
         @keyframes roll_rT_2 {
           0%   { transform: translateY(0); }
           2.857% { transform: translateY(0); }
-          17.143% { transform: translateY(-806.4px); }
-          100% { transform: translateY(-806.4px); }
+          17.143% { transform: translateY(-100.8px); }
+          100% { transform: translateY(-100.8px); }
         }
       </style>
       <clipPath id="rT_2">
@@ -178,8 +178,8 @@
         @keyframes roll_rT_3 {
           0%   { transform: translateY(0); }
           2.857% { transform: translateY(0); }
-          17.143% { transform: translateY(-705.6px); }
-          100% { transform: translateY(-705.6px); }
+          17.143% { transform: translateY(-604.8px); }
+          100% { transform: translateY(-604.8px); }
         }
       </style>
       <clipPath id="rT_3">
@@ -314,8 +314,8 @@
         @keyframes roll_rL_1 {
           0%   { transform: translateY(0); }
           2.857% { transform: translateY(0); }
-          17.143% { transform: translateY(-504px); }
-          100% { transform: translateY(-504px); }
+          17.143% { transform: translateY(-604.8px); }
+          100% { transform: translateY(-604.8px); }
         }
       </style>
       <clipPath id="rL_1">
@@ -349,7 +349,7 @@
       </g>
   <text x="1132" y="218" text-anchor="end" font-size="20"
     font-weight="600" fill="#8b949e">days</text>
-  <text x="888" y="240" font-size="13" fill="#39d353" font-weight="600">Aug 13 → Oct 26</text>
+  <text x="888" y="240" font-size="13" fill="#39d353" font-weight="600">Aug 13 → Oct 27</text>
   <text x="888" y="262" font-size="12" fill="#8b949e">All-time best</text>
 
   <!-- Row 2: Commits by hour -->
@@ -359,9 +359,9 @@
   <text x="1132" y="374" text-anchor="end" font-size="13"
     fill="#8b949e">UTC+5:30</text>
   
-    <rect x="680.3333333333333" y="346" width="104.33333333333337"
+    <rect x="680.3333333333333" y="346" width="60.16666666666663"
       height="160" rx="8" fill="#5EEAD4" fill-opacity="0.08"/>
-    <text x="732.5" y="352"
+    <text x="710.4" y="352"
       text-anchor="middle" font-size="11" font-weight="600" fill="#5EEAD4">Peak hours</text>
   
       <line x1="70" y1="506" x2="1130" y2="506"
@@ -418,17 +418,17 @@
 <rect x="608.4" y="506.0"
       width="27.4" height="1.0" rx="4"
       fill="#39d353" opacity="0.8"/>
-<rect x="652.6" y="470.4"
-      width="27.4" height="35.6" rx="4"
+<rect x="652.6" y="476.0"
+      width="27.4" height="30.0" rx="4"
       fill="#39d353" opacity="0.8"/>
 <rect x="696.7" y="346.0"
       width="27.4" height="160.0" rx="4"
       fill="#7ee787" opacity="1"/>
-<rect x="740.9" y="363.8"
-      width="27.4" height="142.2" rx="4"
-      fill="#7ee787" opacity="1"/>
-<rect x="785.1" y="405.3"
-      width="27.4" height="100.7" rx="4"
+<rect x="740.9" y="411.0"
+      width="27.4" height="95.0" rx="4"
+      fill="#39d353" opacity="0.8"/>
+<rect x="785.1" y="426.0"
+      width="27.4" height="80.0" rx="4"
       fill="#39d353" opacity="0.8"/>
 <rect x="829.2" y="506.0"
       width="27.4" height="1.0" rx="4"
