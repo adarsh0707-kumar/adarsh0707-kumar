@@ -178,8 +178,8 @@
         @keyframes roll_rT_3 {
           0%   { transform: translateY(0); }
           2.857% { transform: translateY(0); }
-          17.143% { transform: translateY(-604.8px); }
-          100% { transform: translateY(-604.8px); }
+          17.143% { transform: translateY(-806.4px); }
+          100% { transform: translateY(-806.4px); }
         }
       </style>
       <clipPath id="rT_3">
@@ -314,8 +314,8 @@
         @keyframes roll_rL_1 {
           0%   { transform: translateY(0); }
           2.857% { transform: translateY(0); }
-          17.143% { transform: translateY(-604.8px); }
-          100% { transform: translateY(-604.8px); }
+          17.143% { transform: translateY(-705.6px); }
+          100% { transform: translateY(-705.6px); }
         }
       </style>
       <clipPath id="rL_1">
@@ -349,7 +349,7 @@
       </g>
   <text x="1132" y="218" text-anchor="end" font-size="20"
     font-weight="600" fill="#8b949e">days</text>
-  <text x="888" y="240" font-size="13" fill="#39d353" font-weight="600">Aug 13 → Oct 27</text>
+  <text x="888" y="240" font-size="13" fill="#39d353" font-weight="600">Aug 13 → Oct 28</text>
   <text x="888" y="262" font-size="12" fill="#8b949e">All-time best</text>
 
   <!-- Row 2: Commits by hour -->
