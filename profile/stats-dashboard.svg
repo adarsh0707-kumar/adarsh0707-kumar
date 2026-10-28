@@ -359,9 +359,9 @@
   <text x="1132" y="374" text-anchor="end" font-size="13"
     fill="#8b949e">UTC+5:30</text>
   
-    <rect x="680.3333333333333" y="346" width="60.16666666666663"
+    <rect x="680.3333333333333" y="346" width="104.33333333333337"
       height="160" rx="8" fill="#5EEAD4" fill-opacity="0.08"/>
-    <text x="710.4" y="352"
+    <text x="732.5" y="352"
       text-anchor="middle" font-size="11" font-weight="600" fill="#5EEAD4">Peak hours</text>
   
       <line x1="70" y1="506" x2="1130" y2="506"
@@ -418,17 +418,17 @@
 <rect x="608.4" y="506.0"
       width="27.4" height="1.0" rx="4"
       fill="#39d353" opacity="0.8"/>
-<rect x="652.6" y="476.0"
-      width="27.4" height="30.0" rx="4"
+<rect x="652.6" y="484.7"
+      width="27.4" height="21.3" rx="4"
       fill="#39d353" opacity="0.8"/>
-<rect x="696.7" y="346.0"
+<rect x="696.7" y="362.0"
+      width="27.4" height="144.0" rx="4"
+      fill="#7ee787" opacity="1"/>
+<rect x="740.9" y="346.0"
       width="27.4" height="160.0" rx="4"
       fill="#7ee787" opacity="1"/>
-<rect x="740.9" y="411.0"
-      width="27.4" height="95.0" rx="4"
-      fill="#39d353" opacity="0.8"/>
-<rect x="785.1" y="426.0"
-      width="27.4" height="80.0" rx="4"
+<rect x="785.1" y="415.3"
+      width="27.4" height="90.7" rx="4"
       fill="#39d353" opacity="0.8"/>
 <rect x="829.2" y="506.0"
       width="27.4" height="1.0" rx="4"
