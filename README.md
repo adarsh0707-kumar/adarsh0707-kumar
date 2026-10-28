@@ -211,7 +211,7 @@ An architecture-first cloud development platform exploring browser IDEs, asynchr
 **Highlights:**
 - Treats submitted programs as hostile input in the security model
 - Asynchronous execution with persistent job and execution states
-- Resource controls for CPU, memory, wall-clock time, processes, disk, and output
+- Resource controls for CPU, memory, wall-clock time, processes, disk, and output.
 - Real-time execution and collaboration events over WebSockets
 - Internal service communication through gRPC/Protocol Buffers
 - Security, testing, observability, and failure handling treated as first-class architecture concerns
