@@ -48,7 +48,7 @@
       font-size="12.5" font-weight="600" fill="#7ee787">Total Contributions (all-time):</text>
     <text x="340" y="136"
       text-anchor="end" font-size="13" font-weight="600"
-      fill="#e6edf3">2.9k</text>
+      fill="#e6edf3">2.6k</text>
 
     <text x="44" y="160"
       font-size="12.5" font-weight="600" fill="#7ee787">Contributions (last 12 months):</text>
@@ -102,7 +102,7 @@
           100% { clip-path: inset(0 0 0 0); }
         }
       </style>
-      <rect x="534.00" y="130" width="222.85" height="10"
+      <rect x="534.00" y="130" width="218.11" height="10"
         fill="#39d353"
         style="animation: langSeg_0 14s infinite; animation-delay: 0.00s"/>
 
@@ -114,7 +114,7 @@
           100% { clip-path: inset(0 0 0 0); }
         }
       </style>
-      <rect x="756.85" y="130" width="75.87" height="10"
+      <rect x="752.11" y="130" width="80.61" height="10"
         fill="#f778ba"
         style="animation: langSeg_1 14s infinite; animation-delay: 0.08s"/>
 
@@ -167,7 +167,7 @@
         <circle cx="539" cy="162" r="4" fill="#39d353"/>
         <text x="550" y="166" font-size="12" fill="#e6edf3">JavaScript</text>
         <text x="729" y="166" text-anchor="end"
-          font-size="12" font-weight="600" fill="#8b949e">47%</text>
+          font-size="12" font-weight="600" fill="#8b949e">46%</text>
       </g>
 
       <style>
@@ -182,7 +182,7 @@
         <circle cx="750" cy="162" r="4" fill="#f778ba"/>
         <text x="761" y="166" font-size="12" fill="#e6edf3">HTML</text>
         <text x="940" y="166" text-anchor="end"
-          font-size="12" font-weight="600" fill="#8b949e">16%</text>
+          font-size="12" font-weight="600" fill="#8b949e">17%</text>
       </g>
 
       <style>
