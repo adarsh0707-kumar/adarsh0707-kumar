@@ -140,8 +140,8 @@
         @keyframes roll_rT_2 {
           0%   { transform: translateY(0); }
           2.857% { transform: translateY(0); }
-          17.143% { transform: translateY(-100.8px); }
-          100% { transform: translateY(-100.8px); }
+          17.143% { transform: translateY(-201.6px); }
+          100% { transform: translateY(-201.6px); }
         }
       </style>
       <clipPath id="rT_2">
@@ -178,8 +178,8 @@
         @keyframes roll_rT_3 {
           0%   { transform: translateY(0); }
           2.857% { transform: translateY(0); }
-          17.143% { transform: translateY(-907.1999999999999px); }
-          100% { transform: translateY(-907.1999999999999px); }
+          17.143% { transform: translateY(-201.6px); }
+          100% { transform: translateY(-201.6px); }
         }
       </style>
       <clipPath id="rT_3">
@@ -227,16 +227,54 @@
         @keyframes roll_rC_0 {
           0%   { transform: translateY(0); }
           2.857% { transform: translateY(0); }
-          17.143% { transform: translateY(0px); }
-          100% { transform: translateY(0px); }
+          17.143% { transform: translateY(-450.80000000000007px); }
+          100% { transform: translateY(-450.80000000000007px); }
         }
       </style>
       <clipPath id="rC_0">
-        <rect x="458.66" y="161" width="26.68" height="64.4"/>
+        <rect x="445.32" y="161" width="26.68" height="64.4"/>
       </clipPath>
       <g clip-path="url(#rC_0)">
         <g style="animation: roll_rC_0 14s infinite; animation-delay: 0.00s; transform-box: fill-box;">
-          <g transform="translate(472, 164.68)">
+          <g transform="translate(458.65999999999997, 164.68)">
+            <text x="0" y="42.32" text-anchor="middle"
+        font-size="46" font-weight="800" fill="url(#numfill)">0</text>
+<text x="0" y="106.72" text-anchor="middle"
+        font-size="46" font-weight="800" fill="url(#numfill)">1</text>
+<text x="0" y="171.12" text-anchor="middle"
+        font-size="46" font-weight="800" fill="url(#numfill)">2</text>
+<text x="0" y="235.52" text-anchor="middle"
+        font-size="46" font-weight="800" fill="url(#numfill)">3</text>
+<text x="0" y="299.92" text-anchor="middle"
+        font-size="46" font-weight="800" fill="url(#numfill)">4</text>
+<text x="0" y="364.32" text-anchor="middle"
+        font-size="46" font-weight="800" fill="url(#numfill)">5</text>
+<text x="0" y="428.72" text-anchor="middle"
+        font-size="46" font-weight="800" fill="url(#numfill)">6</text>
+<text x="0" y="493.12000000000006" text-anchor="middle"
+        font-size="46" font-weight="800" fill="url(#numfill)">7</text>
+<text x="0" y="557.5200000000001" text-anchor="middle"
+        font-size="46" font-weight="800" fill="url(#numfill)">8</text>
+<text x="0" y="621.9200000000001" text-anchor="middle"
+        font-size="46" font-weight="800" fill="url(#numfill)">9</text>
+          </g>
+        </g>
+      </g>
+
+      <style>
+        @keyframes roll_rC_1 {
+          0%   { transform: translateY(0); }
+          2.857% { transform: translateY(0); }
+          17.143% { transform: translateY(-579.6px); }
+          100% { transform: translateY(-579.6px); }
+        }
+      </style>
+      <clipPath id="rC_1">
+        <rect x="472" y="161" width="26.68" height="64.4"/>
+      </clipPath>
+      <g clip-path="url(#rC_1)">
+        <g style="animation: roll_rC_1 14s infinite; animation-delay: 0.08s; transform-box: fill-box;">
+          <g transform="translate(485.34, 164.68)">
             <text x="0" y="42.32" text-anchor="middle"
         font-size="46" font-weight="800" fill="url(#numfill)">0</text>
 <text x="0" y="106.72" text-anchor="middle"
@@ -263,9 +301,9 @@
   <text x="472" y="229" text-anchor="middle" font-size="12"
     font-weight="600" fill="#8b949e">days</text>
   <text x="574" y="174" font-size="19" font-weight="700" fill="#e6edf3">Current streak</text>
-  <text x="574" y="200" font-size="14" fill="#39d353" font-weight="600">0 day run</text>
-  <text x="574" y="222" font-size="13" fill="#8b949e"></text>
-  <text x="574" y="244" font-size="12" fill="#8b949e">Personal record approaching</text>
+  <text x="574" y="200" font-size="14" fill="#39d353" font-weight="600">79 day run</text>
+  <text x="574" y="222" font-size="13" fill="#8b949e">Aug 13 → Oct 30</text>
+  <text x="574" y="244" font-size="12" fill="#8b949e">Matches the longest streak</text>
 
   <rect x="860" y="96" width="300" height="190" rx="20"
     fill="#ffffff08" stroke="#ffffff16"/>
@@ -314,8 +352,8 @@
         @keyframes roll_rL_1 {
           0%   { transform: translateY(0); }
           2.857% { transform: translateY(0); }
-          17.143% { transform: translateY(-806.4px); }
-          100% { transform: translateY(-806.4px); }
+          17.143% { transform: translateY(-907.1999999999999px); }
+          100% { transform: translateY(-907.1999999999999px); }
         }
       </style>
       <clipPath id="rL_1">
@@ -349,7 +387,7 @@
       </g>
   <text x="1132" y="218" text-anchor="end" font-size="20"
     font-weight="600" fill="#8b949e">days</text>
-  <text x="888" y="240" font-size="13" fill="#39d353" font-weight="600">Aug 13 → Oct 29</text>
+  <text x="888" y="240" font-size="13" fill="#39d353" font-weight="600">Aug 13 → Oct 30</text>
   <text x="888" y="262" font-size="12" fill="#8b949e">All-time best</text>
 
   <!-- Row 2: Commits by hour -->
@@ -394,8 +432,8 @@
 <rect x="255.1" y="506.0"
       width="27.4" height="1.0" rx="4"
       fill="#39d353" opacity="0.8"/>
-<rect x="299.2" y="501.7"
-      width="27.4" height="4.3" rx="4"
+<rect x="299.2" y="501.8"
+      width="27.4" height="4.2" rx="4"
       fill="#39d353" opacity="0.8"/>
 <rect x="343.4" y="506.0"
       width="27.4" height="1.0" rx="4"
@@ -418,17 +456,17 @@
 <rect x="608.4" y="506.0"
       width="27.4" height="1.0" rx="4"
       fill="#39d353" opacity="0.8"/>
-<rect x="652.6" y="488.7"
-      width="27.4" height="17.3" rx="4"
+<rect x="652.6" y="489.2"
+      width="27.4" height="16.8" rx="4"
       fill="#39d353" opacity="0.8"/>
-<rect x="696.7" y="393.6"
-      width="27.4" height="112.4" rx="4"
+<rect x="696.7" y="396.5"
+      width="27.4" height="109.5" rx="4"
       fill="#39d353" opacity="0.8"/>
 <rect x="740.9" y="346.0"
       width="27.4" height="160.0" rx="4"
       fill="#7ee787" opacity="1"/>
-<rect x="785.1" y="458.4"
-      width="27.4" height="47.6" rx="4"
+<rect x="785.1" y="459.7"
+      width="27.4" height="46.3" rx="4"
       fill="#39d353" opacity="0.8"/>
 <rect x="829.2" y="506.0"
       width="27.4" height="1.0" rx="4"
@@ -477,46 +515,56 @@
     <circle cx="74" cy="641" r="5" fill="#39d353"/>
     <text x="92" y="646" font-size="14" fill="#e6edf3">JavaScript</text>
     <text x="360" y="646" text-anchor="end" font-size="14"
-      font-weight="600" fill="#8b949e">45%</text>
+      font-weight="600" fill="#8b949e">42%</text>
 
     <circle cx="74" cy="672" r="5" fill="#f778ba"/>
     <text x="92" y="677" font-size="14" fill="#e6edf3">C++</text>
     <text x="360" y="677" text-anchor="end" font-size="14"
-      font-weight="600" fill="#8b949e">36%</text>
+      font-weight="600" fill="#8b949e">33%</text>
 
     <circle cx="74" cy="703" r="5" fill="#f0883e"/>
-    <text x="92" y="708" font-size="14" fill="#e6edf3">Jupyter Notebook</text>
+    <text x="92" y="708" font-size="14" fill="#e6edf3">HTML</text>
     <text x="360" y="708" text-anchor="end" font-size="14"
-      font-weight="600" fill="#8b949e">9%</text>
+      font-weight="600" fill="#8b949e">8%</text>
 
     <circle cx="74" cy="734" r="5" fill="#58a6ff"/>
-    <text x="92" y="739" font-size="14" fill="#e6edf3">Python</text>
+    <text x="92" y="739" font-size="14" fill="#e6edf3">Jupyter Notebook</text>
     <text x="360" y="739" text-anchor="end" font-size="14"
-      font-weight="600" fill="#8b949e">9%</text>
+      font-weight="600" fill="#8b949e">8%</text>
+
+    <circle cx="74" cy="765" r="5" fill="#a371f7"/>
+    <text x="92" y="770" font-size="14" fill="#e6edf3">Python</text>
+    <text x="360" y="770" text-anchor="end" font-size="14"
+      font-weight="600" fill="#8b949e">8%</text>
   <circle cx="450" cy="698" r="68" fill="none"
     stroke="#ffffff14" stroke-width="26"/>
   <circle cx="450" cy="698" r="68" fill="none"
       stroke="#39d353" stroke-width="26"
-      stroke-dasharray="192.27 234.99"
+      stroke-dasharray="179.45 247.81"
       stroke-dashoffset="0.00"
       transform="rotate(-90 450 698)"/>
 <circle cx="450" cy="698" r="68" fill="none"
       stroke="#f778ba" stroke-width="26"
-      stroke-dasharray="153.81 273.44"
-      stroke-dashoffset="-192.27"
+      stroke-dasharray="140.99 286.26"
+      stroke-dashoffset="-179.45"
       transform="rotate(-90 450 698)"/>
 <circle cx="450" cy="698" r="68" fill="none"
       stroke="#f0883e" stroke-width="26"
-      stroke-dasharray="38.45 388.80"
-      stroke-dashoffset="-346.08"
+      stroke-dasharray="34.18 393.08"
+      stroke-dashoffset="-320.44"
       transform="rotate(-90 450 698)"/>
 <circle cx="450" cy="698" r="68" fill="none"
       stroke="#58a6ff" stroke-width="26"
-      stroke-dasharray="38.45 388.80"
-      stroke-dashoffset="-384.53"
+      stroke-dasharray="34.18 393.08"
+      stroke-dashoffset="-354.62"
+      transform="rotate(-90 450 698)"/>
+<circle cx="450" cy="698" r="68" fill="none"
+      stroke="#a371f7" stroke-width="26"
+      stroke-dasharray="34.18 393.08"
+      stroke-dashoffset="-388.80"
       transform="rotate(-90 450 698)"/>
   <text x="450" y="702" text-anchor="middle"
-    font-size="24" font-weight="800" fill="url(#numfill)">45%</text>
+    font-size="24" font-weight="800" fill="url(#numfill)">42%</text>
   <text x="450" y="720" text-anchor="middle"
     font-size="12" fill="#8b949e">JavaScript</text>
 
@@ -527,46 +575,56 @@
     <circle cx="644" cy="641" r="5" fill="#39d353"/>
     <text x="662" y="646" font-size="14" fill="#e6edf3">JavaScript</text>
     <text x="930" y="646" text-anchor="end" font-size="14"
-      font-weight="600" fill="#8b949e">53%</text>
+      font-weight="600" fill="#8b949e">50%</text>
 
     <circle cx="644" cy="672" r="5" fill="#f778ba"/>
     <text x="662" y="677" font-size="14" fill="#e6edf3">C++</text>
     <text x="930" y="677" text-anchor="end" font-size="14"
-      font-weight="600" fill="#8b949e">34%</text>
+      font-weight="600" fill="#8b949e">31%</text>
 
     <circle cx="644" cy="703" r="5" fill="#f0883e"/>
-    <text x="662" y="708" font-size="14" fill="#e6edf3">Jupyter Notebook</text>
+    <text x="662" y="708" font-size="14" fill="#e6edf3">HTML</text>
     <text x="930" y="708" text-anchor="end" font-size="14"
-      font-weight="600" fill="#8b949e">5%</text>
+      font-weight="600" fill="#8b949e">4%</text>
 
     <circle cx="644" cy="734" r="5" fill="#58a6ff"/>
-    <text x="662" y="739" font-size="14" fill="#e6edf3">Python</text>
+    <text x="662" y="739" font-size="14" fill="#e6edf3">Jupyter Notebook</text>
     <text x="930" y="739" text-anchor="end" font-size="14"
-      font-weight="600" fill="#8b949e">3%</text>
+      font-weight="600" fill="#8b949e">2%</text>
+
+    <circle cx="644" cy="765" r="5" fill="#a371f7"/>
+    <text x="662" y="770" font-size="14" fill="#e6edf3">Python</text>
+    <text x="930" y="770" text-anchor="end" font-size="14"
+      font-weight="600" fill="#8b949e">1%</text>
   <circle cx="1020" cy="698" r="68" fill="none"
     stroke="#ffffff14" stroke-width="26"/>
   <circle cx="1020" cy="698" r="68" fill="none"
       stroke="#39d353" stroke-width="26"
-      stroke-dasharray="226.45 200.81"
+      stroke-dasharray="213.63 213.63"
       stroke-dashoffset="0.00"
       transform="rotate(-90 1020 698)"/>
 <circle cx="1020" cy="698" r="68" fill="none"
       stroke="#f778ba" stroke-width="26"
-      stroke-dasharray="145.27 281.99"
-      stroke-dashoffset="-226.45"
+      stroke-dasharray="132.45 294.81"
+      stroke-dashoffset="-213.63"
       transform="rotate(-90 1020 698)"/>
 <circle cx="1020" cy="698" r="68" fill="none"
       stroke="#f0883e" stroke-width="26"
-      stroke-dasharray="21.36 405.89"
-      stroke-dashoffset="-371.71"
+      stroke-dasharray="17.09 410.17"
+      stroke-dashoffset="-346.08"
       transform="rotate(-90 1020 698)"/>
 <circle cx="1020" cy="698" r="68" fill="none"
       stroke="#58a6ff" stroke-width="26"
-      stroke-dasharray="12.82 414.44"
-      stroke-dashoffset="-393.08"
+      stroke-dasharray="8.55 418.71"
+      stroke-dashoffset="-363.17"
+      transform="rotate(-90 1020 698)"/>
+<circle cx="1020" cy="698" r="68" fill="none"
+      stroke="#a371f7" stroke-width="26"
+      stroke-dasharray="4.27 422.98"
+      stroke-dashoffset="-371.71"
       transform="rotate(-90 1020 698)"/>
   <text x="1020" y="702" text-anchor="middle"
-    font-size="24" font-weight="800" fill="url(#numfill)">53%</text>
+    font-size="24" font-weight="800" fill="url(#numfill)">50%</text>
   <text x="1020" y="720" text-anchor="middle"
     font-size="12" fill="#8b949e">JavaScript</text>
 </svg>
