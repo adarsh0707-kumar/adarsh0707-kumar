@@ -112,7 +112,7 @@ A lightweight database engine demonstrating core database internals — parsing,
 - CREATE TABLE, INSERT INTO, SELECT with WHERE filtering
 - UPDATE and DELETE with WHERE clauses
 - Loads data at startup from disk, persists on modification
-- Modular separation: parser · executor · storage
+- Modular separation: parser · executor · storage.
 
 **Stack:** C++ · Makefile
 
