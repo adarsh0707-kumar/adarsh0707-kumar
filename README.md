@@ -356,7 +356,7 @@ An architecture-first cloud development platform exploring browser IDEs, asynchr
 
 <td align="center" width="33%" valign="top">
   <a href="https://github.com/adarsh0707-kumar/portfolio/blob/main/public/certificates/rcpl-data-science-python.png">
-    <img src="https://github.com/adarsh0707-kumar/portfolio/blob/main/public/certificates/rcpl-data-science-python.png" width="220" alt="Data Science with Python" />
+    <img src="https://github.com/adarsh0707-kumar/portfolio/blob/main/public/certificates/rcpl-data-science-python.png" width="220" alt="Data Science with Python." />
   </a><br/><br/>
   <a href="https://github.com/adarsh0707-kumar/portfolio/blob/main/public/certificates/rcpl-data-science-python.png"><b>Data Science with Python</b></a><br/><br/>
   <img src="https://img.shields.io/badge/RCPL_%C3%97_ITS_College-39d353?style=flat-square&labelColor=0d1117" /><br/><br/>
