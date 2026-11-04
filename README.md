@@ -78,7 +78,7 @@ A production-oriented portfolio application for pharmacy billing, inventory, GST
 
 **Features:**
 - Point-of-sale billing and GST reporting
-- Batch-level stock tracking with expiry alerts
+- Batch-level stock tracking with expiry alerts.
 - Multi-shop tenancy — isolated data per pharmacy via JWT-scoped `shopId`
 - Three role levels: `ADMIN` · `PHARMACIST` · `CASHIER`
 - Daily sales and GST reports.
