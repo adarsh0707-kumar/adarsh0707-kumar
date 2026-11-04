@@ -56,7 +56,7 @@ A production-style trading platform demonstrating how modern exchange infrastruc
 **Stack:** C++ · Python · Node.js · TypeScript · React · Docker Compose · GitHub Actions · CMake.
 
 **Highlights:**
-- Deterministic price-time-priority matching engine with partial fills
+- Deterministic price-time-priority matching engine with partial fills.
 - End-to-end event flow: tick → match → trade → analytics → API → dashboard
 - Full test pyramid: C++ unit · Pytest · Node test · React component · E2E
 - Architecture Decision Records (ADR-001 through ADR-006)
