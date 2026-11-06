@@ -58,7 +58,7 @@ A production-style trading platform demonstrating how modern exchange infrastruc
 **Highlights:**
 - Deterministic price-time-priority matching engine with partial fills.
 - End-to-end event flow: tick → match → trade → analytics → API → dashboard
-- Full test pyramid: C++ unit · Pytest · Node test · React component · E2E
+- Full test pyramid: C++ unit · Pytest · Node test · React component · E2E.
 - Architecture Decision Records (ADR-001 through ADR-006)
 
 </td>
