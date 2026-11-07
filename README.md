@@ -74,7 +74,7 @@ A production-oriented portfolio application for pharmacy billing, inventory, GST
 - **Frontend** — React 19, TypeScript, Vite, Tailwind v4, shadcn/ui.
 - **Backend** — Node 22, Express 5, Zod validation, JWT auth
 - **Database** — PostgreSQL 15 via Prisma ORM
-- **Deployment** — Docker Compose + nginx (same-origin by default)
+- **Deployment** — Docker Compose + nginx (same-origin by default).
 
 **Features:**
 - Point-of-sale billing and GST reporting
