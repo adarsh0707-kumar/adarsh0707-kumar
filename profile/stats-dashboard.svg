@@ -397,11 +397,11 @@
 <rect x="299.2" y="498.0"
       width="27.4" height="8.0" rx="4"
       fill="#39d353" opacity="0.8"/>
-<rect x="343.4" y="490.0"
-      width="27.4" height="16.0" rx="4"
+<rect x="343.4" y="482.0"
+      width="27.4" height="24.0" rx="4"
       fill="#39d353" opacity="0.8"/>
-<rect x="387.6" y="498.0"
-      width="27.4" height="8.0" rx="4"
+<rect x="387.6" y="490.0"
+      width="27.4" height="16.0" rx="4"
       fill="#39d353" opacity="0.8"/>
 <rect x="431.7" y="506.0"
       width="27.4" height="1.0" rx="4"
@@ -421,8 +421,8 @@
 <rect x="652.6" y="486.0"
       width="27.4" height="20.0" rx="4"
       fill="#39d353" opacity="0.8"/>
-<rect x="696.7" y="398.0"
-      width="27.4" height="108.0" rx="4"
+<rect x="696.7" y="414.0"
+      width="27.4" height="92.0" rx="4"
       fill="#39d353" opacity="0.8"/>
 <rect x="740.9" y="346.0"
       width="27.4" height="160.0" rx="4"
