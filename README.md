@@ -117,7 +117,7 @@ A lightweight database engine demonstrating core database internals — parsing,
 **Stack:** C++ · Makefile
 
 **Highlights:**
-- Zero external dependencies — pure C++ standard library
+- Zero external dependencies — pure C++ standard library.
 - Custom tokenizer + command parser (not a full SQL grammar, but principled)
 - Demonstrates low-level systems design often skipped in CRUD applications
 - Clear roadmap: dynamic schemas, B-tree indexing, ACID transactions
