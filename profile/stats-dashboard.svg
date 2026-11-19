@@ -140,8 +140,8 @@
         @keyframes roll_rT_2 {
           0%   { transform: translateY(0); }
           2.857% { transform: translateY(0); }
-          17.143% { transform: translateY(-806.4px); }
-          100% { transform: translateY(-806.4px); }
+          17.143% { transform: translateY(-907.1999999999999px); }
+          100% { transform: translateY(-907.1999999999999px); }
         }
       </style>
       <clipPath id="rT_2">
@@ -178,8 +178,8 @@
         @keyframes roll_rT_3 {
           0%   { transform: translateY(0); }
           2.857% { transform: translateY(0); }
-          17.143% { transform: translateY(-806.4px); }
-          100% { transform: translateY(-806.4px); }
+          17.143% { transform: translateY(-403.2px); }
+          100% { transform: translateY(-403.2px); }
         }
       </style>
       <clipPath id="rT_3">
@@ -227,8 +227,8 @@
         @keyframes roll_rC_0 {
           0%   { transform: translateY(0); }
           2.857% { transform: translateY(0); }
-          17.143% { transform: translateY(0px); }
-          100% { transform: translateY(0px); }
+          17.143% { transform: translateY(-128.8px); }
+          100% { transform: translateY(-128.8px); }
         }
       </style>
       <clipPath id="rC_0">
@@ -263,8 +263,8 @@
   <text x="472" y="229" text-anchor="middle" font-size="12"
     font-weight="600" fill="#8b949e">days</text>
   <text x="574" y="174" font-size="19" font-weight="700" fill="#e6edf3">Current streak</text>
-  <text x="574" y="200" font-size="14" fill="#39d353" font-weight="600">0 day run</text>
-  <text x="574" y="222" font-size="13" fill="#8b949e"></text>
+  <text x="574" y="200" font-size="14" fill="#39d353" font-weight="600">2 day run</text>
+  <text x="574" y="222" font-size="13" fill="#8b949e">Nov 18 → Nov 19</text>
   <text x="574" y="244" font-size="12" fill="#8b949e">Personal record approaching</text>
 
   <rect x="860" y="96" width="300" height="190" rx="20"
@@ -412,8 +412,8 @@
 <rect x="520.1" y="506.0"
       width="27.4" height="1.0" rx="4"
       fill="#39d353" opacity="0.8"/>
-<rect x="564.2" y="506.0"
-      width="27.4" height="1.0" rx="4"
+<rect x="564.2" y="494.8"
+      width="27.4" height="11.2" rx="4"
       fill="#39d353" opacity="0.8"/>
 <rect x="608.4" y="498.6"
       width="27.4" height="7.4" rx="4"
@@ -421,8 +421,8 @@
 <rect x="652.6" y="487.4"
       width="27.4" height="18.6" rx="4"
       fill="#39d353" opacity="0.8"/>
-<rect x="696.7" y="446.5"
-      width="27.4" height="59.5" rx="4"
+<rect x="696.7" y="453.9"
+      width="27.4" height="52.1" rx="4"
       fill="#39d353" opacity="0.8"/>
 <rect x="740.9" y="346.0"
       width="27.4" height="160.0" rx="4"
