@@ -227,8 +227,8 @@
         @keyframes roll_rC_0 {
           0%   { transform: translateY(0); }
           2.857% { transform: translateY(0); }
-          17.143% { transform: translateY(-128.8px); }
-          100% { transform: translateY(-128.8px); }
+          17.143% { transform: translateY(0px); }
+          100% { transform: translateY(0px); }
         }
       </style>
       <clipPath id="rC_0">
@@ -263,8 +263,8 @@
   <text x="472" y="229" text-anchor="middle" font-size="12"
     font-weight="600" fill="#8b949e">days</text>
   <text x="574" y="174" font-size="19" font-weight="700" fill="#e6edf3">Current streak</text>
-  <text x="574" y="200" font-size="14" fill="#39d353" font-weight="600">2 day run</text>
-  <text x="574" y="222" font-size="13" fill="#8b949e">Nov 18 → Nov 19</text>
+  <text x="574" y="200" font-size="14" fill="#39d353" font-weight="600">0 day run</text>
+  <text x="574" y="222" font-size="13" fill="#8b949e"></text>
   <text x="574" y="244" font-size="12" fill="#8b949e">Personal record approaching</text>
 
   <rect x="860" y="96" width="300" height="190" rx="20"
